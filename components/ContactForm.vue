@@ -35,7 +35,10 @@
           <div v-for="error in errors" :key="error" class="bg-copper-penny">{{ error.message }}</div>
           <div v-if="success" class="bg-ufo-green ">Message envoyé avec succès</div>
         </div>
-        <form @submit.prevent="submit(form)" class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow">
+        <form @submit.prevent="submit(form)" class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow relative">
+          <div class="absolute -inset-2 bg-eerie-black bg-opacity-50 z-10 rounded-lg">
+            <p class="m-auto w-max h-max absolute inset-0 bg-white bg-opacity-70 p-2 rounded">En cours de construction</p>
+          </div>
           <div class="grid">
             <label for="name" class="font-semibold">Nom :</label>
             <input v-model="form.name" required type="text" name="name" id="name" autocomplete="name" class="rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black">

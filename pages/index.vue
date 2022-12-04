@@ -2,7 +2,15 @@
   <div class="mb-8">
     <section class="relative">
       <div class="relative">
-        <img src="https://picsum.photos/1920/1080" alt="grande images de la facade de la batisse" class="w-full object-cover h-[75vh] rounded-b-xl bg-northern_light_grey font-bold">
+        <nuxt-img 
+          :width="`${1550*1.5}`"
+          :height="`${632*1.5}`"
+          quality="90"
+          format="webp"
+          class="w-full object-cover h-[75vh] rounded-b-xl bg-northern_light_grey font-bold" 
+          :src="Imgs[48].link" 
+          :alt="Imgs[48].alt" />
+        <!-- <img src="Imgs[48].link" alt="grande images de la facade de la batisse" class="w-full object-cover h-[75vh] rounded-b-xl bg-northern_light_grey font-bold"> -->
         <h1 class="mx-auto max-w-screen-lg w-full pl-4 absolute top-60 md:top-auto sm:bottom-24 left-1/2 -translate-x-1/2 text-5xl sm:text-6xl text-white drop-shadow-lg">Votre Séjour au<br> Domaine de Pipangaille</h1>
       </div>
       <div class="mx-auto lg:w-max px-4 -translate-y-1/2">
