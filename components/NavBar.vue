@@ -7,13 +7,13 @@
             <source 
               srcset="/images/logo_domaine_de_pipangaille_light.svg" 
               media="(prefers-color-scheme: dark)">
-            <img id="logo" width="165" height="74" class="h-[4.625rem] duration-200" src="/images/logo_domaine_de_pipangaille.svg" alt="logo du Domaine de Pipangaille">
+            <img id="logo" width="165" height="74" class="h-[4.625rem] duration-200 w-max" src="/images/logo_domaine_de_pipangaille.svg" alt="logo du Domaine de Pipangaille">
           </picture>
         </NuxtLink>
         <ButtonInline link="/" content="Accueil" />
         <ButtonInline link="/le_lieu" content="Le lieu" />
         <ButtonInline link="/hebergements" content="Nos hébergements" />
-        <ButtonInline link="/a_proximite" content="A proximité" />
+        <ButtonInline link="/a_proximite" content="À proximité" />
         <ButtonInline link="/book" content="Reserver" />
       </div>
       <ButtonSecondary link="/contact" content="Nous contactez" />
@@ -36,7 +36,7 @@
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/" content="Accueil" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/le_lieu" content="Le lieu" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/hebergements" content="Nos hébergements" fontSize="20" />
-      <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/a_proximite" content="A proximité" fontSize="20" />
+      <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/a_proximite" content="À proximité" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/book" content="Reserver" fontSize="20" />
       <ButtonSecondary @click="fullNavOpen = !fullNavOpen" link="/contact" content="Nous contactez" fontSize="20"/>
     </div>

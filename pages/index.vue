@@ -11,7 +11,7 @@
           :src="Imgs[48].link" 
           :alt="Imgs[48].alt" />
         <!-- <img src="Imgs[48].link" alt="grande images de la facade de la batisse" class="w-full object-cover h-[75vh] rounded-b-xl bg-northern_light_grey font-bold"> -->
-        <h1 class="mx-auto max-w-screen-lg w-full pl-4 absolute top-60 md:top-auto sm:bottom-24 left-1/2 -translate-x-1/2 text-5xl sm:text-6xl text-white drop-shadow-lg">Votre Séjour au<br> Domaine de Pipangaille</h1>
+        <h1 class="mx-auto max-w-screen-lg w-full pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl text-white drop-shadow-2xl">Votre Séjour au<br> Domaine de Pipangaille</h1>
       </div>
       <div class="mx-auto lg:w-max px-4 -translate-y-1/2">
         <div class="bg-white dark:bg-eerie-black grid gap-2 shadow-lg dark:shadow-lg-dark p-5 px-6 rounded-lg">

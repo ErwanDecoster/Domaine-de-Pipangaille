@@ -1,8 +1,8 @@
 <template>
   <div class="relative h-[215vh]">
     <div class="p-8 absolute inset-8 md:inset-20 rounded-xl">
-      <p class="mx-auto w-max center text-lg">Chargement de la page de réservation. Cela peut prendre un petit moment.</p>
-      <p class="mx-auto w-max center text-lg">Si rien ne charge, réserver directement aux 04 75 68 28 24.</p>
+      <p class="mx-auto center text-lg">Chargement de la page de réservation. Cela peut prendre un petit moment.</p>
+      <p class="mx-auto center text-lg">Si rien ne charge, réserver directement aux 04 75 68 28 24.</p>
     </div>
     <iframe id="iframe" class="absolute inset-0 w-full h-full font-bold"
       title="Inline Frame Example"

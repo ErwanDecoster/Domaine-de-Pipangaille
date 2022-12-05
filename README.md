@@ -40,3 +40,7 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+Domaine : Hostinger
+Hosting : Vercel
+Email : improvmx (simple redirection de contact@domaine-de-pipangaille.fr)

@@ -105,17 +105,6 @@
 
 <script>
 export default {
-  head: {
-    title: 'Mentions Légales - Domaine de Pipangaille',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: "Mentions Légales",
-      },
-      { name: 'robots', content: 'noindex'},
-    ],
-  },
   data() {
     return {
     };
@@ -124,6 +113,32 @@ export default {
     window.scrollTo(0,0);
   },
   created() {
+    useHead({
+      title: `Condition general de vente - Domaine de Pipangaille`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Condition general de vente' 
+        },
+        { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:title', content: 'Condition general de vente - Domaine de Pipangaille' },
+        { property: 'og:description', content: 'Condition general de vente' },
+        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:site', content: '@D_Pipangaille' },
+        { property: 'twitter:creator', content: '@D_Pipangaille' },
+        { property: 'twitter:title', content: 'Condition general de vente - Domaine de Pipangaille' },
+        { property: 'twitter:description', content: 'Condition general de vente' },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://domaine-de-pipangaille.fr${this.$route.path}`,
+        },
+      ],
+    })
   }
 };
 </script>
