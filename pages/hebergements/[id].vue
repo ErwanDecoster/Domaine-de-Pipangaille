@@ -109,7 +109,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `http://localhost:3000${this.$route.path}`,
+          href: `https://domaine-de-pipangaille.fr${this.$route.path}`,
         },
       ],
     })

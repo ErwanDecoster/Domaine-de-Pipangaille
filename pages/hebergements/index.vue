@@ -41,23 +41,23 @@ export default {
           name: 'description',
           content: 'Dans un cadre arboré où la nature est maitresse, vous profiterez d\'un jardin calme où les oiseaux chantent pour nous. De nombreux espaces pour vous poser, vous détendre et profiter du moment, à l\'ombre des arbres ou à la chaleur du soleil. Nous disposons d\'une cour entourée de murs vous isolant de tout bruit mais également d\'un coin piscine avec un pavillon pour vous installer avec votre famille ou vos amis.' 
         },
-        { property: 'og:url', content: 'http://localhost:3000' + this.$route.path },
+        { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: 'Hébergements - Domaine de Pipangaille' },
         { property: 'og:description', content: 'Dans un cadre arboré où la nature est maitresse, vous profiterez d\'un jardin calme où les oiseaux chantent pour nous. De nombreux espaces pour vous poser, vous détendre et profiter du moment, à l\'ombre des arbres ou à la chaleur du soleil. Nous disposons d\'une cour entourée de murs vous isolant de tout bruit mais également d\'un coin piscine avec un pavillon pour vous installer avec votre famille ou vos amis.' },
-        { property: 'og:image', content: 'http://localhost:3000' + '/images/chambres_d_hotes_couloir.jpeg' },
+        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/chambres_d_hotes_couloir.jpeg' },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
         { property: 'twitter:title', content: 'Hébergements - Domaine de Pipangaille' },
         { property: 'twitter:description', content: 'Dans un cadre arboré où la nature est maitresse, vous profiterez d\'un jardin calme où les oiseaux chantent pour nous. De nombreux espaces pour vous poser, vous détendre et profiter du moment, à l\'ombre des arbres ou à la chaleur du soleil. Nous disposons d\'une cour entourée de murs vous isolant de tout bruit mais également d\'un coin piscine avec un pavillon pour vous installer avec votre famille ou vos amis.' },
-        { property: 'twitter:image', content: 'http://localhost:3000' + '/images/chambres_d_hotes_couloir.jpeg' },
+        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/chambres_d_hotes_couloir.jpeg' },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `http://localhost:3000${this.$route.path}`,
+          href: `https://domaine-de-pipangaille.fr${this.$route.path}`,
         },
       ],
     })

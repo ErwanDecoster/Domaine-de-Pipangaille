@@ -59,23 +59,23 @@ export default {
           name: 'description',
           content: 'Loin de rien, nos hébergements situés dans la vallée du Rhône sont à une dizaine de minutes du Safari de Peaugres, du Palais Idéal du facteur Cheval ou encore du Musée de l’Alambic, de nombreux chemins pour des promenade à pied ou à velo sont également possibles à proximité, notamment la ViaRhona juste en face du domaine ou encore la ViaFluvia à une dizaine de minutes. Nous avons sélectionné pour vous, certains de nos endroits préférer.' 
         },
-        { property: 'og:url', content: 'http://localhost:3000' + this.$route.path },
+        { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: 'À proximité - Domaine de Pipangaille' },
         { property: 'og:description', content: 'Loin de rien, nos hébergements situés dans la vallée du Rhône sont à une dizaine de minutes du Safari de Peaugres, du Palais Idéal du facteur Cheval ou encore du Musée de l’Alambic, de nombreux chemins pour des promenade à pied ou à velo sont également possibles à proximité, notamment la ViaRhona juste en face du domaine ou encore la ViaFluvia à une dizaine de minutes. Nous avons sélectionné pour vous, certains de nos endroits préférer.' },
-        { property: 'og:image', content: 'http://localhost:3000' + '/images/palais_idéal_du_facteur_cheval.jpg' },
+        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/palais_idéal_du_facteur_cheval.jpg' },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
         { property: 'twitter:title', content: 'À proximité - Domaine de Pipangaille' },
         { property: 'twitter:description', content: 'Loin de rien, nos hébergements situés dans la vallée du Rhône sont à une dizaine de minutes du Safari de Peaugres, du Palais Idéal du facteur Cheval ou encore du Musée de l’Alambic, de nombreux chemins pour des promenade à pied ou à velo sont également possibles à proximité, notamment la ViaRhona juste en face du domaine ou encore la ViaFluvia à une dizaine de minutes. Nous avons sélectionné pour vous, certains de nos endroits préférer.' },
-        { property: 'twitter:image', content: 'http://localhost:3000' + '/images/palais_idéal_du_facteur_cheval.jpg' },
+        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/palais_idéal_du_facteur_cheval.jpg' },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `http://localhost:3000${this.$route.path}`,
+          href: `https://domaine-de-pipangaille.fr${this.$route.path}`,
         },
       ],
     })

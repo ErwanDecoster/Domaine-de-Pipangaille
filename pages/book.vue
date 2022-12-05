@@ -43,23 +43,23 @@ export default {
           name: 'description',
           content: 'Dès aujourd\'hui réservez votre chambre au domaine de Pipangaille, dans un magnifique cadré arboré où la nature est maîtresse, vous profiterez d\'un grand jardin calme où les oiseaux chantent pour vous.' 
         },
-        { property: 'og:url', content: 'http://localhost:3000' + this.$route.path },
+        { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: 'Reserver - Domaine de Pipangaille' },
         { property: 'og:description', content: 'Dès aujourd\'hui réservez votre chambre au domaine de Pipangaille, dans un magnifique cadré arboré où la nature est maîtresse, vous profiterez d\'un grand jardin calme où les oiseaux chantent pour vous.' },
-        { property: 'og:image', content: 'http://localhost:3000' + '/images/photo_11.jpeg' },
+        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
         { property: 'twitter:title', content: 'Reserver - Domaine de Pipangaille' },
         { property: 'twitter:description', content: 'Dès aujourd\'hui réservez votre chambre au domaine de Pipangaille, dans un magnifique cadré arboré où la nature est maîtresse, vous profiterez d\'un grand jardin calme où les oiseaux chantent pour vous.' },
-        { property: 'twitter:image', content: 'http://localhost:3000' + '/images/photo_11.jpeg' },
+        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `http://localhost:3000${this.$route.path}`,
+          href: `https://domaine-de-pipangaille.fr${this.$route.path}`,
         },
       ],
     })

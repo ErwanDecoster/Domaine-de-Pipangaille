@@ -32,23 +32,23 @@ export default {
           name: 'description',
           content: 'Vous recherchez un lieu pour organiser votre mariage, une réception ou un concert... Le domaine de Pipangaille c’est une magnifique bâtisse avec de nombreux espaces parfaits pour accueillir de nombreuses personnes.' 
         },
-        { property: 'og:url', content: 'http://localhost:3000' + this.$route.path },
+        { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: 'Contact - Domaine de Pipangaille' },
         { property: 'og:description', content: 'Vous recherchez un lieu pour organiser votre mariage, une réception ou un concert... Le domaine de Pipangaille c’est une magnifique bâtisse avec de nombreux espaces parfaits pour accueillir de nombreuses personnes.' },
-        { property: 'og:image', content: 'http://localhost:3000' + '/images/le_lieu_concert.jpeg' },
+        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/le_lieu_concert.jpeg' },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
         { property: 'twitter:title', content: 'Contact - Domaine de Pipangaille' },
         { property: 'twitter:description', content: 'Vous recherchez un lieu pour organiser votre mariage, une réception ou un concert... Le domaine de Pipangaille c’est une magnifique bâtisse avec de nombreux espaces parfaits pour accueillir de nombreuses personnes.' },
-        { property: 'twitter:image', content: 'http://localhost:3000' + '/images/le_lieu_concert.jpeg' },
+        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/le_lieu_concert.jpeg' },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `http://localhost:3000${this.$route.path}`,
+          href: `https://domaine-de-pipangaille.fr${this.$route.path}`,
         },
       ],
     })

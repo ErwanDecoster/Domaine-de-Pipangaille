@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "nodemailer": "^6.8.0",
-    "validator": "^13.7.0"
+    "validator": "^13.7.0",
+    "vue-gtag": "^2.0.1",
+    "vue-gtag-next": "^1.14.0"
   }
 }
