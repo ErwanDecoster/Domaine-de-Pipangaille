@@ -31,13 +31,13 @@
           <iframe title="Carte Google maps du Domaine de Pipangaille" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d&#39;h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071!5m2!1sfr!2sfr" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full rounded dark:hue-rotate-180 dark:invert-[0.8] dark:contrast-125"></iframe>
         </div>
         <span class="lg:hidden mx-auto h-1 bg-almond dark:bg-dark-almond w-full rounded"></span>
-        <div v-if="(errors || success)">
-          <div v-for="error in errors" :key="error" class="bg-copper-penny">{{ error.message }}</div>
-          <div v-if="success" class="bg-ufo-green ">Message envoyé avec succès</div>
-        </div>
         <form @submit.prevent="submit(form)" class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow relative">
-          <div class="absolute -inset-2 bg-eerie-black bg-opacity-50 z-10 rounded-lg">
+          <!-- <div class="absolute -inset-2 bg-eerie-black bg-opacity-50 z-10 rounded-lg">
             <p class="m-auto w-max h-max absolute inset-0 bg-white bg-opacity-70 p-2 rounded">En cours de construction</p>
+          </div> -->
+          <div v-if="(errors || success)" class="sm:col-span-2">
+            <div v-for="error in errors" :key="error" class="bg-copper-penny px-2 py-1 rounded-lg">{{ error.message }}</div>
+            <div v-if="success" class="bg-ufo-green px-2 py-1 rounded-lg">Message envoyé avec succès</div>
           </div>
           <div class="grid">
             <label for="name" class="font-semibold">Nom :</label>
@@ -60,8 +60,9 @@
             <textarea v-model="form.message" required name="message" id="message" autocomplete="off" class="rounded-lg px-2 py-1 border h-32 min-h-[8em] outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black"></textarea>
           </div>
           <button type="submit" class="col-span-2 ml-auto cursor-pointer md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-full text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">
-            <template v-if="!waiting">Envoyer</template>
-            <template v-if="waiting">Envoye en cours</template>
+            <template v-if="(!waiting && !success)">Envoyer</template>
+            <template v-if="(waiting && !success)">Envoye en cours</template>
+            <template v-if="success">Message envoyé 🚀</template>
           </button>
         </form>
       </div>
@@ -73,6 +74,7 @@
 const form = ref({
 	name: '',
 	email: '',
+	phone: '',
 	subject: '',
 	message: '',
 });
@@ -92,6 +94,7 @@ async function submit(form) {
 			this.form = {
 				name: '',
 				email: '',
+				phone: '',
 				subject: '',
 				message: '',
 			};
