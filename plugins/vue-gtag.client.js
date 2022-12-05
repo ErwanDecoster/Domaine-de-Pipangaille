@@ -1,9 +1,9 @@
-import VueGtag from 'vue-gtag-next'
-const config = useRuntimeConfig();
+import VueGtag from 'vue-gtag'
+
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(VueGtag, {
-    property: {
-      id: config.GTAGID,
-    }
-  })
+    nuxtApp.vueApp.use(VueGtag, {
+        config: {
+            id: 'G-0332DJY37K',
+        },
+    }, nuxtApp.$router)
 })
