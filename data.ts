@@ -748,37 +748,37 @@ export const aProximiter = {
       ],
       slug: 'au_pre_du_rhone',
     },
-    {
-      title: 'O\'Daily Truck',
-      category: 'se_restaurer',
-      imgs: [
-        {
-          link: "/images/o_daily_truck.jpg",
-          alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
-        },
-        {
-          link: "/images/o_daily_truck.jpg",
-          alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
-        },
-        {
-          link: "/images/o_daily_truck.jpg",
-          alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
-        },
-      ],
-      shortDesc: 'lorem ipsul dolor si amet lorem ipsul dolor si amet lorem ipsul dolor si amet',
-      longDesc: 'Le camion O\'Daily Truck se deplace chaque jour dans une ville diferente pour vous faire decouvrire une bonne cuisine type Food Truck mais avec des puduits frais et inovant.',
-      links: [
-        {
-          label: 'Site Internet',
-          link: 'https://odailytruck.eatbu.com/?lang=fr',
-        },
-        {
-          label: 'Facebook',
-          link: 'https://www.facebook.com/profile.php?id=100083238615438',
-        },
-      ],
-      slug: 'o_daily_truck.jpg',
-    },
+    // {
+    //   title: 'O\'Daily Truck',
+    //   category: 'se_restaurer',
+    //   imgs: [
+    //     {
+    //       link: "/images/o_daily_truck.jpg",
+    //       alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
+    //     },
+    //     {
+    //       link: "/images/o_daily_truck.jpg",
+    //       alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
+    //     },
+    //     {
+    //       link: "/images/o_daily_truck.jpg",
+    //       alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
+    //     },
+    //   ],
+    //   shortDesc: 'lorem ipsul dolor si amet lorem ipsul dolor si amet lorem ipsul dolor si amet',
+    //   longDesc: 'Le camion O\'Daily Truck se deplace chaque jour dans une ville diferente pour vous faire decouvrire une bonne cuisine type Food Truck mais avec des puduits frais et inovant.',
+    //   links: [
+    //     {
+    //       label: 'Site Internet',
+    //       link: 'https://odailytruck.eatbu.com/?lang=fr',
+    //     },
+    //     {
+    //       label: 'Facebook',
+    //       link: 'https://www.facebook.com/profile.php?id=100083238615438',
+    //     },
+    //   ],
+    //   slug: 'o_daily_truck.jpg',
+    // },
     {
       title: 'César Pizza',
       category: 'se_restaurer',
