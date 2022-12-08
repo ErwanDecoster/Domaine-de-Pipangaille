@@ -18,7 +18,8 @@ export default defineEventHandler(async (event) => {
 		await isValid(body)
 			.then(async (data) => {
 				const mail = await transporter.sendMail({
-					from: `"${data.name}" <${data.email}>`,
+					from: `${config.MAILUSER}`,
+					// from: `"${data.name}" <${data.email}>`,
 					to: config.CONTACTMAIL,
 					subject: `Site Web | ${data.object}`,
 					text: data.message,
