@@ -80,11 +80,11 @@ export default {
       success: false,
       waiting: false,
       form: {
-        name: 'erwan',
-        email: 'wanerd2@gmail.com',
-        phone: '0625306813',
-        object: 'TEST1',
-        message: 'le meesage du test 1',
+        name: 'nom',
+        email: 'email@email.email',
+        phone: '',
+        object: 'test data',
+        message: 'message for test data',
       }
     }
   },
@@ -154,6 +154,7 @@ export default {
             headers: {
               'Accept': 'application/json',
             },
+            credentials: 'same-origin',
             body: this.form,
           }).then(
             response => this.VerifSendState(response),
