@@ -80,11 +80,11 @@ export default {
       success: false,
       waiting: false,
       form: {
-        name: 'nom',
-        email: 'email@email.email',
+        name: '',
+        email: '',
         phone: '',
-        object: 'test data',
-        message: 'message for test data',
+        object: '',
+        message: '',
       }
     }
   },
@@ -149,7 +149,7 @@ export default {
         if (this.CheckForm() && this.waiting == false){
           this.errors = [];
           this.waiting = true;
-          const url = 'http://domaine-de-pipangaille.fr/api/contact'
+          const url = 'https://domaine-de-pipangaille.fr/api/contact'
           // const url = 'http://localhost:3000/api/contact'
           const response = $fetch(url, {
             method: 'POST',
@@ -170,58 +170,3 @@ export default {
 
 }
 </script>
-
-<!-- <script setup>
-const form = ref({
-	name: '',
-	email: '',
-	phone: '',
-	object: '',
-	message: '',
-});
-let errors = ref(false);
-let success = ref(false);
-let waiting = ref(false);
-
-async function postData(url, form) {
-	const response = await $fetch(url, {
-		method: 'POST',
-		body: form,
-	}).then((dataReturn) => {
-    // const dataReturn = response.json(form);
-    if (dataReturn == 'send') {
-      console.log('succes');
-      waiting = false;
-      success = true;
-    }
-    else {
-      console.log('erro');
-      waiting = false;
-      errors = true;
-    }
-    console.log(dataReturn);
-  })
-}
-
-function submit(form){
-  waiting = true;
-  postData('http://localhost:3000/api/contact', form)
-}
-
-
-function verif(message)
-{
-  console.log(message);
-  Verif(message);
-    errors = false;
-    success = true;
-    waiting = false;
-		form = {
-			name: '',
-			email: '',
-			phone: '',
-			object: '',
-			message: '',
-		};
-}
-</script> -->
