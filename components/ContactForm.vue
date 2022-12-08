@@ -149,7 +149,9 @@ export default {
         if (this.CheckForm() && this.waiting == false){
           this.errors = [];
           this.waiting = true;
-          const response = $fetch('http://localhost:3000/api/contact', {
+          const url = 'http://domaine-de-pipangaille.fr/api/contact'
+          // const url = 'http://localhost:3000/api/contact'
+          const response = $fetch(url, {
             method: 'POST',
             headers: {
               'Accept': 'application/json',
