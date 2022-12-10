@@ -43,18 +43,15 @@ async function isValid(body) {
 	const errors = [];
 
 	if (validator.isEmpty(body.email || ''))
-		errors.push({
-			field: 'email',
-			error: 'Field is required.',
-		});
+		errors.push('Le champ Nom est requi.');
 	if (validator.isEmpty(body.name || ''))
-		errors.push('Le champ name est requi.');
+		errors.push('Le champ Nom est requi.');
 	if (validator.isEmpty(body.object || ''))
-		errors.push('Le champ subject est requi.');
+		errors.push('Le champ Objet est requi.');
 	if (validator.isEmpty(body.message || ''))
-		errors.push('Le champ message est requi.');
+		errors.push('Le champ Message est requi.');
 	if (!validator.isEmail(body.email || ''))
-		errors.push('Le champ email est requi.');
+		errors.push('L\'email est incorecte.');
 
 	if (errors.length > 0) {
 		return Promise.reject(errors);

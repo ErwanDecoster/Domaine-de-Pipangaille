@@ -38,7 +38,7 @@
         <div class="p-6 md:pl-10 md:py-10 z-10 relative grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="flex flex-col gap-2 h-full">
             <h2 class="text-4xl">Le Domaine de Pipangaille</h2>
-            <p class="grow">Envie d'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la Via Rhona.</p>
+            <p class="grow">Le Domaine de Pipangaille, ancienne magnanerie récemment rénovée vous propose un séjour magique dans un cadre idyllique. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événement à fêter, le domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la ViaRhôna.</p>
             <ButtonPrimary link="/le_lieu" content="En savoir plus" />
           </div>
           <nuxt-img 
@@ -55,8 +55,9 @@
         <div class="bg-almond dark:bg-dark-almond right-0 left-0 md:left-1/3 absolute top-8 bottom-8 md:bottom-0 rounded"></div>
         <div class="z-10 relative grid grid-cols-1 md:grid-cols-7">
           <div class="flex flex-col gap-2 h-full p-6 md:p-8 pt-12 md:pt-16 md:col-span-3 md:order-1">
-            <h2 class="text-4xl">Du calme et beaucoup d’espace</h2>
-            <p class="grow">Dans un cadre arboré où la nature est maitresse, vous profiterez d'un jardin calme où les oiseaux chantent pour nous. De nombreux espaces pour vous poser, vous détendre et profiter du moment, à l'ombre des arbres ou à la chaleur du soleil. Nous disposons d'une cour entourée de murs vous isolant de tout bruit mais également d'un coin piscine avec un pavillon pour vous installer avec votre famille ou vos amis.</p>
+            <h2 class="text-4xl">Nos chambres d'hôtes</h2>
+            <p class="grow">Vous accédez aux chambres en traversant le parc arboré qui vous amène dans la cour intérieure entourée de pierres qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d'été à votre disposition et une salle de convivialité. Les quatre chambres a la décoration atypique vous invitant au voyage sont situées au deuxième étage.</p>
+            <ButtonPrimary link="/hebergements" content="En savoir plus" />
           </div>
           <div class="relative md:col-span-4">
             <nuxt-img 
@@ -65,16 +66,16 @@
               quality="90"
               format="webp"
               class="rounded hover:z-10 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
-              :src="Imgs[19].link" 
-              :alt="Imgs[19].alt" />
+              :src="Imgs[63].link" 
+              :alt="Imgs[63].alt" />
             <nuxt-img 
               :width="`${378*1.5}`"
               :height="`${214*1.5}`"
               quality="90"
               format="webp"
               class="rounded hover:z-10 shadow-lg dark:shadow-lg-dark ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:right-0 w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
-              :src="Imgs[41].link" 
-              :alt="Imgs[41].alt" />
+              :src="Imgs[62].link" 
+              :alt="Imgs[62].alt" />
           </div>
         </div>
       </div>
@@ -116,8 +117,9 @@
         <div class="bg-almond dark:bg-dark-almond left-0 right-0 md:right-1/4 top-0 bottom-32 sm:bottom-1/3 md:bottom-8 md:top-8 absolute rounded"></div>
         <div class="z-10 relative grid md:grid-cols-2">
           <div class="flex flex-col gap-2 h-full md:py-16 p-8">
-            <h2 class="text-4xl">A visiter à proximité</h2>
-            <p class="grow">Loin de rien, nos hébergements situés dans la vallée du Rhône sont à une dizaine de minutes du Safari de Peaugres, du Palais Idéal du facteur Cheval ou encore du Musée de l’Alambic. De nombreux chemins pour des promenades à pied ou à vélo sont également possibles à proximité, notamment la ViaRhona juste en face du domaine ou encore la ViaFluvia à une dizaine de minutes. Nous avons sélectionné pour vous certains de nos endroits préférés.</p>
+            <h2 class="text-4xl">À proximité</h2>
+            <p class="grow">Idéalement situé proche des grands axes au cœur de la vallée du Rhône, lors de votre séjour au Domaine de Pipangaille vous pourrez visiter : le Safari de Peaugres, le Palais Idéal du facteur Cheval, le Musée de l’Alambic... Vous initiez au Golf avec le golf d'Albon et de St Clair.</p>
+            <p class="grow">Au cœur du Saint Joseph vous pourrez aussi déguster les vins locaux et visiter de nombreuses caves. Randonnées, promenades, espace aquatique, vol en mongolfiere sont également à proximité. Mais aussi la ViaRhôna en accès direct ou encore la ViaFluvia pas très loin.</p>
             <ButtonPrimary link="/a_proximite" content="En savoir plus" />
           </div>
           <div class="relative">
@@ -127,14 +129,6 @@
               quality="90"
               format="webp"
               class="rounded hover:z-10 shadow-lg w-2/3 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
-              :src="Imgs[29].link" 
-              :alt="Imgs[29].alt" />
-            <nuxt-img 
-              :width="`${298*1.5}`"
-              :height="`${168*1.5}`"
-              quality="90"
-              format="webp"
-              class="rounded hover:z-10 shadow-lg w-2/3 ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:left-0 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
               :src="Imgs[31].link" 
               :alt="Imgs[31].alt" />
             <nuxt-img 
@@ -142,9 +136,17 @@
               :height="`${168*1.5}`"
               quality="90"
               format="webp"
-              class="rounded hover:z-10 shadow-lg hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
+              class="rounded hover:z-10 shadow-lg w-2/3 ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:left-0 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
               :src="Imgs[60].link" 
               :alt="Imgs[60].alt" />
+            <nuxt-img 
+              :width="`${298*1.5}`"
+              :height="`${168*1.5}`"
+              quality="90"
+              format="webp"
+              class="rounded hover:z-10 shadow-lg hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
+              :src="Imgs[28].link" 
+              :alt="Imgs[28].alt" />
           </div>
         </div>
       </div>
@@ -166,17 +168,17 @@ export default {
           autor: 'Rémi Spérone',
           comment: 'Accueil et séjour enchanteur. Hôtes chaleureux et prévenants Magnifique demeure au  calme  en bordure du fleuve. Nous reviendrons forcement. Parfait !',
         },
-        {
-          platformOrigine: 'Google Maps',
-          starReview: 5,
-          autor: 'Etienne Villetard',
-          comment: 'Un commentaire un peu tardif mais merci à Marie Claire et Bruno pour leur superbe acceuil, magnifique cadre pour se reposer après une journée de vélo sur la Viarhona, d\'autant plus que la voie verte passe juste à côté... Merci aussi pour toutes vos petits attentions, et je vous souhaite une bonne continuation pour vos futurs projets ! 👍',
-        },
+        // {
+        //   platformOrigine: 'Google Maps',
+        //   starReview: 5,
+        //   autor: 'Etienne Villetard',
+        //   comment: 'Un commentaire un peu tardif mais merci à Marie Claire et Bruno pour leur superbe acceuil, magnifique cadre pour se reposer après une journée de vélo sur la Viarhona, d\'autant plus que la voie verte passe juste à côté... Merci aussi pour toutes vos petits attentions, et je vous souhaite une bonne continuation pour vos futurs projets ! 👍',
+        // },
         {
           platformOrigine: 'Google Maps',
           starReview: 1,
           autor: 'Marie helene Perrin',
-          comment: 'Je n`\'ai pas détester le mieux je l\'ai adoré.',
+          comment: 'Je n\'ai pas détester le mieux je l\'ai adoré.',
         },
         {
           platformOrigine: 'Google Maps',

@@ -4,7 +4,7 @@
       <h1 class="text-4xl sm:text-5xl">Contact</h1>
       <CardTypeOn 
         title="Demande particulière" 
-        :content="[{ text: `Vous recherchez un lieu pour organiser votre mariage, une réception ou un concert... Le domaine de Pipangaille c’est une magnifique bâtisse avec de nombreux espaces parfaits pour accueillir de nombreuses personnes. Vous pouvez louer tout le lieu ou juste que qui vous intéresse. Le parc peut être idéal pour une après-midi, le préau lorsque la pluie vous menace, la cour intérieure sera parfaite pour une cinquantaine de personnes et une scène peut y être installée. Si vous souhaitez que l'on instal des éclairages pour illuminer votre soirée c’est aussi une possibilité.Le domaine est grand et les possibilités sont très nombreuses.`}]"
+        :content="[{ text: `Nous pouvons privatiser le lieu pour vos évenements privés avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, séminaires... Le domaine de Pipangaille ancienne bâtisse de caractère entouré d'un parc arboré, avec de nombreux espaces est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux...nous restons à votre disposition pour toutes demandes.`}]"
         :imgs="[{ src: Imgs[25].link, alt: Imgs[25].alt }, { src: Imgs[59].link, alt: Imgs[59].alt }]" />
     </section>
     <ContactForm />

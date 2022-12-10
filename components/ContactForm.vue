@@ -32,9 +32,6 @@
         </div>
         <span class="lg:hidden mx-auto h-1 bg-almond dark:bg-dark-almond w-full rounded"></span>
         <form @submit.prevent="SendMessage()" class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow relative">
-          <!-- <div class="absolute -inset-2 bg-eerie-black bg-opacity-50 z-10 rounded-lg">
-            <p class="m-auto w-max h-max absolute inset-0 bg-white bg-opacity-70 p-2 rounded">En cours de construction</p>
-          </div> -->
           <div v-if="(errors || success)" class="sm:col-span-2">
             <div v-if="success" @click="(success = false)" class="bg-ufo-green px-2 py-1 rounded-lg">Message envoyé avec succès</div>
             <div class="grid gap-1">

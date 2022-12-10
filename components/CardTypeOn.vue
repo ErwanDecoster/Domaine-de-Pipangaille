@@ -12,9 +12,11 @@
         </div>
       </div>
       <div class="relative">
-        <nuxt-img
+        <nuxt-img 
+          @mouseover="InvertPicture($event)"
           :width="`${330*1.5}`"
           :height="`${186*1.5}`"
+          id="1"
           quality="90"
           format="webp"
           placeholder
@@ -23,8 +25,10 @@
           v-if="imgs[0].src" :src="imgs[0].src" 
           :alt="imgs[0].alt" />
         <nuxt-img
+          @mouseover="InvertPicture($event)"
           :width="`${330*1.5}`"
           :height="`${186*1.5}`"
+          id="2"
           quality="90"
           format="webp"
           placeholder
@@ -38,7 +42,31 @@
 
 <script>
 export default {
-    name: "CardTypeOn",
-    props: ["title", "content", "imgs", "button"],
+  name: "CardTypeOn",
+  props: ["title", "content", "imgs", "button"],
+  methods: {
+    InvertPicture(elementInput){
+      // const parent = elementInput.target.parentElement;
+      // const asArray = Object.entries(parent.children);
+      // asArray.pop();
+      // asArray.forEach(element => {
+      //   element[0] = 1;
+      // })
+      // const filtered = asArray.filter(element => element[1].id != elementInput.target.id);
+      // this.MoveElements(elementInput.target, Object.fromEntries(filtered)[1], ((elementInput.target.parentElement.offsetHeight - elementInput.target.offsetHeight * 2) / 2))
+    },
+    MoveElements(elem1, elem2, sizeBetwen){
+      // if (sizeBetwen < 0)
+      // {
+      //   console.log(elem1.getBoundingClientRect());
+      //   elem1.style.transform = `translateY(-${sizeBetwen}px)`
+      //   // console.log('elem2', elem1);
+      //   elem2.style.transform = `translateY(${sizeBetwen}px)`
+      //   // elem2[1].classList.add('test2');
+      // }
+
+      // console.log('sizeBetwen', sizeBetwen);
+    }
+  }
 };
 </script>

@@ -9,7 +9,7 @@
       class="rounded-b w-full h-full aspect-[4/3] object-cover bg-northern_light_grey font-bold" />
     <div class="p-3 sm:p-4 flex flex-col gap-2 h-full">
       <h3 class="text-xl">{{ title }}</h3>
-      <p class="grow ">{{ shortDesc }}</p>
+      <p v-if="shortDesc" class="grow ">{{ shortDesc }}</p>
       <ButtonSecondary :link="target" content="En savoir plus" />
     </div>
   </div>

@@ -5,7 +5,7 @@ export const hebergements = [
     imgs: [
       {
         link: "/images/chambre_marocaine.jpeg",
-        alt: "Image avec vue sur toute la Chambre marocaine. Aux couleurs rouges, ocre et grise. Nous voyons un lit king size, une fenêtre. On aperçoit un évier sur la droite."
+        alt: "Image avec vue sur toute la Chambre marocaine. Aux couleurs rouges, ocre et grise. Nous voyons un lit king size, une fenêtre. On aperçoit un lavabo sur la droite."
       },
       {
         link: "/images/chambre_marocaine_2.jpeg",
@@ -15,28 +15,32 @@ export const hebergements = [
         link: "/images/chambre_marocaine_3.jpeg",
         alt: "Chambre thématique marocaine. Aux couleurs rouge, ocre et gris. Nous voyons un lit king size recouvert d’un beau dessus-de-lit couleur or."
       },
+      {
+        link: "/images/chambre_marocaine_4.jpeg",
+        alt: "Photo d'une chambre sur laquelle nous voyons l'espace douche, double vasque et la porte des toilettes"
+      },
     ],
-    shortDesc: 'Une chambre aux couleurs chaleureuse, avec salle d\'eau privée, canapé et possibilité de lit séparé.',
+    shortDesc: 'Notre chambre familiale aux couleurs chaleureuse, avec toilette salle d\'eau privée, canapé et possibilité de lit séparé.',
     longDesc: [
       {
-        text: 'Une grande chambre de 20 mètres carrés aux couleurs chaleureuses sur la thématique du Maroc, adaptée jusqu\'à deux adultes et un enfant. La chambre possède des éviers double vasque ainsi qu’une grande douche avec tout le nécessaire : gel douche et shampoing L\'Occitane ainsi que des serviettes. Votre hébergement possède des toilettes séparées, de quoi ranger vos vêtements, un canapé, un grand lit double avec possibilité d\'être séparé en deux lits simples.',
+        text: 'L\'ambiance marocaine aux couleurs chaleureuses vous depaysera pour cette chambre de 20 m², adaptée pour 2 adultes et un enfant ou pour un sejour en amoureux. La chambre est composée d\'un lit de 1.80 m, d\'un canapé lit, d\'un lavabo double vasque et d\'une douche spacieuse "Tadelakt", d\'un toilette séparé et d\'un petit espace de rangement. Le couchage peut etre coufiguré en deux lits simples.',
       },
       {
-        text: 'La chambre est climatisée en été.',
+        text: 'Pour votre bien-être la chambre est climatisée en été.',
       },
     ],
     slug: 'chambre_marocaine',
     equipements: [
       {
-        label: 'Grand lit double separable',
+        label: 'lit double séparable',
         path: 'icon_lit_separable',
         imgAlt: 'icon_lit_separable',
       },
-      {
-        label: 'Lit double',
-        path: 'icon_lit_double',
-        imgAlt: 'icon_lit_double',
-      },
+      // {
+      //   label: 'Lit double',
+      //   path: 'icon_lit_double',
+      //   imgAlt: 'icon_lit_double',
+      // },
       {
         label: 'Lit simple',
         path: 'icon_lit_simple',
@@ -72,21 +76,21 @@ export const hebergements = [
         path: 'icon_seche_cheveux',
         imgAlt: 'icon_seche_cheveux',
       },
-      {
-        label: 'Lave linge commun',
-        path: 'icon_machine_a_laver',
-        imgAlt: 'icon_machine_a_laver',
-      },
-      {
-        label: 'Bureau',
-        path: 'icon_table',
-        imgAlt: 'icon_table',
-      },
-      {
-        label: 'Cuisine d\'été',
-        path: 'icon_cuisine',
-        imgAlt: 'icon_cuisine',
-      },
+      // {
+      //   label: 'Lave linge commun',
+      //   path: 'icon_machine_a_laver',
+      //   imgAlt: 'icon_machine_a_laver',
+      // },
+      // {
+      //   label: 'Bureau',
+      //   path: 'icon_table',
+      //   imgAlt: 'icon_table',
+      // },
+      // {
+      //   label: 'Cuisine d\'été',
+      //   path: 'icon_cuisine',
+      //   imgAlt: 'icon_cuisine',
+      // },
       {
         label: 'Canapé',
         path: 'icon_canape',
@@ -104,34 +108,34 @@ export const hebergements = [
       },
       {
         link: "/images/chambre_africaine_2.jpeg",
-        alt: "Chambre à thématique africaine de couleur grise et ocre, sur lequel nous voyons un évier, la porte de la chambre…"
+        alt: "Chambre à thématique africaine de couleur grise et ocre, sur lequel nous voyons un lavabo, la porte de la chambre…"
       },
       {
         link: "/images/chambre_africaine_3.jpeg",
         alt: "Chambre à thématique africaine de couleur grise et ocre avec disposition de deux lits simples. Avec par la fenêtre, vue sur le jardin."
       },
     ],
-    shortDesc: 'Une chambre aux couleurs qui font voyager, avec salle d\'eau privée, table et possibilité de lit séparé.',
+    shortDesc: 'Une chambre pour deux aux couleurs qui font voyager, avec salle d\'eau privée, table et possibilité de lit séparé.',
     longDesc: [
       {
-        text: 'Une belle chambre aux couleurs qui vous feront voyager sur la thématique africaine, pour deux personnes. La chambre possède un évier ainsi qu’une douche avec tout le nécessaire : gel douche et shampoing L’Occitane ainsi que des serviettes. Votre hébergement possède des toilettes séparées, de quoi ranger vos vêtements, une table, un grand lit double avec possibilité d\'être séparé en deux lits simples.',
+        text: 'Une autre invitation au voyage avec la chambre "africaine", une chambre en couleur qui vous fera voyager. Concue pour 2 personnes, en lit double de 1.80 m ou 2 lits simples, la chambre possède un lavabo, une douche ouverte, un toilette séparé, un petit espace de rangement, une table et 2 chaises.'
       },
       {
-        text: 'La chambre est climatisée en été.',
+        text: 'Pour votre bien-être la chambre est climatisée en été.',
       },
     ],
     slug: 'chambre_africaine',
     equipements: [
       {
-        label: 'Grand lit double separable',
+        label: 'Lit double séparable',
         path: 'icon_lit_separable',
         imgAlt: 'icon_lit_separable',
       },
-      {
-        label: 'Lit double',
-        path: 'icon_lit_double',
-        imgAlt: 'icon_lit_double',
-      },
+      // {
+      //   label: 'Lit double',
+      //   path: 'icon_lit_double',
+      //   imgAlt: 'icon_lit_double',
+      // },
       {
         label: 'Wifi Gratuit Haut Debit',
         path: 'icon_wifi',
@@ -162,21 +166,21 @@ export const hebergements = [
         path: 'icon_seche_cheveux',
         imgAlt: 'icon_seche_cheveux',
       },
-      {
-        label: 'Lave linge commun',
-        path: 'icon_machine_a_laver',
-        imgAlt: 'icon_machine_a_laver',
-      },
+      // {
+      //   label: 'Lave linge commun',
+      //   path: 'icon_machine_a_laver',
+      //   imgAlt: 'icon_machine_a_laver',
+      // },
       {
         label: 'Bureau',
         path: 'icon_table',
         imgAlt: 'icon_table',
       },
-      {
-        label: 'Cuisine d\'été',
-        path: 'icon_cuisine',
-        imgAlt: 'icon_cuisine',
-      },
+      // {
+      //   label: 'Cuisine d\'été',
+      //   path: 'icon_cuisine',
+      //   imgAlt: 'icon_cuisine',
+      // },
     ]
   },
   {
@@ -185,7 +189,7 @@ export const hebergements = [
     imgs: [
       {
         link: "/images/chambre_toscane_1.jpeg",
-        alt: "Photo de la Chambre toscane, aux couleurs grise et violette. On aperçoit un grand lit double, la belle douche faite de matériaux nobles et l’évier sur sa droite."
+        alt: "Photo de la Chambre toscane, aux couleurs grise et violette. On aperçoit un grand lit double, la belle douche faite de matériaux nobles et l’lavabo sur sa droite."
       },
       {
         link: "/images/chambre_toscane_2.jpeg",
@@ -193,22 +197,22 @@ export const hebergements = [
       },
       {
         link: "/images/chambre_toscane_3.jpeg",
-        alt: "Chambre à thématique toscane, aux couleurs grise et violette. On aperçoit un grand lit double, une fenêtre avec vue sur le jardin ainsi qu’une table, des rangements et un évier."
+        alt: "Chambre à thématique toscane, aux couleurs grise et violette. On aperçoit un grand lit double, une fenêtre avec vue sur le jardin ainsi qu’une table, des rangements et un lavabo."
       },
     ],
-    shortDesc: 'Une agréable chambre aux couleurs délicates, avec salle d\'eau privée, table et lit double.',
+    shortDesc: 'Une agréable chambre aux couleurs romantiques qui vous invitents au voyage, avec salle d\'eau privée, table et lit double.',
     longDesc: [
       {
-        text: 'Une agréable chambre aux couleurs délicates sur la thématique toscane, une région au centre de l’Italie. Une chambre pour deux personnes équipées d’un évier, d’une belle douche avec tout le nécessaire : gel douche et shampoing L’Occitane ainsi que des serviettes. Votre hébergement possède des toilettes séparées, de quoi ranger vos vêtements, une table, un lit double.'
+        text: 'Une chambre romantique aux couleurs délicates sur la thématique toscane, une région au centre de l’Italie. Une chambre pour deux personnes équipée d’un lavabo, d’une belle douche, d\'un toilette séparé, d\'un rangement et d\'une table.'
       },
       {
-        text: 'La chambre est climatisée en été.'
+        text: 'Pour votre bien-être la chambre est climatisée en été.'
       },
     ],
     slug: 'chambre_toscane',
     equipements: [
       {
-        label: 'Lit double',
+        label: 'Lit double 160*200cm',
         path: 'icon_lit_double',
         imgAlt: 'icon_lit_double',
       },
@@ -242,21 +246,21 @@ export const hebergements = [
         path: 'icon_seche_cheveux',
         imgAlt: 'icon_seche_cheveux',
       },
-      {
-        label: 'Lave linge commun',
-        path: 'icon_machine_a_laver',
-        imgAlt: 'icon_machine_a_laver',
-      },
+      // {
+      //   label: 'Lave linge commun',
+      //   path: 'icon_machine_a_laver',
+      //   imgAlt: 'icon_machine_a_laver',
+      // },
       {
         label: 'Bureau',
         path: 'icon_table',
         imgAlt: 'icon_table',
       },
-      {
-        label: 'Cuisine d\'été',
-        path: 'icon_cuisine',
-        imgAlt: 'icon_cuisine',
-      },
+      // {
+      //   label: 'Cuisine d\'été',
+      //   path: 'icon_cuisine',
+      //   imgAlt: 'icon_cuisine',
+      // },
     ]
   },
   {
@@ -276,19 +280,22 @@ export const hebergements = [
         alt: "Chambre créole aux couleurs bleu, blanche et verte. Nous voyons un lit double. Ainsi qu\'une fenêtre avec vue sur le jardin"
       },
     ],
-    shortDesc: 'Une chambre aux couleurs légères, avec salle d\'eau privée et lit double.',
+    shortDesc: 'Une chambre aux couleurs originale, avec salle d\'eau privée et lit double.',
     longDesc: [
       {
-        text: 'Une chambre aux couleurs légères s\'inspirant des îles créoles. Pour deux personnes, équipée d\'un évier, d\'une douche avec tout le nécessaire : gel douche et shampoing L\'Occitane ainsi que des serviettes. Votre hébergement possède des toilettes séparées, de quoi ranger vos vêtements pour un séjour de courte ou longue durée, d’un lit double.'
+        text: 'Une chambre aux couleurs légères s\'inspirant des îles créoles. Pour deux personnes, équipée d\'un lit double, d\'un lavabo, d\'une douche. Votre hébergement possède un toilette séparé et un grand placard.'
       },
       {
-        text: 'La chambre est climatisée en été.'
+        text: 'Pour une autonomie totale possibilité de louer la cuisine attenante pour long séjour ou séjour d\'affaire. Nous contacter pour plus d\'infos.'
+      },
+      {
+        text: 'Pour votre bien-être la chambre est climatisée en été.'
       },
     ],
     slug: 'chambre_creole',
     equipements: [
       {
-        label: 'Lit double',
+        label: 'Lit double 160*200cm',
         path: 'icon_lit_double',
         imgAlt: 'icon_lit_double',
       },
@@ -344,10 +351,6 @@ export const aProximiter = {
           link: "/images/safari_de_peaugres.jpg",
           alt: "Image du parcours voiture du Safari de Peaugre avec au premier plan une voiture de safari sur la route, entouré d’animaux tel que des autruches qui se pavanent dans l’herbe."
         },
-        {
-          link: "/images/safari_de_peaugres.jpg",
-          alt: "Image du parcours voiture du Safari de Peaugre avec au premier plan une voiture de safari sur la route, entouré d’animaux tel que des autruches qui se pavanent dans l’herbe."
-        },
       ],
       shortDesc: 'Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares.',
       longDesc: 'Un grand parc remplit d\'animaux, le tout sur deux circuits, voiture et à pied. Profitez du safari de Peaugres et faites la rencontre avec plus 130 espèces différentes, le tout sur 80 hectares avec plus de 1200 animaux. Traversez l\'enclos des félins dans un solide tunnel de verre, entrez dans la serre tropicale Terre des minus, découvrez la baie des otaries, la serre aux 1000 cachettes, la passerelle des girafes et bien d\'autres choses encore.',
@@ -368,10 +371,6 @@ export const aProximiter = {
       title: 'Palais Idéal du Facteur Cheval',
       category: 'a_visiter',
       imgs: [
-        {
-          link: "/images/palais_idéal_du_facteur_cheval.jpg",
-          alt: "Photo d’un magnifique palais de pierre “Le palais du facteur cheval” aux couleurs vives et chaleureuses entourée d’une belle végétation."
-        },
         {
           link: "/images/palais_idéal_du_facteur_cheval.jpg",
           alt: "Photo d’un magnifique palais de pierre “Le palais du facteur cheval” aux couleurs vives et chaleureuses entourée d’une belle végétation."
@@ -416,13 +415,9 @@ export const aProximiter = {
           link: "/images/acrobois_pilat.jpg",
           alt: "Chalet en bois au milieu d’une forêt de sapins, entourés de tyroliennes et parcours entre les arbres."
         },
-        {
-          link: "/images/acrobois_pilat.jpg",
-          alt: "Chalet en bois au milieu d’une forêt de sapins, entourés de tyroliennes et parcours entre les arbres."
-        },
       ],
-      shortDesc: 'Au coeur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux.',
-      longDesc: 'Au coeur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux. Venez vous mettre aux défis et essayez d\'atteindre et de réussir le dernier parcours. De nombreuses tyroliennes et obstacles variés sauront vous mettre à l\'épreuve.',
+      shortDesc: 'Au cœur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux.',
+      longDesc: 'Au cœur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux. Venez vous mettre aux défis et essayez d\'atteindre et de réussir le dernier parcours. De nombreuses tyroliennes et obstacles variés sauront vous mettre à l\'épreuve.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89692.58883524877!2d4.380942982021311!3d45.37114609720795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5084b3bafc339%3A0xf17cc27dad426b1d!2sAcrobois%20Pilat!5e0!3m2!1sfr!2sfr!4v1668710836619!5m2!1sfr!2sfr',
       links: [
         {
@@ -448,10 +443,6 @@ export const aProximiter = {
           link: "/images/musee_de_l_alambic.png",
           alt: "Photo d’un musée avec une statue d’un artisan devant d’anciennes machines couleur cuivre."
         },
-        {
-          link: "/images/musee_de_l_alambic.png",
-          alt: "Photo d’un musée avec une statue d’un artisan devant d’anciennes machines couleur cuivre."
-        },
       ],
       shortDesc: 'Relate le charme et l\'histoire d\'un passé disparu, celui des bouilleurs ambulants. Exposition, de magnifiques appareils en cuivre provenant de toute la France',
       longDesc: 'Au cœur de la Vallée du Rhône à Saint Désirat, le musée de l\'Alambic de la Distillerie JEAN GAUTHIER, relate le charme et l\'histoire d\'un passé disparu, celui des bouilleurs ambulants. Sur 1400 m² d\'exposition, de magnifiques appareils en cuivre provenant des quatre coins de France, ainsi qu\'une collection de matériels, ustensiles et autres outils constituent en 30 tableaux la mémoire d\'une partie de notre patrimoine rural',
@@ -468,10 +459,6 @@ export const aProximiter = {
       title: 'Golf de Saint-Clair',
       category: 'a_visiter',
       imgs: [
-        {
-          link: "/images/golf_de_saint-clair.jpg",
-          alt: "Terrain de golf, avec deux golfeurs devant leurs voitures de golf. On aperçoit un lac à l’arrière."
-        },
         {
           link: "/images/golf_de_saint-clair.jpg",
           alt: "Terrain de golf, avec deux golfeurs devant leurs voitures de golf. On aperçoit un lac à l’arrière."
@@ -512,10 +499,6 @@ export const aProximiter = {
           link: "/images/via_rhona.jpg",
           alt: "Photo d’un chemin de la ViaRhôna longeant le Rhône, des cyclistes qui s’y baladent. Couleurs d'automne et des nombreux arbres l’entourent"
         },
-        {
-          link: "/images/via_rhona.jpg",
-          alt: "Photo d’un chemin de la ViaRhôna longeant le Rhône, des cyclistes qui s’y baladent. Couleurs d'automne et des nombreux arbres l’entourent"
-        },
       ],
       shortDesc: 'Cet itinéraire cyclable vous conduit le long des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles de Côtes du Rhône et de Provence méridionale',
       longDesc: 'Vous mener des rives du lac Léman aux plages de la Méditerranée à vélo, en suivant le fleuve Rhône, voici l’ambition de ViaRhôna. Cet itinéraire cyclable de 815 km vous conduit des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles des Côtes du Rhône et ceux de la Provence méridionale',
@@ -539,12 +522,8 @@ export const aProximiter = {
           link: "/images/via_fluvia.jpg",
           alt: "Photo d’un groupe de 4 cyclistes traversant un pont entouré de végétation."
         },
-        {
-          link: "/images/via_fluvia.jpg",
-          alt: "Photo d’un groupe de 4 cyclistes traversant un pont entouré de végétation."
-        },
       ],
-      shortDesc: 'Une expérience nature au coeur de magnifiques paysages à travers la Loire, la Haute-Loire et l’Ardèche, une expérience nature à 360°.',
+      shortDesc: 'Une expérience nature au cœur de magnifiques paysages à travers la Loire, la Haute-Loire et l’Ardèche, une expérience nature à 360°.',
       longDesc: 'La Via Fluvia est un itinéraire cyclable de plus de 80km aménagés et sécurisés à travers la Loire, la Haute-Loire et l’Ardèche. Reconnaissable par la diversité de ses paysages, c’est une expérience nature à 360° qui s’offre à vous le long de cette ancienne ligne de chemin de fer accessible au plus grand nombre (vélos, piétons, trottinettes, etc.).',
       links: [
         {
@@ -558,10 +537,6 @@ export const aProximiter = {
       title: 'Montgolfières & Cie',
       category: 'a_visiter',
       imgs: [
-        {
-          link: "/images/montgolfières_et_cie.jpg",
-          alt: "Vue du ciel avec des montgolfières occupées par des personnes. Entouré d’une forêt et d’un village avec une église."
-        },
         {
           link: "/images/montgolfières_et_cie.jpg",
           alt: "Vue du ciel avec des montgolfières occupées par des personnes. Entouré d’une forêt et d’un village avec une église."
@@ -600,13 +575,11 @@ export const aProximiter = {
           link: "/images/le_relais_des_mailles.jpg",
           alt: "Terrasse de restaurant ombré. À côté de la ViaRhôna avec en fond le Rhône."
         },
-        {
-          link: "/images/le_relais_des_mailles.jpg",
-          alt: "Terrasse de restaurant ombré. À côté de la ViaRhôna avec en fond le Rhône."
-        },
       ],
-      shortDesc: 'Au bord de la ViaRhôna, vous trouverez ce petit restaurant atypique Le relais des Mailles. Découvrez ses plaisirs gourmands dans une ambiance cosy et conviviale.',
-      longDesc: 'Situé à Laveyron, entre Vienne et Tain l’Hermitage, le bar, restaurant, le Relais des Mailles vous invite à déguster ses plaisirs gourmands, dans la bonne humeur et la convivialité… Tournant le dos à la célèbre Nationale 7, vous découvrirez un paysage magnifique avec ce Rhône majestueux qui servira de tremplin à votre regard pour admirer les monts Ardéchois. Au cœur d\'un parc de grands arbres et de verdure, nous sommes au bord de la Via Rhôna, ce grand axe piéton et cycliste, où la promenade est garantie sans rencontre de véhicules à moteur.',
+      shortDesc: '',
+      // shortDesc: 'Au bord de la ViaRhôna, vous trouverez ce petit restaurant atypique Le relais des Mailles. Découvrez ses plaisirs gourmands dans une ambiance cosy et conviviale.',
+      longDesc: '',
+      // longDesc: 'Situé à Laveyron, entre Vienne et Tain l’Hermitage, le bar, restaurant, le Relais des Mailles vous invite à déguster ses plaisirs gourmands, dans la bonne humeur et la convivialité… Tournant le dos à la célèbre Nationale 7, vous découvrirez un paysage magnifique avec ce Rhône majestueux qui servira de tremplin à votre regard pour admirer les monts Ardéchois. Au cœur d\'un parc de grands arbres et de verdure, nous sommes au bord de la Via Rhôna, ce grand axe piéton et cycliste, où la promenade est garantie sans rencontre de véhicules à moteur.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.225223103316!2d4.811978015548724!3d45.202777779098774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f86aa0f5df3%3A0xadfe40030a3eadd3!2sLe%20Relais%20Des%20Mailles!5e0!3m2!1sfr!2sfr!4v1669483885140!5m2!1sfr!2sfr',
       links: [
         {
@@ -620,38 +593,36 @@ export const aProximiter = {
       ],
       slug: 'le_relais_mailles',
     },
-    {
-      title: 'Le Champenois',
-      category: 'se_restaurer',
-      imgs: [
-        {
-          link: 'https://picsum.photos/400/300',
-          alt: 'Description de l\'image',
-        },
-        {
-          link: 'https://picsum.photos/400/300',
-          alt: 'Description de l\'image',
-        },
-        {
-          link: 'https://picsum.photos/400/300',
-          alt: 'Description de l\'image',
-        },
-      ],
-      shortDesc: 'Au Champenois vous sera proposé des menus du jour variés confectionnés avec des produits frais et locaux et avec amour.',
-      longDesc: 'Notre cuisine se compose de produits frais et locaux. De menu du jours variés, d\'une carte weekend plus évoluée tant par ses produits que par son dressage, créé avec passion par la Cheffe cuisinière.',
-      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.8066369615626!2d4.799217015551!3d45.271919379099074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53d20a5d3cab5%3A0x906028e4bdbac44a!2sLe%20Champenois!5e0!3m2!1sfr!2sfr!4v1669483673371!5m2!1sfr!2sfr',
-      links: [
-        {
-          label: 'Site Internet',
-          link: 'https://le-champenoisgd.metro.biz/?lang=fr',
-        },
-        {
-          label: 'Facebook',
-          link: 'https://www.facebook.com/Lechampenoisgd',
-        },
-      ],
-      slug: 'le_champenois',
-    },
+    // {
+    //   title: 'Le Champenois',
+    //   category: 'se_restaurer',
+    //   imgs: [
+    //     {
+    //       link: 'https://picsum.photos/400/300',
+    //       alt: 'Description de l\'image',
+    //     },
+    //     {
+    //       link: 'https://picsum.photos/400/300',
+    //       alt: 'Description de l\'image',
+    //     },
+    //   ],
+    //   shortDesc: '',
+    //   // shortDesc: 'Au Champenois vous sera proposé des menus du jour variés confectionnés avec des produits frais et locaux et avec amour.',
+    //   longDesc: '',
+    //   // longDesc: 'Notre cuisine se compose de produits frais et locaux. De menu du jours variés, d\'une carte weekend plus évoluée tant par ses produits que par son dressage, créé avec passion par la Cheffe cuisinière.',
+    //   mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.8066369615626!2d4.799217015551!3d45.271919379099074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53d20a5d3cab5%3A0x906028e4bdbac44a!2sLe%20Champenois!5e0!3m2!1sfr!2sfr!4v1669483673371!5m2!1sfr!2sfr',
+    //   links: [
+    //     {
+    //       label: 'Site Internet',
+    //       link: 'https://le-champenoisgd.metro.biz/?lang=fr',
+    //     },
+    //     {
+    //       label: 'Facebook',
+    //       link: 'https://www.facebook.com/Lechampenoisgd',
+    //     },
+    //   ],
+    //   slug: 'le_champenois',
+    // },
     {
       title: 'La Poule Noire',
       category: 'se_restaurer',
@@ -664,13 +635,11 @@ export const aProximiter = {
           link: "/images/la_poule_noire.jpeg",
           alt: "Terrasse de restaurant ombré, table dressée en bois et chaise de couleur orange et rose."
         },
-        {
-          link: "/images/la_poule_noire.jpeg",
-          alt: "Terrasse de restaurant ombré, table dressée en bois et chaise de couleur orange et rose."
-        },
       ],
-      shortDesc: 'Au sein de la Poule noire, venez déguster des spécialités du terroir local dans un cadre chaleureux et original.',
-      longDesc: 'Le restaurant La Poule Noire vous accueille à Albon, dans le département de la Drôme. Venez déguster nos spécialités régionales dans un cadre agréable, à la fois atypique et chaleureux. Au menu : cuisses de grenouilles, foie gras poêlé, gambas, et bien plus encore. Nous disposons d’une terrasse ombragée et d’une salle de réception pour accueillir vos événements privés et professionnels.',
+      shortDesc: '',
+      // shortDesc: 'Au sein de la Poule noire, venez déguster des spécialités du terroir local dans un cadre chaleureux et original.',
+      longDesc: '',
+      // longDesc: 'Le restaurant La Poule Noire vous accueille à Albon, dans le département de la Drôme. Venez déguster nos spécialités régionales dans un cadre agréable, à la fois atypique et chaleureux. Au menu : cuisses de grenouilles, foie gras poêlé, gambas, et bien plus encore. Nous disposons d’une terrasse ombragée et d’une salle de réception pour accueillir vos événements privés et professionnels.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.1526048602063!2d4.847777615550117!3d45.24470677909896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53ec2efffb5cf%3A0x5e00680a9119bd91!2sLa%20Poule%20Noire!5e0!3m2!1sfr!2sfr!4v1669484279763!5m2!1sfr!2sfr',
       links: [
         {
@@ -696,13 +665,11 @@ export const aProximiter = {
           link: "/images/le_picotin.jpg",
           alt: "Jolie salle de restauration aux couleurs gris clair et noir, avec de nombreuses tables."
         },
-        {
-          link: "/images/le_picotin.jpg",
-          alt: "Jolie salle de restauration aux couleurs gris clair et noir, avec de nombreuses tables."
-        },
       ],
-      shortDesc: 'Amoureux de la gastronomie française, le Picotin est L’Endroit qui vous conviendra. Dans une salle sympathique, dégustez des mets raffinés.',
-      longDesc: 'Les amoureux de cuisine française seront entièrement satisfaits dans notre restaurant. Notre bel extérieur vous permet de vous évader lorsqu’il fait bon. Nos salles climatisées sont parfaites pour une pause rafraîchissante pendant les vagues de chaleur.',
+      shortDesc: '',
+      // shortDesc: 'Amoureux de la gastronomie française, le Picotin est L’Endroit qui vous conviendra. Dans une salle sympathique, dégustez des mets raffinés.',
+      longDesc: '',
+      // longDesc: 'Les amoureux de cuisine française seront entièrement satisfaits dans notre restaurant. Notre bel extérieur vous permet de vous évader lorsqu’il fait bon. Nos salles climatisées sont parfaites pour une pause rafraîchissante pendant les vagues de chaleur.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.369912579978!2d4.7964493155499515!3d45.24031207909892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e33e8fa4b59%3A0x13b9117667cddb47!2sLE%20PICOTIN!5e0!3m2!1sfr!2sfr!4v1669484403254!5m2!1sfr!2sfr',
       links: [
         {
@@ -728,13 +695,11 @@ export const aProximiter = {
           link: "/images/au_pre_du_rhone.jpg",
           alt: "Salle de restauration décorée de bois, lumineuse par de grandes baies vitrées avec vue sur le Rhône."
         },
-        {
-          link: "/images/au_pre_du_rhone.jpg",
-          alt: "Salle de restauration décorée de bois, lumineuse par de grandes baies vitrées avec vue sur le Rhône."
-        },
       ],
-      shortDesc: 'Profitez d’un espace lumineux et agréable pour vous prélasser et déjeuner, le Rhône s’étendant sous vos yeux.',
-      longDesc: 'Le restaurant Au Pré du Rhône, situé entre Saint-Vallier et Tain-l\'Hermitage, vous accueille au bord de l\'eau avec une très belle vue sur le Rhône et les collines de l\'Ardèche.',
+      shortDesc: '',
+      // shortDesc: 'Profitez d’un espace lumineux et agréable pour vous prélasser et déjeuner, le Rhône s’étendant sous vos yeux.',
+      longDesc: '',
+      // longDesc: 'Le restaurant Au Pré du Rhône, situé entre Saint-Vallier et Tain-l\'Hermitage, vous accueille au bord de l\'eau avec une très belle vue sur le Rhône et les collines de l\'Ardèche.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.687469610846!2d4.829160315547032!3d45.152926979098574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5417229e2ce4d%3A0xa3c08b2f5145b6b3!2sRestaurant%20Au%20Pr%C3%A9%20du%20Rh%C3%B4ne!5e0!3m2!1sfr!2sfr!4v1669484524190!5m2!1sfr!2sfr',
       links: [
         {
@@ -752,10 +717,6 @@ export const aProximiter = {
     //   title: 'O\'Daily Truck',
     //   category: 'se_restaurer',
     //   imgs: [
-    //     {
-    //       link: "/images/o_daily_truck.jpg",
-    //       alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
-    //     },
     //     {
     //       link: "/images/o_daily_truck.jpg",
     //       alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
@@ -791,13 +752,11 @@ export const aProximiter = {
           link: "/images/cesar_pizza.jpg",
           alt: "Plan de travail en bois sur lequel est posée la carte des pizzas de césar pizza."
         },
-        {
-          link: "/images/cesar_pizza.jpg",
-          alt: "Plan de travail en bois sur lequel est posée la carte des pizzas de césar pizza."
-        },
       ],
-      shortDesc: 'lorem ipsul dolor si amet lorem ipsul dolor si amet lorem ipsul dolor si amet',
-      longDesc: 'Une pizzeria bien située avec de bon produits, posibilité de commander sur place ou  emporter',
+      shortDesc: '',
+      // shortDesc: 'lorem ipsul dolor si amet lorem ipsul dolor si amet lorem ipsul dolor si amet',
+      longDesc: '',
+      // longDesc: 'Une pizzeria bien située avec de bon produits, posibilité de commander sur place ou  emporter',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.3278141159412!2d4.79721751554998!3d45.24116347909896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e3151ab7961%3A0xb011d2747fe95cca!2sC%C3%A9sar%20Pizza!5e0!3m2!1sfr!2sfr!4v1669484773964!5m2!1sfr!2sfr',
       links: [
         {
@@ -819,13 +778,11 @@ export const aProximiter = {
           link: "/images/la_villa_champagnere.jpeg",
           alt: "Salle de restauration aux couleurs grises claire et des touches de noir, avec de nombreuses tables."
         },
-        {
-    link: "/images/la_villa_champagnere.jpeg",
-    alt: "Salle de restauration aux couleurs grises claire et des touches de noir, avec de nombreuses tables."
-        },
       ],
-      shortDesc: 'Pour les carnivores, allez à la Villa Champagnère. Viandes d’exception se bousculent dans votre assiette et bons vins les accompagnent.',
-      longDesc: 'Le chef vous propose son menu du marché tous les midis, ses suggestions du jour et une carte de viandes d’exception, le tout fait maison. Plats à base de produits régionaux : crique ardéchoise, ravioles, charcuterie du Pilat… Très belle carte de vins. Viandes d’exception (Blanck angus, viandes maturées…). Nouveau cadre cosy pour déjeuner entre collègues ou diner entre amis à St Rambert d’Albon, à côté de l’hôtel Ibis. Accueil de groupes. Possibilité de privatiser une salle isolée pour repas d’affaire. Suggestions du chef, cocktails maison.',
+      // shortDesc: 'Pour les carnivores, allez à la Villa Champagnère. Viandes d’exception se bousculent dans votre assiette et bons vins les accompagnent.',
+      shortDesc: '',
+      // longDesc: 'Le chef vous propose son menu du marché tous les midis, ses suggestions du jour et une carte de viandes d’exception, le tout fait maison. Plats à base de produits régionaux : crique ardéchoise, ravioles, charcuterie du Pilat… Très belle carte de vins. Viandes d’exception (Blanck angus, viandes maturées…). Nouveau cadre cosy pour déjeuner entre collègues ou diner entre amis à St Rambert d’Albon, à côté de l’hôtel Ibis. Accueil de groupes. Possibilité de privatiser une salle isolée pour repas d’affaire. Suggestions du chef, cocktails maison.',
+      longDesc: '',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.959217030252!2d4.8218889155509155!3d45.26883517909909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e796a8f81d7%3A0x807aeb4c6349b13b!2sLa%20Villa%20Champagn%C3%A8re!5e0!3m2!1sfr!2sfr!4v1669484905306!5m2!1sfr!2sfr',
       links: [
         {
@@ -870,7 +827,7 @@ export const Imgs = [
   {
     id: 5,
     link: "/images/chambre_africaine_2.jpeg",
-    alt: "Chambre à thématique africaine de couleur grise et ocre, sur lequel nous voyons un évier, la porte de la chambre…"
+    alt: "Chambre à thématique africaine de couleur grise et ocre, sur lequel nous voyons un lavabo, la porte de la chambre…"
   },
   {
     id: 6,
@@ -895,7 +852,7 @@ export const Imgs = [
   {
     id: 10,
     link: "/images/chambre_marocaine.jpeg",
-    alt: "Image avec vue sur toute la Chambre marocaine. Aux couleurs rouges, ocre et grise. Nous voyons un lit king size, une fenêtre. On aperçoit un évier sur la droite."
+    alt: "Image avec vue sur toute la Chambre marocaine. Aux couleurs rouges, ocre et grise. Nous voyons un lit king size, une fenêtre. On aperçoit un lavabo sur la droite."
   },
   {
     id: 11,
@@ -910,7 +867,7 @@ export const Imgs = [
   {
     id: 13,
     link: "/images/chambre_toscane_1.jpeg",
-    alt: "Photo de la Chambre toscane, aux couleurs grise et violette. On aperçoit un grand lit double, la belle douche faite de matériaux nobles et l’évier sur sa droite."
+    alt: "Photo de la Chambre toscane, aux couleurs grise et violette. On aperçoit un grand lit double, la belle douche faite de matériaux nobles et l’lavabo sur sa droite."
   },
   {
     id: 14,
@@ -920,7 +877,7 @@ export const Imgs = [
   {
     id: 15,
     link: "/images/chambre_toscane_3.jpeg",
-    alt: "Chambre à thématique toscane, aux couleurs grise et violette. On aperçoit un grand lit double, une fenêtre avec vue sur le jardin ainsi qu’une table, des rangements et un évier."
+    alt: "Chambre à thématique toscane, aux couleurs grise et violette. On aperçoit un grand lit double, une fenêtre avec vue sur le jardin ainsi qu’une table, des rangements et un lavabo."
   },
   {
     id: 16,
@@ -1151,5 +1108,40 @@ export const Imgs = [
     id: 61,
     link: "/images/via_fluvia.jpg",
     alt: "Photo d’un groupe de 4 cyclistes traversant un pont entouré de végétation."
+  },
+  {
+    id: 62,
+    link: "/images/chambre_marocaine_4.jpeg",
+    alt: "Photo d'une chambre sur laquelle nous voyons l'espace douche, double vasque et la porte des toilettes"
+  },
+  {
+    id: 63,
+    link: "/images/cour_interieure_1.jpeg",
+    alt: "Cour intereure du Domaine, toute ensoleillé avec des napes aux couleurs vives."
+  },
+  {
+    id: 64,
+    link: "/images/jardin.jpeg",
+    alt: "Jardin prit en photo de la terrasse, les couleurs sont vive et la nature ensoliellé."
+  },
+  {
+    id: 65,
+    link: "/images/salle_commune.jpeg",
+    alt: "La salle commune faite de beaux murs de pierre, dans laquelle nous voyons deux canapés."
+  },
+  {
+    id: 66,
+    link: "/images/salle_commune_1.jpeg",
+    alt: "La salle commune prise en photo de l'escaler d'accés au chambres, dans laquelle nous voyons un canapé avec derriere celui ci un grand mur de pierre."
+  },
+  {
+    id: 67,
+    link: "/images/mariage.jpeg",
+    alt: "Une table recouverte d'un tissus noir joliment decoré au premier plant, derriere le jardin et ses arbres."
+  },
+  {
+    id: 68,
+    link: "/images/mariage_1.jpeg",
+    alt: "Une table recouverte d'un tissus noir joliment decoré au premier plant, en fond le mur en pierre du préau."
   },
 ]

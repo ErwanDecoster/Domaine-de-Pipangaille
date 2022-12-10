@@ -14,7 +14,7 @@
         <ButtonInline link="/le_lieu" content="Le lieu" />
         <ButtonInline link="/hebergements" content="Nos hébergements" />
         <ButtonInline link="/a_proximite" content="À proximité" />
-        <ButtonInline link="/book" content="Reserver" />
+        <ButtonInline link="/book" content="Réserver" />
       </div>
       <ButtonSecondary link="/contact" content="Nous contactez" />
     </div>
@@ -37,7 +37,7 @@
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/le_lieu" content="Le lieu" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/hebergements" content="Nos hébergements" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/a_proximite" content="À proximité" fontSize="20" />
-      <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/book" content="Reserver" fontSize="20" />
+      <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/book" content="Réserver" fontSize="20" />
       <ButtonSecondary @click="fullNavOpen = !fullNavOpen" link="/contact" content="Nous contactez" fontSize="20"/>
     </div>
   </div>

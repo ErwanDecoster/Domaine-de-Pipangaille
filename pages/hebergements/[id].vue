@@ -8,6 +8,44 @@
         :imgs="[{ src: hebergementSelected.imgs[1].link, alt: hebergementSelected.imgs[1].alt }, { src: hebergementSelected.imgs[2].link, alt: hebergementSelected.imgs[1].alt }]" 
         :button="[{ target: '/book', content: 'Reserver maintenent' }]"/>
       <div class="grid gap-2">
+        <h2 class="text-4xl">Photos</h2>
+        <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-3 gap-4">
+          <nuxt-img 
+            :width="`${320*1.5}`"
+            :height="`${288*1.5}`"
+            id="1"
+            quality="90"
+            format="webp"
+            placeholder
+            preload
+            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow" 
+            v-if="hebergementSelected.imgs[0].link" :src="hebergementSelected.imgs[0].link" 
+            :alt="hebergementSelected.imgs[0].alt" />
+          <nuxt-img 
+            :width="`${320*1.5}`"
+            :height="`${288*1.5}`"
+            id="1"
+            quality="90"
+            format="webp"
+            placeholder
+            preload
+            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow" 
+            v-if="hebergementSelected.imgs[1].link" :src="hebergementSelected.imgs[1].link" 
+            :alt="hebergementSelected.imgs[1].alt" />
+          <nuxt-img 
+            :width="`${320*1.5}`"
+            :height="`${288*1.5}`"
+            id="1"
+            quality="90"
+            format="webp"
+            placeholder
+            preload
+            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow" 
+            v-if="hebergementSelected.imgs[2].link" :src="hebergementSelected.imgs[2].link" 
+            :alt="hebergementSelected.imgs[2].alt" />
+        </div>
+      </div>
+      <div class="grid gap-2">
         <h2 class="text-4xl">Equipements</h2>
         <div class="w-full lg:w-4/5 grid sm:grid-cols-2 md:grid-cols-3 gap-1">
           <div v-for="row in hebergementSelected.equipements" :key="row" class="p-1 flex gap-4">
@@ -16,36 +54,22 @@
           </div>
         </div>
       </div>
+      <h1 class="text-4xl sm:text-5xl">Nos propositions</h1>
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img src="https://www.generali.fr/sites/default/files-d8/2019-09/Table_dhote.jpg" alt="Description de l'image" class="aspect-video md:h-full w-full bg-northern_light_grey font-bold">
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
-          <h2 class="text-4xl">La table d’hote</h2>
-          <p class="grow">Sur reservation, il s'agit d'un repas unique specialité des regions allentour caillette, raviole... Cuisiné avec des produit locaux et bio autant que possible, ainsi qu'avec les legume du potager, le repas est suivis d'un dessert fait maison ou glace Adelise.</p>
+          <h2 class="text-4xl">La table d'hôtes</h2>
+          <p class="grow">Sur réservation, nous vous proposons la table d'hôtes afin de partager un moment convivial et gourmand. Un menu unique composé d'une cuisine locale gourmande et familale avec des produits locaux et bio. Planche charcuteries fromages, salade gourmande peuvent aussi vous être proposées.</p>
         </div>
       </div>
       <CardTypeOn 
         title="La cuisine d'été" 
-        :content="[{ text: `Nous mettons à votre disposition une petite cuisine commune toute équipées. Vous disposeriez à l'intérieur de celle-ci des équipements suivants : Four, Frigo, Plaque de cuisson, Bouilloir, Lave vaisselle, Lave linge` }, { text: `Vous disposerez à l'intérieur de celle-ci d'un emplacement pour recharger vos batteries de velo électrique.`}]"
+        :content="[{ text: `Nous mettons à votre disposition une petite cuisine commune toute équipée. Vous disposez des équipements suivants : Four, Frigo, Plaque de cuisson, Lave vaisselle, Lave linge.` }, { text: `Un emplacement est prévu pour recharger vos batteries de vélos électriques.`}]"
         :imgs="[{ src: Imgs[20].link, alt: Imgs[20].alt }, { src: Imgs[21].link, alt: Imgs[21].alt }]" />
-      <div class="w-full h-full relative">
-        <div class="bg-almond dark:bg-dark-almond left-0 right-0 md:right-1/3 absolute h-2/3 md:h-full rounded"></div>
-        <div class="p-6 md:pl-10 md:py-10 z-10 relative grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="flex flex-col gap-2 h-full">
-            <h2 class="text-4xl">Le Domaine de Pipangaille</h2>
-            <p class="grow">Ancienne magnanerie récemment rénovée situer au coeur de la vallée du Rhône le domaine se trouve dans la partie centrale d'une propriété de trois hectares principalement entourés de bois le domaine est à moins d'un kilometre du centre du petit village d'Andancette. Cette manique batisse a pour point fort son grand jardin disposant de nombreux espaces isolés les uns des autres et pouvant accueillir de grands événements anniversaires, soirée, mariage et bien d'autre encore.</p>
-            <NuxtLink to="/le_lieu" class="p-2 px-4 rounded-lg bg-eerie-black text-md w-max text-white duration-100 border border-eerie-black hover:bg-almond hover:text-eerie-black hover:rounded-md">En savoir plus</NuxtLink>
-          </div>
-          <nuxt-img
-            :width="`${448*1.5}`"
-            :height="`${252*1.5}`"
-            quality="100"
-            format="webp"
-            placeholder
-            class="rounded shadow-lg dark:shadow-lg-dark aspect-video object-cover bg-northern_light_grey font-bold" 
-            :src="Imgs[18].link"
-            :alt="Imgs[18].alt" />
-        </div>
-      </div>
+      <CardTypeOn 
+        title="Détente" 
+        :content="[{ text: `Une piscine est à votre disposition en pleine saison avec transats. Vous y trouverez le pavillon d\'été, endroit de convivialité pour y prendre un verre, manger une glace, ou tous simplement vous y détendre.` }, { text: `Une salle commune est aussi à votre disposition (canapés, livres, jeux de sociétés)`}]"
+        :imgs="[{ src: Imgs[33].link, alt: Imgs[33].alt }, { src: Imgs[58].link, alt: Imgs[58].alt }]" />
       <div>
         <h2 class="text-4xl">Nos autre hebergements</h2>
         <PageCardGroup v-if="hebergementsNoSelected" :propElementsList="hebergementsNoSelected" targetPage="hebergements"/>

@@ -9,11 +9,11 @@
             <p>Identification de la Société : <span>SAS Domaine de Pipangaille</span></p>
             <p>Siège social : <span><a href="https://www.google.fr/maps/dir//domaine+de+pipangaille/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47f53e41af912869:0xe0c49553166e1500?sa=X&ved=2ahUKEwj59IKk0474AhUa_4UKHTamDM0Q9Rd6BAhbEAQ" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">1 Quartier Les Marettes 26140 Andancette</a></span></p>
             <div class="flex gap-2">
-              <p>RCS : <span>####</span> /</p>
+              <p>RCS : <span>904 638 814</span> /</p>
               <p>Code NAF : <span>55202</span> /</p>
-              <p>Capital social : <span>####</span></p>
+              <p>Capital social : <span>1 500 euro</span></p>
             </div>
-            <p>N° de TVA : <span>####</span></p>
+            <!-- <p>N° de TVA : <span>####</span></p> -->
             <p>Telephone : <span><a href="tel:+334 75 68 28 24" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">04 75 68 28 24</a></span></p>
             <p>Email : <span><a href="mailto:contact@domaine-de-pipangaille.fr" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">contact@domaine-de-pipangaille.fr</a></span></p>
             <p>Dirigeant : <span>Catherine Lemoine</span></p>
@@ -38,7 +38,7 @@
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">HEBERGEMENT DE LA BASE DE DONNÉE</h2>
           <div>
-            <p>Hostinger International Ltd |  : <span><a href="https://www.hostinger.fr/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">hostinger.fr</a></span></p>
+            <!-- <p>Hostinger International Ltd |  : <span><a href="https://www.hostinger.fr/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">hostinger.fr</a></span></p> -->
           </div>
         </div>
         <div class="grid gap-2">

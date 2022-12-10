@@ -23,7 +23,7 @@
               class="rounded hover:z-10 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
               v-if="aProximiterSelected.imgs[1].link" :src="aProximiterSelected.imgs[1].link" 
               :alt="aProximiterSelected.imgs[1].alt" />
-            <nuxt-img
+            <!-- <nuxt-img
               :width="`${330*1.5}`"
               :height="`${186*1.5}`"
               quality="90"
@@ -32,7 +32,7 @@
               preload
               class="rounded hover:z-10 shadow-lg ml-auto -mt-20 md:absolute md:bottom-0 md:right-0 w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
               v-if="aProximiterSelected.imgs[2].link" :src="aProximiterSelected.imgs[2].link" 
-              :alt="aProximiterSelected.imgs[2].alt" />
+              :alt="aProximiterSelected.imgs[2].alt" /> -->
           </div>
         </div>
       </div>

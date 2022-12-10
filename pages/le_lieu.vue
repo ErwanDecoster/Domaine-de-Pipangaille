@@ -4,12 +4,12 @@
       <h1 class="text-4xl sm:text-5xl">Le lieu</h1>
       <CardTypeOn 
         title="Le Domaine de Pipangaille" 
-        :content="[{ text: `Ancienne Magnianerie construite autour des années 1500, le bâtiment servait à l’époque à l’élevage de vers à soie. Elle fut utilisée à une période comme ferme pour la production d'alimentaire. Elle est aujoud'hui rénovée depuis une dizaine d'années pour accueillir des chambres d'hôtes et ainsi faire profiter à d'autres du cadre magnifique qui l'entoure. La propriété s'étend sur trois hectares, principalement un bois, et dispose également d'un grand parking gratuit devant l'entrée. Nous disposons également d'une entrée secondaire avec un grand espace pour y garer plus de véhicules, utilisé notamment lors de gros événements.`}]"
+        :content="[{ text: `Ancienne magnanerie de plus de 150 ans, la demeure authentique, de caractère et pleine de charme est bercée par le doux tourbillon du Rhône. Outre le charme de la bâtisse vous pourrez profiter du parc, de la piscine et du pavillon d'été pour vous détendre. En accès direct sur la ViaRhôna et au cœur d'un bois, le lieu vous offre une parenthèse mêlant détente, nature et zenitude. La propriété s'étend sur trois hectares, principalement un bois, et dispose d'un parking intérieur et extérieur.`}]"
         :imgs="[{ src: Imgs[38].link, alt: Imgs[38].alt }, { src: Imgs[42].link, alt: Imgs[42].alt }]" />
       <div class="grid md:grid-cols-7 rounded overflow-hidden">
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8 md:col-span-4">
           <h2 class="text-4xl">Organisation d'événements</h2>
-          <p class="grow">Concert, Mariage, Anniversaire, Réception...<br />Les possibilités sont nombreuses et le lieu est grand. De nombreux espaces peuvent être utilisés pour vos événements et pour accueillir un grand nombre de personnes. Contactez-nous directement pour discuter de toutes les possibilités.</p>
+          <p class="grow">Réunions familiales, événements artistiques, anniversaires, mariages, séminaires, dégustations de vins, les propositions sont nombreuses....</p>
           <ButtonPrimary link="/contact" content="Nous contacter" />
         </div>
         <nuxt-img
@@ -194,7 +194,7 @@ export default {
           size: 2,
         },
         {
-          title: 'Les extérieurs tout éclairés',
+          title: 'Les extérieurs illuminés',
           espace: 'L\'entrée',
           img: Imgs[51].link,
           alt: Imgs[51].alt,
@@ -254,7 +254,14 @@ export default {
           espace: 'Coin piscine',
           img: Imgs[58].link,
           alt: Imgs[58].alt,
-          size: 2,
+          size: 3,
+        },
+        {
+          title: 'Concert ce soir',
+          espace: 'La cour intérieure',
+          img: Imgs[59].link,
+          alt: Imgs[59].alt,
+          size: 3,
         },
         {
           title: 'La cuisine en accès libre',
@@ -263,11 +270,39 @@ export default {
           alt: Imgs[20].alt,
           size: 2,
         },
+        // {
+        //   title: 'Autonne',
+        //   espace: 'Le jardin',
+        //   img: Imgs[64].link,
+        //   alt: Imgs[64].alt,
+        //   size: 2,
+        // },
         {
-          title: 'Concert ce soir',
-          espace: 'La cour intérieure',
-          img: Imgs[59].link,
-          alt: Imgs[59].alt,
+          title: 'Un endroit ou s\'abriter',
+          espace: 'Salle commune',
+          img: Imgs[65].link,
+          alt: Imgs[65].alt,
+          size: 2,
+        },
+        {
+          title: 'Un endroit ou s\'abriter',
+          espace: 'Salle commune',
+          img: Imgs[66].link,
+          alt: Imgs[66].alt,
+          size: 2,
+        },
+        {
+          title: 'Jour de mariage',
+          espace: 'Le préau',
+          img: Imgs[67].link,
+          alt: Imgs[67].alt,
+          size: 4,
+        },
+        {
+          title: 'Jour de mariage',
+          espace: 'Le préau',
+          img: Imgs[68].link,
+          alt: Imgs[68].alt,
           size: 2,
         },
       ],
