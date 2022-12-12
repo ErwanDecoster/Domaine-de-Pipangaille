@@ -11,9 +11,9 @@
       </NuxtLink>
       <div class="grid sm:grid-cols-2 sm:gap-12">
         <div class="flex flex-col items-center">
-          <ButtonInline link="https://www.facebook.com/domainedepipangaille" content="Facebook" target="_blank" />
-          <ButtonInline link="https://www.linkedin.com/company/domaine-de-pipangaille/" content="LinkedIn" target="_blank" />
-          <ButtonInline link="https://www.instagram.com/domaine_de_pipangaille" content="Instagram" target="_blank" />
+          <ButtonInline link="https://www.facebook.com/domainedepipangaille" content="Facebook" newWindow="_blank" />
+          <ButtonInline link="https://www.linkedin.com/company/domaine-de-pipangaille/" content="LinkedIn" newWindow="_blank" />
+          <ButtonInline link="https://www.instagram.com/domaine_de_pipangaille" content="Instagram" newWindow="_blank" />
         </div>
         <div class="flex flex-col items-center">
           <ButtonInline link="/contact" content="Contact" />

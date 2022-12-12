@@ -5,7 +5,7 @@
       <CardTypeOn 
         title="Les chambres d’hôtes" 
         :content="[{ text: `Décoration et aménagement atypiques mêlant originalité et confort nos chambres situées au deuxième étage sont conçues pour vous offrir un séjour dépaysant. Nos quatre chambres thématiques sont fonctionnelles pour vous accueillir le temps d'une nuit, d'un weekend ou d'un séjour pour les particuliers comme pour les professionnels. Le Domaine de Pipangaille vous accueille en couple, en famille ou entre amis.`}]"
-        :imgs="[{ src: Imgs[16].link, alt: Imgs[16].alt }, { src: Imgs[17].link, alt: Imgs[17].alt }]" />
+        :imgs="[{ src: Imgs[17].link, alt: Imgs[17].alt }, { src: Imgs[16].link, alt: Imgs[16].alt }]" />
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img src="https://www.alsace.shop/wp-content/uploads/2021/06/formule-petit-dejeuner.jpg" alt="photo d'un petit dejeuner" class="aspect-video md:h-full w-full object-cover bg-northern_light_grey font-bold">
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">

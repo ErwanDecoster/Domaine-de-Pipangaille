@@ -51,34 +51,11 @@
             :alt="Imgs[42].alt" />
         </div>
       </div>
-      <div class="w-full h-full relative">
-        <div class="bg-almond dark:bg-dark-almond right-0 left-0 md:left-1/3 absolute top-8 bottom-8 md:bottom-0 rounded"></div>
-        <div class="z-10 relative grid grid-cols-1 md:grid-cols-7">
-          <div class="flex flex-col gap-2 h-full p-6 md:p-8 pt-12 md:pt-16 md:col-span-3 md:order-1">
-            <h2 class="text-4xl">Nos chambres d'hôtes</h2>
-            <p class="grow">Vous accédez aux chambres en traversant le parc arboré qui vous amène dans la cour intérieure entourée de pierres qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d'été à votre disposition et une salle de convivialité. Les quatre chambres a la décoration atypique vous invitant au voyage sont situées au deuxième étage.</p>
-            <ButtonPrimary link="/hebergements" content="En savoir plus" />
-          </div>
-          <div class="relative md:col-span-4">
-            <nuxt-img 
-              :width="`${378*1.5}`"
-              :height="`${214*1.5}`"
-              quality="90"
-              format="webp"
-              class="rounded hover:z-10 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
-              :src="Imgs[63].link" 
-              :alt="Imgs[63].alt" />
-            <nuxt-img 
-              :width="`${378*1.5}`"
-              :height="`${214*1.5}`"
-              quality="90"
-              format="webp"
-              class="rounded hover:z-10 shadow-lg dark:shadow-lg-dark ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:right-0 w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
-              :src="Imgs[62].link" 
-              :alt="Imgs[62].alt" />
-          </div>
-        </div>
-      </div>
+      <CardTypeOnReverse 
+        title="Nos chambres d'hôtes" 
+        :content="[{ text: 'Vous accédez aux chambres en traversant le parc arboré qui vous amène dans la cour intérieure entourée de pierres qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d\'été à votre disposition et une salle de convivialité. Les quatre chambres a la décoration atypique vous invitant au voyage sont situées au deuxième étage.' }]"
+        :imgs="[{ src: Imgs[63].link, alt: Imgs[63].alt }, { src: Imgs[62].link, alt: Imgs[62].alt }]" 
+        :button="[{ target: '/hebergements', content: 'En savoir plus' }]"/>
     </section>
     <section class="bg-almond dark:bg-dark-almond w-full min-h-[16rem] my-8 flex items-center py-8">
       <div class="max-w-3xl w-full px-2 sm:px-6 gap-2 md:gap-8 mx-auto flex items-center">

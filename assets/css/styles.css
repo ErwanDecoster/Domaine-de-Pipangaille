@@ -9,6 +9,20 @@ html {
   width: 6px;
 }
 
+*::selection {
+  background: #5f90e390;
+  /* text-color: black;   */
+  /* text-shadow: 1px 1px 1px #2c5bab; */
+}
+
+@media (prefers-color-scheme: dark) {
+  *::selection {
+    background: #2c5bab90;
+    /* text-color: white; */
+    /* text-shadow: 2px 2px #2c5bab; */
+  }
+}
+
 /* Add a thumb */
 *::-webkit-scrollbar-thumb {
   background: #1A1D1A;

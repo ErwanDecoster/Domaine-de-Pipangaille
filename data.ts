@@ -351,6 +351,10 @@ export const aProximiter = {
           link: "/images/safari_de_peaugres.jpg",
           alt: "Image du parcours voiture du Safari de Peaugre avec au premier plan une voiture de safari sur la route, entouré d’animaux tel que des autruches qui se pavanent dans l’herbe."
         },
+        {
+          link: "/images/safari_de_peaugres.jpg",
+          alt: "Image du parcours voiture du Safari de Peaugre avec au premier plan une voiture de safari sur la route, entouré d’animaux tel que des autruches qui se pavanent dans l’herbe."
+        },
       ],
       shortDesc: 'Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares.',
       longDesc: 'Un grand parc remplit d\'animaux, le tout sur deux circuits, voiture et à pied. Profitez du safari de Peaugres et faites la rencontre avec plus 130 espèces différentes, le tout sur 80 hectares avec plus de 1200 animaux. Traversez l\'enclos des félins dans un solide tunnel de verre, entrez dans la serre tropicale Terre des minus, découvrez la baie des otaries, la serre aux 1000 cachettes, la passerelle des girafes et bien d\'autres choses encore.',
@@ -371,6 +375,10 @@ export const aProximiter = {
       title: 'Palais Idéal du Facteur Cheval',
       category: 'a_visiter',
       imgs: [
+        {
+          link: "/images/palais_idéal_du_facteur_cheval.jpg",
+          alt: "Photo d’un magnifique palais de pierre “Le palais du facteur cheval” aux couleurs vives et chaleureuses entourée d’une belle végétation."
+        },
         {
           link: "/images/palais_idéal_du_facteur_cheval.jpg",
           alt: "Photo d’un magnifique palais de pierre “Le palais du facteur cheval” aux couleurs vives et chaleureuses entourée d’une belle végétation."
@@ -415,6 +423,10 @@ export const aProximiter = {
           link: "/images/acrobois_pilat.jpg",
           alt: "Chalet en bois au milieu d’une forêt de sapins, entourés de tyroliennes et parcours entre les arbres."
         },
+        {
+          link: "/images/acrobois_pilat.jpg",
+          alt: "Chalet en bois au milieu d’une forêt de sapins, entourés de tyroliennes et parcours entre les arbres."
+        },
       ],
       shortDesc: 'Au cœur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux.',
       longDesc: 'Au cœur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux. Venez vous mettre aux défis et essayez d\'atteindre et de réussir le dernier parcours. De nombreuses tyroliennes et obstacles variés sauront vous mettre à l\'épreuve.',
@@ -435,6 +447,10 @@ export const aProximiter = {
       title: 'Musée de l’Alambic',
       category: 'a_visiter',
       imgs: [
+        {
+          link: "/images/musee_de_l_alambic.png",
+          alt: "Photo d’un musée avec une statue d’un artisan devant d’anciennes machines couleur cuivre."
+        },
         {
           link: "/images/musee_de_l_alambic.png",
           alt: "Photo d’un musée avec une statue d’un artisan devant d’anciennes machines couleur cuivre."
@@ -467,6 +483,10 @@ export const aProximiter = {
           link: "/images/golf_de_saint-clair.jpg",
           alt: "Terrain de golf, avec deux golfeurs devant leurs voitures de golf. On aperçoit un lac à l’arrière."
         },
+        {
+          link: "/images/golf_de_saint-clair.jpg",
+          alt: "Terrain de golf, avec deux golfeurs devant leurs voitures de golf. On aperçoit un lac à l’arrière."
+        },
       ],
       shortDesc: 'Entre la Vallée du Rhône et le début des Monts d’Ardèche, venez profiter de magnifiques parcours de golf.',
       longDesc: 'Bien situé dans le parc d’un château du XVIIIème, entre la Vallée du Rhône et le début des Monts d’Ardèche, le parcours est réputé pour sa situation panoramique et la largeur de ses fairways arborés. Ces particularités procurent une agréable sensation d’espace !',
@@ -491,6 +511,10 @@ export const aProximiter = {
       title: 'ViaRhôna',
       category: 'a_visiter',
       imgs: [
+        {
+          link: "/images/via_rhona.jpg",
+          alt: "Photo d’un chemin de la ViaRhôna longeant le Rhône, des cyclistes qui s’y baladent. Couleurs d'automne et des nombreux arbres l’entourent"
+        },
         {
           link: "/images/via_rhona.jpg",
           alt: "Photo d’un chemin de la ViaRhôna longeant le Rhône, des cyclistes qui s’y baladent. Couleurs d'automne et des nombreux arbres l’entourent"
@@ -545,6 +569,10 @@ export const aProximiter = {
           link: "/images/montgolfières_et_cie.jpg",
           alt: "Vue du ciel avec des montgolfières occupées par des personnes. Entouré d’une forêt et d’un village avec une église."
         },
+        {
+          link: "/images/montgolfières_et_cie.jpg",
+          alt: "Vue du ciel avec des montgolfières occupées par des personnes. Entouré d’une forêt et d’un village avec une église."
+        },
       ],
       shortDesc: 'Partagez un moment convivial en famille, entre amis, collègues ou d’autres passagers, vous vivrez ce moment de totale liberté.',
       longDesc: 'Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l’échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d’autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables.',
@@ -567,6 +595,10 @@ export const aProximiter = {
       title: 'Le Relais Des Mailles',
       category: 'se_restaurer',
       imgs: [
+        {
+          link: "/images/le_relais_des_mailles.jpg",
+          alt: "Terrasse de restaurant ombré. À côté de la ViaRhôna avec en fond le Rhône."
+        },
         {
           link: "/images/le_relais_des_mailles.jpg",
           alt: "Terrasse de restaurant ombré. À côté de la ViaRhôna avec en fond le Rhône."
@@ -635,6 +667,10 @@ export const aProximiter = {
           link: "/images/la_poule_noire.jpeg",
           alt: "Terrasse de restaurant ombré, table dressée en bois et chaise de couleur orange et rose."
         },
+        {
+          link: "/images/la_poule_noire.jpeg",
+          alt: "Terrasse de restaurant ombré, table dressée en bois et chaise de couleur orange et rose."
+        },
       ],
       shortDesc: '',
       // shortDesc: 'Au sein de la Poule noire, venez déguster des spécialités du terroir local dans un cadre chaleureux et original.',
@@ -665,6 +701,10 @@ export const aProximiter = {
           link: "/images/le_picotin.jpg",
           alt: "Jolie salle de restauration aux couleurs gris clair et noir, avec de nombreuses tables."
         },
+        {
+          link: "/images/le_picotin.jpg",
+          alt: "Jolie salle de restauration aux couleurs gris clair et noir, avec de nombreuses tables."
+        },
       ],
       shortDesc: '',
       // shortDesc: 'Amoureux de la gastronomie française, le Picotin est L’Endroit qui vous conviendra. Dans une salle sympathique, dégustez des mets raffinés.',
@@ -687,6 +727,10 @@ export const aProximiter = {
       title: 'Au Pré du Rhône',
       category: 'se_restaurer',
       imgs: [
+        {
+          link: "/images/au_pre_du_rhone.jpg",
+          alt: "Salle de restauration décorée de bois, lumineuse par de grandes baies vitrées avec vue sur le Rhône."
+        },
         {
           link: "/images/au_pre_du_rhone.jpg",
           alt: "Salle de restauration décorée de bois, lumineuse par de grandes baies vitrées avec vue sur le Rhône."
@@ -752,6 +796,10 @@ export const aProximiter = {
           link: "/images/cesar_pizza.jpg",
           alt: "Plan de travail en bois sur lequel est posée la carte des pizzas de césar pizza."
         },
+        {
+          link: "/images/cesar_pizza.jpg",
+          alt: "Plan de travail en bois sur lequel est posée la carte des pizzas de césar pizza."
+        },
       ],
       shortDesc: '',
       // shortDesc: 'lorem ipsul dolor si amet lorem ipsul dolor si amet lorem ipsul dolor si amet',
@@ -770,6 +818,10 @@ export const aProximiter = {
       title: 'La Villa Champagnère',
       category: 'se_restaurer',
       imgs: [
+        {
+          link: "/images/la_villa_champagnere.jpeg",
+          alt: "Salle de restauration aux couleurs grises claire et des touches de noir, avec de nombreuses tables."
+        },
         {
           link: "/images/la_villa_champagnere.jpeg",
           alt: "Salle de restauration aux couleurs grises claire et des touches de noir, avec de nombreuses tables."

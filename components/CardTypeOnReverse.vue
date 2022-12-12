@@ -1,8 +1,9 @@
 <template>
   <div class="w-full h-full relative">
-    <div class="bg-almond dark:bg-dark-almond left-0 right-0 md:right-32 absolute top-8 bottom-8 rounded"></div>
-    <div class="z-10 relative grid grid-cols-1 md:grid-cols-2">
-      <div class="flex flex-col gap-2 h-full p-6 md:p-8 pt-12 md:py-16">
+    <!-- <div class="bg-almond dark:bg-dark-almond left-0 right-0 md:right-32 absolute top-8 bottom-8 rounded"></div> -->
+    <div class="bg-almond dark:bg-dark-almond right-0 left-0 md:left-1/3 absolute top-8 bottom-8 md:bottom-4 rounded"></div>
+    <div class="z-10 relative grid grid-cols-1 md:grid-cols-7">
+      <div class="flex flex-col gap-2 h-full p-6 md:p-8 pt-12 md:pt-16 md:pb-12 md:col-span-3 md:order-1">
         <h2 class="text-4xl">{{ title }}</h2>
         <div class="grow grid gap-1">
           <p v-for="row in content" :key="row">{{ row.text }}</p>
@@ -17,7 +18,7 @@
           </div>
         </div>
       </div>
-      <div class="relative">
+      <div class="relative md:col-span-4">
         <nuxt-img 
           @mouseover="InvertPicture($event)"
           style="z-index: 0;"
@@ -68,10 +69,6 @@ export default {
         const filtered = asArray.filter(element => element.id != elementInput.target.id);
         this.MoveElements(elementInput.target, filtered[0], ((elementInput.target.parentElement.offsetHeight - elementInput.target.offsetHeight * 2) / 2))
       }
-      else
-      {
-        console.log('nop');
-      }
     },
     MoveElements(elem1, elem2, sizeBetwen) {
       if (sizeBetwen < 0 && elem1.style.zIndex == 0 && document.body.scrollWidth >= 768)
@@ -106,9 +103,6 @@ export default {
         }
       }
     },
-    mounted() {
-      console.log(this._uid);
-    }
   }
 };
 </script>
