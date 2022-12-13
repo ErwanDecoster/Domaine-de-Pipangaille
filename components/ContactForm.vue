@@ -98,6 +98,11 @@ export default {
           object: '',
           message: '',
         }
+        localStorage.name = '';
+        localStorage.email = '';
+        localStorage.phone = '';
+        localStorage.object = '';
+        localStorage.message = '';
       }
       else {
         this.errors.push('Une erreur est suvenu durant l\'envoi');
@@ -146,8 +151,8 @@ export default {
         if (this.CheckForm() && this.waiting == false){
           this.errors = [];
           this.waiting = true;
-          const url = 'https://domaine-de-pipangaille.fr/api/contact'
-          // const url = 'http://localhost:3000/api/contact'
+          // const url = 'https://domaine-de-pipangaille.fr/api/contact'
+          const url = 'http://localhost:3000/api/contact'
           const response = $fetch(url, {
             method: 'POST',
             headers: {
@@ -164,6 +169,39 @@ export default {
       }
     }
   },
-
+  mounted() {
+    if (localStorage.name) {
+      this.form.name = localStorage.name;
+    }
+    if (localStorage.email) {
+      this.form.email = localStorage.email;
+    }
+    if (localStorage.phone) {
+      this.form.phone = localStorage.phone;
+    }
+    if (localStorage.object) {
+      this.form.object = localStorage.object;
+    }
+    if (localStorage.message) {
+      this.form.message = localStorage.message;
+    }
+  },
+  watch: {
+    'form.name'(newName) {
+      localStorage.name = newName;
+    },
+    'form.email'(newEmail) {
+      localStorage.email = newEmail;
+    },
+    'form.phone'(newPhone) {
+      localStorage.phone = newPhone;
+    },
+    'form.object'(newObject) {
+      localStorage.object = newObject;
+    },
+    'form.message'(newMessage) {
+      localStorage.message = newMessage;
+    },
+  },
 }
 </script>

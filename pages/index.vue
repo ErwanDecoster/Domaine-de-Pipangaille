@@ -13,24 +13,7 @@
         <!-- <img src="Imgs[48].link" alt="grande images de la facade de la batisse" class="w-full object-cover h-[75vh] rounded-b-xl bg-northern_light_grey font-bold"> -->
         <h1 class="mx-auto max-w-screen-lg w-full pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl text-white drop-shadow-2xl">Votre Séjour au<br> Domaine de Pipangaille</h1>
       </div>
-      <div class="mx-auto lg:w-max px-4 -translate-y-1/2">
-        <div class="bg-white dark:bg-eerie-black grid gap-2 shadow-lg dark:shadow-lg-dark p-5 px-6 rounded-lg">
-          <h2 class="font-bold text-xl">Réserver</h2>
-          <p class="items-center flex flex-wrap gap-y-2">
-            <span>Pour</span>
-            <input type="number" v-model="form.nbAdulte" name="nbAdulte" id="nbAdulte" autocomplete="no" class="w-16 mx-2 rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black">
-            <label for="nbAdulte">adultes</label>
-            <span class="ml-1">et</span>
-            <input type="number" v-model="form.nbEnfant" name="nbEnfant" id="nbEnfant" autocomplete="no" class="w-16 mx-2 rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black">
-            <label for="nbEnfant">enfants</label>
-            <label for="startDate">, du</label>
-            <input type="date" v-model="form.startDate" @change="UpdateEndDate()" name="startDate" id="startDate" autocomplete="no" class="w-32 mx-2 rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black">
-            <label for="endDate">au</label>
-            <input type="date" v-model="form.endDate" name="endDate" id="endDate" autocomplete="no" class="w-32 mx-2 rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black">
-            <NuxtLink :to="`/book?nbAdulte=${form.nbAdulte}&nbEnfant=${form.nbEnfant}&startDate=${form.startDate}&endDate=${form.endDate}`" :form="22" class="md:ml-auto md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-full text-center cursor-pointer duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">Voir les disponibilités</NuxtLink>
-          </p>
-        </div>
-      </div>
+      <ReservationSearcher />
     </section>
     <section class="max-w-screen-lg mx-auto px-4 grid gap-8">
       <div class="w-full h-full relative">
