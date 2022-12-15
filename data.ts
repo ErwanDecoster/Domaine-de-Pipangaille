@@ -757,33 +757,41 @@ export const aProximiter = {
       ],
       slug: 'au_pre_du_rhone',
     },
-    // {
-    //   title: 'O\'Daily Truck',
-    //   category: 'se_restaurer',
-    //   imgs: [
-    //     {
-    //       link: "/images/o_daily_truck.jpg",
-    //       alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
-    //     },
-    //     {
-    //       link: "/images/o_daily_truck.jpg",
-    //       alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
-    //     },
-    //   ],
-    //   shortDesc: 'lorem ipsul dolor si amet lorem ipsul dolor si amet lorem ipsul dolor si amet',
-    //   longDesc: 'Le camion O\'Daily Truck se deplace chaque jour dans une ville diferente pour vous faire decouvrire une bonne cuisine type Food Truck mais avec des puduits frais et inovant.',
-    //   links: [
-    //     {
-    //       label: 'Site Internet',
-    //       link: 'https://odailytruck.eatbu.com/?lang=fr',
-    //     },
-    //     {
-    //       label: 'Facebook',
-    //       link: 'https://www.facebook.com/profile.php?id=100083238615438',
-    //     },
-    //   ],
-    //   slug: 'o_daily_truck.jpg',
-    // },
+    {
+      title: 'O\'Daily Truck',
+      category: 'se_restaurer',
+      imgs: [
+        {
+          link: "/images/o_daily_truck_1.jpeg",
+          alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
+        },
+        {
+          link: "/images/o_daily_truck_2.jpeg",
+          alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
+        },
+        {
+          link: "/images/o_daily_truck_3.jpg",
+          alt: "Images d’un food truck avec une personne préparant trois plateaux garnis, avec des burgers, frites et salades."
+        },
+      ],
+      shortDesc: 'Au menu, burgers 100% maison, viandes en sauce ou snacks, planches de charcuteries et fromages à partager, plats végétariens, frites fraîches.',
+      longDesc: [
+        { text: 'Au menu, burgers 100% maison, viandes en sauce ou snacks, planches de charcuteries et fromages à partager, plats végétariens, frites fraîches.' },
+        { text: ' Le but est de varier nos offres et de faire découvrir à notre clientèle la richesse des produits de saisons, charcuterie italienne, ou espagnole, fromage de nos régions ou des montagnes suisses, fruits et légumes de nos maraîchers locaux, viandes d’Aubrac et volaille du terroir, aromates cultivés sur nos belles collines drômoises.' }, 
+        { text: 'Également des desserts maison : on a plaisir à retrouver des mousses au chocolat, des tartes des pannacottas onctueuses et légères, des glaces artisanales.'},
+      ],
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'https://odailytruck.eatbu.com/?lang=fr',
+        },
+        {
+          label: 'Facebook',
+          link: 'https://www.facebook.com/profile.php?id=100083238615438',
+        },
+      ],
+      slug: 'o_daily_truck.jpg',
+    },
     {
       title: 'César Pizza',
       category: 'se_restaurer',

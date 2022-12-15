@@ -28,7 +28,7 @@
           format="webp"
           placeholder
           preload
-          class="rounded duration-150 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
+          class="rounded duration-200 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
           v-if="imgs[0]" :src="imgs[0].src" 
           :alt="imgs[0].alt" />
         <nuxt-img
@@ -40,7 +40,7 @@
           quality="90"
           format="webp"
           placeholder
-          class="rounded duration-150 shadow-lg dark:shadow-lg-dark ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:right-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
+          class="rounded duration-200 shadow-lg dark:shadow-lg-dark ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:right-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
           v-if="imgs[1]" :src="imgs[1].src" 
           :alt="imgs[1].alt" />
       </div>
@@ -90,7 +90,7 @@ export default {
             elem1.style.transform = `translateY(0px)`;
             elem2.style.transform = `translateY(0px)`;
             this.isAnime = false;
-          }, 150)
+          }, 200)
         }
         else
         {
@@ -102,13 +102,10 @@ export default {
             elem1.style.transform = `translateY(0px)`;
             elem2.style.transform = `translateY(0px)`;
             this.isAnime = false;
-          }, 150)
+          }, 200)
         }
       }
     },
-    mounted() {
-      console.log(this._uid);
-    }
   }
 };
 </script>

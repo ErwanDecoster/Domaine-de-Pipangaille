@@ -4,7 +4,7 @@
       <h1 class="text-4xl sm:text-5xl">{{ aProximiterSelected.title }}</h1>
       <CardTypeOn 
         :title="$route.params.group === 'a_visiter' ? 'Le lieu' : 'Le restaurant'" 
-        :content="[{ text: aProximiterSelected.longDesc}]"
+        :content="aProximiterSelected.longDesc"
         :imgs="[{ src: aProximiterSelected.imgs[1].link, alt: aProximiterSelected.imgs[1].alt }, { src: aProximiterSelected.imgs[2].link, alt: aProximiterSelected.imgs[2].alt }]"
         :links="aProximiterSelected.links" />
       <div v-if="aProximiterSelected.mapslink" class="grid h-[328px] rounded overflow-hidden">

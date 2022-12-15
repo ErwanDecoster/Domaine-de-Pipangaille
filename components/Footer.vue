@@ -1,7 +1,7 @@
 <template>
   <footer class="p-8 bg-white dark:bg-eerie-black rounded-t-2xl shadow-lg-inverted dark:shadow-lg-dark-inverted z-10">
     <div class="max-w-screen-lg mx-auto relative flex justify-center">
-      <NuxtLink to="/" class="hidden sm:block p-2 absolute left-0 top-1/2 -translate-y-1/2 md:translate-x-1/2">
+      <NuxtLink to="/" class="hidden lg:block p-2 absolute left-0 top-1/2 -translate-y-1/2 md:translate-x-1/2">
         <picture>
           <source 
             srcset="/images/logo_domaine_de_pipangaille_light.svg" 

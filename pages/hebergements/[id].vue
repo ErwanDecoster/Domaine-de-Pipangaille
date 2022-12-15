@@ -10,7 +10,8 @@
       <div class="grid gap-2">
         <h2 class="text-4xl">Photos</h2>
         <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-3 gap-4">
-          <nuxt-img 
+          <nuxt-img
+            @click="OpenPicture($event, hebergementSelected.imgs[0])"
             :width="`${320*1.5}`"
             :height="`${288*1.5}`"
             id="1"
@@ -18,10 +19,11 @@
             format="webp"
             placeholder
             preload
-            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow" 
+            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
             v-if="hebergementSelected.imgs[0].link" :src="hebergementSelected.imgs[0].link" 
             :alt="hebergementSelected.imgs[0].alt" />
-          <nuxt-img 
+          <nuxt-img
+            @click="OpenPicture($event, hebergementSelected.imgs[1])"
             :width="`${320*1.5}`"
             :height="`${288*1.5}`"
             id="1"
@@ -29,10 +31,11 @@
             format="webp"
             placeholder
             preload
-            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow" 
+            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
             v-if="hebergementSelected.imgs[1].link" :src="hebergementSelected.imgs[1].link" 
             :alt="hebergementSelected.imgs[1].alt" />
-          <nuxt-img 
+          <nuxt-img
+            @click="OpenPicture($event, hebergementSelected.imgs[2])"
             :width="`${320*1.5}`"
             :height="`${288*1.5}`"
             id="1"
@@ -40,9 +43,21 @@
             format="webp"
             placeholder
             preload
-            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow" 
+            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
             v-if="hebergementSelected.imgs[2].link" :src="hebergementSelected.imgs[2].link" 
             :alt="hebergementSelected.imgs[2].alt" />
+          <nuxt-img
+            @click="OpenPicture($event, hebergementSelected.imgs[2])"
+            :width="`${320*1.5}`"
+            :height="`${288*1.5}`"
+            id="1"
+            quality="90"
+            format="webp"
+            placeholder
+            preload
+            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
+            v-if="hebergementSelected.imgs[3].link" :src="hebergementSelected.imgs[3].link" 
+            :alt="hebergementSelected.imgs[3].alt" />
         </div>
       </div>
       <div class="grid gap-2">
@@ -75,6 +90,7 @@
         <PageCardGroup v-if="hebergementsNoSelected" :propElementsList="hebergementsNoSelected" targetPage="hebergements"/>
       </div>
     </section>
+    <PictureFull v-if="PictureFull" @close="PictureFull = false" :imgs="hebergementSelected.imgs" :actualPict="actualPict" />
   </div>
 </template>
 
@@ -89,6 +105,8 @@ export default {
       hebergementSelected: [],
       hebergementsNoSelected: [],
       hebergements: hebergements,
+      PictureFull: false,
+      actualPict: 0,
     };
   },
   methods: {
@@ -101,7 +119,11 @@ export default {
     },
     NoSelecteHebergements() {
       this.hebergementsNoSelected = this.hebergements.filter(item => item !== this.hebergementSelected );
-    }
+    },
+    OpenPicture(div, pict) {
+      this.PictureFull = true;
+      this.actualPict = pict;
+    },
   },
   mounted() {
     window.scrollTo(0,0);

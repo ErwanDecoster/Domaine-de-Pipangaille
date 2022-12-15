@@ -31,7 +31,7 @@
           <iframe title="Carte Google maps du Domaine de Pipangaille" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d&#39;h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071!5m2!1sfr!2sfr" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full rounded dark:hue-rotate-180 dark:invert-[0.8] dark:contrast-125"></iframe>
         </div>
         <span class="lg:hidden mx-auto h-1 bg-almond dark:bg-dark-almond w-full rounded"></span>
-        <form @submit.prevent="SendMessage()" class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow relative">
+        <form @submit.prevent="SendMessage()" id="contact-form" class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow relative scroll-m-4">
           <div v-if="(errors || success)" class="sm:col-span-2">
             <div v-if="success" @click="(success = false)" class="bg-ufo-green px-2 py-1 rounded-lg">Message envoyé avec succès</div>
             <div class="grid gap-1">
@@ -58,7 +58,7 @@
             <label for="message" class="font-semibold">Message :</label>
             <textarea v-model="form.message" required name="message" id="message" autocomplete="off" class="rounded-lg px-2 py-1 border h-32 min-h-[8em] outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black"></textarea>
           </div>
-          <button type="submit" class="col-span-2 ml-auto cursor-pointer md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-full text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">
+          <button type="submit" id="submit" class="col-span-2 ml-auto cursor-pointer md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-full text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">
             <template v-if="(!waiting && !success)">Envoyer</template>
             <template v-if="(waiting && !success)">Envoye en cours</template>
             <template v-if="success">Message envoyé 🚀</template>
@@ -76,6 +76,7 @@ export default {
       errors: [],
       success: false,
       waiting: false,
+      sendDate: '',
       form: {
         name: '',
         email: '',
@@ -103,9 +104,14 @@ export default {
         localStorage.phone = '';
         localStorage.object = '';
         localStorage.message = '';
+        this.sendDate = Date.parse(new Date());
+        localStorage.sendDate = this.sendDate;
+        console.log(this.sendDate);
+        document.getElementById('contact-form').scrollIntoView()
       }
       else {
         this.errors.push('Une erreur est suvenu durant l\'envoi');
+        document.getElementById('contact-form').scrollIntoView()
       }
     },
     ValidEmail(email) {
@@ -137,18 +143,29 @@ export default {
       } else if (this.form.message.length <= 10) {
         this.errors.push('Le champ Message doit contenir aux moins 10 caractères.');
       }
+      document.getElementById('contact-form').scrollIntoView();
       return false;
+    },
+    CheckSendDate() {
+      if (Date.parse(new Date()) - this.sendDate < 200000) {
+        this.errors.push('Un message à déjà était envoyé. Vous pourrez à nouveau envoyer un message d\'ici quelques minutes.');
+        document.getElementById('contact-form').scrollIntoView();
+        return false;
+      } else {
+        return true;
+      }
     },
     ShowError(data) {
       this.waiting = false;
       this.errors = [];
       this.errors.push('Une erreur est survenue vérifier votre connexion ainsi que les champs remplis ou réessayés plus tard.');
+      document.getElementById('contact-form').scrollIntoView()
     },
     SendMessage() {
       if (this.waiting){
         this.errors.push('Un message est déjà en cours d\'envoi.');
       } else {
-        if (this.CheckForm() && this.waiting == false){
+        if (this.CheckForm() && this.CheckSendDate() && this.waiting == false){
           this.errors = [];
           this.waiting = true;
           // const url = 'https://domaine-de-pipangaille.fr/api/contact'
@@ -184,6 +201,9 @@ export default {
     }
     if (localStorage.message) {
       this.form.message = localStorage.message;
+    }
+    if (localStorage.sendDate) {
+      this.sendDate = localStorage.sendDate;
     }
   },
   watch: {

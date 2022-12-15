@@ -25,20 +25,20 @@
     <span class="w-8 bg-black dark:bg-white h-1 block rounded-full drop-shadow-lg"></span>
   </button>
   <div v-if="fullNavOpen === true" class="md:hidden fixed z-40 inset-0 bg-white dark:bg-eerie-black">
-    <button @click="fullNavOpen = !fullNavOpen" class="h-12 w-12 px-2 pt-2.5 absolute right-6 top-6 flex flex-col gap-2 duration-150 hover:rotate-45">
+    <button @click="fullNavOpen = !fullNavOpen" class="h-12 w-12 px-2 pt-2.5 absolute right-6 top-6 flex flex-col gap-2 duration-150 hover:rotate-90">
       <span class="w-8 bg-black dark:bg-white h-1 block rounded-full rotate-45 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"></span>
       <span class="w-8 bg-black dark:bg-white h-1 block rounded-full -rotate-45 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"></span>
     </button>
     <NuxtLink @click="fullNavOpen = !fullNavOpen" to="/" class="group flex gap-2 items-center absolute left-6 top-6">
       <p class="whitespace-nowrap text-xl">domaine-de-pipangaille.fr</p>
     </NuxtLink>
-    <div class="flex flex-col justify-center items-center gap-4 mx-auto w-max h-full">
+    <div class="flex flex-col flex-wrap justify-center items-center gap-4 mx-auto h-full">
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/" content="Accueil" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/le_lieu" content="Le lieu" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/hebergements" content="Nos hébergements" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/a_proximite" content="À proximité" fontSize="20" />
       <ButtonInline @click="fullNavOpen = !fullNavOpen" link="/book" content="Réserver" fontSize="20" />
-      <ButtonSecondary @click="fullNavOpen = !fullNavOpen" link="/contact" content="Nous contactez" fontSize="20"/>
+      <ButtonInlineSecondary @click="fullNavOpen = !fullNavOpen" link="/contact" content="Nous contactez" fontSize="20"/>
     </div>
   </div>
 </template>
