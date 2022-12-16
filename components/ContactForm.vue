@@ -168,8 +168,8 @@ export default {
         if (this.CheckForm() && this.CheckSendDate() && this.waiting == false){
           this.errors = [];
           this.waiting = true;
-          // const url = 'https://domaine-de-pipangaille.fr/api/contact'
-          const url = 'http://localhost:3000/api/contact'
+          const url = 'https://domaine-de-pipangaille.fr/api/contact'
+          // const url = 'http://localhost:3000/api/contact'
           const response = $fetch(url, {
             method: 'POST',
             headers: {
