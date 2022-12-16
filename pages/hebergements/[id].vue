@@ -11,7 +11,7 @@
         <h2 class="text-4xl">Photos</h2>
         <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-3 gap-4">
           <nuxt-img
-            @click="OpenPicture($event, hebergementSelected.imgs[0])"
+            @click="OpenPicture($event, img)"
             :width="`${320*1.5}`"
             :height="`${288*1.5}`"
             id="1"
@@ -20,44 +20,8 @@
             placeholder
             preload
             class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
-            v-if="hebergementSelected.imgs[0].link" :src="hebergementSelected.imgs[0].link" 
-            :alt="hebergementSelected.imgs[0].alt" />
-          <nuxt-img
-            @click="OpenPicture($event, hebergementSelected.imgs[1])"
-            :width="`${320*1.5}`"
-            :height="`${288*1.5}`"
-            id="1"
-            quality="90"
-            format="webp"
-            placeholder
-            preload
-            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
-            v-if="hebergementSelected.imgs[1].link" :src="hebergementSelected.imgs[1].link" 
-            :alt="hebergementSelected.imgs[1].alt" />
-          <nuxt-img
-            @click="OpenPicture($event, hebergementSelected.imgs[2])"
-            :width="`${320*1.5}`"
-            :height="`${288*1.5}`"
-            id="1"
-            quality="90"
-            format="webp"
-            placeholder
-            preload
-            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
-            v-if="hebergementSelected.imgs[2].link" :src="hebergementSelected.imgs[2].link" 
-            :alt="hebergementSelected.imgs[2].alt" />
-          <nuxt-img
-            @click="OpenPicture($event, hebergementSelected.imgs[2])"
-            :width="`${320*1.5}`"
-            :height="`${288*1.5}`"
-            id="1"
-            quality="90"
-            format="webp"
-            placeholder
-            preload
-            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
-            v-if="hebergementSelected.imgs[3].link" :src="hebergementSelected.imgs[3].link" 
-            :alt="hebergementSelected.imgs[3].alt" />
+            v-for="img in hebergementSelected.imgs" :key="img" :src="img.link" 
+            :alt="img.alt" />
         </div>
       </div>
       <div class="grid gap-2">
