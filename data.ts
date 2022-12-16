@@ -357,7 +357,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: 'Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares.',
-      longDesc: 'Un grand parc remplit d\'animaux, le tout sur deux circuits, voiture et à pied. Profitez du safari de Peaugres et faites la rencontre avec plus 130 espèces différentes, le tout sur 80 hectares avec plus de 1200 animaux. Traversez l\'enclos des félins dans un solide tunnel de verre, entrez dans la serre tropicale Terre des minus, découvrez la baie des otaries, la serre aux 1000 cachettes, la passerelle des girafes et bien d\'autres choses encore.',
+      longDesc: [{ text: 'Un grand parc remplit d\'animaux, le tout sur deux circuits, voiture et à pied. Profitez du safari de Peaugres et faites la rencontre avec plus 130 espèces différentes, le tout sur 80 hectares avec plus de 1200 animaux. Traversez l\'enclos des félins dans un solide tunnel de verre, entrez dans la serre tropicale Terre des minus, découvrez la baie des otaries, la serre aux 1000 cachettes, la passerelle des girafes et bien d\'autres choses encore.' }],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25399.90187538962!2d4.711628222803869!3d45.26310487550016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f51417d31f614f%3A0x762be489cc59804e!2sSafari%20de%20Peaugres!5e0!3m2!1sen!2sfr!4v165953927!5m2!1sen!2sfr',
       links: [
         {
@@ -389,7 +389,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: 'Un palais de pierres, construit à la main par un seul homme, "le facteur cheval". Une histoire passionnante d\'un projet d\'une vie',
-      longDesc: 'Visitez au cœur d’un jardin luxuriant, un palais de pierres, construit à la main par un seul homme, "le facteur cheval". Une histoire passionnante d\'un projet d\'une vie, 93 000 heures, 33 ans d\'épreuves. Un palais inspiré des cartes postales livrées, qui vous fera voyager. Peuplé de caïmans, éléphants, pélicans, ours, oiseaux… Mais aussi de géants, de fées, de personnages mythologiques ou encore de cascades, d\'architectures de tous les continents. Une œuvre architecturale aussi inclassable qu’universelle.',
+      longDesc: [{ text: 'Visitez au cœur d’un jardin luxuriant, un palais de pierres, construit à la main par un seul homme, "le facteur cheval". Une histoire passionnante d\'un projet d\'une vie, 93 000 heures, 33 ans d\'épreuves. Un palais inspiré des cartes postales livrées, qui vous fera voyager. Peuplé de caïmans, éléphants, pélicans, ours, oiseaux… Mais aussi de géants, de fées, de personnages mythologiques ou encore de cascades, d\'architectures de tous les continents. Une œuvre architecturale aussi inclassable qu’universelle.' }],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.5805896794313!2d5.025934876547189!3d45.2562732710713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f536b05d5e218d%3A0xc38d75a0b5857c29!2sPalais%20Id%C3%A9al%20du%20Facteur%20Cheval!5e0!3m2!1sfr!2sfr!4v1668710162374!5m2!1sfr!2sfr',
       links: [
         {
@@ -429,7 +429,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: 'Au cœur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux.',
-      longDesc: 'Au cœur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux. Venez vous mettre aux défis et essayez d\'atteindre et de réussir le dernier parcours. De nombreuses tyroliennes et obstacles variés sauront vous mettre à l\'épreuve.',
+      longDesc: [{ text: 'Au cœur d\'un bois, profitez en famille en couple ou entre amis d\'une aventure sur 14 parcours pour tous les niveaux. Venez vous mettre aux défis et essayez d\'atteindre et de réussir le dernier parcours. De nombreuses tyroliennes et obstacles variés sauront vous mettre à l\'épreuve.' }],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89692.58883524877!2d4.380942982021311!3d45.37114609720795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5084b3bafc339%3A0xf17cc27dad426b1d!2sAcrobois%20Pilat!5e0!3m2!1sfr!2sfr!4v1668710836619!5m2!1sfr!2sfr',
       links: [
         {
@@ -461,7 +461,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: 'Relate le charme et l\'histoire d\'un passé disparu, celui des bouilleurs ambulants. Exposition, de magnifiques appareils en cuivre provenant de toute la France',
-      longDesc: 'Au cœur de la Vallée du Rhône à Saint Désirat, le musée de l\'Alambic de la Distillerie JEAN GAUTHIER, relate le charme et l\'histoire d\'un passé disparu, celui des bouilleurs ambulants. Sur 1400 m² d\'exposition, de magnifiques appareils en cuivre provenant des quatre coins de France, ainsi qu\'une collection de matériels, ustensiles et autres outils constituent en 30 tableaux la mémoire d\'une partie de notre patrimoine rural',
+      longDesc: [{ text: 'Au cœur de la Vallée du Rhône à Saint Désirat, le musée de l\'Alambic de la Distillerie JEAN GAUTHIER, relate le charme et l\'histoire d\'un passé disparu, celui des bouilleurs ambulants. Sur 1400 m² d\'exposition, de magnifiques appareils en cuivre provenant des quatre coins de France, ainsi qu\'une collection de matériels, ustensiles et autres outils constituent en 30 tableaux la mémoire d\'une partie de notre patrimoine rural' }],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.470119451013!2d4.789534115550604!3d45.25850677909912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e1ecf9f32d7%3A0x963ede95fbaa5f1f!2sMus%C3%A9e%20De%20L\'alambic!5e0!3m2!1sfr!2sfr!4v1668968065898!5m2!1sfr!2sfr',
       links: [
         {
@@ -489,7 +489,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: 'Entre la Vallée du Rhône et le début des Monts d’Ardèche, venez profiter de magnifiques parcours de golf.',
-      longDesc: 'Bien situé dans le parc d’un château du XVIIIème, entre la Vallée du Rhône et le début des Monts d’Ardèche, le parcours est réputé pour sa situation panoramique et la largeur de ses fairways arborés. Ces particularités procurent une agréable sensation d’espace !',
+      longDesc: [{ text: 'Bien situé dans le parc d’un château du XVIIIème, entre la Vallée du Rhône et le début des Monts d’Ardèche, le parcours est réputé pour sa situation panoramique et la largeur de ses fairways arborés. Ces particularités procurent une agréable sensation d’espace !' }],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.76003356285!2d4.687672776548022!3d45.272861371071585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8071d3acf1b43db7!2sGolf%20et%20brasserie%20de%20St-Clair!5e0!3m2!1sfr!2sfr!4v1668714492081!5m2!1sfr!2sfr',
       links: [
         {
@@ -525,7 +525,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: 'Cet itinéraire cyclable vous conduit le long des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles de Côtes du Rhône et de Provence méridionale',
-      longDesc: 'Vous mener des rives du lac Léman aux plages de la Méditerranée à vélo, en suivant le fleuve Rhône, voici l’ambition de ViaRhôna. Cet itinéraire cyclable de 815 km vous conduit des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles des Côtes du Rhône et ceux de la Provence méridionale',
+      longDesc: [{ text: 'Vous mener des rives du lac Léman aux plages de la Méditerranée à vélo, en suivant le fleuve Rhône, voici l’ambition de ViaRhôna. Cet itinéraire cyclable de 815 km vous conduit des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles des Côtes du Rhône et ceux de la Provence méridionale' }],
       links: [
         {
           label: 'Site Internet',
@@ -548,7 +548,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: 'Une expérience nature au cœur de magnifiques paysages à travers la Loire, la Haute-Loire et l’Ardèche, une expérience nature à 360°.',
-      longDesc: 'La Via Fluvia est un itinéraire cyclable de plus de 80km aménagés et sécurisés à travers la Loire, la Haute-Loire et l’Ardèche. Reconnaissable par la diversité de ses paysages, c’est une expérience nature à 360° qui s’offre à vous le long de cette ancienne ligne de chemin de fer accessible au plus grand nombre (vélos, piétons, trottinettes, etc.).',
+      longDesc: [{ text: 'La Via Fluvia est un itinéraire cyclable de plus de 80km aménagés et sécurisés à travers la Loire, la Haute-Loire et l’Ardèche. Reconnaissable par la diversité de ses paysages, c’est une expérience nature à 360° qui s’offre à vous le long de cette ancienne ligne de chemin de fer accessible au plus grand nombre (vélos, piétons, trottinettes, etc.).' }],
       links: [
         {
           label: 'Site Internet',
@@ -575,7 +575,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: 'Partagez un moment convivial en famille, entre amis, collègues ou d’autres passagers, vous vivrez ce moment de totale liberté.',
-      longDesc: 'Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l’échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d’autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables.',
+      longDesc: [{ text: 'Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l’échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d’autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables.' }],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.832788345058!2d4.684443115548301!3d45.19048097909869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f56ca4d6341c61%3A0x8a4da1cf859e9461!2sMONTGOLFI%C3%88RES%20%26%20Cie!5e0!3m2!1sfr!2sfr!4v1668714934393!5m2!1sfr!2sfr',
       links: [
         {
@@ -758,6 +758,38 @@ export const aProximiter = {
       slug: 'au_pre_du_rhone',
     },
     {
+      title: 'La Treille',
+      category: 'se_restaurer',
+      imgs: [
+        {
+          link: "/images/la_treille.jpg",
+          alt: "Salle de restauration décorée de bois, lumineuse par de grandes baies vitrées avec vue sur le Rhône."
+        },
+        {
+          link: "/images/la_treille.jpg",
+          alt: "Salle de restauration décorée de bois, lumineuse par de grandes baies vitrées avec vue sur le Rhône."
+        },
+        {
+          link: "/images/la_treille.jpg",
+          alt: "Salle de restauration décorée de bois, lumineuse par de grandes baies vitrées avec vue sur le Rhône."
+        },
+      ],
+      shortDesc: '',
+      longDesc: '',
+      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d718676.4229992441!2d4.751139167794733!3d45.28155739232987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e0f8983f541%3A0x204c4a81978f9496!2sRestaurant%20de%20la%20Treille!5e0!3m2!1sfr!2sfr!4v1671203545510!5m2!1sfr!2sfr',
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'https://www.restaurant-latreille.com/',
+        },
+        {
+          label: 'Facebook',
+          link: 'https://www.facebook.com/profile.php?id=100065281608840',
+        },
+      ],
+      slug: 'la_treille',
+    },
+    {
       title: 'O\'Daily Truck',
       category: 'se_restaurer',
       imgs: [
@@ -790,7 +822,7 @@ export const aProximiter = {
           link: 'https://www.facebook.com/profile.php?id=100083238615438',
         },
       ],
-      slug: 'o_daily_truck.jpg',
+      slug: 'o_daily_truck',
     },
     {
       title: 'César Pizza',
