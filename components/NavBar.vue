@@ -1,6 +1,6 @@
 <template>
   <nav class="hidden md:flex bg-white dark:bg-eerie-black shadow-lg dark:shadow-lg-dark duration-200 rounded-b-xl fixed top-0 h-24 inset-x-0 z-20">
-    <div class="max-w-screen-lg mx-auto w-full flex justify-between items-center  px-8">
+    <div class="max-w-screen-lg mx-auto w-full flex justify-between items-center px-4">
       <div class="flex items-center gap-2 md:gap-4">
         <NuxtLink class="hidden lg:block h-full py-4" to="/">
           <picture>
