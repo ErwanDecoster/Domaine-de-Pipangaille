@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="grid gap-2">
-          <h2 class="text-4xl uppercase">possession du nom de domaine</h2>
+          <h2 class="text-4xl uppercase">possèssion du nom de domaine</h2>
           <div>
             <p>Hostinger International Ltd |  : <span><a href="https://www.hostinger.fr/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">hostinger.fr</a></span></p>
           </div>
