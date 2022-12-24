@@ -27,20 +27,28 @@
             <p>Telephone : <span><a href="tel:+33625306813" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">06 25 30 68 13</a></span></p>
             <p>Email : <span><a href="mailto:erwan.decoster.pro@gmail.com" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">erwan.decoster.pro@gmail.com</a></span></p>
             <p>Site : <span><a href="https://erwan-decoster.com/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">erwan-decoster.com</a></span></p>
+            <p>Github : <span><a href="https://github.com/ErwanDecoster" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">github.com/ErwanDecoster</a></span></p>
+            <p>Repo du site : <span><a href="https://github.com/ErwanDecoster/Domaine-de-Pipangaille" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">github.com/ErwanDecoster/Domaine-de-Pipangaille</a></span></p>
           </div>
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">HEBERGEMENT DU SITE</h2>
           <div>
-            <p>Hostinger International Ltd |  : <span><a href="https://www.hostinger.fr/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">hostinger.fr</a></span></p>
+            <p>Vercel Inc |  : <span><a href="https://vercel.com/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">vercel.com</a></span></p>
           </div>
         </div>
         <div class="grid gap-2">
-          <h2 class="text-4xl uppercase">HEBERGEMENT DE LA BASE DE DONNÉE</h2>
+          <h2 class="text-4xl uppercase">possession du nom de domaine</h2>
           <div>
-            <!-- <p>Hostinger International Ltd |  : <span><a href="https://www.hostinger.fr/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">hostinger.fr</a></span></p> -->
+            <p>Hostinger International Ltd |  : <span><a href="https://www.hostinger.fr/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">hostinger.fr</a></span></p>
           </div>
         </div>
+        <!-- <div class="grid gap-2"> -->
+          <!-- <h2 class="text-4xl uppercase">HEBERGEMENT DE LA BASE DE DONNÉE</h2> -->
+          <!-- <div> -->
+            <!-- <p>Hostinger International Ltd |  : <span><a href="https://www.hostinger.fr/" target="_blank" class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md">hostinger.fr</a></span></p> -->
+          <!-- </div> -->
+        <!-- </div> -->
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">CRÉDIT PHOTOS</h2>
           <div>
