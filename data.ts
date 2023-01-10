@@ -546,6 +546,10 @@ export const aProximiter = {
           link: "/images/via_fluvia.jpg",
           alt: "Photo d’un groupe de 4 cyclistes traversant un pont entouré de végétation."
         },
+        {
+          link: "/images/via_fluvia.jpg",
+          alt: "Photo d’un groupe de 4 cyclistes traversant un pont entouré de végétation."
+        },
       ],
       shortDesc: 'Une expérience nature au cœur de magnifiques paysages à travers la Loire, la Haute-Loire et l’Ardèche, une expérience nature à 360°.',
       longDesc: [{ text: 'La Via Fluvia est un itinéraire cyclable de plus de 80km aménagés et sécurisés à travers la Loire, la Haute-Loire et l’Ardèche. Reconnaissable par la diversité de ses paysages, c’est une expérience nature à 360° qui s’offre à vous le long de cette ancienne ligne de chemin de fer accessible au plus grand nombre (vélos, piétons, trottinettes, etc.).' }],

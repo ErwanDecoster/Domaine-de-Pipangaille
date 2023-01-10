@@ -4,7 +4,7 @@
       <p class="mx-auto center text-lg">Chargement de la page de réservation. Cela peut prendre un petit moment.</p>
       <p class="mx-auto center text-lg">Si rien ne charge, réserver directement aux 04 75 68 28 24.</p>
     </div>
-    <iframe id="iframe" class="relative w-full h-full font-bold dark:brightness-75"
+    <iframe id="iframe" class="relative w-full h-full font-bold dark:brightness-90"
       title="Inline Frame Example"
       :src="createURL()">
     </iframe>
