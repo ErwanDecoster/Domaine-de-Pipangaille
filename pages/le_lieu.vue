@@ -23,8 +23,8 @@
           />
         </div>
         <nuxt-img
-          :width="`${426*1.5}`"
-          :height="`${272*1.5}`"
+          :width="`${Math.round(426*1.1)}`"
+          :height="`${Math.round(272*1.1)}`"
           quality="90"
           format="webp"
           placeholder
@@ -55,8 +55,8 @@
           <nuxt-img
             v-if="photo.link"
             :id="photo.id"
-            :width="`${160*photo.size*1.25}`"
-            :height="`${320*1.25}`"
+            :width="`${Math.round(160*photo.size*1.15)}`"
+            :height="`${Math.round(320*1.15)}`"
             quality="90"
             format="webp"
             placeholder
@@ -337,7 +337,7 @@ export default {
         // },
         {
           id: 65,
-          title: 'Un endroit ou s\'abriter',
+          title: 'Un endroit où s\'abriter',
           espace: 'Salle commune',
           link: Imgs[65].link,
           alt: Imgs[65].alt,
@@ -345,7 +345,7 @@ export default {
         },
         {
           id: 66,
-          title: 'Un endroit ou s\'abriter',
+          title: 'Un endroit où s\'abriter',
           espace: 'Salle commune',
           link: Imgs[66].link,
           alt: Imgs[66].alt,

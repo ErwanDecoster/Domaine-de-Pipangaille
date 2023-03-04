@@ -5,6 +5,7 @@
   >
     <div class="fixed inset-2 sm:inset-6 bg-white dark:bg-eerie-black p-6 sm:py-16 px-6 rounded-2xl overflow-hidden">
       <button 
+        aria-label="Bouton quitté les images en plein écran"
         class="w-10 h-10 absolute duration-200 hover:rotate-90 top-6 right-6 z-10"
         @click="$emit('close')" 
       >
@@ -13,7 +14,7 @@
       </button>
       <div class="flex flex-col gap-8 sm:gap-2 sm:flex-row h-full">
         <button 
-          aria-label="Boutton voir photo precedente" 
+          aria-label="Bouton voir photo precedente"
           class="hidden sm:block h-40 w-10 duration-150 hover:-translate-x-2 self-center"
           @click="GoPrevious()" 
         >
@@ -46,7 +47,7 @@
           </div>
         </div>
         <button 
-          aria-label="Boutton voir photo suivante" 
+          aria-label="Bouton voir photo suivante" 
           class="hidden sm:block h-40 w-10 duration-150 hover:translate-x-2 self-center"
           @click="GoNext()" 
         >
@@ -93,7 +94,21 @@
 
 <script>
 export default {
-  props: ['imgs', 'actualPict'],
+  // props: ['imgs', 'actualPict'],
+  props: { 
+    imgs: {
+      type: Array,
+      default() {
+        return []
+      },
+    },
+    actualPict: { 
+      type: Array,
+      default() {
+        return []
+      },
+    },
+  },
   emits: ['close'],
   data() {
     return {

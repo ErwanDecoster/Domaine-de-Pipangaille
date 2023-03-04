@@ -9,6 +9,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image-edge',
   ],
+  nitro: {
+    compressPublicAssets: true,
+  },
   runtimeConfig: {
     MAILHOST: process.env.MAILHOST,
     MAILPORT: process.env.MAILPORT,

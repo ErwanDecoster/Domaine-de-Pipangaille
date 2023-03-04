@@ -3,15 +3,13 @@
     <section class="relative">
       <div class="relative">
         <nuxt-img 
-          :width="`${1550*1.5}`"
-          :height="`${632*1.5}`"
+          sizes="xs:100vw sm:100vw lg:100vw xl:100vh xxl:100vw 2xl:100vw"
           quality="90"
           format="webp"
-          class="w-full object-cover h-[75vh] rounded-b-xl bg-northern_light_grey font-bold" 
+          class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] 4xl:h-[65vh] 5xl:h-[50vh] rounded-b-xl bg-northern_light_grey font-bold bg" 
           :src="Imgs[48].link" 
           :alt="Imgs[48].alt" 
         />
-        <!-- <img src="Imgs[48].link" alt="grande images de la facade de la batisse" class="w-full object-cover h-[75vh] rounded-b-xl bg-northern_light_grey font-bold"> -->
         <h1 class="mx-auto max-w-screen-lg w-full pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl text-white drop-shadow-2xl">
           Votre Séjour au<br> Domaine de Pipangaille
         </h1>
@@ -35,8 +33,8 @@
             />
           </div>
           <nuxt-img 
-            :width="`${448*1.5}`"
-            :height="`${252*1.5}`"
+            :width="`${Math.round(448*1.1)}`"
+            :height="`${Math.round(252*1.1)}`"
             quality="90"
             format="webp"
             class="rounded shadow-lg dark:shadow-lg-dark aspect-video object-cover bg-northern_light_grey font-bold" 
@@ -147,28 +145,31 @@
           </div>
           <div class="relative">
             <nuxt-img 
-              :width="`${298*1.5}`"
-              :height="`${168*1.5}`"
+              :width="`${Math.round(298*1.1)}`"
+              :height="`${Math.round(168*1.1)}`"
               quality="90"
               format="webp"
+              loading="lazy"
               class="rounded hover:z-10 shadow-lg w-2/3 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
               :src="Imgs[31].link" 
               :alt="Imgs[31].alt"
             />
             <nuxt-img 
-              :width="`${298*1.5}`"
-              :height="`${168*1.5}`"
+              :width="`${Math.round(298*1.1)}`"
+              :height="`${Math.round(168*1.1)}`"
               quality="90"
               format="webp"
+              loading="lazy"
               class="rounded hover:z-10 shadow-lg w-2/3 ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:left-0 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
               :src="Imgs[60].link" 
               :alt="Imgs[60].alt"
             />
             <nuxt-img 
-              :width="`${298*1.5}`"
-              :height="`${168*1.5}`"
+              :width="`${Math.round(298*1.1)}`"
+              :height="`${Math.round(168*1.1)}`"
               quality="90"
               format="webp"
+              loading="lazy"
               class="rounded hover:z-10 shadow-lg hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
               :src="Imgs[28].link" 
               :alt="Imgs[28].alt"

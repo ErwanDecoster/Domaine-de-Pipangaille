@@ -265,7 +265,7 @@ export const hebergements = [
   },
   {
     id: 4,
-    title: 'Chambre Creole',
+    title: 'Chambre Créole',
     imgs: [
       {
         link: "/images/chambre_creole_1.jpeg",

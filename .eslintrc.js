@@ -17,8 +17,7 @@ module.exports = {
   },
   plugins: ["@typescript-eslint"],
   rules: {
-      // "vue/attribute-hyphenation": ["error", "always" | "never", {
-      //   "ignore": []
-      // }]
+      "vue/attribute-hyphenation": "off",
+      "vue/multi-word-component-names": "off",
   },  
 };

@@ -49,8 +49,8 @@
           :id="id1"
           :src="imgs[0].src" 
           style="z-index: 0;"
-          :width="`${330*1.5}`"
-          :height="`${186*1.5}`"
+          :width="`${Math.round(330*1.1)}`"
+          :height="`${Math.round(186*1.1)}`"
           quality="90"
           format="webp"
           placeholder
@@ -64,8 +64,8 @@
           :id="id2"
           :src="imgs[1].src" 
           style="z-index: 10;"
-          :width="`${330*1.5}`"
-          :height="`${186*1.5}`"
+          :width="`${Math.round(330*1.1)}`"
+          :height="`${Math.round(186*1.1)}`"
           quality="90"
           format="webp"
           placeholder
@@ -126,10 +126,6 @@ export default {
         const asArray = [...parent.children];
         const filtered = asArray.filter(element => element.id != elementInput.target.id);
         this.MoveElements(elementInput.target, filtered[0], ((elementInput.target.parentElement.offsetHeight - elementInput.target.offsetHeight * 2) / 2))
-      }
-      else
-      {
-        console.log('nop');
       }
     },
     MoveElements(elem1, elem2, sizeBetwen) {

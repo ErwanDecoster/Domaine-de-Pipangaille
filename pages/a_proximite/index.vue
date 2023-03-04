@@ -15,8 +15,8 @@
       />
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <nuxt-img
-          :width="`${496*1.5}`"
-          :height="`${280*1.5}`"
+          :width="`${Math.round(496*1.1)}`"
+          :height="`${Math.round(280*1.1)}`"
           quality="90"
           format="webp"
           placeholder

@@ -50,8 +50,8 @@
           :id="id1"
           :src="imgs[0].src" 
           style="z-index: 0;"
-          :width="`${330*1.5}`"
-          :height="`${186*1.5}`"
+          :width="`${Math.round(330*1.1)}`"
+          :height="`${Math.round(186*1.1)}`"
           quality="90"
           format="webp"
           placeholder
@@ -65,8 +65,8 @@
           :id="id2"
           :src="imgs[1].src" 
           style="z-index: 10;"
-          :width="`${330*1.5}`"
-          :height="`${186*1.5}`"
+          :width="`${Math.round(330*1.1)}`"
+          :height="`${Math.round(186*1.1)}`"
           quality="90"
           format="webp"
           placeholder

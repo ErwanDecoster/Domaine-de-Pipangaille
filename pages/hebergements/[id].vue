@@ -20,8 +20,8 @@
             id="1"
             :key="img"
             :src="img.link" 
-            :width="`${320*1.5}`"
-            :height="`${288*1.5}`"
+            :width="`${Math.round(320*1.1)}`"
+            :height="`${Math.round(288*1.1)}`"
             quality="90"
             format="webp"
             placeholder
@@ -86,7 +86,7 @@
       />
       <div>
         <h2 class="text-4xl">
-          Nos autre hebergements
+          Nos autrew hébergements
         </h2>
         <PageCardGroup 
           v-if="hebergementsNoSelected"
