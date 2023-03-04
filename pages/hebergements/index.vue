@@ -1,19 +1,34 @@
 <template>
   <div class="mb-8">
     <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
-      <h1 class="text-4xl sm:text-5xl">Nos hébergements</h1>
+      <h1 class="text-4xl sm:text-5xl">
+        Nos hébergements
+      </h1>
       <CardTypeOn 
-        title="Les chambres d’hôtes" 
+        title="Les chambres d'hôtes" 
         :content="[{ text: `Décoration et aménagement atypiques mêlant originalité et confort nos chambres situées au deuxième étage sont conçues pour vous offrir un séjour dépaysant. Nos quatre chambres thématiques sont fonctionnelles pour vous accueillir le temps d'une nuit, d'un weekend ou d'un séjour pour les particuliers comme pour les professionnels. Le Domaine de Pipangaille vous accueille en couple, en famille ou entre amis.`}]"
-        :imgs="[{ src: Imgs[17].link, alt: Imgs[17].alt }, { src: Imgs[16].link, alt: Imgs[16].alt }]" />
+        :imgs="[{ src: Imgs[17].link, alt: Imgs[17].alt }, { src: Imgs[16].link, alt: Imgs[16].alt }]"
+      />
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
-        <img src="https://www.alsace.shop/wp-content/uploads/2021/06/formule-petit-dejeuner.jpg" alt="photo d'un petit dejeuner" class="aspect-video md:h-full w-full object-cover bg-northern_light_grey font-bold">
+        <img 
+          src="https://www.alsace.shop/wp-content/uploads/2021/06/formule-petit-dejeuner.jpg"
+          alt="photo d'un petit dejeuner"
+          class="aspect-video md:h-full w-full object-cover bg-northern_light_grey font-bold"
+        >
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
-          <h2 class="text-4xl">Petit déjeuner et Table d'hôtes</h2>
-            <p class="grow">Le petit déjeuner est servi de 7h00 à 9h30. Il vous est proposé dans la salle manger ou dans la cour intérieure pleine de charme, à la belle saison. Sous forme de buffet, vous retrouverez le pain traditionnel et ses viennoiseries, du thé Bio, le café du torréfacteur, jus de fruits et yaourts locaux ainsi que des fruits de saison.<br />Sur réservation, la table d'hôte est possible afin de partager un moment convivial et gourmand. Nous vous proposons un menu unique "maison" ou des planches de charcuteries fromages ou salade composée avec des produits locaux et bio.</p>
+          <h2 class="text-4xl">
+            Petit déjeuner et Table d'hôtes
+          </h2>
+          <p class="grow">
+            Le petit déjeuner est servi de 7h00 à 9h30. Il vous est proposé dans la salle manger ou dans la cour intérieure pleine de charme, à la belle saison. Sous forme de buffet, vous retrouverez le pain traditionnel et ses viennoiseries, du thé Bio, le café du torréfacteur, jus de fruits et yaourts locaux ainsi que des fruits de saison.<br>Sur réservation, la table d'hôte est possible afin de partager un moment convivial et gourmand. Nous vous proposons un menu unique "maison" ou des planches de charcuteries fromages ou salade composée avec des produits locaux et bio.
+          </p>
         </div>
       </div>
-      <PageCardGroup v-if="hebergements" :propElementsList="hebergements" targetPage="hebergements"/>
+      <PageCardGroup 
+        v-if="hebergements" 
+        :propElementsList="hebergements"
+        targetPage="hebergements"
+      />
     </section>
   </div>
 </template>

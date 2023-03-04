@@ -1,16 +1,40 @@
 <template>
-  <NuxtLink :to="link" :target="newWindow" class="group relative py-4 px-3 text-md w-max" :style="{ 'font-size': fontSize + 'px' }">
+  <NuxtLink
+    :to="link"
+    :target="newWindow"
+    class="group relative py-4 px-3 text-md w-max"
+    :style="{ 'font-size': fontSize + 'px' }"
+  >
     {{ content }}
     <div class="w-full h-0.5 bg-almond dark:bg-dark-almond overflow-hidden rounded -translate-y-0.5">
-      <div id="progres_bg" class="w-0 duration-200 group-hover:w-full h-full bg-eerie-black dark:bg-white rounded"></div>
+      <div
+        id="progres_bg"
+        class="w-0 duration-200 group-hover:w-full h-full bg-eerie-black dark:bg-white rounded"
+      />
     </div>
   </NuxtLink>
 </template>
 
 <script>
 export default {
-  name: 'Button',
-  props: ['link', 'content', 'fontSize', 'newWindow'],
+  props: { 
+    link: {
+      type: String,
+      default: '',
+    },
+    content: { 
+      type: String,
+      default: '',
+    },
+    fontSize: {
+      type: String,
+      default: '',
+    },
+    newWindow: {
+      type: String,
+      default: '',
+    }
+  },
 };
 </script>
 

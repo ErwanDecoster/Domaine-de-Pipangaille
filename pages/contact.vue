@@ -1,11 +1,14 @@
 <template>
   <div class="flex flex-col gap-8">
     <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
-      <h1 class="text-4xl sm:text-5xl">Contact</h1>
+      <h1 class="text-4xl sm:text-5xl">
+        Contact
+      </h1>
       <CardTypeOn 
         title="Demande particulière" 
         :content="[{ text: `Nous pouvons privatiser le lieu pour vos évenements privés avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, séminaires... Le domaine de Pipangaille ancienne bâtisse de caractère entouré d'un parc arboré, avec de nombreux espaces est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux...nous restons à votre disposition pour toutes demandes.`}]"
-        :imgs="[{ src: Imgs[25].link, alt: Imgs[25].alt }, { src: Imgs[59].link, alt: Imgs[59].alt }]" />
+        :imgs="[{ src: Imgs[25].link, alt: Imgs[25].alt }, { src: Imgs[59].link, alt: Imgs[59].alt }]" 
+      />
     </section>
     <ContactForm />
   </div>

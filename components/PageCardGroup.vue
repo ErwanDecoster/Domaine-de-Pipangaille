@@ -10,14 +10,32 @@
         :shortDesc="element.shortDesc" 
         :target="element.category ? `/${targetPage}/${element.category}/${element.slug}` : `/${targetPage}/${element.slug}`" />
     </div>
-    <button v-if="propElementsList.length > 6" @click="updateElementList" class="mx-auto p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">{{ elementsMinimized === true ? 'Voir moins d\'activité' : 'Voir plus d\'activité' }}</button>
+    <button
+      v-if="propElementsList.length > 6"
+      class="mx-auto p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
+      @click="updateElementList"
+    >
+      {{ elementsMinimized === true ? 'Voir moins d\'activité' : 'Voir plus d\'activité' }}
+    </button>
   </div>
 </template>
 
 <script>
 
 export default {
-  props: ['propElementsList', 'targetPage'],
+  // props: [ 'propElementsList', 'targetPage' ],
+  props: { 
+    propElementsList: {
+      type: Array,
+      default() {
+        return []
+      },
+    },
+    targetPage: { 
+      type: String,
+      default: '',
+    },
+  },
   data() {
     return {
       elementsList: this.propElementsList.slice(0, 6),
