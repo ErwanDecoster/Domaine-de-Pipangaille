@@ -8,14 +8,22 @@
         :imgAlt="element.imgs[0].alt" 
         :title="element.title" 
         :shortDesc="element.shortDesc" 
-        :target="element.category ? `/${targetPage}/${element.category}/${element.slug}` : `/${targetPage}/${element.slug}`" />
+        :target="element.category ? `/${targetPage}/${element.category}/${element.slug}` : `/${targetPage}/${element.slug}`"
+      />
     </div>
     <button
-      v-if="propElementsList.length > 6"
+      v-if="propElementsList.length > 6 && elementsCategory === 'a_visiter'"
       class="mx-auto p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
       @click="updateElementList"
     >
       {{ elementsMinimized === true ? 'Voir moins d\'activité' : 'Voir plus d\'activité' }}
+    </button>
+    <button
+      v-else-if="propElementsList.length > 6 && elementsCategory === 'se_restaurer'"
+      class="mx-auto p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
+      @click="updateElementList"
+    >
+      {{ elementsMinimized === true ? 'Voir moins de lieu de restauration' : 'Voir plus de lieu de restauration' }}
     </button>
   </div>
 </template>
@@ -23,7 +31,6 @@
 <script>
 
 export default {
-  // props: [ 'propElementsList', 'targetPage' ],
   props: { 
     propElementsList: {
       type: Array,
@@ -40,6 +47,7 @@ export default {
     return {
       elementsList: this.propElementsList.slice(0, 6),
       elementsMinimized: false,
+      elementsCategory: this.propElementsList[0].category,
     };
   },
   methods: {

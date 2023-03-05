@@ -3,6 +3,7 @@
     <section class="relative">
       <div class="relative">
         <nuxt-img 
+          fetchpriority="high" 
           sizes="xs:100vw sm:100vw lg:100vw xl:100vh xxl:100vw 2xl:100vw"
           quality="90"
           format="webp"
@@ -35,6 +36,8 @@
           <nuxt-img 
             :width="`${Math.round(448*1.1)}`"
             :height="`${Math.round(252*1.1)}`"
+            loading="lazy"
+            sizes="xs:100vw sm:448px lg:480px"
             quality="90"
             format="webp"
             class="rounded shadow-lg dark:shadow-lg-dark aspect-video object-cover bg-northern_light_grey font-bold" 
@@ -59,6 +62,7 @@
         >
           <img 
             src="/images/icon_fleche_gauche.svg"
+            loading="lazy"
             height="32"
             width="32"
             alt="flèche en direction de la gauche"
@@ -116,6 +120,7 @@
         >
           <img 
             src="/images/icon_fleche_droite.svg" 
+            loading="lazy"
             height="32" 
             width="32"
             alt="flèche en direction de la droite"

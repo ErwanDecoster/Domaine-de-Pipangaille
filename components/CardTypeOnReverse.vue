@@ -50,10 +50,11 @@
           :id="id1"
           :src="imgs[0].src" 
           style="z-index: 0;"
-          :width="`${Math.round(330*1.1)}`"
-          :height="`${Math.round(186*1.1)}`"
+          :width="`${Math.round(378*1.1)}`"
+          :height="`${Math.round(213*1.1)}`"
           quality="90"
           format="webp"
+          loading="lazy"
           placeholder
           preload
           class="rounded duration-150 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
@@ -65,10 +66,11 @@
           :id="id2"
           :src="imgs[1].src" 
           style="z-index: 10;"
-          :width="`${Math.round(330*1.1)}`"
-          :height="`${Math.round(186*1.1)}`"
+          :width="`${Math.round(378*1.1)}`"
+          :height="`${Math.round(213*1.1)}`"
           quality="90"
           format="webp"
+          loading="lazy"
           placeholder
           class="rounded duration-150 shadow-lg dark:shadow-lg-dark ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:right-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
           :alt="imgs[1].alt" 
