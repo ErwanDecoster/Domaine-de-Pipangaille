@@ -13,18 +13,6 @@
   </div>
 </template>
 
-<style>
-/* .page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-} */
-</style>
-
 <script>
 export default {
   data() {
@@ -48,3 +36,30 @@ export default {
   }
 }
 </script>
+
+<style>
+@font-face {
+    font-family: "Nunito";
+    src: local("Nunito"),
+    url(~/assets/font/Nunito-Regular.ttf) format("truetype");
+}
+
+html {
+    font-family: 'Nunito';
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Lora";
+    src: local("Lora"),
+     url(~/assets/font/Lora-Regular.ttf) format("truetype");
+}
+/* .page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+} */
+</style>

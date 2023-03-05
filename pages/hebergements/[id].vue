@@ -17,7 +17,6 @@
         <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-3 gap-4">
           <nuxt-img
             v-for="img in hebergementSelected.imgs"
-            id="1"
             :key="img"
             :src="img.link" 
             :width="`${Math.round(320*1.1)}`"
@@ -26,9 +25,11 @@
             format="webp"
             placeholder
             preload
+            tabindex="0"
             class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
             :alt="img.alt"
             @click="OpenPicture($event, img)"
+            @keyup.enter="OpenPicture($event, photo)"
           />
         </div>
       </div>
@@ -86,7 +87,7 @@
       />
       <div>
         <h2 class="text-4xl">
-          Nos autrew hébergements
+          Nos autres hébergements
         </h2>
         <PageCardGroup 
           v-if="hebergementsNoSelected"
@@ -98,7 +99,7 @@
     <PictureFull
       v-if="PictureFull"
       :imgs="hebergementSelected.imgs"
-      :actualPict="actualPict" 
+      :enterPictIndex="index" 
       @close="PictureFull = false"
     />
   </div>
@@ -116,7 +117,7 @@ export default {
       hebergementsNoSelected: [],
       hebergements: hebergements,
       PictureFull: false,
-      actualPict: 0,
+      index: 0,
     };
   },
   mounted() {
@@ -167,7 +168,7 @@ export default {
     },
     OpenPicture(div, pict) {
       this.PictureFull = true;
-      this.actualPict = pict;
+      this.index = this.hebergementSelected.imgs.indexOf(pict, 0);
     },
   },
 };

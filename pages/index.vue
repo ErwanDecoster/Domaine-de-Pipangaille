@@ -3,16 +3,24 @@
     <section class="relative">
       <div class="relative">
         <nuxt-img 
+          height="807px"
           fetchpriority="high" 
           sizes="xs:100vw sm:100vw lg:100vw xl:100vh xxl:100vw 2xl:100vw"
-          quality="90"
+          quality="80"
           format="webp"
-          class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] 4xl:h-[65vh] 5xl:h-[50vh] rounded-b-xl bg-northern_light_grey font-bold bg" 
+          class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] 4xl:h-[65vh] 5xl:h-[50vh] rounded-b-xl bg-[#61845a] font-bold bg" 
           :src="Imgs[48].link" 
           :alt="Imgs[48].alt" 
         />
-        <h1 class="mx-auto max-w-screen-lg w-full pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl text-white drop-shadow-2xl">
-          Votre Séjour au<br> Domaine de Pipangaille
+        <h1 class="mx-auto max-w-screen-lg w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl">
+          <span class="relative w-max">
+            Votre Séjour au
+            <span class="bg-almond dark:bg-dark-almond absolute -top-1 bottom-0 -inset-x-3 dark:opacity-90 -z-10 rounded-t-lg" />
+          </span>
+          <span class="relative w-max">
+            Domaine de Pipangailles
+            <span class="bg-almond dark:bg-dark-almond absolute -bottom-1 top-0 -inset-x-3 dark:opacity-90 -z-10 rounded-b-lg" />
+          </span>
         </h1>
       </div>
       <ReservationSearcher />
@@ -73,6 +81,7 @@
           <div 
             v-for="slide in slidesUsable" 
             :key="slide"
+            tabindex="0"
             class="w-full flex-none my-auto grid gap-4" 
           >
             <div class="relative w-max mx-auto">
@@ -200,12 +209,6 @@ export default {
           autor: 'Rémi Spérone',
           comment: 'Accueil et séjour enchanteur. Hôtes chaleureux et prévenants Magnifique demeure au  calme  en bordure du fleuve. Nous reviendrons forcement. Parfait !',
         },
-        // {
-        //   platformOrigine: 'Google Maps',
-        //   starReview: 5,
-        //   autor: 'Etienne Villetard',
-        //   comment: 'Un commentaire un peu tardif mais merci à Marie Claire et Bruno pour leur superbe acceuil, magnifique cadre pour se reposer après une journée de vélo sur la Viarhona, d\'autant plus que la voie verte passe juste à côté... Merci aussi pour toutes vos petits attentions, et je vous souhaite une bonne continuation pour vos futurs projets ! 👍',
-        // },
         {
           platformOrigine: 'Google Maps',
           starReview: 1,

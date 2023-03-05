@@ -42,9 +42,11 @@
           :key="photo" 
           class="h-80 group w-full relative rounded overflow-hidden bg-almond shadow cursor-pointer"
           :class="[ {'md:col-span-2': photo.size === 2}, {'md:col-span-3': photo.size === 3}, {'md:col-span-4': photo.size === 4} ]"
+          tabindex="0"
           @click="OpenPicture($event, photo)"
+          @keyup.enter="OpenPicture($event, photo)"
         >
-          <div class="bg-gradient-to-b z-10 from-eerie-black absolute inset-x-0 p-2 pb-10 -translate-y-full duration-300 group-hover:-translate-y-0">
+          <div class="bg-gradient-to-b z-10 from-eerie-black absolute inset-x-0 p-2 pb-10 -translate-y-full duration-300 group-hover:-translate-y-0 group-focus-within:-translate-y-0">
             <h3 class="text-3xl text-white font-semibold">
               {{ photo.title }}
             </h3>
@@ -62,7 +64,7 @@
             placeholder
             loading="lazy"
             :src="photo.link"
-            class="w-full h-full object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110" 
+            class="w-full h-full object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 group-focus-within:scale-110" 
             :alt="photo.alt"
           />
         </div>
@@ -71,7 +73,7 @@
     <PictureFull 
       v-if="PictureFull"
       :imgs="photos"
-      :actualPict="actualPict"
+      :enterPictIndex="index"
       @close="PictureFull = false"
     />
   </div>
@@ -86,7 +88,7 @@ export default {
       Imgs: Imgs,
       route: this.$route.path,
       PictureFull: false,
-      actualPict: 0,
+      index: 0,
       photos:  [
         {
           id: 32,
@@ -328,13 +330,6 @@ export default {
           alt: Imgs[20].alt,
           size: 2,
         },
-        // {
-        //   title: 'Autonne',
-        //   espace: 'Le jardin',
-        //   link: Imgs[64].link,
-        //   alt: Imgs[64].alt,
-        //   size: 2,
-        // },
         {
           id: 65,
           title: 'Un endroit où s\'abriter',
@@ -406,7 +401,7 @@ export default {
   methods: {
     OpenPicture(div, pict) {
       this.PictureFull = true;
-      this.actualPict = pict;
+      this.index = this.photos.indexOf(pict, 0);
     },
   },
 };

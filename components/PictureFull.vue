@@ -3,8 +3,11 @@
     class="fixed inset-0 bg-davys-grey bg-opacity-60 z-50"
     @click.self="$emit('close')"
   >
-    <div class="fixed inset-2 sm:inset-6 bg-white dark:bg-eerie-black p-6 sm:py-16 px-6 rounded-2xl overflow-hidden">
+    <div
+      class="fixed inset-2 sm:inset-6 bg-white dark:bg-eerie-black p-6 sm:py-16 px-6 rounded-2xl overflow-hidden"
+    >
       <button 
+        id="PictureFull"
         aria-label="Bouton quitté les images en plein écran"
         class="w-10 h-10 absolute duration-200 hover:rotate-90 top-6 right-6 z-10"
         @click="$emit('close')" 
@@ -94,7 +97,7 @@
 
 <script>
 export default {
-  // props: ['imgs', 'actualPict'],
+  // props: ['imgs', 'enterPictIndex'],
   props: { 
     imgs: {
       type: Array,
@@ -102,22 +105,21 @@ export default {
         return []
       },
     },
-    actualPict: { 
-      type: Array,
-      default() {
-        return []
-      },
+    enterPictIndex: { 
+      type: Number,
+      default: 0,
     },
   },
   emits: ['close'],
   data() {
     return {
-      index: this.imgs.indexOf(this.actualPict, 0),
+      index: this.enterPictIndex,
       imgWidth: 0,
     }
   },
   mounted() {
     this.UpdateGlobalTranslate();
+    document.getElementById("PictureFull").focus();
     window.addEventListener('resize', () => {
       this.UpdateGlobalTranslate();
     })

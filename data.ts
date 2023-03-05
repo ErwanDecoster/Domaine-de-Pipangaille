@@ -36,11 +36,6 @@ export const hebergements = [
         path: 'icon_lit_separable',
         imgAlt: 'icon_lit_separable',
       },
-      // {
-      //   label: 'Lit double',
-      //   path: 'icon_lit_double',
-      //   imgAlt: 'icon_lit_double',
-      // },
       {
         label: 'Lit simple',
         path: 'icon_lit_simple',
@@ -76,21 +71,6 @@ export const hebergements = [
         path: 'icon_seche_cheveux',
         imgAlt: 'icon_seche_cheveux',
       },
-      // {
-      //   label: 'Lave linge commun',
-      //   path: 'icon_machine_a_laver',
-      //   imgAlt: 'icon_machine_a_laver',
-      // },
-      // {
-      //   label: 'Bureau',
-      //   path: 'icon_table',
-      //   imgAlt: 'icon_table',
-      // },
-      // {
-      //   label: 'Cuisine d\'été',
-      //   path: 'icon_cuisine',
-      //   imgAlt: 'icon_cuisine',
-      // },
       {
         label: 'Canapé',
         path: 'icon_canape',
@@ -131,11 +111,6 @@ export const hebergements = [
         path: 'icon_lit_separable',
         imgAlt: 'icon_lit_separable',
       },
-      // {
-      //   label: 'Lit double',
-      //   path: 'icon_lit_double',
-      //   imgAlt: 'icon_lit_double',
-      // },
       {
         label: 'Wifi Gratuit Haut Debit',
         path: 'icon_wifi',
@@ -166,21 +141,11 @@ export const hebergements = [
         path: 'icon_seche_cheveux',
         imgAlt: 'icon_seche_cheveux',
       },
-      // {
-      //   label: 'Lave linge commun',
-      //   path: 'icon_machine_a_laver',
-      //   imgAlt: 'icon_machine_a_laver',
-      // },
       {
         label: 'Bureau',
         path: 'icon_table',
         imgAlt: 'icon_table',
       },
-      // {
-      //   label: 'Cuisine d\'été',
-      //   path: 'icon_cuisine',
-      //   imgAlt: 'icon_cuisine',
-      // },
     ]
   },
   {
@@ -246,21 +211,11 @@ export const hebergements = [
         path: 'icon_seche_cheveux',
         imgAlt: 'icon_seche_cheveux',
       },
-      // {
-      //   label: 'Lave linge commun',
-      //   path: 'icon_machine_a_laver',
-      //   imgAlt: 'icon_machine_a_laver',
-      // },
       {
         label: 'Bureau',
         path: 'icon_table',
         imgAlt: 'icon_table',
       },
-      // {
-      //   label: 'Cuisine d\'été',
-      //   path: 'icon_cuisine',
-      //   imgAlt: 'icon_cuisine',
-      // },
     ]
   },
   {
@@ -613,9 +568,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: '',
-      // shortDesc: 'Au bord de la ViaRhôna, vous trouverez ce petit restaurant atypique Le relais des Mailles. Découvrez ses plaisirs gourmands dans une ambiance cosy et conviviale.',
       longDesc: '',
-      // longDesc: 'Situé à Laveyron, entre Vienne et Tain l’Hermitage, le bar, restaurant, le Relais des Mailles vous invite à déguster ses plaisirs gourmands, dans la bonne humeur et la convivialité… Tournant le dos à la célèbre Nationale 7, vous découvrirez un paysage magnifique avec ce Rhône majestueux qui servira de tremplin à votre regard pour admirer les monts Ardéchois. Au cœur d\'un parc de grands arbres et de verdure, nous sommes au bord de la Via Rhôna, ce grand axe piéton et cycliste, où la promenade est garantie sans rencontre de véhicules à moteur.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.225223103316!2d4.811978015548724!3d45.202777779098774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53f86aa0f5df3%3A0xadfe40030a3eadd3!2sLe%20Relais%20Des%20Mailles!5e0!3m2!1sfr!2sfr!4v1669483885140!5m2!1sfr!2sfr',
       links: [
         {
@@ -643,9 +596,7 @@ export const aProximiter = {
     //     },
     //   ],
     //   shortDesc: '',
-    //   // shortDesc: 'Au Champenois vous sera proposé des menus du jour variés confectionnés avec des produits frais et locaux et avec amour.',
     //   longDesc: '',
-    //   // longDesc: 'Notre cuisine se compose de produits frais et locaux. De menu du jours variés, d\'une carte weekend plus évoluée tant par ses produits que par son dressage, créé avec passion par la Cheffe cuisinière.',
     //   mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.8066369615626!2d4.799217015551!3d45.271919379099074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53d20a5d3cab5%3A0x906028e4bdbac44a!2sLe%20Champenois!5e0!3m2!1sfr!2sfr!4v1669483673371!5m2!1sfr!2sfr',
     //   links: [
     //     {
@@ -677,9 +628,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: '',
-      // shortDesc: 'Au sein de la Poule noire, venez déguster des spécialités du terroir local dans un cadre chaleureux et original.',
       longDesc: '',
-      // longDesc: 'Le restaurant La Poule Noire vous accueille à Albon, dans le département de la Drôme. Venez déguster nos spécialités régionales dans un cadre agréable, à la fois atypique et chaleureux. Au menu : cuisses de grenouilles, foie gras poêlé, gambas, et bien plus encore. Nous disposons d’une terrasse ombragée et d’une salle de réception pour accueillir vos événements privés et professionnels.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.1526048602063!2d4.847777615550117!3d45.24470677909896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53ec2efffb5cf%3A0x5e00680a9119bd91!2sLa%20Poule%20Noire!5e0!3m2!1sfr!2sfr!4v1669484279763!5m2!1sfr!2sfr',
       links: [
         {
@@ -711,9 +660,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: '',
-      // shortDesc: 'Amoureux de la gastronomie française, le Picotin est L’Endroit qui vous conviendra. Dans une salle sympathique, dégustez des mets raffinés.',
       longDesc: '',
-      // longDesc: 'Les amoureux de cuisine française seront entièrement satisfaits dans notre restaurant. Notre bel extérieur vous permet de vous évader lorsqu’il fait bon. Nos salles climatisées sont parfaites pour une pause rafraîchissante pendant les vagues de chaleur.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.369912579978!2d4.7964493155499515!3d45.24031207909892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e33e8fa4b59%3A0x13b9117667cddb47!2sLE%20PICOTIN!5e0!3m2!1sfr!2sfr!4v1669484403254!5m2!1sfr!2sfr',
       links: [
         {
@@ -745,9 +692,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: '',
-      // shortDesc: 'Profitez d’un espace lumineux et agréable pour vous prélasser et déjeuner, le Rhône s’étendant sous vos yeux.',
       longDesc: '',
-      // longDesc: 'Le restaurant Au Pré du Rhône, situé entre Saint-Vallier et Tain-l\'Hermitage, vous accueille au bord de l\'eau avec une très belle vue sur le Rhône et les collines de l\'Ardèche.',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.687469610846!2d4.829160315547032!3d45.152926979098574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5417229e2ce4d%3A0xa3c08b2f5145b6b3!2sRestaurant%20Au%20Pr%C3%A9%20du%20Rh%C3%B4ne!5e0!3m2!1sfr!2sfr!4v1669484524190!5m2!1sfr!2sfr',
       links: [
         {
@@ -846,9 +791,7 @@ export const aProximiter = {
         },
       ],
       shortDesc: '',
-      // shortDesc: 'lorem ipsul dolor si amet lorem ipsul dolor si amet lorem ipsul dolor si amet',
       longDesc: '',
-      // longDesc: 'Une pizzeria bien située avec de bon produits, posibilité de commander sur place ou  emporter',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.3278141159412!2d4.79721751554998!3d45.24116347909896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e3151ab7961%3A0xb011d2747fe95cca!2sC%C3%A9sar%20Pizza!5e0!3m2!1sfr!2sfr!4v1669484773964!5m2!1sfr!2sfr',
       links: [
         {
@@ -875,9 +818,7 @@ export const aProximiter = {
           alt: "Salle de restauration aux couleurs grises claire et des touches de noir, avec de nombreuses tables."
         },
       ],
-      // shortDesc: 'Pour les carnivores, allez à la Villa Champagnère. Viandes d’exception se bousculent dans votre assiette et bons vins les accompagnent.',
       shortDesc: '',
-      // longDesc: 'Le chef vous propose son menu du marché tous les midis, ses suggestions du jour et une carte de viandes d’exception, le tout fait maison. Plats à base de produits régionaux : crique ardéchoise, ravioles, charcuterie du Pilat… Très belle carte de vins. Viandes d’exception (Blanck angus, viandes maturées…). Nouveau cadre cosy pour déjeuner entre collègues ou diner entre amis à St Rambert d’Albon, à côté de l’hôtel Ibis. Accueil de groupes. Possibilité de privatiser une salle isolée pour repas d’affaire. Suggestions du chef, cocktails maison.',
       longDesc: '',
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.959217030252!2d4.8218889155509155!3d45.26883517909909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e796a8f81d7%3A0x807aeb4c6349b13b!2sLa%20Villa%20Champagn%C3%A8re!5e0!3m2!1sfr!2sfr!4v1669484905306!5m2!1sfr!2sfr',
       links: [
