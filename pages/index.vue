@@ -42,8 +42,8 @@
             />
           </div>
           <nuxt-img 
-            :width="`${Math.round(448*1.1)}`"
-            :height="`${Math.round(252*1.1)}`"
+            width="448"
+            height="252"
             loading="lazy"
             sizes="xs:100vw sm:448px lg:480px"
             quality="90"
@@ -159,8 +159,8 @@
           </div>
           <div class="relative">
             <nuxt-img 
-              :width="`${Math.round(298*1.1)}`"
-              :height="`${Math.round(168*1.1)}`"
+              width="298"
+              height="168"
               quality="90"
               format="webp"
               loading="lazy"
@@ -169,8 +169,8 @@
               :alt="Imgs[31].alt"
             />
             <nuxt-img 
-              :width="`${Math.round(298*1.1)}`"
-              :height="`${Math.round(168*1.1)}`"
+              width="298"
+              height="168"
               quality="90"
               format="webp"
               loading="lazy"
@@ -179,8 +179,8 @@
               :alt="Imgs[60].alt"
             />
             <nuxt-img 
-              :width="`${Math.round(298*1.1)}`"
-              :height="`${Math.round(168*1.1)}`"
+              width="298"
+              height="168"
               quality="90"
               format="webp"
               loading="lazy"

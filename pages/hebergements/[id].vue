@@ -19,8 +19,8 @@
             v-for="img in hebergementSelected.imgs"
             :key="img"
             :src="img.link" 
-            :width="`${Math.round(320*1.1)}`"
-            :height="`${Math.round(288*1.1)}`"
+            width="320"
+            height="288"
             quality="90"
             format="webp"
             placeholder

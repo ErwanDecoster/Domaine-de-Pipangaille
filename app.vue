@@ -42,6 +42,7 @@ export default {
     font-family: "Nunito";
     src: local("Nunito"),
     url(~/assets/font/Nunito-Regular.ttf) format("truetype");
+    font-display: swap;
 }
 
 html {

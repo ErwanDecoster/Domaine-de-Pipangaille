@@ -23,8 +23,8 @@
           />
         </div>
         <nuxt-img
-          :width="`${Math.round(426*1.1)}`"
-          :height="`${Math.round(272*1.1)}`"
+          width="426"
+          height="272"
           quality="90"
           format="webp"
           placeholder
@@ -57,8 +57,8 @@
           <nuxt-img
             v-if="photo.link"
             :id="photo.id"
-            :width="`${Math.round(160*photo.size*1.15)}`"
-            :height="`${Math.round(320*1.15)}`"
+            :width="`${(160*photo.size)}`"
+            height="320"
             quality="90"
             format="webp"
             placeholder
