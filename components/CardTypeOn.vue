@@ -52,6 +52,7 @@
           width="330"
           height="186"
           quality="90"
+          sizes="xs:280px lg:380px"
           format="webp"
           loading="lazy"
           placeholder
@@ -68,6 +69,7 @@
           width="330"
           height="186"
           quality="90"
+          sizes="xs:280px lg:380px"
           format="webp"
           loading="lazy"
           placeholder

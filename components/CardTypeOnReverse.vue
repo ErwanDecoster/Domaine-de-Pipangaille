@@ -49,6 +49,7 @@
           :id="id1"
           :src="imgs[0].src" 
           style="z-index: 0;"
+          sizes="xs:280px lg:380px"
           width="378"
           height="213"
           quality="90"
