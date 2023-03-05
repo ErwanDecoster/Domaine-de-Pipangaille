@@ -1,6 +1,5 @@
 <template>
   <div class="w-full h-full relative">
-    <!-- <div class="bg-almond dark:bg-dark-almond left-0 right-0 md:right-32 absolute top-8 bottom-8 rounded"></div> -->
     <div class="bg-almond dark:bg-dark-almond right-0 left-0 md:left-1/3 absolute top-8 bottom-8 md:bottom-4 rounded" />
     <div class="z-10 relative grid grid-cols-1 md:grid-cols-7">
       <div class="flex flex-col gap-2 h-full p-6 md:p-8 pt-12 md:pt-16 md:pb-12 md:col-span-3 md:order-1">

@@ -31,7 +31,6 @@
               <p>Code NAF : <span>55202</span> /</p>
               <p>Capital social : <span>1 500 euro</span></p>
             </div>
-            <!-- <p>N° de TVA : <span>####</span></p> -->
             <p>
               Telephone : 
               <span>
