@@ -89,7 +89,7 @@ export default {
       return (d < 10) ? '0' + d.toString() : d.toString();
     },
     createURL() {
-      const  newUrl = `https://domaine-de-pipangaille.amenitiz.io/fr/booking/room?info%5Barrival_date%5D=${this.startDate.split('-').reverse().join('%2F')}&info%5Bdeparture_date%5D=${this.endDate.split('-').reverse().join('%2F')}&info%5Btotal_adult%5D=${this.nbAdulte}&info%5Btotal_children%5D=${this.nbEnfant}&info%5Broom_id%5D=&button=&cart_id=42349657`
+      const  newUrl = `https://domaine-de-pipangaille.amenitiz.io/fr/booking/room?info%5Barrival_date%5D=${this.startDate.split('-').reverse().join('%2F')}&info%5Bdeparture_date%5D=${this.endDate.split('-').reverse().join('%2F')}&info%5Btotal_adult%5D=${this.nbAdulte}&info%5Btotal_children%5D=${this.nbEnfant}&info%5Broom_id`
       return (newUrl)
     },
   },
