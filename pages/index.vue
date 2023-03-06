@@ -14,11 +14,11 @@
         />
         <h1 class="mx-auto max-w-screen-lg w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl">
           <span class="relative w-max">
-            Votre Séjour au
+            Votre séjour au
             <span class="bg-almond dark:bg-dark-almond absolute -top-1 bottom-0 -inset-x-3 dark:opacity-90 -z-10 rounded-t-lg" />
           </span>
           <span class="relative w-max">
-            Domaine de Pipangailles
+            Domaine de Pipangaille
             <span class="bg-almond dark:bg-dark-almond absolute -bottom-1 top-0 -inset-x-3 dark:opacity-90 -z-10 rounded-b-lg" />
           </span>
         </h1>
