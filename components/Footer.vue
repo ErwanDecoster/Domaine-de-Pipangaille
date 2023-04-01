@@ -1,5 +1,8 @@
 <template>
-  <footer class="p-8 bg-white dark:bg-eerie-black rounded-t-2xl shadow-lg-inverted dark:shadow-lg-dark-inverted z-10">
+  <footer 
+    v-if="onBookPage" 
+    class="p-8 bg-white dark:bg-eerie-black rounded-t-2xl shadow-lg-inverted dark:shadow-lg-dark-inverted z-10"
+  >
     <div class="max-w-screen-lg mx-auto relative flex justify-center">
       <NuxtLink
         to="/" 
@@ -57,3 +60,21 @@
     </div>
   </footer>
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+    };
+  },
+  computed: {
+    onBookPage() {
+      if (this.$route.path == '/book') {
+        return false;
+      }
+      return true;
+    }
+  },
+};
+</script>

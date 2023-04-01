@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8">
+  <div class="mb-8 md:pt-[5.25rem]">
     <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
         Mentions Légales

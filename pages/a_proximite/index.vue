@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8">
+  <div class="mb-8 md:pt-[5.25rem]">
     <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
         À proximité
@@ -7,23 +7,23 @@
       <CardTypeOn 
         title="À visiter"
         :content="[{ text: `Au cœur de la Vallée du Rhône à proximité de la sortie A7, à 1 h de Lyon, 50 mn de Valence, 1 h 15 de Grenoble, le domaine de Pipangaille bénéficie d'un emplacement privilégié. D'un emplacement apprécié par les touristes à vélos qui parcourent la ViaRhôna car elle longe le domaine. Pour des activités en famille, randonnées à pieds ou en vtt, découvertes oenologiques sur la route des vins, visite du Palais Idéal du Facteur Cheval, du Safari de Peaugres, chemin de fer du Vivarais, le choix est riche et varié...`}]"
-        :imgs="[{ src: Imgs[31].link, alt: Imgs[31].alt }, { src: Imgs[28].link, alt: Imgs[28].alt }]"
+        :imgs="[ Imgs[31], Imgs[28] ]"
       />
       <PageCardGroup
         :propElementsList="aProximiter.aVisiter"
         targetPage="a_proximite"
       />
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
-        <nuxt-img
-          :width="`${Math.round(496*1.1)}`"
-          :height="`${Math.round(280*1.1)}`"
-          quality="90"
-          format="webp"
-          placeholder
-          class="aspect-video md:h-full object-cover bg-northern_light_grey font-bold" 
-          :src="Imgs[2].link"
+        <img 
+          :src="Imgs[2].srcs[0].src" 
           :alt="Imgs[2].alt" 
-        />
+          :srcset="
+            Imgs[2].srcs[0].src + ' 309w, ' +
+              Imgs[2].srcs[1].src + ' 462w'"
+          sizes="462px"
+          class="aspect-video w-full md:h-full object-cover bg-northern_light_grey font-bold"
+          loading="lazy"
+        >
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
           <h2 class="text-4xl">
             Se restaurer
@@ -37,6 +37,7 @@
         <img
           src="https://www.generali.fr/sites/default/files-d8/2019-09/Table_dhote.jpg"
           alt="Description de l'image"
+          loading="lazy"
           class="aspect-video md:h-full md:order-1 object-cover bg-northern_light_grey font-bold"
         >
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">

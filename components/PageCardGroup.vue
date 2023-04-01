@@ -4,8 +4,7 @@
       <PageCard
         v-for="element in elementsList" 
         :key="element" 
-        :img="element.imgs[0].link" 
-        :imgAlt="element.imgs[0].alt" 
+        :img="Imgs[element.imgs[0].id]"
         :title="element.title" 
         :shortDesc="element.shortDesc" 
         :target="element.category ? `/${targetPage}/${element.category}/${element.slug}` : `/${targetPage}/${element.slug}`"
@@ -29,6 +28,7 @@
 </template>
 
 <script>
+import { Imgs } from '@/data';
 
 export default {
   props: { 
@@ -45,6 +45,7 @@ export default {
   },
   data() {
     return {
+      Imgs: Imgs,
       elementsList: this.propElementsList.slice(0, 6),
       elementsMinimized: false,
       elementsCategory: this.propElementsList[0].category,

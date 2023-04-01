@@ -38,15 +38,13 @@
             :key="img" 
             class="img-element min-w-full snap-center"
           >
-            <nuxt-img
-              quality="90"
-              format="webp"
-              class="rounded-lg object-contain font-bold m-auto h-full"
-              width="1920"
-              height="1080"
-              :src="img.link"
+            <img 
+              v-if="img" 
+              :src="img.srcs[3].src" 
               :alt="img.alt" 
-            />
+              class="rounded-lg object-contain font-bold m-auto h-full" 
+              loading="lazy"
+            >
           </div>
         </div>
         <button 
@@ -97,7 +95,6 @@
 
 <script>
 export default {
-  // props: ['imgs', 'enterPictIndex'],
   props: { 
     imgs: {
       type: Array,
@@ -123,6 +120,7 @@ export default {
     window.addEventListener('resize', () => {
       this.UpdateGlobalTranslate();
     })
+    console.log(this.imgs);
   },
   methods: {
     GoNext() {

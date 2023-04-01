@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   css: ['~/assets/css/styles.css'],
+  dev: process.env.NODE_ENV !== 'production',
   postcss: {
     plugins: {
       tailwindcss: {},

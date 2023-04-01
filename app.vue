@@ -1,5 +1,5 @@
 <template>
-  <div class="text-eerie-black bg-white dark:bg-eerie-black dark:text-white md:pt-[5.25rem] min-h-[100vh] h-full">
+  <div class="text-eerie-black bg-white dark:bg-eerie-black dark:text-white min-h-[100vh] h-full">
     <!-- <button v-if="!showModal" @click="showModal = true" class="z-50 fixed top-1 left-1 p-2 bg-almond dark:bg-dark-almond bg-opacity-50 hover:bg-opacity-100 duration-200 rounded text-white">Site en construction infos</button>
     <PopUp v-if="showModal" @close="showModal = false">
       <p class="text-xl">Site en construction</p>
@@ -49,10 +49,15 @@ html {
     font-family: 'Nunito';
 }
 
-h1, h2, h3, h4, h5 {
+/* h1, h2, h3, h4, h5 {
     font-family: "Lora";
     src: local("Lora"),
      url(~/assets/font/Lora-Regular.ttf) format("truetype");
+} */
+h1, h2, h3, h4, h5 {
+    font-family: "WollstonecraftRomance";
+    src: local("WollstonecraftRomance"),
+     url(~/assets/font/WollstonecraftRomance-Regular.ttf) format("truetype");
 }
 /* .page-enter-active,
 .page-leave-active {

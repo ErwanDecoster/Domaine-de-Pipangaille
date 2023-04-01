@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8">
+  <div class="mb-8 md:pt-[5.25rem]">
     <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
         Nos hébergements
@@ -7,7 +7,7 @@
       <CardTypeOn 
         title="Les chambres d'hôtes" 
         :content="[{ text: `Décoration et aménagement atypiques mêlant originalité et confort nos chambres situées au deuxième étage sont conçues pour vous offrir un séjour dépaysant. Nos quatre chambres thématiques sont fonctionnelles pour vous accueillir le temps d'une nuit, d'un weekend ou d'un séjour pour les particuliers comme pour les professionnels. Le Domaine de Pipangaille vous accueille en couple, en famille ou entre amis.`}]"
-        :imgs="[{ src: Imgs[17].link, alt: Imgs[17].alt }, { src: Imgs[16].link, alt: Imgs[16].alt }]"
+        :imgs="[ Imgs[17] , Imgs[16] ]"
       />
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img 

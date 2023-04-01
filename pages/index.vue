@@ -1,17 +1,18 @@
 <template>
-  <div class="mb-8">
+  <div class="mb-8 md:pt-[5.25rem]">
     <section class="relative">
       <div class="relative">
-        <nuxt-img 
-          height="807px"
-          fetchpriority="high" 
-          sizes="xs:100vw sm:100vw lg:100vw xl:100vh xxl:100vw 2xl:100vw"
-          quality="80"
-          format="webp"
-          class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] 4xl:h-[65vh] 5xl:h-[50vh] rounded-b-xl bg-[#61845a] font-bold bg" 
-          :src="Imgs[48].link" 
-          :alt="Imgs[48].alt" 
-        />
+        <img 
+          :src="Imgs[71].srcs[0].src" 
+          :alt="Imgs[71].alt" 
+          :srcset="
+            Imgs[71].srcs[0].src + ' 375w, ' +
+              Imgs[71].srcs[1].src + ' 768w, ' +
+              Imgs[71].srcs[2].src + ' 1920w, ' +
+              Imgs[71].srcs[3].src + ' 2048w'"
+          sizes="100vw"
+          class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] 4xl:h-[65vh] 5xl:h-[50vh] rounded-b-xl bg-[#61845a] font-bold bg"
+        >
         <h1 class="mx-auto max-w-screen-lg w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl">
           <span class="relative w-max">
             Votre séjour au
@@ -41,24 +42,23 @@
               content="En savoir plus"
             />
           </div>
-          <nuxt-img 
-            width="448"
-            height="252"
-            loading="lazy"
-            sizes="xs:100vw sm:448px lg:480px"
-            quality="90"
-            format="webp"
-            class="rounded shadow-lg dark:shadow-lg-dark aspect-video object-cover bg-northern_light_grey font-bold" 
-            :src="Imgs[42].link" 
+          <img 
+            :src="Imgs[42].srcs[1].src" 
             :alt="Imgs[42].alt" 
-          />
+            :srcset="
+              Imgs[42].srcs[1].src + ' 488w, ' +
+                Imgs[42].srcs[2].src + ' 656w'"
+            sizes="488px"
+            class="rounded w-full shadow-lg dark:shadow-lg-dark aspect-video object-cover bg-northern_light_grey font-bold"
+            loading="lazy"
+          >
         </div>
       </div>
       <CardTypeOnReverse 
         title="Nos chambres d'hôtes" 
         :content="[{ text: 'Vous accédez aux chambres en traversant le parc arboré qui vous amène dans la cour intérieure entourée de pierres qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d\'été à votre disposition et une salle de convivialité. Les quatre chambres a la décoration atypique vous invitant au voyage sont situées au deuxième étage.' }]"
-        :imgs="[{ src: Imgs[63].link, alt: Imgs[63].alt }, { src: Imgs[62].link, alt: Imgs[62].alt }]" 
-        :button="[{ target: '/hebergements', content: 'En savoir plus' }]"
+        :imgs="[ Imgs[63], Imgs[62] ]" 
+        :button="[{ target: '/hebergements', content: 'En savoir plus' }, { target: '/book', content: 'Reserver' }]"
       />
     </section>
     <section class="bg-almond dark:bg-dark-almond w-full min-h-[16rem] my-8 flex items-center py-8">
@@ -158,39 +158,38 @@
             />
           </div>
           <div class="relative">
-            <nuxt-img 
-              width="298"
-              height="168"
-              quality="90"
-              sizes="xs:280px lg:380px"
-              format="webp"
+            <img 
+              :src="Imgs[31].srcs[0].src" 
+              :alt="Imgs[31].alt" 
+              :srcset="
+                Imgs[31].srcs[0].src + ' 309w, ' +
+                  Imgs[31].srcs[2].src + ' 378w, ' +
+                  Imgs[31].srcs[1].src + ' 462w'"
+              sizes="298px"
+              class="rounded hover:z-10 shadow-lg w-2/3 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold"
               loading="lazy"
-              class="rounded hover:z-10 shadow-lg w-2/3 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
-              :src="Imgs[31].link" 
-              :alt="Imgs[31].alt"
-            />
-            <nuxt-img 
-              width="298"
-              height="168"
-              quality="90"
-              sizes="xs:280px lg:380px"
-              format="webp"
+            >
+            <img 
+              :src="Imgs[60].srcs[0].src" 
+              :alt="Imgs[60].alt" 
+              :srcset="
+                Imgs[60].srcs[0].src + ' 309w, ' +
+                  Imgs[60].srcs[1].src + ' 462w'"
+              sizes="298px"
+              class="rounded hover:z-10 shadow-lg w-2/3 ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:left-0 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold"
               loading="lazy"
-              class="rounded hover:z-10 shadow-lg w-2/3 ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:left-0 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
-              :src="Imgs[60].link" 
-              :alt="Imgs[60].alt"
-            />
-            <nuxt-img 
-              width="298"
-              height="168"
-              quality="90"
-              sizes="xs:280px lg:380px"
-              format="webp"
+            >
+            <img 
+              :src="Imgs[28].srcs[0].src" 
+              :alt="Imgs[28].alt" 
+              :srcset="
+                Imgs[28].srcs[0].src + ' 309w, ' +
+                  Imgs[28].srcs[1].src + ' 378w, ' +
+                  Imgs[28].srcs[2].src + ' 462w'"
+              sizes="298px"
+              class="rounded hover:z-10 shadow-lg hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 w-3/5 aspect-video object-cover bg-northern_light_grey font-bold"
               loading="lazy"
-              class="rounded hover:z-10 shadow-lg hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 w-3/5 aspect-video object-cover bg-northern_light_grey font-bold" 
-              :src="Imgs[28].link" 
-              :alt="Imgs[28].alt"
-            />
+            >
           </div>
         </div>
       </div>

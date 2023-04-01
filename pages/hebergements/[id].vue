@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8">
+  <div class="mb-8 md:pt-[5.25rem]">
     <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
         {{ hebergementSelected.title }}
@@ -7,7 +7,7 @@
       <CardTypeOn 
         title="La chambre" 
         :content="hebergementSelected.longDesc"
-        :imgs="[{ src: hebergementSelected.imgs[1].link, alt: hebergementSelected.imgs[1].alt }, { src: hebergementSelected.imgs[2].link, alt: hebergementSelected.imgs[1].alt }]" 
+        :imgs="[ Imgs[hebergementSelected.imgs[1].id], Imgs[hebergementSelected.imgs[2].id] ]" 
         :button="[{ target: '/book', content: 'Reserver maintenent' }]"
       />
       <div class="grid gap-2">
@@ -15,22 +15,21 @@
           Photos
         </h2>
         <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-3 gap-4">
-          <nuxt-img
+          <img 
             v-for="img in hebergementSelected.imgs"
             :key="img"
-            :src="img.link" 
-            width="320"
-            height="288"
-            quality="90"
-            format="webp"
-            placeholder
-            preload
-            tabindex="0"
+            :src="Imgs[img.id].srcs[2].src" 
+            :alt="Imgs[img.id].alt" 
+            :srcset="
+              Imgs[img.id].srcs[2].src + ' 320w, ' +
+                Imgs[img.id].srcs[1].src + ' 462w' +
+                Imgs[img.id].srcs[3].src + ' 1980w'"
             class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
-            :alt="img.alt"
+            sizes="320px"
+            loading="lazy"
             @click="OpenPicture($event, img)"
             @keyup.enter="OpenPicture($event, photo)"
-          />
+          >
         </div>
       </div>
       <div class="grid gap-2">
@@ -78,12 +77,12 @@
       <CardTypeOn 
         title="La cuisine d'été" 
         :content="[{ text: `Nous mettons à votre disposition une petite cuisine commune toute équipée. Vous disposez des équipements suivants : Four, Frigo, Plaque de cuisson, Lave vaisselle, Lave linge.` }, { text: `Un emplacement est prévu pour recharger vos batteries de vélos électriques.`}]"
-        :imgs="[{ src: Imgs[20].link, alt: Imgs[20].alt }, { src: Imgs[21].link, alt: Imgs[21].alt }]"
+        :imgs="[Imgs[20], Imgs[21]]"
       />
       <CardTypeOn 
         title="Détente" 
         :content="[{ text: `Une piscine est à votre disposition en pleine saison avec transats. Vous y trouverez le pavillon d\'été, endroit de convivialité pour y prendre un verre, manger une glace, ou tous simplement vous y détendre.` }, { text: `Une salle commune est aussi à votre disposition (canapés, livres, jeux de sociétés)`}]"
-        :imgs="[{ src: Imgs[33].link, alt: Imgs[33].alt }, { src: Imgs[58].link, alt: Imgs[58].alt }]"
+        :imgs="[Imgs[33], Imgs[58]]"
       />
       <div>
         <h2 class="text-4xl">
@@ -98,7 +97,7 @@
     </section>
     <PictureFull
       v-if="PictureFull"
-      :imgs="hebergementSelected.imgs"
+      :imgs="photosPrepared"
       :enterPictIndex="index" 
       @close="PictureFull = false"
     />
@@ -113,6 +112,7 @@ export default {
   data() {
     return {
       Imgs: Imgs,
+      photosPrepared: [],
       hebergementSelected: [],
       hebergementsNoSelected: [],
       hebergements: hebergements,
@@ -126,6 +126,7 @@ export default {
   created() {
     this.SelecteHebergement()
     this.NoSelecteHebergements()
+    this.PreparePhoto()
     useHead({
       title: `${this.hebergementSelected.title} - Domaine de Pipangaille`,
       meta: [
@@ -156,6 +157,11 @@ export default {
     })
   },
   methods: {
+    PreparePhoto() {
+      this.hebergementSelected.imgs.forEach(photo => {
+        this.photosPrepared.push(this.Imgs[photo.id]);
+      });
+    },
     SelecteHebergement() {
       this.hebergements.forEach(hebergement => {
         if (hebergement.slug === this.$route.params.id) {

@@ -126,19 +126,25 @@ export default {
       fullNavOpen: false,
     };
   },
+  watch:{
+    $route (){
+      this.UpdateDefaultStyle();
+    }
+  },
   mounted() {
+    this.UpdateDefaultStyle();
     window.addEventListener('scroll', () => {
       let scrollYPosition = window.scrollY;
       const navBar = document.querySelector('nav');
       const logo = document.querySelector('#logo');
-      if (scrollYPosition > 50)
+      if (scrollYPosition > 50 && this.$route.path !== '/book')
       {
         navBar.classList.remove('h-24')
         navBar.classList.add('h-16')
         logo.classList.remove('h-[4.625rem]')
         logo.classList.add('h-14')
       }
-      else
+      else if (this.$route.path !== '/book')
       {
         navBar.classList.add('h-24')
         navBar.classList.remove('h-16')
@@ -146,6 +152,24 @@ export default {
         logo.classList.remove('h-14')
       }
     });
-  }
+  },
+  methods: {
+    UpdateDefaultStyle() {
+      const navBar = document.querySelector('nav');
+      const logo = document.querySelector('#logo');
+      if (this.$route.path == '/book') {
+        navBar.classList.remove('h-24')
+        navBar.classList.add('h-16')
+        logo.classList.remove('h-[4.625rem]')
+        logo.classList.add('h-14')
+      }
+      else {
+        navBar.classList.add('h-24')
+        navBar.classList.remove('h-16')
+        logo.classList.add('h-[4.625rem]')
+        logo.classList.remove('h-14')
+      }
+    },
+  },
 };
 </script>

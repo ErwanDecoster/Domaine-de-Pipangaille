@@ -44,38 +44,34 @@
         </div>
       </div>
       <div class="relative md:col-span-4">
-        <nuxt-img 
+        <img 
           v-if="imgs[0]" 
           :id="id1"
-          :src="imgs[0].src" 
-          style="z-index: 0;"
-          sizes="xs:280px lg:380px"
-          width="378"
-          height="213"
-          quality="90"
-          format="webp"
-          loading="lazy"
-          placeholder
-          preload
-          class="rounded duration-150 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
+          :src="imgs[0].srcs[0].src" 
           :alt="imgs[0].alt" 
+          :srcset="
+            imgs[0].srcs[0].src + ' 309w, ' +
+              imgs[0].srcs[1].src + ' 462w'"
+          style="z-index: 0;"
+          class="rounded duration-150 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
+          sizes="378px"
+          loading="lazy"
           @mouseover="InvertPicture($event)"
-        />
-        <nuxt-img
+        >
+        <img 
           v-if="imgs[1]" 
           :id="id2"
-          :src="imgs[1].src" 
-          style="z-index: 10;"
-          width="378"
-          height="213"
-          quality="90"
-          format="webp"
-          loading="lazy"
-          placeholder
-          class="rounded duration-150 shadow-lg dark:shadow-lg-dark ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:right-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
+          :src="imgs[1].srcs[0].src" 
           :alt="imgs[1].alt" 
+          :srcset="
+            imgs[1].srcs[0].src + ' 309w, ' +
+              imgs[1].srcs[1].src + ' 462w'"
+          style="z-index: 10;"
+          class="rounded duration-150 shadow-lg dark:shadow-lg-dark ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:right-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
+          sizes="378px"
+          loading="lazy"
           @mouseover="InvertPicture($event)"
-        />
+        >
       </div>
     </div>
   </div>

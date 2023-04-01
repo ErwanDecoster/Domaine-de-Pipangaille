@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8">
+  <div class="mb-8 md:pt-[5.25rem]">
     <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
         {{ aProximiterSelected.title }}
@@ -7,7 +7,7 @@
       <CardTypeOn 
         :title="$route.params.group === 'a_visiter' ? 'Le lieu' : 'Le restaurant'" 
         :content="aProximiterSelected.longDesc"
-        :imgs="[{ src: aProximiterSelected.imgs[1].link, alt: aProximiterSelected.imgs[1].alt }, { src: aProximiterSelected.imgs[2].link, alt: aProximiterSelected.imgs[2].alt }]"
+        :imgs="[Imgs[aProximiterSelected.imgs[1].id], Imgs[aProximiterSelected.imgs[2].id]]"
         :links="aProximiterSelected.links" 
       />
       <div 
@@ -38,10 +38,12 @@
 
 <script>
 import { aProximiter } from '@/data';
+import { Imgs } from '@/data';
 
 export default {
   data() {
     return {
+      Imgs: Imgs,
       aProximiterSelected: [],
       aProximiterNoSelected: [],
       aProximiter: aProximiter,
@@ -49,6 +51,8 @@ export default {
   },
   mounted() {
     window.scrollTo(0,0)
+    console.log(this.aProximiterSelected);
+    console.log(this.Imgs[this.aProximiterSelected.imgs[1]]);
   },
   created() {
     this.SelecteAProximite();

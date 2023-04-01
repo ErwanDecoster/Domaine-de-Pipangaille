@@ -1,6 +1,6 @@
 <template>
-  <div class="relative h-[215vh]">
-    <div class="p-8 absolute inset-8 md:inset-20 rounded-xl">
+  <div class="md:pt-14 relative h-[100vh]">
+    <div class="p-8 absolute inset-8 md:inset-16 rounded-xl">
       <p class="mx-auto center text-lg">
         Chargement de la page de réservation. Cela peut prendre un petit moment.
       </p>
