@@ -564,6 +564,34 @@ export const aProximiter = {
     //   slug: 'la_treille',
     // },
     {
+      title: 'La belle époque',
+      category: 'se_restaurer',
+      imgs: [
+        { id: 72 },
+        { id: 73 },
+        { id: 74 },
+      ],
+      shortDesc: "Une cuisine traditionnelle, faite maison, avec un maximum de circuits courts.",
+      longDesc: [
+        { text: "Restaurant La Belle Epoque au Creux de la Thine, à 2 kms." },
+        { text: "Accueil chaleureux en toute convivialité." }, 
+        { text: "Une cuisine traditionnelle, faite maison, avec un maximum de circuits courts." },
+        { text: "Terrasse ombragée, Parking." },
+        { text: "Ouvert tous les midis du Lundi au Vendredi + mardi soir et jeudi soir." },
+      ],
+      links: [
+        {
+          label: 'Facebook',
+          link: 'https://www.facebook.com/people/La-belle-epoque/100089023786667',
+        },
+        {
+          label: 'Instagram',
+          link: 'https://www.instagram.com/restaurant_la_belle_epoque26/',
+        },
+      ],
+      slug: 'la_belle_epoque',
+    },
+    {
       title: 'O\'Daily Truck',
       category: 'se_restaurer',
       imgs: [
@@ -1317,5 +1345,29 @@ export const Imgs = [
       { src: "/images/photo_17_2048x820.webp" },
     ],
     alt: "Grand espace avec une piscine ombragée, une terrasse ensoleillée qui l'entoure. On voit de nombreux transats sur la pelouse artificielle ainsi qu'un cabanon en bois et le pavillon."
+  },
+  {
+    id: 72,
+    srcs: [
+      { src: "/images/la_belle_epoque_1_309x232.webp" },
+      { src: "/images/la_belle_epoque_1_462x347.webp" },
+    ],
+    alt: "Photo de l'intérieure du restaurant nous y voyons de beaux lustres et de jolies tables dressés."
+  },
+  {
+    id: 73,
+    srcs: [
+      { src: "/images/la_belle_epoque_2_309x232.webp" },
+      { src: "/images/la_belle_epoque_2_462x347.webp" },
+    ],
+    alt: "Photo de l'intérieure du restaurant nous y voyons de beaux lustres éclairant la pièce d'une lumière chaleureuse et de jolies tables dressées devant un mur peint d'une couleur bleu."
+  },
+  {
+    id: 74,
+    srcs: [
+      { src: "/images/la_belle_epoque_3_309x232.webp" },
+      { src: "/images/la_belle_epoque_3_462x347.webp" },
+    ],
+    alt: "Photo de l'intérieure du restaurant nous y voyons de beaux lustres éclairant la pièce d'une lumière chaleureuse et de jolies tables dressées. Au fond nous pouvons apercevoir le bar."
   },
 ]
