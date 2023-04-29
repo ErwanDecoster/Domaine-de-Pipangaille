@@ -16,7 +16,7 @@
       >
       <div>
         <p class="text-xl text-center py-2">
-          Reserver :
+          Réserver  :
         </p>
         <div class="flex flex-row justify-center object-cover gap-2 items-center">
           <a 
