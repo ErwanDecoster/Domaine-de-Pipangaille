@@ -41,7 +41,7 @@
                   Email :
                 </p>
                 <a 
-                  href="mailto:contact@domaine-de-pipangaille.fr"
+                  href="mailto:contact@domaine-de-pipangaille.fr?&body=contact via email site internet %0D%0A %0D%0A Nom :   %0D%0A Prénom :    %0D%0A Télephone :     %0D%0A"
                   target="_blank" 
                   class="pl-2 underline decoration-2 underline-offset-2 decoration-almond dark:decoration-dark-almond text-md block"
                 >
