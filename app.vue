@@ -11,7 +11,7 @@
       </div> -->
       <img 
         class="h-fill"
-        src="./images/post_concert_pipangaille_22.04.2023.png" 
+        src="/images/post_concert_pipangaille_22.04.2023.png" 
         alt=""
       >
       <div>
