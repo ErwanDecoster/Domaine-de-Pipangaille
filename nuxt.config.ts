@@ -22,12 +22,15 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/image-edge',
-    '@nuxtjs/sitemap'
+    'nuxt-simple-sitemap',
   ],
   nitro: {
     compressPublicAssets: true,
   },
   runtimeConfig: {
+    public: {
+      siteUrl: process.env.PUBLIC_SITE_URL || 'https://domaine-de-pipangaille.fr',
+    },
     MAILHOST: process.env.MAILHOST,
     MAILPORT: process.env.MAILPORT,
     MAILUSER: process.env.MAILUSER,
