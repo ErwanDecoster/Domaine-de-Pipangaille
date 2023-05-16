@@ -5,6 +5,7 @@
   >
     <div class="fixed inset-2 h-max max-h-[calc(100%-16px)] max-w-[700px] overflow-y-scroll m-auto sm:inset-20 bg-white dark:bg-eerie-black p-8 sm:p-16 rounded-2xl">
       <button 
+        aria-label="fermer la popup"
         class="w-10 h-10 absolute duration-200 hover:rotate-90 top-2 right-2 sm:top-6 sm:right-6"
         @click="$emit('close')"
       >

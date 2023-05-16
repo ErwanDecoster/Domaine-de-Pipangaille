@@ -10,7 +10,7 @@
         <p>Site en cours de construction, certaine fonctionctionnaliteé ne sont pas encore au point, n'hesitez pas a donner votre avis sur votre experience. <a class="text-dark-almond dark:text-almond hover:underline" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScrA6ZsyNeKY2iKPFHmfDSfFC_EmouGnmTjgDRDo-T1ZBvuCw/viewform?usp=sf_link">Google Form</a></p>
       </div> -->
       <img 
-        class="h-fill"
+        class="h-fill w-full"
         src="/images/post_concert_pipangaille_22.04.2023.webp" 
         alt="Poster de l'événement concert aux chambres d'hôtes Domaine de Pipangaille"
       >
