@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/image-edge',
+    '@nuxtjs/sitemap'
   ],
   nitro: {
     compressPublicAssets: true,
