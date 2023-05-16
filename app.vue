@@ -11,8 +11,8 @@
       </div> -->
       <img 
         class="h-fill"
-        src="/images/post_concert_pipangaille_22.04.2023.png" 
-        alt=""
+        src="/images/post_concert_pipangaille_22.04.2023.webp" 
+        alt="Poster de l'événement concert aux chambres d'hôtes Domaine de Pipangaille"
       >
       <div>
         <p class="text-xl text-center py-2">
