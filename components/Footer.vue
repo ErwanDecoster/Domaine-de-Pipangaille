@@ -48,7 +48,7 @@
             content="Contact" 
           />
           <ButtonInline 
-            link="/legal_notice"
+            link="/mentions_legales"
             content="Mentions Légales"
           />
           <ButtonInline 
@@ -70,7 +70,7 @@ export default {
   },
   computed: {
     onBookPage() {
-      if (this.$route.path == '/book') {
+      if (this.$route.path == '/reserver') {
         return false;
       }
       return true;

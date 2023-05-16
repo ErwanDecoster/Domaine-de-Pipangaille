@@ -8,7 +8,7 @@
         title="La chambre" 
         :content="hebergementSelected.longDesc"
         :imgs="[ Imgs[hebergementSelected.imgs[1].id], Imgs[hebergementSelected.imgs[2].id] ]" 
-        :button="[{ target: '/book', content: 'Reserver maintenent' }]"
+        :button="[{ target: '/reserver', content: 'Reserver maintenent' }]"
       />
       <div class="grid gap-2">
         <h2 class="text-4xl">

@@ -58,7 +58,7 @@
         title="Nos chambres d'hôtes" 
         :content="[{ text: 'Vous accédez aux chambres en traversant le parc arboré qui vous amène dans la cour intérieure entourée de pierres qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d\'été à votre disposition et une salle de convivialité. Les quatre chambres a la décoration atypique vous invitant au voyage sont situées au deuxième étage.' }]"
         :imgs="[ Imgs[63], Imgs[62] ]" 
-        :button="[{ target: '/hebergements', content: 'En savoir plus' }, { target: '/book', content: 'Reserver' }]"
+        :button="[{ target: '/hebergements', content: 'En savoir plus' }, { target: '/reserver', content: 'Reserver' }]"
       />
     </section>
     <section class="bg-almond dark:bg-dark-almond w-full min-h-[16rem] my-8 flex items-center py-8">

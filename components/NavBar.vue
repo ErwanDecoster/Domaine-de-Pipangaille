@@ -39,7 +39,7 @@
           content="À proximité"
         />
         <ButtonInline 
-          link="/book"
+          link="/reserver"
           content="Réserver"
         />
       </div>
@@ -104,7 +104,7 @@
         @click="fullNavOpen = !fullNavOpen"
       />
       <ButtonInline
-        link="/book"
+        link="/reserver"
         content="Réserver"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
@@ -137,14 +137,14 @@ export default {
       let scrollYPosition = window.scrollY;
       const navBar = document.querySelector('nav');
       const logo = document.querySelector('#logo');
-      if (scrollYPosition > 50 && this.$route.path !== '/book')
+      if (scrollYPosition > 50 && this.$route.path !== '/reserver')
       {
         navBar.classList.remove('h-24')
         navBar.classList.add('h-16')
         logo.classList.remove('h-[4.625rem]')
         logo.classList.add('h-14')
       }
-      else if (this.$route.path !== '/book')
+      else if (this.$route.path !== '/reserver')
       {
         navBar.classList.add('h-24')
         navBar.classList.remove('h-16')
@@ -157,7 +157,7 @@ export default {
     UpdateDefaultStyle() {
       const navBar = document.querySelector('nav');
       const logo = document.querySelector('#logo');
-      if (this.$route.path == '/book') {
+      if (this.$route.path == '/reserver') {
         navBar.classList.remove('h-24')
         navBar.classList.add('h-16')
         logo.classList.remove('h-[4.625rem]')
