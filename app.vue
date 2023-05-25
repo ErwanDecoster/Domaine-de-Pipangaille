@@ -9,32 +9,6 @@
       <!-- <div>
         <p>Site en cours de construction, certaine fonctionctionnaliteé ne sont pas encore au point, n'hesitez pas a donner votre avis sur votre experience. <a class="text-dark-almond dark:text-almond hover:underline" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScrA6ZsyNeKY2iKPFHmfDSfFC_EmouGnmTjgDRDo-T1ZBvuCw/viewform?usp=sf_link">Google Form</a></p>
       </div> -->
-      <img 
-        class="h-fill w-full"
-        src="/images/post_concert_pipangaille_22.04.2023.webp" 
-        alt="Poster de l'événement concert aux chambres d'hôtes Domaine de Pipangaille"
-      >
-      <div>
-        <p class="text-xl text-center py-2">
-          Réserver  :
-        </p>
-        <div class="flex flex-row justify-center object-cover gap-2 items-center">
-          <a 
-            href="mailto:contact@domaine-de-pipangaille.fr?subject=Réservation concert 20 mai 2023&body=Nom : %0D%0A Prénom : %0D%0A Nombre de personnes :"
-            target="_blank" 
-            class="pl-2 underline decoration-2 underline-offset-2 decoration-almond dark:decoration-dark-almond text-md block"
-          >
-            contact@domaine-de-pipangaille.fr
-          </a>
-          <p>ou</p>
-          <a 
-            href="tel:+33603605430"
-            class="pl-2 underline decoration-2 underline-offset-2 decoration-almond dark:decoration-dark-almond text-md block"
-          >
-            06 03 60 54 30
-          </a>
-        </div>
-      </div>
     </PopUp>
     <NavBar />
     <NuxtPage />
