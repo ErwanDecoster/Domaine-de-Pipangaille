@@ -6,7 +6,7 @@
       </h1>
       <CardTypeOn 
         title="Demande particulière" 
-        :content="[{ text: `Nous pouvons privatiser le lieu pour vos évenements privés avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, séminaires... Le domaine de Pipangaille ancienne bâtisse de caractère entouré d'un parc arboré, avec de nombreux espaces est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux...nous restons à votre disposition pour toutes demandes.`}]"
+        :content="[{ text: `Nous pouvons privatiser le lieu pour vos événements privés, avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, des séminaires... Le domaine de Pipangaille, ancienne bâtisse de caractère entourée d'un parc arboré, avec de nombreux espaces, est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux... nous restons à votre disposition pour toutes demandes.` }]"
         :imgs="[Imgs[25], Imgs[59]]" 
       />
     </section>
