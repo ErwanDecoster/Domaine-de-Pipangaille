@@ -2,72 +2,71 @@
 
 ## Description
 
-Le domaine de pipangaille est un établissement proposant des hébergements principalement des chambres d'hôtes. L'établissement est situé en France à Andancette en Drôme. Dans l'objectif de presenter l'établissement a ses clients et de diminuer le nombre de réservations via les OTA (Online Tourism Agency) ce site internet fut développé.
-Le site a pour objectif de presenter le domaine et ses hébergements mais également de proposer différents endroits à visiter aux alentours. Une page pour les réservations fut aussi mise en place avec un formulaire sur la page principale permet la recherche rapide de disponibilité.
+Le Domaine de Pipangaille est un établissement proposant principalement des chambres d'hôtes. Il est situé en France à Andancette en Drôme. Dans le but de présenter l'établissement à ses clients et de réduire le nombre de réservations via les OTA (Online Tourism Agency), ce site internet a été développé. Le site a pour objectif de présenter le domaine et ses hébergements, ainsi que de proposer différents endroits à visiter aux alentours. Une page de réservation a également été mise en place, avec un formulaire sur la page principale permettant une recherche rapide de disponibilité.
 
-## Points important
+## Points importants
 
-Dans le développement du site plusieurs points on était traité avec une plus grande attention :
-- Le responsive 
+Dans le développement du site, plusieurs points ont été traités avec une plus grande attention :
+- Le responsive design
 - La rapidité du site
-- Les textes alternatifs (ALT, Arias label)
-- Les metas description
+- Les textes alternatifs (ALT, Aria label)
+- Les méta-descriptions
 - La qualité des images
-- Le confort visuel (Dark mode)
+- Le confort visuel (mode sombre)
 
-### Le responsive
+### Le responsive design
 
-L'ensemble du site a etait concu et désigné de façon à ce que le site s'adapte parfaitement à tous les formats d'écrans dans la limite du possible (ne marche pas pour l'Apple Watch)
+L'ensemble du site a été conçu et designé de manière à ce qu'il s'adapte parfaitement à tous les formats d'écrans, dans la limite du possible (ne fonctionne pas pour l'Apple Watch).
 
 ### Rapidité du site
 
-L'utilisation du Nuxt nous permet de précharger les contenus des pages dont le lien apparaît a l'écran. Nuxt nous a permis d'utiliser Nuxt-image qui génère des images pour la taille demander, cela nous évite de devoir stocker nos images en différentes tailles. Les images sont également toutes compresser de façon à maximiser leurs vitesses de chargement.
+L'utilisation de Nuxt nous permet de précharger les contenus des pages dont le lien apparaît à l'écran. Nuxt nous a également permis d'utiliser Nuxt Image, qui génère des images de la taille demandée, évitant ainsi de stocker nos images en différentes tailles. De plus, toutes les images sont compressées pour maximiser leur vitesse de chargement.
 
-### Texte alternatife
+### Textes alternatifs
 
-Nous avons fait de notre possible pour que le site soit accessible à tous, chaque image possède un texte alternatif qui sera lisible par les lecteurs d'écran ou tous autre dispositif dans ce genre. Tous les boutons ne disposant pas d'un texte visible possèdent également un Aria Label.
+Nous avons fait de notre mieux pour rendre le site accessible à tous. Chaque image possède un texte alternatif qui peut être lu par les lecteurs d'écran et autres dispositifs similaires. Tous les boutons ne disposant pas d'un texte visible possèdent également un Aria Label.
 
-### Meta description
+### Méta-descriptions
 
-Pour un bon référencement sur les moteurs de recherche et pour un joli rendu lors du partage des pages, nous avons mis en place des metas description sur chacune de nos pages celles-ci nous permettent de mieux nous positionner pour le référencement en choisissant les textes que nous souhaitons faire apparaitre mais également de faire de joli rendu lors du partage de nos pages sur les réseaux sociaux ou par messages.
+Pour améliorer notre référencement sur les moteurs de recherche et pour obtenir un rendu attrayant lors du partage des pages, nous avons mis en place des méta-descriptions pour chacune de nos pages. Cela nous permet de mieux nous positionner en choisissant les textes que nous souhaitons faire apparaître et d'obtenir un rendu élégant lors du partage de nos pages sur les réseaux sociaux ou par messages.
 
 ### Qualité des images
 
-Toutes nos images sont stockées en 4k mais sont généré par le serveur dans la taille afficher à l'écran de nos visiteurs. Les images de mauvaise qualité on était traité avec différents outils d'upscale. tous les logos, pictogramme, icône... sont en format SVG pour être le plus léger possible et toujours bénéficier d'une bonne qualité.
+Toutes nos images sont stockées en 4k, mais sont générées par le serveur dans la taille affichée à l'écran de nos visiteurs. Les images de mauvaise qualité ont été améliorées avec différents outils d'upscale. Tous les logos, pictogrammes, icônes, etc., sont au format SVG pour être aussi légers que possible tout en conservant une bonne qualité.
 
 ### Confort visuel
 
-Toutes les couleurs du site sont placées de façon à ce que les textes restent toujours parfaitement lisible. Dans le cas on nous devait placer un texte par-dessus une image celui-ci a subi l'ajout d'ombres le rendent plus lisible et l'image a été sélectionnée de sorte que le contraste reste toujours bon.
+Toutes les couleurs du site sont choisies de manière à ce que les textes restent toujours parfaitement lisibles. Si un texte doit être superposé à une image, il a été doté d'une ombre pour le rendre plus lisible, et l'image a été sélectionnée de manière à ce que le contraste reste toujours bon.
 
-## Technologies utilisé
+## Technologies utilisées
 
 - Nuxt
-- Nuxt-image
-- Tailwindcss
+- Nuxt Image
+- Tailwind CSS
 
-## Outils utilisé
+## Outils utilisés
 
 Design : Figma
 
-Création logo : Figma
+Création du logo : Figma
 
-Développement : Vscode
+Développement : VSCode
 
-Améliorer qualité d'image : https://www.upscale.media/fr/upload
+Amélioration de la qualité des images : [Upscale Media](https://www.upscale.media/fr/upload)
 
-Achat nom de domaine : hostinger
+Achat du nom de domaine : Hostinger
 
 Hébergement : Vercel
 
+# Installation du projet
 
-# Instalation du projet
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Consultez la [documentation de Nuxt 3](https://nuxt.com/docs/getting-started/introduction) pour en savoir plus.
 
-Attention le projet utilise des variables d'environnement qui ne sont pas présente sur ce repo.
+Attention, le projet utilise des variables d'environnement qui ne sont pas incluses dans ce dépôt.
 
-## Setup
+## Configuration
 
-Make sure to install the dependencies:
+Assurez-vous d'installer les dépendances :
 
 ```bash
 # yarn
@@ -80,10 +79,9 @@ npm install
 pnpm install --shamefully-hoist
 ```
 
-## Development Server
+## Serveur de développement
 
-Start the development server on http://localhost:3000
-
+Lancez le serveur de développement à l'adresse http://localhost:3000
 ```bash
 npm run dev
 ```
