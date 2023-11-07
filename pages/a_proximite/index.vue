@@ -9,10 +9,34 @@
         :content="[{ text: `Au cœur de la Vallée du Rhône à proximité de la sortie A7, à 1 h de Lyon, 50 mn de Valence, 1 h 15 de Grenoble, le domaine de Pipangaille bénéficie d'un emplacement privilégié. D'un emplacement apprécié par les touristes à vélos qui parcourent la ViaRhôna car elle longe le domaine. Pour des activités en famille, randonnées à pieds ou en vtt, découvertes oenologiques sur la route des vins, visite du Palais Idéal du Facteur Cheval, du Safari de Peaugres, chemin de fer du Vivarais, le choix est riche et varié...`}]"
         :imgs="[ Imgs[31], Imgs[28] ]"
       />
-      <PageCardGroup
-        :propElementsList="aProximiter.aVisiter"
-        targetPage="a_proximite"
-      />
+      <div class="grid gap-2">
+        <div class="grid gap-2">
+          <h2 class="text-2xl">
+            Filtrer
+          </h2>
+          <div class="flex gap-2 justify-starts">
+            <button class="p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">
+              Promenade
+            </button>
+            <button class="p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">
+              Famille
+            </button>
+            <button class="p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">
+              Promenade velo
+            </button>
+            <button class="p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">
+              Sport
+            </button>
+            <button class="p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-max text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md">
+              Visite
+            </button>
+          </div>
+        </div>
+        <PageCardGroup
+          :propElementsList="aProximiter.aVisiter"
+          targetPage="a_proximite"
+        />
+      </div>
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img 
           :src="Imgs[2].srcs[0].src" 

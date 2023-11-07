@@ -11,10 +11,10 @@ export const hebergements = [
     shortDesc: "Notre chambre familiale aux couleurs chaleureuse, avec toilette salle d'eau privée, canapé et possibilité de lit séparé.",
     longDesc: [
       {
-        text: "L'ambiance marocaine aux couleurs chaleureuses vous depaysera pour cette chambre de 20 m², adaptée pour 2 adultes et un enfant ou pour un sejour en amoureux. La chambre est composée d'un lit de 1.80 m, d'un canapé lit, d'un lavabo double vasque et d'une douche spacieuse \"Tadelakt\", d'un toilette séparé et d'un petit espace de rangement. Le couchage peut etre coufiguré en deux lits simples.'"
+        text: "L'ambiance marocaine aux couleurs chaleureuses vous depaysera pour cette chambre de 20 m², adaptée pour 2 adultes et un enfant ou pour un sejour en amoureux. La chambre est composée d'un lit de 1.80 m, d'un canapé lit, d'un lavabo double vasque et d'une douche spacieuse \"Tadelakt\", d'un toilette séparé et d'un petit espace de rangement. Le couchage peut etre coufiguré en deux lits simples."
       },
       {
-        text: "Pour votre bien-être la chambre est climatisée en été.'"
+        text: "Pour votre bien-être la chambre est climatisée en été."
       },
     ],
     slug: 'chambre_marocaine',
@@ -80,7 +80,7 @@ export const hebergements = [
         text: "Une autre invitation au voyage avec la chambre 'africaine', une chambre en couleur qui vous fera voyager. Concue pour 2 personnes, en lit double de 1.80 m ou 2 lits simples, la chambre possède un lavabo, une douche ouverte, un toilette séparé, un petit espace de rangement, une table et 2 chaises."
       },
       {
-        text: "Pour votre bien-être la chambre est climatisée en été.'"
+        text: "Pour votre bien-être la chambre est climatisée en été."
       },
     ],
     slug: 'chambre_africaine',
@@ -258,6 +258,7 @@ export const aProximiter = {
     {
       title: 'Safari de Peaugres',
       category: 'a_visiter',
+      sous_category: ['famille'],
       imgs: [
         { id: 60 },
         { id: 60 },
@@ -281,6 +282,7 @@ export const aProximiter = {
     {
       title: 'Palais Idéal du Facteur Cheval',
       category: 'a_visiter',
+      sous_category: ['famille', 'visite', 'coup de coeur'],
       imgs: [
         { id: 31 },
         { id: 31 },
@@ -312,6 +314,7 @@ export const aProximiter = {
     {
       title: 'Acrobois Pilat',
       category: 'a_visiter',
+      sous_category: ['famille', 'sport'],
       imgs: [
         { id: 1 },
         { id: 1 },
@@ -335,6 +338,7 @@ export const aProximiter = {
     {
       title: 'Musée de l\'Alambic',
       category: 'a_visiter',
+      sous_category: ['famille', 'visite'],
       imgs: [
         { id: 29 },
         { id: 29 },
@@ -354,6 +358,7 @@ export const aProximiter = {
     {
       title: 'Golf de Saint-Clair',
       category: 'a_visiter',
+      sous_category: ['sport'],
       imgs: [
         { id: 22 },
         { id: 22 },
@@ -380,7 +385,8 @@ export const aProximiter = {
     },
     {
       title: 'ViaRhôna',
-      category: 'a_visiter',
+      category: [ 'a_visiter' ],
+      sous_category: ['promenade velo', 'promenade', 'sport'],
       imgs: [
         { id: 0 },
         { id: 0 },
@@ -399,6 +405,7 @@ export const aProximiter = {
     {
       title: 'ViaFluvia',
       category: 'a_visiter',
+      sous_category: ['promenade velo', 'promenade', 'sport'],
       imgs: [
         { id: 61 },
         { id: 61 },
@@ -417,6 +424,7 @@ export const aProximiter = {
     {
       title: 'Montgolfières & Cie',
       category: 'a_visiter',
+      sous_category: ['famille', 'visite', 'sport'],
       imgs: [
         { id: 28 },
         { id: 28 },
@@ -436,6 +444,185 @@ export const aProximiter = {
         },
       ],
       slug: 'mongolfieres_et_cie',
+    },
+    {
+      title: "Train de l'ardèche",
+      category: 'a_visiter',
+      sous_category: ['famille', 'visite', 'coup de coeur'],
+      imgs: [
+        { id: 81 },
+        { id: 81 },
+        { id: 81 },
+      ],
+      shortDesc: "Embarquez pour un voyage unique en Ardèche à bord du train à vapeur, découvrez des paysages exceptionnels.",
+      longDesc: [
+        { text: "Une activité incontournable pendant vos vacances en Ardèche : embarquez pour un voyage exceptionnel à bord de l'unique train de voyageurs circulant dans tout le département ardéchois." },
+        { text: "Nos authentiques locomotives à vapeur vous emmènent au cœur d'une nature préservée, le long d'une rivière sauvage. Des gorges du Doux à la montagne ardéchoise, profitez de paysages à couper le souffle." }
+      ],
+      mapslink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.889945565062!2d4.785396876973903!3d45.06774355980253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f542ee0be4daeb%3A0xced9ed03fcfbfc84!2sTrain%20de%20l'Ard%C3%A8che!5e0!3m2!1sfr!2sfr!4v1699292973669!5m2!1sfr!2sfr",
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'https://www.trainardeche.fr/',
+        },
+        {
+          label: 'Billetterie',
+          link: 'https://www.trainardeche.fr/les-voyages/',
+        },
+        {
+          label: 'Facebook',
+          link: 'https://www.facebook.com/trainardeche07/',
+        },
+        {
+          label: 'Instagram',
+          link: 'https://www.instagram.com/traindelardeche/',
+        },
+      ],
+      slug: 'train_de_l_ardeche',
+    },
+    {
+      title: "La fabrique de Julien",
+      category: 'a_visiter',
+      sous_category: ['famille', 'visite'],
+      imgs: [
+        { id: 77 },
+        { id: 77 },
+        { id: 77 },
+      ],
+      shortDesc: "Re découvrez votre enfance à La Fabrique de Julien, Bourg Argental : bonbons artisanaux, visites, délices gourmands.",
+      longDesc: [
+        { text: "Re plongez en enfance à La Fabrique de Julien, Bourg Argental. Des bonbons artisanaux, sans gluten ni conservateurs, disponibles à Lyon et Bourg Argental." },
+        { text: "Nos maîtres confiseurs lyonnais ont créé une variété de délices : sucettes, caramels, guimauves, confiseries au chocolat, et bien plus." }, 
+        { text: "Visitez la fabrique et le musée pour découvrir leur savoir-faire. Découvrez une expérience gourmande avec des saveurs d'antan" },
+      ],
+      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5632220.474156089!2d-3.7942353004358234!3d46.42674576287124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f50e9245aa9609%3A0xfdb142f0cca33da4!2sLa%20Fabrique%20de%20Julien!5e0!3m2!1sfr!2sfr!4v1699292916482!5m2!1sfr!2sfr',
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'https://www.fabrique-julien.fr/',
+        },
+      ],
+      slug: 'la_fabrique_de_julien',
+    },
+    {
+      title: "Le Nougat de Montségur",
+      category: 'a_visiter',
+      sous_category: ['visite'],
+      imgs: [
+        { id: 80 },
+        { id: 80 },
+        { id: 80 },
+      ],
+      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
+      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.565783006997!2d4.844310976948855!3d44.359970506432354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b576d972d14e19%3A0xf24766592b34c9a9!2sLe%20Nougat%20de%20Montsegur!5e0!3m2!1sfr!2sfr!4v1699293264985!5m2!1sfr!2sfr',
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'http://lenougatdemontsegur.com/',
+        },
+        {
+          label: 'Facebook',
+          link: 'https://www.facebook.com/LenougatdeMontsegur',
+        },
+      ],
+      slug: 'le_nougat_de_montsegur',
+    },
+    {
+      title: "Château de Grignan",
+      category: 'a_visiter',
+      sous_category: ['famille', 'visite'],
+      imgs: [
+        { id: 75 },
+        { id: 75 },
+        { id: 75 },
+      ],
+      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
+      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.693052782849!2d4.906192676950954!3d44.41894400256858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b57a916b9ae53f%3A0x3dddef62740f24a9!2sCh%C3%A2teau%20de%20Grignan!5e0!3m2!1sfr!2sfr!4v1699293349698!5m2!1sfr!2sfr',
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'https://www.chateaux-ladrome.fr/fr/chateau-de-grignan',
+        },
+        {
+          label: 'Facebook',
+          link: 'https://www.facebook.com/chateauxdeladrome',
+        },
+        {
+          label: 'billetterie',
+          link: 'https://chateaux-ladrome.notre-billetterie.fr/formulaire?dial=sommairegeneral',
+        },
+      ],
+      slug: 'chateau_de_grignan',
+    },
+    {
+      title: "Labyrinthe végétal",
+      category: 'a_visiter',
+      sous_category: ['famille', 'coup de coeur'],
+      imgs: [
+        { id: 78 },
+        { id: 78 },
+        { id: 78 },
+      ],
+      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
+      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.2422525455586!2d4.818862076967201!3d44.87771877237721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b54c97839d2593%3A0x67542e4940b3b3d8!2zbGFieXJpbnRoZSB2w6lnw6h0YWw!5e0!3m2!1sfr!2sfr!4v1699293410152!5m2!1sfr!2sfr',
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'https://labyleo.com/',
+        },
+        {
+          label: 'Facebook',
+          link: 'https://www.facebook.com/labyrinthevegetal/',
+        },
+      ],
+      slug: 'labyrinthe_vegetal',
+    },
+    {
+      title: "Compagnie des Canotiers Rhône & Saône",
+      category: 'a_visiter',
+      sous_category: ['visite', 'coup de coeur'],
+      imgs: [
+        { id: 76 },
+        { id: 76 },
+        { id: 76 },
+      ],
+      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
+      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.5346671430843!2d4.816064676998021!3d45.740426114964926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb0379e15237%3A0x84ce35aa518fc43d!2sCompagnie%20des%20Canotiers%20Rh%C3%B4ne%20%26%20Sa%C3%B4ne!5e0!3m2!1sfr!2sfr!4v1699293472340!5m2!1sfr!2sfr',
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'https://www.canotiersboatnbike.com/',
+        },
+        {
+          label: 'Facebook',
+          link: 'https://www.facebook.com/canotiersboatnbike',
+        },
+      ],
+      slug: 'compagnie_des_canotiers_rhone_et_saone',
+    },
+    {
+      title: "Le chateau d'Anet",
+      category: 'a_visiter',
+      sous_category: ['visite', 'famille'],
+      imgs: [
+        { id: 79 },
+        { id: 79 },
+        { id: 79 },
+      ],
+      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
+      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.989469225792!2d1.436084077113906!3d48.85841120070413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6ad9b9fc12581%3A0xb9ee1bb171a28a!2sCh%C3%A2teau%20d&#39;Anet!5e0!3m2!1sfr!2sfr!4v1699293510016!5m2!1sfr!2sfr',
+      links: [
+        {
+          label: 'Site Internet',
+          link: 'https://www.chateau-d-anet.com/',
+        },
+      ],
+      slug: 'le_chateau_d_anet',
     },
   ],
   seRestaurer: [
@@ -1369,5 +1556,61 @@ export const Imgs = [
       { src: "/images/la_belle_epoque_3_462x347.webp" },
     ],
     alt: "Photo de l'intérieure du restaurant nous y voyons de beaux lustres éclairant la pièce d'une lumière chaleureuse et de jolies tables dressées. Au fond nous pouvons apercevoir le bar."
+  },
+  {
+    id: 75,
+    srcs: [
+      { src: "/images/chataeu_de_grignan_309x232.webp" },
+      { src: "/images/chataeu_de_grignan_462x347.webp" },
+    ],
+    alt: "Le chateau de grignan au somet d'une coline"
+  },
+  {
+    id: 76,
+    srcs: [
+      { src: "/images/compagnie_des_canotiers_rhone_et_saone_309x232.webp" },
+      { src: "/images/compagnie_des_canotiers_rhone_et_saone_462x347.webp" },
+    ],
+    alt: "un bateau sur l'eau"
+  },
+  {
+    id: 77,
+    srcs: [
+      { src: "/images/la_fabrique_de_julien_309x232.webp" },
+      { src: "/images/la_fabrique_de_julien_462x347.webp" },
+    ],
+    alt: "un chef versant du chocolat sur une machine"
+  },
+  {
+    id: 78,
+    srcs: [
+      { src: "/images/labyrinthe_vegetal_309x232.webp" },
+      { src: "/images/labyrinthe_vegetal_462x347.webp" },
+    ],
+    alt: "Un labyrinthe de plantes représentant des formes, vue de haut"
+  },
+  {
+    id: 79,
+    srcs: [
+      { src: "/images/le_chateau_d_anet_309x232.webp" },
+      { src: "/images/le_chateau_d_anet_462x347.webp" },
+    ],
+    alt: "Un grand bâtiment en pierre avec une horloge."
+  },
+  {
+    id: 80,
+    srcs: [
+      { src: "/images/le_nougat_de_montsegur_309x232.webp" },
+      { src: "/images/le_nougat_de_montsegur_462x347.webp" },
+    ],
+    alt: "Étagères colorées recouvertes de nougat, bonbon et autres sucreries."
+  },
+  {
+    id: 81,
+    srcs: [
+      { src: "/images/train_de_l_ardeche_309x232.webp" },
+      { src: "/images/train_de_l_ardeche_462x347.webp" },
+    ],
+    alt: "Un train sortant d'un tunnel traversant un pont au-dessus d'une rivière le tout entouré d'une végétation verdoyante"
   },
 ]
