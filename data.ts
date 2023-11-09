@@ -386,7 +386,7 @@ export const aProximiter = {
     {
       title: 'ViaRhôna',
       category: [ 'a_visiter' ],
-      sous_category: ['promenade velo', 'promenade', 'sport'],
+      sous_category: ['velo', 'promenade', 'sport'],
       imgs: [
         { id: 0 },
         { id: 0 },
@@ -405,7 +405,7 @@ export const aProximiter = {
     {
       title: 'ViaFluvia',
       category: 'a_visiter',
-      sous_category: ['promenade velo', 'promenade', 'sport'],
+      sous_category: ['velo', 'promenade', 'sport'],
       imgs: [
         { id: 61 },
         { id: 61 },
@@ -448,7 +448,7 @@ export const aProximiter = {
     {
       title: "Train de l'ardèche",
       category: 'a_visiter',
-      sous_category: ['famille', 'visite', 'coup de coeur'],
+      sous_category: ['famille', 'visite', 'coup de coeur', 'velo'],
       imgs: [
         { id: 81 },
         { id: 81 },
@@ -513,8 +513,13 @@ export const aProximiter = {
         { id: 80 },
         { id: 80 },
       ],
-      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
-      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      shortDesc: "Délices artisanaux de Montségur-sur-Lauzon : nougat traditionnel, sans additifs, dans la pure tradition provençale.",
+      longDesc: [
+        { text: "Au sein de la pittoresque Drôme provençale, niché dans le charmant village de Montségur-sur-Lauzon, nous sommes fiers de créer et de proposer à la vente nos propres délices." },
+        { text: "Chaque produit est conçu avec une attention méticuleuse, cuisiné dans des chaudrons en cuivre pour assurer une qualité authentique. " },
+        { text: "Notre nougat traditionnel se distingue par son engagement envers la pureté, dépourvu de colorants et de conservateurs. " },
+        { text: "Chacun de nos ingrédients est soigneusement sélectionné, perpétuant la tradition immuable de ce joyau gastronomique ancré dans le terroir provençal." },
+      ],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.565783006997!2d4.844310976948855!3d44.359970506432354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b576d972d14e19%3A0xf24766592b34c9a9!2sLe%20Nougat%20de%20Montsegur!5e0!3m2!1sfr!2sfr!4v1699293264985!5m2!1sfr!2sfr',
       links: [
         {
@@ -537,8 +542,10 @@ export const aProximiter = {
         { id: 75 },
         { id: 75 },
       ],
-      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
-      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      shortDesc: "Château de Grignan, joyau historique dominant, alliant Renaissance et classicisme, offre une immersion dans l'art de vivre à travers les siècles.",
+      longDesc: [
+        { text: "Surplombant le village, le Château de Grignan, témoin de l'histoire, mêle Renaissance et classicisme français. Transformé en demeure de plaisance au 17e siècle, il fut résidence de la marquise de Sévigné. Démantelé à la Révolution, reconstruit au 20e siècle, il appartient au Département de la Drôme depuis 1979. Classé Monument historique et labellisé Musée de France, le château offre une plongée dans l'art de vivre à travers les siècles." }
+      ],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.693052782849!2d4.906192676950954!3d44.41894400256858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b57a916b9ae53f%3A0x3dddef62740f24a9!2sCh%C3%A2teau%20de%20Grignan!5e0!3m2!1sfr!2sfr!4v1699293349698!5m2!1sfr!2sfr',
       links: [
         {
@@ -565,8 +572,10 @@ export const aProximiter = {
         { id: 78 },
         { id: 78 },
       ],
-      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
-      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      shortDesc: "Labyrinthe de maïs à Charmes : aventure ludique, sportive et intellectuelle dans un cadre préservé depuis 2001.",
+      longDesc: [
+        { text: "Niché dans un cadre préservé, ce labyrinthe de maïs promet joie aux petits comme aux grands. Depuis 2001, perché sur les hauteurs de Charmes au cœur d'une exploitation agricole, il offre une expérience ludique, sportive et intellectuelle pour tous les âges. Laissez-vous séduire par l'aventure !" }
+      ],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.2422525455586!2d4.818862076967201!3d44.87771877237721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b54c97839d2593%3A0x67542e4940b3b3d8!2zbGFieXJpbnRoZSB2w6lnw6h0YWw!5e0!3m2!1sfr!2sfr!4v1699293410152!5m2!1sfr!2sfr',
       links: [
         {
@@ -583,14 +592,16 @@ export const aProximiter = {
     {
       title: "Compagnie des Canotiers Rhône & Saône",
       category: 'a_visiter',
-      sous_category: ['visite', 'coup de coeur'],
+      sous_category: ['visite', 'coup de coeur', 'velo'],
       imgs: [
         { id: 76 },
         { id: 76 },
         { id: 76 },
       ],
-      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
-      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
+      shortDesc: "Canotier solaire sur le Rhône : croisière gourmande, vue sur Saint Joseph, dégustation de vin, choix de programmes avec option vélo.",
+      longDesc: [
+        { text: "Embarquez à bord d'un canotier électro-solaire pour une croisière gourmande, une balade, ou un dîner sur le Rhône. Savourez une dégustation de vins tout en admirant les coteaux du Saint Joseph. Une escapade inoubliable pour les amateurs de plaisirs gustatifs. Choisissez votre programme, et selon les options, profitez de la possibilité d'emporter votre vélo à bord." }
+      ],
       mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.5346671430843!2d4.816064676998021!3d45.740426114964926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb0379e15237%3A0x84ce35aa518fc43d!2sCompagnie%20des%20Canotiers%20Rh%C3%B4ne%20%26%20Sa%C3%B4ne!5e0!3m2!1sfr!2sfr!4v1699293472340!5m2!1sfr!2sfr',
       links: [
         {
@@ -613,9 +624,11 @@ export const aProximiter = {
         { id: 79 },
         { id: 79 },
       ],
-      shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
-      longDesc: [{ text: "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables." }],
-      mapslink: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.989469225792!2d1.436084077113906!3d48.85841120070413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6ad9b9fc12581%3A0xb9ee1bb171a28a!2sCh%C3%A2teau%20d&#39;Anet!5e0!3m2!1sfr!2sfr!4v1699293510016!5m2!1sfr!2sfr',
+      shortDesc: "Explorez le Château d'Anet, joyau Renaissance en Eure-et-Loir. Vivez l'histoire de Henri II et Diane de Poitiers lors d'une visite guidée captivante.",
+      longDesc: [
+        { text: "Les hôtes du Château d'Anet, Eure-et-Loir, vous invitent à la détente et à l'échange culturel. Explorez ce joyau de la Renaissance française avec une visite guidée, plongez dans l'histoire du monument construit en 1548 par Henri II pour Diane de Poitiers. Un guide vous dévoilera la demeure, les objets de Diane, et la chapelle où elle repose." }
+      ],
+      mapslink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.989469225792!2d1.436084077113906!3d48.85841120070413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6ad9b9fc12581%3A0xb9ee1bb171a28a!2sCh%C3%A2teau%20d'Anet!5e0!3m2!1sfr!2sfr!4v1699293510016!5m2!1sfr!2sfr",
       links: [
         {
           label: 'Site Internet',
