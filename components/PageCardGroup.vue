@@ -129,7 +129,6 @@ export default {
     },
     GetFilter() {
       const filters = []
-      console.log(this.propElementsList);
       this.propElementsList.forEach(element => {
         element.sous_category.forEach(sous_category_elem => {
           filters.indexOf(sous_category_elem) === -1 && filters.push(sous_category_elem);
@@ -142,7 +141,6 @@ export default {
       if (newVisibleCategory == false)
       {
         this.filteredElementsList = this.propElementsList;
-        console.log(this.propElementsList);
         this.updateElementList()
         return ;
       }
