@@ -11,7 +11,7 @@
           </h2>
           <div>
             <p>
-              Identification de la Société : 
+              Identification de la Société :
               <span>SAS Domaine de Pipangaille</span>
             </p>
             <p>
@@ -22,7 +22,7 @@
                   target="_blank"
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  1 Quartier Les Marettes 26140 Andancette
+                  1 Quartier Les Marettes, 26140, Andancette
                 </a>
               </span>
             </p>
@@ -32,7 +32,7 @@
               <p>Capital social : <span>1 500 euro</span></p>
             </div>
             <p>
-              Telephone : 
+              Téléphone : 
               <span>
                 <a 
                   href="tel:+334 75 68 28 24"
@@ -65,7 +65,7 @@
           <div>
             <p>Société : <span>Decoster Erwan</span></p>
             <p>
-              Telephone : 
+              Téléphone : 
               <span>
                 <a 
                   href="tel:+33625306813"
@@ -168,7 +168,7 @@
             CRÉDIT PHOTOS
           </h2>
           <div>
-            <p>Toutes les photos sont la propieter de SAS Domaine de Pipangaille.</p>
+            <p>Toutes les photos sont la propriété de SAS Domaine de Pipangaille.</p>
           </div>
         </div>
         <div class="grid gap-2">
@@ -176,18 +176,18 @@
             UTILISATION DES COOKIES
           </h2>
           <div>
-            <p>Ce site utilise les cookie dans un but de statistique et de fonctionnement uniquement.</p>
+            <p>Ce site utilise les cookies dans un but de statistiques et de fonctionnement uniquement.</p>
           </div>
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            UTILISATION DES DONNEES PERSONNELLES
+            UTILISATION DES DONNÉES PERSONNELLES
           </h2>
           <div>
-            <p>En utilisant les formulaires present sur le site vous acceptez le stockage des donnée ainsi transmise et le traitement de celles-ci, elle sont concervé et traité a des fin de gestion, d’historique et d’amelioration de nos services.</p>
-            <p>Les données sont concervé pour une durée resonable de 10 ans.</p>
+            <p>En utilisant les formulaires présents sur le site, vous acceptez le stockage des données ainsi transmises et le traitement de celles-ci. Elles sont conservées et traitées à des fins de gestion, d'historique et d'amélioration de nos services.</p>
+            <p>Les données sont conservées pour une durée raisonnable de 10 ans.</p>
             <p>
-              Pour toute demande de suppresion, de rectification ou d’accés aux données veuiller effectuer une demande par email a : 
+              Pour toute demande de suppression, de rectification ou d'accès aux données, veuillez effectuer une demande par email à : 
               <span>
                 <a 
                   href="mailto:contact@domaine-de-pipangaille.fr"
@@ -197,7 +197,7 @@
                   contact@domaine-de-pipangaille.fr 
                 </a>
               </span>
-              ou par courrier à l'addresse : 
+              ou par courrier à l'adresse : 
               <span>
                 <a 
                   href="https://www.google.fr/maps/dir//domaine+de+pipangaille/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47f53e41af912869:0xe0c49553166e1500?sa=X&ved=2ahUKEwj59IKk0474AhUa_4UKHTamDM0Q9Rd6BAhbEAQ"
@@ -212,11 +212,14 @@
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            RESPONSABILITÉ DE LA SAS Domaine de Pipangaille
+            RESPONSABILITÉ DE LA SAS DOMAINE DE PIPANGAILLE
           </h2>
           <div>
             <p>Dans les conditions autorisées par la loi, la SAS Domaine de Pipangaille n'encourt aucune responsabilité :</p>
-            <p>Pour toute imprécision, inexactitude, omission, ou pour tous dommages résultant d'une intrusion d'un tiers ayant entraîné une modification des informations mises à disposition sur le Site, en cas de dommages provoqués à raison de l'accès d'un tiers non-autorisé sur le Site ou rendant impossible son accès.</p>
+            <ul>
+              <li>Pour toute imprécision, inexactitude, omission ou pour tous dommages résultant d'une intrusion d'un tiers ayant entraîné une modification des informations mises à disposition sur le Site.</li>
+              <li>En cas de dommages provoqués en raison de l'accès d'un tiers non autorisé sur le Site ou rendant impossible son accès.</li>
+            </ul>
             <p>Le visiteur est informé que l'accès au Site pourra être interrompu à tout moment par la SAS Domaine de Pipangaille en raison de maintenance, de sécurité ou toute autre contrainte technique.</p>
           </div>
         </div>

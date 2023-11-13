@@ -56,7 +56,7 @@
       </div>
       <CardTypeOnReverse 
         title="Nos chambres d'hôtes" 
-        :content="[{ text: 'Vous accédez aux chambres en traversant le parc arboré qui vous amène dans la cour intérieure entourée de pierres qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d\'été à votre disposition et une salle de convivialité. Les quatre chambres a la décoration atypique vous invitant au voyage sont situées au deuxième étage.' }]"
+        :content="[{ text: `Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d'été à votre disposition ainsi qu'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étage.` }]"
         :imgs="[ Imgs[63], Imgs[62] ]" 
         :button="[{ target: '/hebergements', content: 'En savoir plus' }, { target: '/reserver', content: 'Reserver' }]"
       />
@@ -147,10 +147,10 @@
               À proximité
             </h2>
             <p class="grow">
-              Idéalement situé proche des grands axes au cœur de la vallée du Rhône, lors de votre séjour au Domaine de Pipangaille vous pourrez visiter : le Safari de Peaugres, le Palais Idéal du facteur Cheval, le Musée de l’Alambic... Vous initiez au Golf avec le golf d'Albon et de St Clair.
+              Idéalement situé proche des grands axes au cœur de la vallée du Rhône, lors de votre séjour au Domaine de Pipangaille, vous pourrez visiter : le Safari de Peaugres, le Palais Idéal du facteur Cheval, le Musée de l’Alambic... Vous pourrez également vous initier au golf avec le golf d'Albon et de St Clair.
             </p>
             <p class="grow">
-              Au cœur du Saint Joseph vous pourrez aussi déguster les vins locaux et visiter de nombreuses caves. Randonnées, promenades, espace aquatique, vol en mongolfiere sont également à proximité. Mais aussi la ViaRhôna en accès direct ou encore la ViaFluvia pas très loin.
+              Au cœur du Saint Joseph, vous pourrez aussi déguster les vins locaux et visiter de nombreuses caves. Randonnées, promenades, espace aquatique, vol en montgolfière sont également à proximité. Mais aussi la ViaRhôna en accès direct, ou encore la ViaFluvia, pas très loin.
             </p>
             <ButtonPrimary 
               link="/a_proximite" 

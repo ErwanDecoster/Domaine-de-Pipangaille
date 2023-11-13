@@ -45,7 +45,7 @@
       </div>
       <ButtonSecondary 
         link="/contact"
-        content="Nous contactez"
+        content="Nous contacter"
       />
     </div>
   </nav>
@@ -111,7 +111,7 @@
       />
       <ButtonInlineSecondary
         link="/contact"
-        content="Nous contactez"
+        content="Nous contacter"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />

@@ -6,7 +6,7 @@
       </h1>
       <CardTypeOn 
         title="Les chambres d'hôtes" 
-        :content="[{ text: `Décoration et aménagement atypiques mêlant originalité et confort nos chambres situées au deuxième étage sont conçues pour vous offrir un séjour dépaysant. Nos quatre chambres thématiques sont fonctionnelles pour vous accueillir le temps d'une nuit, d'un weekend ou d'un séjour pour les particuliers comme pour les professionnels. Le Domaine de Pipangaille vous accueille en couple, en famille ou entre amis.`}]"
+        :content="[{ text: `Une décoration et un aménagement atypiques, mêlant originalité et confort, caractérisent nos chambres situées au deuxième étage, conçues pour vous offrir un séjour dépaysant. Nos quatre chambres thématiques sont fonctionnelles pour vous accueillir le temps d'une nuit, d'un week-end ou d'un séjour, que vous soyez particuliers ou professionnels. Le Domaine de Pipangaille vous accueille en couple, en famille ou entre amis.` }]"
         :imgs="[ Imgs[17] , Imgs[16] ]"
       />
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
@@ -20,7 +20,7 @@
             Petit déjeuner et Table d'hôtes
           </h2>
           <p class="grow">
-            Le petit déjeuner est servi de 7h00 à 9h30. Il vous est proposé dans la salle manger ou dans la cour intérieure pleine de charme, à la belle saison. Sous forme de buffet, vous retrouverez le pain traditionnel et ses viennoiseries, du thé Bio, le café du torréfacteur, jus de fruits et yaourts locaux ainsi que des fruits de saison.<br>Sur réservation, la table d'hôte est possible afin de partager un moment convivial et gourmand. Nous vous proposons un menu unique "maison" ou des planches de charcuteries fromages ou salade composée avec des produits locaux et bio.
+            Le petit déjeuner est servi de 8h00 à 9h30, ou plus tôt sur demande. Il vous est proposé dans la salle à manger ou dans la cour intérieure pleine de charme, à la belle saison. Sous forme de buffet, vous retrouverez le pain traditionnel et ses viennoiseries, du thé bio, le café du torréfacteur, du jus de fruits et des yaourts locaux, ainsi que des fruits de saison. Sur réservation, la table d'hôte est possible afin de partager un moment convivial et gourmand. Nous vous proposons un menu unique "maison" ou des planches de charcuteries, fromages, ou salade composée avec des produits locaux et bio.
           </p>
         </div>
       </div>

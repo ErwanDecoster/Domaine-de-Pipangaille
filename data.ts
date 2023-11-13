@@ -8,13 +8,13 @@ export const hebergements = [
       { id: 12 },
       { id: 62 },
     ],
-    shortDesc: "Notre chambre familiale aux couleurs chaleureuse, avec toilette salle d'eau privée, canapé et possibilité de lit séparé.",
+    shortDesc: "Notre chambre familiale aux couleurs chaleureuses, avec toilette et salle d'eau privée, canapé et possibilité de lit séparé.",
     longDesc: [
       {
-        text: "L'ambiance marocaine aux couleurs chaleureuses vous depaysera pour cette chambre de 20 m², adaptée pour 2 adultes et un enfant ou pour un sejour en amoureux. La chambre est composée d'un lit de 1.80 m, d'un canapé lit, d'un lavabo double vasque et d'une douche spacieuse \"Tadelakt\", d'un toilette séparé et d'un petit espace de rangement. Le couchage peut etre coufiguré en deux lits simples."
+        text: "L'ambiance marocaine aux couleurs chaleureuses vous dépaysera pour cette chambre de 20 m², adaptée pour 2 adultes et un enfant ou pour un séjour en amoureux. La chambre est composée d'un lit de 1,80 m, d'un canapé-lit, d'un lavabo double vasque et d'une douche spacieuse \"Tadelakt\", d'un toilette séparé et d'un petit espace de rangement. Le couchage peut être configuré en deux lits simples."
       },
       {
-        text: "Pour votre bien-être la chambre est climatisée en été."
+        text: "Pour votre bien-être, la chambre est climatisée en été."
       },
     ],
     slug: 'chambre_marocaine',
@@ -77,10 +77,10 @@ export const hebergements = [
     shortDesc: "Une chambre pour deux aux couleurs qui font voyager, avec salle d'eau privée, table et possibilité de lit séparé.",
     longDesc: [
       {
-        text: "Une autre invitation au voyage avec la chambre 'africaine', une chambre en couleur qui vous fera voyager. Concue pour 2 personnes, en lit double de 1.80 m ou 2 lits simples, la chambre possède un lavabo, une douche ouverte, un toilette séparé, un petit espace de rangement, une table et 2 chaises."
+        text: "Une autre invitation au voyage avec la chambre 'africaine', une chambre aux couleurs qui vous feront voyager. Conçue pour 2 personnes, avec un lit double de 1,80 m ou 2 lits simples, la chambre possède un lavabo, une douche ouverte, des toilettes séparées, un petit espace de rangement, une table et 2 chaises."
       },
       {
-        text: "Pour votre bien-être la chambre est climatisée en été."
+        text: "Pour votre bien-être, la chambre est climatisée en été."
       },
     ],
     slug: 'chambre_africaine',
@@ -135,13 +135,13 @@ export const hebergements = [
       { id: 14 },
       { id: 15 },
     ],
-    shortDesc: "Une agréable chambre aux couleurs romantiques qui vous invitents au voyage, avec salle d'eau privée, table et lit double.",
+    shortDesc: "Une agréable chambre aux couleurs romantiques qui vous invite au voyage, avec une salle d'eau privée, une table et un lit double.",
     longDesc: [
       {
-        text: "Une chambre romantique aux couleurs délicates sur la thématique toscane, une région au centre de l'Italie. Une chambre pour deux personnes équipée d'un lavabo, d'une belle douche, d'un toilette séparé, d'un rangement et d'une table."
+        text: "Une chambre romantique aux couleurs délicates sur le thème toscan, une région au centre de l'Italie. Une chambre pour deux personnes équipée d'un lavabo, d'une belle douche, de toilettes séparées, d'un espace de rangement et d'une table."
       },
       {
-        text: "Pour votre bien-être la chambre est climatisée en été."
+        text: "Pour votre bien-être, la chambre est climatisée en été."
       },
     ],
     slug: 'chambre_toscane',
@@ -199,13 +199,13 @@ export const hebergements = [
     shortDesc: "Une chambre aux couleurs originale, avec salle d'eau privée et lit double.",
     longDesc: [
       {
-        text: "Une chambre aux couleurs légères s'inspirant des îles créoles. Pour deux personnes, équipée d'un lit double, d'un lavabo, d'une douche. Votre hébergement possède un toilette séparé et un grand placard."
+        text: "Une chambre aux couleurs légères s'inspirant des îles créoles. Conçue pour deux personnes, elle est équipée d'un lit double, d'un lavabo et d'une douche. Votre hébergement dispose également de toilettes séparées et d'un grand placard."
       },
       {
-        text: "Pour une autonomie totale possibilité de louer la cuisine attenante pour long séjour ou séjour d'affaire. Nous contacter pour plus d'infos."
+        text: "Pour une totale autonomie, il est possible de louer la cuisine attenante pour un long séjour ou un séjour d'affaires. N'hésitez pas à nous contacter pour plus d'informations."
       },
       {
-        text: "Pour votre bien-être la chambre est climatisée en été."
+        text: "Pour votre bien-être, la chambre est climatisée en été."
       },
     ],
     slug: 'chambre_creole',
@@ -393,7 +393,7 @@ export const aProximiter = {
         { id: 0 },
       ],
       shortDesc: "Cet itinéraire cyclable vous conduit le long des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles de Côtes du Rhône et de Provence méridionale",
-      longDesc: [{ text: "Vous mener des rives du lac Léman aux plages de la Méditerranée à vélo, en suivant le fleuve Rhône, voici l'ambition de ViaRhôna. Cet itinéraire cyclable de 815 km vous conduit des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles des Côtes du Rhône et ceux de la Provence méridionale'" }],
+      longDesc: [{ text: "Vous mener des rives du lac Léman aux plages de la Méditerranée à vélo, en suivant le fleuve Rhône, voici l'ambition de ViaRhôna. Cet itinéraire cyclable de 815 km vous conduit des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles des Côtes du Rhône et ceux de la Provence méridionale" }],
       links: [
         {
           label: 'Site Internet',

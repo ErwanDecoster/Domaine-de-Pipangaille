@@ -6,7 +6,7 @@
       </h1>
       <CardTypeOn 
         title="À visiter"
-        :content="[{ text: `Au cœur de la Vallée du Rhône à proximité de la sortie A7, à 1 h de Lyon, 50 mn de Valence, 1 h 15 de Grenoble, le domaine de Pipangaille bénéficie d'un emplacement privilégié. D'un emplacement apprécié par les touristes à vélos qui parcourent la ViaRhôna car elle longe le domaine. Pour des activités en famille, randonnées à pieds ou en vtt, découvertes oenologiques sur la route des vins, visite du Palais Idéal du Facteur Cheval, du Safari de Peaugres, chemin de fer du Vivarais, le choix est riche et varié...`}]"
+        :content="[{ text: `Au cœur de la Vallée du Rhône, à proximité de la sortie A7, à 1 h de Lyon, 50 min de Valence, et 1 h 15 de Grenoble, le domaine de Pipangaille bénéficie d'un emplacement privilégié. Cet emplacement est particulièrement apprécié par les touristes à vélo, car la ViaRhôna longe le domaine. Pour des activités en famille, telles que des randonnées à pied ou en VTT, des découvertes œnologiques sur la route des vins, la visite du Palais Idéal du Facteur Cheval, du Safari de Peaugres, du chemin de fer du Vivarais, le choix est riche et varié...`}]"
         :imgs="[ Imgs[31], Imgs[28] ]"
       />
       <div class="grid gap-2">
@@ -32,7 +32,7 @@
             Se restaurer
           </h2>
           <p class="grow">
-            Plusieurs restaurant se trouvent a proximité, le plus proche se trouvant a deux kilometres.
+            Plusieurs restaurants se trouvent à proximité, le plus proche se trouvant à deux kilomètres.
           </p>
         </div>
       </div>
@@ -48,7 +48,7 @@
             La table d'hôtes
           </h2>
           <p class="grow">
-            Sur réservation, nous vous proposons la table d'hôtes afin de partager un moment convivial et gourmand. Un menu unique composé d'une cuisine locale gourmande et familale avec des produits locaux et bio. Planche charcuteries fromages, salade gourmande peuvent aussi vous être proposées.
+            Sur réservation, nous vous proposons la table d'hôtes afin de partager un moment convivial et gourmand. Un menu unique composé d'une cuisine locale gourmande et familiale, avec des produits locaux et bio, vous est proposé. Des planches de charcuteries, de fromages, ainsi qu'une salade gourmande peuvent également vous être proposées.
           </p>
         </div>
       </div>

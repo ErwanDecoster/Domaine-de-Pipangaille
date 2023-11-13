@@ -13,12 +13,12 @@
                 width="28"
                 height="28"
                 src="/images/icon_telephone.svg"
-                alt="Icone Telephone"
+                alt="Icone Téléphone"
                 class="w-7 sm:10 dark:invert"
               >
               <div>
                 <p class="font-semibold ml-2">
-                  Tel :
+                  Tél :
                 </p>
                 <a 
                   href="tel:+334 75 68 28 24"
@@ -66,7 +66,7 @@
                   target="_blank"
                   class="pl-2 underline decoration-2 underline-offset-2 decoration-almond dark:decoration-dark-almond text-md block"
                 >
-                  1 Quartier Les Marettes 26140 Andancette
+                  1 Quartier Les Marettes, 26140, Andancette
                 </a>
               </div>
             </div>
@@ -147,7 +147,7 @@
               for="tel" 
               class="font-semibold relative"
             >
-              Telephone : 
+              Téléphone : 
               <span class="text-xs absolute pl-1 -top-1">
                 optionnel
               </span> 
