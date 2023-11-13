@@ -22,7 +22,7 @@
           loading="lazy"
         />
       </div>
-      <div>
+      <div class="grid gap-4">
         <h2 class="text-4xl">
           {{ $route.params.group === 'a_visiter' ? 'Autre lieu a visiter' : 'Autre endroit ou se restaurer' }}
         </h2>
