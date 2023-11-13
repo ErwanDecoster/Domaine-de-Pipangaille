@@ -120,7 +120,6 @@ export default {
     window.addEventListener('resize', () => {
       this.UpdateGlobalTranslate();
     })
-    console.log(this.imgs);
   },
   methods: {
     GoNext() {

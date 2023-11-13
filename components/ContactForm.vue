@@ -289,7 +289,6 @@ export default {
         localStorage.message = '';
         this.sendDate = Date.parse(new Date());
         localStorage.sendDate = this.sendDate;
-        console.log(this.sendDate);
         document.getElementById('contact-form').scrollIntoView()
       }
       else {

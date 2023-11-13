@@ -330,7 +330,6 @@ export default {
   },
   mounted() {
     window.scrollTo(0,0);
-    console.log(this.photosPrepared);
   },
   created() {
     this.PreparePhoto()

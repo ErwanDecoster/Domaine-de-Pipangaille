@@ -38,7 +38,8 @@
               :key="link"
               :link="link.link"
               :content="link.label"
-              newWindow="_blank"
+              rel="noopener"
+              target="_blank"
             />
           </div>
         </div>

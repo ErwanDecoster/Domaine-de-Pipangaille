@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-eerie-black shadow-lg dark:shadow-lg-dark rounded flex flex-col overflow-hidden">
+  <div class="card bg-white dark:bg-eerie-black shadow-lg dark:shadow-lg-dark rounded flex flex-col overflow-hidden">
     <img 
       v-if="img" 
       :src="img.srcs[0].src" 
@@ -31,7 +31,6 @@
 
 <script>
 export default {
-  name: 'PageCard',
   props: { 
     img: {
       type: Object,
@@ -50,8 +49,5 @@ export default {
       default: '',
     },
   },
-  mounted() {
-    console.log(this.img);
-  }
 };
 </script>

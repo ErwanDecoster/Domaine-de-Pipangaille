@@ -9,10 +9,13 @@
         :content="[{ text: `Au cœur de la Vallée du Rhône, à proximité de la sortie A7, à 1 h de Lyon, 50 min de Valence, et 1 h 15 de Grenoble, le domaine de Pipangaille bénéficie d'un emplacement privilégié. Cet emplacement est particulièrement apprécié par les touristes à vélo, car la ViaRhôna longe le domaine. Pour des activités en famille, telles que des randonnées à pied ou en VTT, des découvertes œnologiques sur la route des vins, la visite du Palais Idéal du Facteur Cheval, du Safari de Peaugres, du chemin de fer du Vivarais, le choix est riche et varié...`}]"
         :imgs="[ Imgs[31], Imgs[28] ]"
       />
-      <PageCardGroup
-        :propElementsList="aProximiter.aVisiter"
-        targetPage="a_proximite"
-      />
+      <div class="grid gap-2">
+        <PageCardGroup
+          :propElementsList="aProximiter.aVisiter"
+          targetPage="a_proximite"
+          showFilter="true"
+        />
+      </div>
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img 
           :src="Imgs[2].srcs[0].src" 
@@ -100,6 +103,9 @@ export default {
         },
       ],
     })
-  }
+  },
+  methods: {
+    
+  },
 };
 </script>

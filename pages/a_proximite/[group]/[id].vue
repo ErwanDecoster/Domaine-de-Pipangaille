@@ -22,7 +22,7 @@
           loading="lazy"
         />
       </div>
-      <div>
+      <div class="grid gap-4">
         <h2 class="text-4xl">
           {{ $route.params.group === 'a_visiter' ? 'Autre lieu a visiter' : 'Autre endroit ou se restaurer' }}
         </h2>
@@ -51,8 +51,6 @@ export default {
   },
   mounted() {
     window.scrollTo(0,0)
-    console.log(this.aProximiterSelected);
-    console.log(this.Imgs[this.aProximiterSelected.imgs[1]]);
   },
   created() {
     this.SelecteAProximite();
