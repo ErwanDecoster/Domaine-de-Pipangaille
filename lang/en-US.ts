@@ -12,8 +12,8 @@ export default {
   index: {
     title: "Accueil",
     meta: {
-      title: "Domaine de Pipangaille",
-      desc: "Nos 4 chambres d\'hôte situé à Andancette vous accueils un cadre idyllique en pleine nature. Proche de la Via Rhona accessible directement à vélo.",
+      title: "Domaine de Pipangaille | Chambres d'hôtes de charme à Andancette",
+      desc: "Nos 4 chambres d'hôte situé à Andancette vous accueils un cadre idyllique en pleine nature. Proche de la Via Rhona accessible directement à vélo.",
     },
     welcome: "Votre séjour au",
     placeDescTitle: "Le Domaine de Pipangaille",
@@ -38,8 +38,8 @@ export default {
   thePlace: {
     title: "Le lieu",
     meta: {
-      title: "Le lieu - Domaine de Pipangaille",
-      desc: "Envie d\'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal.",
+      title: "Domaine de Pipangaille - Séjour magique en pleine nature",
+      desc: "Découvrez le charme du Domaine de Pipangaille, des chambres d'hôte idyllique à Andancette. Profitez d'un cadre pittoresque au cœur de la nature.",
     },
     placeDescTitle: "Le Domaine de Pipangaille",
     placeDescText: "Ancienne magnanerie de plus de 150 ans, la demeure authentique, de caractère et pleine de charme est bercée par le doux tourbillon du Rhône. Outre le charme de la bâtisse vous pourrez profiter du parc, de la piscine et du pavillon d'été pour vous détendre. En accès direct sur la ViaRhôna et au cœur d'un bois, le lieu vous offre une parenthèse mêlant détente, nature et zenitude. La propriété s'étend sur trois hectares, principalement un bois, et dispose d'un parking intérieur et extérieur.",
@@ -51,8 +51,8 @@ export default {
   accommodation: {
     title: "Nos hébergements",
     meta: {
-      title: "Hébergements - Domaine de Pipangaille",
-      desc: "Dans un cadre arboré où la nature est maitresse, vous profiterez d\'un jardin calme où les oiseaux chantent pour nous. De nombreux espaces pour vous poser, vous détendre et profiter du moment, à l\'ombre des arbres ou à la chaleur du soleil. Nous disposons d\'une cour entourée de murs vous isolant de tout bruit mais également d\'un coin piscine avec un pavillon pour vous installer avec votre famille ou vos amis.",
+      title: "Hébergements - Domaine de Pipangaille - Chambres d'hôtes à Andancette",
+      desc: "Séjournez dans nos charmante chambres d'hôte au cœur de la nature. Chambres confortables et délicieux petit-déjeuner.",
     },
     guestroomDescTitle: "Les chambres d'hôtes",
     guestroomDescText: [
@@ -132,8 +132,8 @@ export default {
   near: {
     title: "À proximité",
     meta: {
-      title: "À proximité - Domaine de Pipangaille",
-      desc: "Loin de rien, nos hébergements situés dans la vallée du Rhône sont à une dizaine de minutes du Safari de Peaugres, du Palais Idéal du facteur Cheval ou encore du Musée de l\'Alambic, de nombreux chemins pour des promenade à pied ou à velo sont également possibles à proximité, notamment la ViaRhona juste en face du domaine ou encore la ViaFluvia à une dizaine de minutes. Nous avons sélectionné pour vous, certains de nos endroits préférer.",
+      title: "Sites touristiques à proximité - Domaine de Pipangaille",
+      desc: "Découvrez les attractions à visiter près du Domaine de Pipangaille, dont le Safari de Peaugres et le Palais Idéal du Facteur Cheval.",
     },
     toVisitDescTitle: "À visiter",
     toVisitDescText: [
@@ -316,16 +316,16 @@ export default {
   book: {
     title: "Réserver",
     meta: {
-      title: "Réserver - Domaine de Pipangaille",
-      desc: "Dès aujourd'hui réservez votre chambre au domaine de Pipangaille, dans un magnifique cadré arboré où la nature est maîtresse, vous profiterez d'un grand jardin calme où les oiseaux chantent pour vous.",
+      title: "Réserver - Domaine de Pipangaille - Chambres d'hôtes à Andancette",
+      desc: "Réservez dès aujourd'hui votre chambre au Domaine de Pipangaille, un charmant B&B à Andancette. Cadre pittoresque en pleine nature.",
     },
   },
   contact: {
-    contactUs: "Nous contactez",
+    contactUs: "Nous contacter",
     title: "contact",
     meta: {
-      title: "Contact - Domaine de Pipangaille",
-      desc: "Vous recherchez un lieu pour organiser votre mariage, une réception ou un concert... Le domaine de Pipangaille c’est une magnifique bâtisse avec de nombreux espaces parfaits pour accueillir de nombreuses personnes.",
+      title: "Contactez-nous - Domaine de Pipangaille",
+      desc: "Réservez dès maintenant votre séjour dans nos chambres d'hôtes. Contactez-nous pour plus d'informations.",
     },
     specialRequestTitle: "Demande particulière",
     specialRequestText: [
@@ -360,17 +360,17 @@ export default {
     },
   },
   legalNotice: {
-    title: 'Mentions Légales',
+    title: "Mentions Légales",
     meta: {
-      title: "Mentions Légales",
-      desc: "Mentions Légales",
+      title: "Mentions Légales - Domaine de Pipangaille - Chambres d'hôtes de charme à Andancette",
+      desc: "Consultez les mentions légales du Domaine de Pipangaille, des charmantes chambres d'hôte situé à Andancette, offrant un cadre pittoresque en pleine nature.",
     },
   },
   generalConditionOfSale: {
-    title: 'Conditions générales de vente',
+    title: "Conditions générales de vente",
     meta: {
-      title: "Conditions générales de vente",
-      desc: "Conditions générales de vente",
+      title: "Conditions générales de vente - Domaine de Pipangaille",
+      desc: "Consultez nos conditions générales de vente pour les séjours en chambre d'hôtes au Domaine de Pipangaille. Réservez votre séjour en toute tranquillité.",
     },
   },
 }
