@@ -8,6 +8,7 @@
         :to="localePath({ name: 'index' })"
         class="hidden lg:block p-2 absolute left-0 top-1/2 -translate-y-1/2 md:translate-x-1/2"
         title="Domaine de Pipangaille"
+        aria-label="Domaine de Pipangaille"
       >
         <picture>
           <source 

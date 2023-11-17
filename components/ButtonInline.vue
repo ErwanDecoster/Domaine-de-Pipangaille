@@ -3,7 +3,6 @@
     :to="link"
     :target="newWindow"
     class="group relative py-4 px-3 text-md w-max"
-    :style="{ 'font-size': fontSize + 'px' }"
     :title="$t(content)"
   >
     {{ $t(content) }}
@@ -23,10 +22,6 @@ export default {
       default: '',
     },
     content: { 
-      type: String,
-      default: '',
-    },
-    fontSize: {
       type: String,
       default: '',
     },

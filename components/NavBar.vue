@@ -15,6 +15,7 @@ const availableLocales = computed(() => {
           class="hidden lg:block h-full py-4"
           :to="localePath({ name: 'index' })"
           title="Domaine de Pipangaille"
+          aria-label="Domaine de Pipangaille"
         >
           <picture>
             <source 
