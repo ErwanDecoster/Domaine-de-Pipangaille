@@ -247,7 +247,7 @@ export default {
   },
   created() {
     const desc = this.$t('legalNotice.meta.desc')
-    const title = this.$t('legalNotice.meta.title') + " - Domaine de Pipangaille"
+    const title = this.$t('legalNotice.meta.title')
     useHead({
       title: title,
       meta: [
@@ -260,11 +260,13 @@ export default {
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: title },
         { property: 'og:description', content: desc },
+        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/logo_domaine_de_pipangaille.svg' },
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
         { property: 'twitter:title', content: title },
         { property: 'twitter:description', content: desc },
+        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/logo_domaine_de_pipangaille.svg' },
       ],
       link: [
         {

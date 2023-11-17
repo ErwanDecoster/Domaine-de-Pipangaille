@@ -56,9 +56,9 @@
           </div>
         </div>
       </div>
-      <h1 class="text-4xl sm:text-5xl first-letter:capitalize">
+      <h2 class="text-4xl sm:text-5xl first-letter:capitalize">
         {{ $t('accommodation.ourProposals') }}
-      </h1>
+      </h2>
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img
           src="https://www.generali.fr/sites/default/files-d8/2019-09/Table_dhote.jpg"

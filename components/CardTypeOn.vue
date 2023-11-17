@@ -23,6 +23,7 @@
             :key="row" 
             :to="localePath({ name: row.target })"
             class="btn-primary"
+            :title="$t(row.content)"
           >
             {{ $t(row.content) }}
           </NuxtLink>

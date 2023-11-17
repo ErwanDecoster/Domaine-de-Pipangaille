@@ -37,6 +37,7 @@ export default {
       identifierAttribute: 'id',
       addSeoAttributes: true
     })
+    const title = this.$t('index.meta.title')
     useHead({
       script: [
         {
@@ -46,7 +47,7 @@ export default {
           type: 'text/javascript'
         },
       ],
-      title: 'Domaine de Pipangaille - Chambres d\'hôtes de charme à Andancette',
+      title: title,
       htmlAttrs: {
         lang: head.value.htmlAttrs.lang,
         dir: head.value.htmlAttrs.dir

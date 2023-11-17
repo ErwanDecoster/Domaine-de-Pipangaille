@@ -14,6 +14,7 @@ const availableLocales = computed(() => {
         <NuxtLink 
           class="hidden lg:block h-full py-4"
           :to="localePath({ name: 'index' })"
+          title="Domaine de Pipangaille"
         >
           <picture>
             <source 

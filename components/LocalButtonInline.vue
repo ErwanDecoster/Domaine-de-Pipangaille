@@ -4,6 +4,7 @@
     :target="newWindow"
     class="group relative py-4 px-3 text-md w-max"
     :style="{ 'font-size': fontSize + 'px' }"
+    :title="$t(content)"
   >
     {{ $t(content) }}
     <div class="w-full h-0.5 bg-almond dark:bg-dark-almond overflow-hidden rounded -translate-y-0.5">
