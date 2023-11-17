@@ -38,6 +38,14 @@ export default {
       addSeoAttributes: true
     })
     useHead({
+      script: [
+        {
+          id: 'seona-js-plugin',
+          defer: true,
+          src: 'https://assets.usestyle.ai/seonajsplugin',
+          type: 'text/javascript'
+        },
+      ],
       title: 'Domaine de Pipangaille - Chambres d\'hôtes de charme à Andancette',
       htmlAttrs: {
         lang: head.value.htmlAttrs.lang,
