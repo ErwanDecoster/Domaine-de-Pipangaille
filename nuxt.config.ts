@@ -23,6 +23,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image-edge',
     'nuxt-simple-sitemap',
+    'nuxt-vercel-analytics',
     '@nuxtjs/i18n',
   ],
   i18n: {

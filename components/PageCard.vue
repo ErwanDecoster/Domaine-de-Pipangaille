@@ -24,6 +24,7 @@
       <NuxtLink
         :to="localePath(target)"
         class="btn-secondary"
+        :title="title"
       >
         {{ $t('learnMore') }}
       </NuxtLink>

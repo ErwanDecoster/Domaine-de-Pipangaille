@@ -20,6 +20,7 @@
           <NuxtLink 
             :to="localePath({ name: 'contact'})"
             class="btn-primary"
+            :title="$t('thePlace.eventOrganisationActionButton')"
           >
             {{ $t('thePlace.eventOrganisationActionButton') }}
           </NuxtLink>

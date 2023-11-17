@@ -40,6 +40,7 @@
             <NuxtLink
               :to="localePath({ name: 'the_place'})"
               class="btn-primary"
+              :title="$t('thePlace.title')"
             >
               {{ $t('learnMore') }}
             </NuxtLink>
@@ -157,6 +158,7 @@
             <NuxtLink 
               :to="localePath({ name: 'near'})"
               class="btn-primary"
+              :title="$t('near.title')"
             >
               {{ $t('learnMore') }}
             </NuxtLink>

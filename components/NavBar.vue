@@ -82,6 +82,7 @@ const availableLocales = computed(() => {
         <NuxtLink
           :to="localePath({ name: 'contact' })"
           class="btn-secondary"
+          :title="$t('contact.contactUs')"
         >
           {{ $t('contact.contactUs') }}
         </NuxtLink>
@@ -112,7 +113,8 @@ const availableLocales = computed(() => {
       to="/"
       class="group flex gap-2 items-center absolute left-6 top-6"
       @click="fullNavOpen = !fullNavOpen"
-    >
+      title="Domaine de Pipangaille"
+    > 
       <p class="whitespace-nowrap text-xl">
         domaine-de-pipangaille.fr
       </p>
