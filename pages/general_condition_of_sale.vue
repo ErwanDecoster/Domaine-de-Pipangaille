@@ -1,6 +1,6 @@
 <template>
   <div class="mb-8 md:pt-[5.25rem]">
-    <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
+    <section class="max-w-screen-xl mx-auto px-4 grid gap-8 pt-16">
       <div class="grid gap-2">
         <h1 class="text-4xl sm:text-5xl">
           Condition general de vente des séjours en chambre d'hôtes
@@ -145,8 +145,10 @@ export default {
     window.scrollTo(0,0);
   },
   created() {
+    const desc = this.$t('generalConditionOfSale.meta.desc')
+    const title = this.$t('generalConditionOfSale.meta.title') + " - Domaine de Pipangaille"
     useHead({
-      title: `Condition general de vente - Domaine de Pipangaille`,
+      title: title,
       meta: [
         {
           hid: 'description',
@@ -155,12 +157,12 @@ export default {
         },
         { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: 'Condition general de vente - Domaine de Pipangaille' },
+        { property: 'og:title', content: title },
         { property: 'og:description', content: 'Condition general de vente' },
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
-        { property: 'twitter:title', content: 'Condition general de vente - Domaine de Pipangaille' },
+        { property: 'twitter:title', content: title },
         { property: 'twitter:description', content: 'Condition general de vente' },
       ],
       link: [

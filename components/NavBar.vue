@@ -1,10 +1,19 @@
+<script setup>
+const { locale, locales } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+
+const availableLocales = computed(() => {
+  return (locales.value).filter(i => i.code !== locale.value)
+})
+</script>
+
 <template>
   <nav class="hidden md:flex bg-white dark:bg-eerie-black shadow-lg dark:shadow-lg-dark duration-200 rounded-b-xl fixed top-0 h-24 inset-x-0 z-20">
-    <div class="max-w-screen-lg mx-auto w-full flex justify-between items-center px-4">
+    <div class="max-w-screen-xl mx-auto w-full flex justify-between items-center px-4">
       <div class="flex items-center gap-2 md:gap-4">
         <NuxtLink 
           class="hidden lg:block h-full py-4"
-          to="/"
+          :to="localePath({ name: 'index' })"
         >
           <picture>
             <source 
@@ -22,31 +31,60 @@
             >
           </picture>
         </NuxtLink>
-        <ButtonInline 
-          link="/"
-          content="Accueil"
+        <LocalButtonInline 
+          link="index"
+          content="index.title"
         />
-        <ButtonInline 
-          link="/le_lieu"
-          content="Le lieu"
+        <LocalButtonInline 
+          link="the_place"
+          content="thePlace.title"
         />
-        <ButtonInline 
-          link="/hebergements"
-          content="Nos hébergements"
+        <LocalButtonInline 
+          link="accommodation"
+          content="accommodation.title"
         />
-        <ButtonInline 
-          link="/a_proximite"
-          content="À proximité"
+        <LocalButtonInline 
+          link="near"
+          content="near.title"
         />
-        <ButtonInline 
-          link="/reserver"
-          content="Réserver"
+        <LocalButtonInline 
+          link="book"
+          content="book.title"
         />
       </div>
-      <ButtonSecondary 
-        link="/contact"
-        content="Nous contacter"
-      />
+      <div class="flex gap-2">
+        <LangSwitcher />
+        <!-- <NuxtLink 
+          v-for="local in availableLocales" 
+          :key="local.code" 
+          :to="switchLocalePath(local.code)"
+        >
+          {{ local.name }}
+        </NuxtLink> -->
+        <!-- <form action="">
+          <select
+            v-model="locale"
+            class="dark:bg-eerie-black p-2 px-4 rounded-lg text-md duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
+          >
+            <option 
+              value="fr"
+            >
+              Français
+            </option>
+            <option 
+              value="en"
+            >
+              English
+            </option>
+          </select>
+        </form> -->
+        <NuxtLink
+          :to="localePath({ name: 'contact' })"
+          class="btn-secondary"
+        >
+          {{ $t('contact.contactUs') }}
+        </NuxtLink>
+      </div>
     </div>
   </nav>
   <button 
@@ -79,37 +117,37 @@
       </p>
     </NuxtLink>
     <div class="flex flex-col flex-wrap justify-center items-center gap-4 mx-auto h-full">
-      <ButtonInline
+      <LocalButtonInline
         link="/"
         content="Accueil"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />
-      <ButtonInline
-        link="/le_lieu"
+      <LocalButtonInline
+        link="/the_place"
         content="Le lieu"
         fontSize="20" 
         @click="fullNavOpen = !fullNavOpen"
       />
-      <ButtonInline
-        link="/hebergements"
+      <LocalButtonInline
+        link="/accommodation"
         content="Nos hébergements"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />
-      <ButtonInline
+      <LocalButtonInline
         link="/a_proximite"
         content="À proximité"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />
-      <ButtonInline
+      <LocalButtonInline
         link="/reserver"
         content="Réserver"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />
-      <ButtonInlineSecondary
+      <LocalButtonInlineSecondary
         link="/contact"
         content="Nous contacter"
         fontSize="20"
@@ -137,14 +175,14 @@ export default {
       let scrollYPosition = window.scrollY;
       const navBar = document.querySelector('nav');
       const logo = document.querySelector('#logo');
-      if (scrollYPosition > 50 && this.$route.path !== '/reserver')
+      if (scrollYPosition > 50 && this.$route.name.search('book') == -1)
       {
         navBar.classList.remove('h-24')
         navBar.classList.add('h-16')
         logo.classList.remove('h-[4.625rem]')
         logo.classList.add('h-14')
       }
-      else if (this.$route.path !== '/reserver')
+      else if (this.$route.name.search('book') == -1)
       {
         navBar.classList.add('h-24')
         navBar.classList.remove('h-16')
@@ -157,7 +195,7 @@ export default {
     UpdateDefaultStyle() {
       const navBar = document.querySelector('nav');
       const logo = document.querySelector('#logo');
-      if (this.$route.path == '/reserver') {
+      if (this.$route.name.search('book') !== -1) {
         navBar.classList.remove('h-24')
         navBar.classList.add('h-16')
         logo.classList.remove('h-[4.625rem]')

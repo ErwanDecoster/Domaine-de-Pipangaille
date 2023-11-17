@@ -7,7 +7,7 @@
       :srcset="
         img.srcs[0].src + ' 309w, ' +
           img.srcs[1].src + ' 462w'"
-      class="rounded-b w-full h-full aspect-[4/3] object-cover bg-northern_light_grey font-bold" 
+      class="rounded-b w-full h-full aspect-[4/3] max-h-64 object-cover bg-northern_light_grey font-bold" 
       sizes="(max-width: 600px) 462px, 309px"
       loading="lazy"
     >
@@ -21,17 +21,19 @@
       >
         {{ shortDesc }}
       </p>
-      <ButtonSecondary
-        :link="target"
-        content="En savoir plus"
-      />
+      <NuxtLink
+        :to="localePath(target)"
+        class="btn-secondary"
+      >
+        {{ $t('learnMore') }}
+      </NuxtLink>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: { 
+  props: {
     img: {
       type: Object,
       default: () => ({}),
@@ -45,8 +47,8 @@ export default {
       default: '',
     },
     target: {
-      type: String,
-      default: '',
+      type: Object,
+      default: () => ({}),
     },
   },
 };

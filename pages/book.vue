@@ -48,24 +48,26 @@ export default {
     }
   },
   created() {
+    const desc = this.$t('book.meta.desc')
+    const title = this.$t('book.meta.title')
     useHead({
-      title: `Reserver - Domaine de Pipangaille`,
+      title: title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Dès aujourd\'hui réservez votre chambre au domaine de Pipangaille, dans un magnifique cadré arboré où la nature est maîtresse, vous profiterez d\'un grand jardin calme où les oiseaux chantent pour vous.' 
+          content: desc 
         },
         { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: 'Reserver - Domaine de Pipangaille' },
-        { property: 'og:description', content: 'Dès aujourd\'hui réservez votre chambre au domaine de Pipangaille, dans un magnifique cadré arboré où la nature est maîtresse, vous profiterez d\'un grand jardin calme où les oiseaux chantent pour vous.' },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: desc },
         { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
-        { property: 'twitter:title', content: 'Reserver - Domaine de Pipangaille' },
-        { property: 'twitter:description', content: 'Dès aujourd\'hui réservez votre chambre au domaine de Pipangaille, dans un magnifique cadré arboré où la nature est maîtresse, vous profiterez d\'un grand jardin calme où les oiseaux chantent pour vous.' },
+        { property: 'twitter:title', content: title },
+        { property: 'twitter:description', content: desc },
         { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
       ],
       link: [

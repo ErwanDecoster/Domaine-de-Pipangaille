@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
@@ -26,4 +27,22 @@ html {
 }
 *::-webkit-scrollbar-track {
   background: transparent;
+}
+
+@layer components {
+	.btn-primary {
+		@apply p-2 px-4 rounded-lg bg-eerie-black w-max text-white duration-100 border border-eerie-black first-letter:capitalize;
+	}
+	.btn-primary:hover {
+		@apply hover:bg-almond dark:hover:bg-dark-almond hover:text-eerie-black dark:hover:text-white hover:rounded-md;
+	}
+	.btn-secondary {
+		@apply md:ml-auto md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond w-full text-center duration-100 border border-almond dark:border-dark-almond first-letter:capitalize;
+	}
+	.btn-secondary:hover {
+		@apply hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md;
+	}
+	label, p, h1, h2, h3, h4, h5, h6 {
+		@apply first-letter:capitalize
+	}
 }

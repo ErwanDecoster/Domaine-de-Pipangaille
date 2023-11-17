@@ -18,12 +18,14 @@
           v-if="button"
           class="flex gap-4 flex-wrap"
         >
-          <ButtonPrimary 
+          <NuxtLink 
             v-for="row in button"
             :key="row"
-            :link="row.target"
-            :content="row.content"
-          />
+            :to="localePath(row.target)"
+            class="btn-primary"
+          >
+            {{ row.content }}
+          </NuxtLink>
         </div>
         <div 
           v-if="links.length"
@@ -33,13 +35,15 @@
             Les liens
           </p>
           <div class="flex gap-4 flex-wrap md:w-[130%]">
-            <ButtonPrimary 
+            <NuxtLink 
               v-for="link in links" 
               :key="link" 
-              :link="link.link"
-              :content="link.label"
-              newWindow="_blank" 
-            />
+              :to="localePath(link.link)"
+              newWindow="_blank"
+              class="btn-secondary"
+            >
+              {{ linl.label }}
+            </NuxtLink>
           </div>
         </div>
       </div>

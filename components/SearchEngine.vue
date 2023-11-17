@@ -2,10 +2,10 @@
   <div class="mx-auto lg:w-max px-4 -translate-y-1/2">
     <div class="bg-white dark:bg-eerie-black grid gap-2 shadow-lg dark:shadow-lg-dark p-5 px-6 rounded-lg">
       <h2 class="font-bold text-xl">
-        Réserver
+        {{ $t('searchEngine.book' )}}
       </h2>
       <p class="items-center flex flex-wrap gap-y-2">
-        <span>Pour</span>
+        <span>{{ $t('searchEngine.part1') }}</span>
         <input
           id="nbAdulte"
           v-model="form.nbAdulte" 
@@ -14,8 +14,8 @@
           autocomplete="no"
           class="w-16 mx-2 rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black"
         >
-        <label for="nbAdulte">adultes</label>
-        <span class="ml-1">et</span>
+        <label for="nbAdulte">{{ $t('searchEngine.part2') }}</label>
+        <span class="ml-1">{{ $t('searchEngine.part3') }}</span>
         <input
           id="nbEnfant"
           v-model="form.nbEnfant" 
@@ -24,8 +24,13 @@
           autocomplete="no"
           class="w-16 mx-2 rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black"
         >
-        <label for="nbEnfant">enfants</label>
-        <label for="startDate">, du</label>
+        <label for="nbEnfant">{{ $t('searchEngine.part4') }}</label>
+        <label 
+          for="startDate"
+          class="ml-1"
+        >
+          {{ $t('searchEngine.part5') }}
+        </label>
         <input
           id="startDate"
           v-model="form.startDate" 
@@ -35,7 +40,7 @@
           class="w-32 mx-2 rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black"
           @change="UpdateEndDate()"
         >
-        <label for="endDate">au</label>
+        <label for="endDate">{{ $t('searchEngine.part6') }}</label>
         <input
           id="endDate"
           v-model="form.endDate" 
@@ -45,11 +50,11 @@
           class="w-32 mx-2 rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black"
         >
         <NuxtLink
-          :to="`/reserver?nbAdulte=${form.nbAdulte}&nbEnfant=${form.nbEnfant}&startDate=${form.startDate}&endDate=${form.endDate}`"
+          :to="localePath(`book`)"
           :form="22"
           class="md:ml-auto md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-full text-center cursor-pointer duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
         >
-          Voir les disponibilités
+          {{ $t('searchEngine.showDisponibility') }}
         </NuxtLink>
       </p>
     </div>

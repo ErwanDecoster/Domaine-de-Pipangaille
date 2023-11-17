@@ -13,9 +13,9 @@
           sizes="100vw"
           class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] 4xl:h-[65vh] 5xl:h-[50vh] rounded-b-xl bg-[#61845a] font-bold bg"
         >
-        <h1 class="mx-auto max-w-screen-lg w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl">
+        <h1 class="mx-auto max-w-screen-xl w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl">
           <span class="relative w-max">
-            Votre séjour au
+            {{ $t('index.welcome') }}
             <span class="bg-almond dark:bg-dark-almond absolute -top-1 bottom-0 -inset-x-3 dark:opacity-90 -z-10 rounded-t-lg" />
           </span>
           <span class="relative w-max">
@@ -24,23 +24,25 @@
           </span>
         </h1>
       </div>
-      <ReservationSearcher />
+      <SearchEngine />
     </section>
-    <section class="max-w-screen-lg mx-auto px-4 grid gap-8">
+    <section class="max-w-screen-xl mx-auto px-4 grid gap-8">
       <div class="w-full h-full relative">
         <div class="bg-almond dark:bg-dark-almond left-0 right-0 md:right-1/3 top-0 bottom-32 sm:bottom-1/3 md:bottom-0 absolute rounded" />
         <div class="p-6 md:pl-10 md:py-10 z-10 relative grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="flex flex-col gap-2 h-full">
             <h2 class="text-4xl">
-              Le Domaine de Pipangaille
+              {{ $t('index.placeDescTitle') }}
             </h2>
             <p class="grow">
-              Le Domaine de Pipangaille, ancienne magnanerie récemment rénovée vous propose un séjour magique dans un cadre idyllique. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événement à fêter, le domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la ViaRhôna.
+              {{ $t('index.placeDescText') }} 
             </p>
-            <ButtonPrimary 
-              link="/le_lieu" 
-              content="En savoir plus"
-            />
+            <NuxtLink
+              :to="localePath({ name: 'the_place'})"
+              class="btn-primary"
+            >
+              {{ $t('learnMore') }}
+            </NuxtLink>
           </div>
           <img 
             :src="Imgs[42].srcs[1].src" 
@@ -55,10 +57,10 @@
         </div>
       </div>
       <CardTypeOnReverse 
-        title="Nos chambres d'hôtes" 
-        :content="[{ text: `Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d'été à votre disposition ainsi qu'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étage.` }]"
+        :title="$t('index.guestroomDescTitle')" 
+        :content="[{ text: $t('index.guestroomDescText') }]"
         :imgs="[ Imgs[63], Imgs[62] ]" 
-        :button="[{ target: '/hebergements', content: 'En savoir plus' }, { target: '/reserver', content: 'Reserver' }]"
+        :button="[{ target: 'accommodation', content: $t('index.guestroomDescActionButton') }, { target: 'book', content: $t('book.title') }]"
       />
     </section>
     <section class="bg-almond dark:bg-dark-almond w-full min-h-[16rem] my-8 flex items-center py-8">
@@ -138,24 +140,26 @@
         </button>
       </div>
     </section>
-    <section class="max-w-screen-lg mx-auto px-4 grid gap-8">
+    <section class="max-w-screen-xl mx-auto px-4 grid gap-8">
       <div class="w-full h-full relative">
         <div class="bg-almond dark:bg-dark-almond left-0 right-0 md:right-1/4 top-0 bottom-32 sm:bottom-1/3 md:bottom-8 md:top-8 absolute rounded" />
         <div class="z-10 relative grid md:grid-cols-2">
           <div class="flex flex-col gap-2 h-full md:py-16 p-8">
             <h2 class="text-4xl">
-              À proximité
+              {{ $t('index.nearDescTitle') }}
             </h2>
             <p class="grow">
-              Idéalement situé proche des grands axes au cœur de la vallée du Rhône, lors de votre séjour au Domaine de Pipangaille, vous pourrez visiter : le Safari de Peaugres, le Palais Idéal du facteur Cheval, le Musée de l’Alambic... Vous pourrez également vous initier au golf avec le golf d'Albon et de St Clair.
+              {{ $t('index.nearDescTextPart1') }}
             </p>
             <p class="grow">
-              Au cœur du Saint Joseph, vous pourrez aussi déguster les vins locaux et visiter de nombreuses caves. Randonnées, promenades, espace aquatique, vol en montgolfière sont également à proximité. Mais aussi la ViaRhôna en accès direct, ou encore la ViaFluvia, pas très loin.
+              {{ $t('index.nearDescTextPart2') }}
             </p>
-            <ButtonPrimary 
-              link="/a_proximite" 
-              content="En savoir plus"
-            />
+            <NuxtLink 
+              :to="localePath({ name: 'near'})"
+              class="btn-primary"
+            >
+              {{ $t('learnMore') }}
+            </NuxtLink>
           </div>
           <div class="relative">
             <img 
@@ -272,25 +276,27 @@ export default {
     this.slidesUsable = this.slides;
   },
   created() {
+    const desc = this.$t('index.meta.desc')
+    const title = this.$t('index.meta.title')
     useHead({
-      title: `Domaine de Pipangaille`,
+      title: title,
       meta: [
         {
           hid: 'description',
           name: 'description',
           // content: 'Envie d\'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal.' 
-          content: 'Nos 4 chambres d\'hôte situé à Andancette vous accueils un cadre idyllique en pleine nature. Proche de la Via Rhona accessible directement à vélo.' 
+          content: desc 
         },
         { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: 'Domaine de Pipangaille' },
-        { property: 'og:description', content: 'Envie d\'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la Via Rhona.' },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: desc },
         { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
-        { property: 'twitter:title', content: 'Domaine de Pipangaille' },
-        { property: 'twitter:description', content: 'Envie d\'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la Via Rhona.' },
+        { property: 'twitter:title', content: title },
+        { property: 'twitter:description', content: desc },
         { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
       ],
       link: [

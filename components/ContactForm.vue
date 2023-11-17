@@ -1,9 +1,8 @@
-
 <template>
   <section class="bg-almond dark:bg-dark-almond p-2 py-8 sm:p-16 rounedd-t-lg">
-    <div class="max-w-screen-lg mx-auto p-8 bg-white dark:bg-eerie-black rounded grid gap-8">
+    <div class="max-w-screen-xl mx-auto p-8 bg-white dark:bg-eerie-black rounded grid gap-8">
       <h2 class="text-4xl">
-        Nous contacter
+        {{ $t('contact.contactUs') }}
       </h2>
       <div class="grid lg:flex gap-x-16 gap-y-8">
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
@@ -18,7 +17,7 @@
               >
               <div>
                 <p class="font-semibold ml-2">
-                  Tél :
+                  {{ $t('contact.contactForm.phone') }} :
                 </p>
                 <a 
                   href="tel:+334 75 68 28 24"
@@ -38,10 +37,10 @@
               >
               <div>
                 <p class="font-semibold ml-2">
-                  Email :
+                  {{ $t('contact.contactForm.email') }} :
                 </p>
                 <a 
-                  href="mailto:contact@domaine-de-pipangaille.fr?&body=contact via email site internet %0D%0A %0D%0A Nom :   %0D%0A Prénom :    %0D%0A Télephone :     %0D%0A"
+                  :href="`mailto:contact@domaine-de-pipangaille.fr?&body=${$t('contact.contactForm.emailBody')}`"
                   target="_blank" 
                   class="pl-2 underline decoration-2 underline-offset-2 decoration-almond dark:decoration-dark-almond text-md block"
                 >
@@ -59,7 +58,7 @@
               >
               <div>
                 <p class="font-semibold ml-2">
-                  Adresse :
+                  {{ $t('contact.contactForm.address') }} :
                 </p>
                 <a 
                   href="https://www.google.fr/maps/dir//domaine+de+pipangaille/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47f53e41af912869:0xe0c49553166e1500?sa=X&ved=2ahUKEwj59IKk0474AhUa_4UKHTamDM0Q9Rd6BAhbEAQ"
@@ -71,9 +70,9 @@
               </div>
             </div>
           </div>
-          <iframe 
-            title="Carte Google maps du Domaine de Pipangaille" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d&#39;h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071!5m2!1sfr!2sfr"
+          <iframe
+            :title="$t('contact.contactForm.mapsTitle')" 
+            :src="`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d&#39;h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071!5m2!1s${local}!2sfr`"
             style="border:0;"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -95,7 +94,7 @@
               class="bg-ufo-green px-2 py-1 rounded-lg"
               @click="(success = false)"
             >
-              Message envoyé avec succès
+              {{ $t('contact.contactForm.succes') }}
             </div>
             <div class="grid gap-1">
               <div 
@@ -113,7 +112,7 @@
               for="name"
               class="font-semibold"
             >
-              Nom :
+              {{ $t('contact.contactForm.name') }} :
             </label>
             <input 
               id="name" 
@@ -130,7 +129,7 @@
               for="email"
               class="font-semibold"
             >
-              Email :
+              {{ $t('contact.contactForm.email') }} :
             </label>
             <input 
               id="email"
@@ -147,9 +146,9 @@
               for="tel" 
               class="font-semibold relative"
             >
-              Téléphone : 
+              {{ $t('contact.contactForm.phone') }} : 
               <span class="text-xs absolute pl-1 -top-1">
-                optionnel
+                {{ $t('contact.contactForm.optional') }}
               </span> 
             </label>
             <input 
@@ -163,17 +162,17 @@
           </div>
           <div class="grid">
             <label 
-              for="objet"
+              for="object"
               class="font-semibold"
             >
-              Objet :
+              {{ $t('contact.contactForm.object') }} :
             </label>
             <input 
-              id="objet"
+              id="object"
               v-model="form.object" 
               required
               type="text"
-              name="objet"
+              name="object"
               autocomplete="off"
               class="rounded-lg px-2 py-1 border outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black"
             >
@@ -183,8 +182,9 @@
               for="message"
               class="font-semibold"
             >
-              Message :
+              {{ $t('contact.contactForm.message') }} :
             </label>
+            {{ local }}
             <textarea 
               id="message"
               v-model="form.message"
@@ -197,16 +197,16 @@
           <button 
             id="submit" 
             type="submit"
-            class="col-span-2 ml-auto cursor-pointer md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md w-full text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
+            class="col-span-2 ml-auto cursor-pointer md:w-max btn-secondary"
           >
             <template v-if="(!waiting && !success)">
-              Envoyer
+              {{ $t('contact.contactForm.send') }}
             </template>
             <template v-if="(waiting && !success)">
-              Envoye en cours
+              {{ $t('contact.contactForm.sendingInProgress') }}
             </template>
             <template v-if="success">
-              Message envoyé 🚀
+              {{ $t('contact.contactForm.sent') }}
             </template>
           </button>
         </form>
@@ -219,6 +219,7 @@
 export default {
   data() {
     return {
+      local: useI18n().locale,
       errors: [],
       success: false,
       waiting: false,
@@ -292,7 +293,7 @@ export default {
         document.getElementById('contact-form').scrollIntoView()
       }
       else {
-        this.errors.push('Une erreur est suvenu durant l\'envoi');
+        this.errors.push(this.$t('contact.contactForm.errors.errorOcured'));
         document.getElementById('contact-form').scrollIntoView()
       }
     },
@@ -307,30 +308,30 @@ export default {
       }
       this.errors = [];
       if (this.success) {
-        this.errors.push('Le message a déjà été envoyé attendais quelques secondes.');
+        this.errors.push(this.$t('contact.contactForm.errors.alreadySend'));
       }
       if (!this.form.name) {
-        this.errors.push('Le champ Nom est requis.');
+        this.errors.push(this.$t('contact.contactForm.errors.nameFieldRequired'));
       }
       if (!this.form.email) {
-        this.errors.push('Le champ Email est requis.');
+        this.errors.push(this.$t('contact.contactForm.errors.emailFieldRequired'));
       } else if (!this.ValidEmail(this.form.email)) {
-        this.errors.push('Une adresse email valide est requise.');
+        this.errors.push(this.$t('contact.contactForm.errors.emailInvalid'));
       }
       if (!this.form.object) {
-        this.errors.push('Le champ Objet est requis.');
+        this.errors.push(this.$t('contact.contactForm.errors.objectFieldRequired'));
       }
       if (!this.form.message) {
-        this.errors.push('Le champ Message est requis.');
+        this.errors.push(this.$t('contact.contactForm.errors.messageFieldRequired'));
       } else if (this.form.message.length <= 10) {
-        this.errors.push('Le champ Message doit contenir aux moins 10 caractères.');
+        this.errors.push(this.$t('contact.contactForm.errors.messageFieldTtooShort'));
       }
       document.getElementById('contact-form').scrollIntoView();
       return false;
     },
     CheckSendDate() {
       if (Date.parse(new Date()) - this.sendDate < 200000) {
-        this.errors.push('Un message à déjà était envoyé. Vous pourrez à nouveau envoyer un message d\'ici quelques minutes.');
+        this.errors.push(this.$t('contact.contactForm.errors.alreadySend'));
         document.getElementById('contact-form').scrollIntoView();
         return false;
       } else {
@@ -340,12 +341,12 @@ export default {
     ShowError() {
       this.waiting = false;
       this.errors = [];
-      this.errors.push('Une erreur est survenue vérifier votre connexion ainsi que les champs remplis ou réessayés plus tard.');
+      this.errors.push(this.$t('contact.contactForm.errors.badConnection'));
       document.getElementById('contact-form').scrollIntoView()
     },
     SendMessage() {
       if (this.waiting){
-        this.errors.push('Un message est déjà en cours d\'envoi.');
+        this.errors.push(this.$t('contact.contactForm.errors.messageSending'));
       } else {
         if (this.CheckForm() && this.CheckSendDate() && this.waiting == false){
           this.errors = [];

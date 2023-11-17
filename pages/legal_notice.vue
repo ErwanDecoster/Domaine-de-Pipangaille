@@ -1,6 +1,6 @@
 <template>
   <div class="mb-8 md:pt-[5.25rem]">
-    <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
+    <section class="max-w-screen-xl mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
         Mentions Légales
       </h1>
@@ -246,23 +246,25 @@ export default {
     window.scrollTo(0,0);
   },
   created() {
+    const desc = this.$t('legalNotice.meta.desc')
+    const title = this.$t('legalNotice.meta.title') + " - Domaine de Pipangaille"
     useHead({
-      title: `Mentions Légales - Domaine de Pipangaille`,
+      title: title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Mentions Légales' 
+          content: desc 
         },
         { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: 'Mentions Légales - Domaine de Pipangaille' },
-        { property: 'og:description', content: 'Mentions Légales' },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: desc },
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
-        { property: 'twitter:title', content: 'Mentions Légales - Domaine de Pipangaille' },
-        { property: 'twitter:description', content: 'Mentions Légales' },
+        { property: 'twitter:title', content: title },
+        { property: 'twitter:description', content: desc },
       ],
       link: [
         {

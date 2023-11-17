@@ -22,6 +22,7 @@ module.exports = {
       'yellow-red': '#EFB94F',
       'copper-penny': '#B4656F',
       'ufo-green': '#42D481',
+      'transparent': 'transparent',
     },
     extend: {
       boxShadow: {

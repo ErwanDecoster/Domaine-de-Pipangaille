@@ -1,26 +1,28 @@
 <template>
   <div class="mb-8 md:pt-[5.25rem]">
-    <section class="max-w-screen-lg mx-auto px-4 grid gap-8 pt-16">
+    <section class="max-w-screen-xl mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
-        Le lieu
+        {{ $t('thePlace.title') }}
       </h1>
       <CardTypeOn 
-        title="Le Domaine de Pipangaille" 
-        :content="[{ text: `Ancienne magnanerie de plus de 150 ans, la demeure authentique, de caractère et pleine de charme est bercée par le doux tourbillon du Rhône. Outre le charme de la bâtisse vous pourrez profiter du parc, de la piscine et du pavillon d'été pour vous détendre. En accès direct sur la ViaRhôna et au cœur d'un bois, le lieu vous offre une parenthèse mêlant détente, nature et zenitude. La propriété s'étend sur trois hectares, principalement un bois, et dispose d'un parking intérieur et extérieur.`}]"
+        :title="$t('thePlace.placeDescTitle')" 
+        :content="[{ text: $t('thePlace.placeDescText') }]"
         :imgs="[ Imgs[38], Imgs[42] ]" 
       />
       <div class="grid md:grid-cols-7 rounded overflow-hidden">
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8 md:col-span-4">
           <h2 class="text-4xl">
-            Organisation d'événements
+            {{ $t('thePlace.eventOrganisationTitle') }}
           </h2>
           <p class="grow">
-            Réunions familiales, événements artistiques, anniversaires, mariages, séminaires, dégustations de vins, les propositions sont nombreuses....
+            {{ $t('thePlace.eventOrganisationText') }}
           </p>
-          <ButtonPrimary 
-            link="/contact"
-            content="Nous contacter"
-          />
+          <NuxtLink 
+            :to="localePath({ name: 'contact'})"
+            class="btn-primary"
+          >
+            {{ $t('thePlace.eventOrganisationActionButton') }}
+          </NuxtLink>
         </div>
         <img 
           :src="Imgs[25].srcs[0].src" 
@@ -30,7 +32,7 @@
         >
       </div>
       <h2 class="text-4xl sm:text-5xl">
-        Nos photos
+        {{ $t('thePlace.ourPhotosTitle') }}
       </h2>
       <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-6 gap-4">
         <div 
@@ -333,24 +335,26 @@ export default {
   },
   created() {
     this.PreparePhoto()
+    const desc = this.$t('thePlace.meta.desc')
+    const title = this.$t('thePlace.meta.title')
     useHead({
-      title: `Le lieu - Domaine de Pipangaille`,
+      title: title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Envie d\'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal.' 
+          content: desc 
         },
         { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
         { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: 'Le lieu - Domaine de Pipangaille' },
-        { property: 'og:description', content: 'Envie d\'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la Via Rhona.' },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: desc },
         { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
-        { property: 'twitter:title', content: 'Le lieu - Domaine de Pipangaille' },
-        { property: 'twitter:description', content: 'Envie d\'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la Via Rhona.' },
+        { property: 'twitter:title', content: title },
+        { property: 'twitter:description', content: desc },
         { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
       ],
       link: [

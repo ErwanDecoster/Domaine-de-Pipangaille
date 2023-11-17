@@ -3,7 +3,7 @@
     v-if="onBookPage" 
     class="p-8 bg-white dark:bg-eerie-black rounded-t-2xl shadow-lg-inverted dark:shadow-lg-dark-inverted z-10"
   >
-    <div class="max-w-screen-lg mx-auto relative flex justify-center">
+    <div class="max-w-screen-xl mx-auto relative flex justify-center">
       <NuxtLink
         to="/" 
         class="hidden lg:block p-2 absolute left-0 top-1/2 -translate-y-1/2 md:translate-x-1/2"
@@ -27,33 +27,33 @@
       <div class="grid sm:grid-cols-2 sm:gap-12">
         <div class="flex flex-col items-center">
           <ButtonInline 
-            link="https://www.facebook.com/domainedepipangaille"
-            content="Facebook"
+            link="https://facebook.com/domainedepipangaille"
+            content="facebook"
             newWindow="_blank" 
           />
           <ButtonInline 
-            link="https://www.linkedin.com/company/domaine-de-pipangaille/"
-            content="LinkedIn"
+            link="https://linkedin.com/company/domaine-de-pipangaille/"
+            content="linkedin"
             newWindow="_blank" 
           />
           <ButtonInline 
-            link="https://www.instagram.com/domaine_de_pipangaille"
-            content="Instagram" 
+            link="https://instagram.com/domaine_de_pipangaille"
+            content="instagram" 
             newWindow="_blank" 
           />
         </div>
         <div class="flex flex-col items-center">
-          <ButtonInline 
-            link="/contact"
-            content="Contact" 
+          <LocalButtonInline 
+            link="contact"
+            content="contact.contactUs" 
           />
-          <ButtonInline 
-            link="/mentions_legales"
-            content="Mentions Légales"
+          <LocalButtonInline 
+            link="legal_notice"
+            content="legalNotice.title"
           />
-          <ButtonInline 
-            link="/condition_general_de_vente"
-            content="Condition general de vente"
+          <LocalButtonInline 
+            link="general_condition_of_sale"
+            content="generalConditionOfSale.title"
           />
         </div>
       </div>
@@ -70,7 +70,7 @@ export default {
   },
   computed: {
     onBookPage() {
-      if (this.$route.path == '/reserver') {
+      if (this.$route.name.search('book') !== -1) {
         return false;
       }
       return true;
