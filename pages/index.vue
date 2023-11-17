@@ -293,13 +293,13 @@ export default {
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: title },
         { property: 'og:description', content: desc },
-        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
+        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11_488x320.webp' },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
         { property: 'twitter:title', content: title },
         { property: 'twitter:description', content: desc },
-        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11.jpeg' },
+        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + '/images/photo_11_488x320.webp' },
       ],
       link: [
         {

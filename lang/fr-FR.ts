@@ -12,7 +12,7 @@ export default {
   index: {
     title: "Accueil",
     meta: {
-      title: "Domaine de Pipangaille | Chambres d'hôtes de charme à Andancette",
+      title: "Domaine de Pipangaille - Chambres d'hôtes de charme à Andancette",
       desc: "Nos 4 chambres d'hôte situé à Andancette vous accueils un cadre idyllique en pleine nature. Proche de la Via Rhona accessible directement à vélo.",
     },
     welcome: "Votre séjour au",
