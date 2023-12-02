@@ -6,7 +6,7 @@
     :style="{ 'font-size': fontSize + 'px' }"
     :title="$t(content)"
   >
-    {{ content }}
+    {{ $t(content) }}
   </NuxtLink>
 </template>
 

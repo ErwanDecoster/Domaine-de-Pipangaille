@@ -6,13 +6,14 @@ export default {
   facebook: "Facebook",
   instagram: "Instagram",
   linkedin: "LinkedIn",
+  twitter: "Twitter (x)",
   schedulesAndPrices: "Horaires et Tarifs",
   price: "Tarifs",
   ticketing: "Billetterie",
   index: {
     title: "Accueil",
     meta: {
-      title: "Domaine de Pipangaille | Chambres d'hôtes de charme à Andancette",
+      title: "Domaine de Pipangaille - Chambres d'hôtes à Andancette",
       desc: "Nos 4 chambres d'hôte situé à Andancette vous accueils un cadre idyllique en pleine nature. Proche de la Via Rhona accessible directement à vélo.",
     },
     welcome: "Votre séjour au",
@@ -21,6 +22,7 @@ export default {
     guestroomDescTitle: "Nos chambres d'hôtes",
     guestroomDescText: "Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d'été à votre disposition ainsi qu'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étag",
     guestroomDescActionButton: "Voir les chambres",
+    reviewsTittle: "Avis clients",
     nearDescTitle: "À proximité",
     nearDescTextPart1: "Idéalement situé proche des grands axes au cœur de la vallée du Rhône, lors de votre séjour au Domaine de Pipangaille, vous pourrez visiter : le Safari de Peaugres, le Palais Idéal du facteur Cheval, le Musée de l’Alambic... Vous pourrez également vous initier au golf avec le golf d'Albon et de St Clair.",
     nearDescTextPart2: "Au cœur du Saint Joseph, vous pourrez aussi déguster les vins locaux et visiter de nombreuses caves. Randonnées, promenades, espace aquatique, vol en montgolfière sont également à proximité. Mais aussi la ViaRhôna en accès direct, ou encore la ViaFluvia, pas très loin.",
@@ -319,10 +321,14 @@ export default {
       title: "Réserver - Domaine de Pipangaille - Chambres d'hôtes à Andancette",
       desc: "Réservez dès aujourd'hui votre chambre au Domaine de Pipangaille, un charmant B&B à Andancette. Cadre pittoresque en pleine nature.",
     },
+    loadingText: [
+      "Chargement de la page de réservation. Cela peut prendre un petit moment.",
+      "Si rien ne charge, réserver directement aux { tel }.",
+    ],
   },
   contact: {
-    contactUs: "Nous contacter",
     title: "contact",
+    contactUs: "Nous contacter",
     meta: {
       title: "Contactez-nous - Domaine de Pipangaille",
       desc: "Réservez dès maintenant votre séjour dans nos chambres d'hôtes. Contactez-nous pour plus d'informations.",
@@ -365,12 +371,181 @@ export default {
       title: "Mentions Légales - Domaine de Pipangaille - Chambres d'hôtes de charme à Andancette",
       desc: "Consultez les mentions légales du Domaine de Pipangaille, des charmantes chambres d'hôte situé à Andancette, offrant un cadre pittoresque en pleine nature.",
     },
+    siteEditor: {
+      title: "éditeur du site",
+      company: "Identification de la Société",
+      headquarters: "Siège social",
+      rcs: "RCS",
+      nafCode: "Code NAF",
+      shareCapital: "Capital social",
+      phone: "Téléphone",
+      email: "Email ",
+      director: "dirigeant",
+      publicationDirector: "Directeur de la Publication"
+    },
+    siteDesignAndDevelopment: {
+      title: "CONCEPTION ET DÉVELOPPEMENT DU SITE",
+      company: "Société",
+      phone: "Téléphone",
+      email: "Email",
+      website: "Site",
+      github: "Github",
+      siteRepo: "Repo Github"
+    },
+    siteHosting: {
+      title: "HEBERGEMENT DU SITE",
+    },
+    domainNameOwnership: {
+      title: "possèssion du nom de domaine",
+    },
+    photoCredit: {
+      title: "CRÉDIT PHOTOS",
+      description: "Toutes les photos sont la propriété de {compagny}"
+    },
+    cookieUsage: {
+      title: "UTILISATION DES COOKIES",
+      description: "Ce site utilise les cookies dans un but de statistiques et de fonctionnement uniquement."
+    },
+    personalDataUsage: {
+      title: "UTILISATION DES DONNÉES PERSONNELLES",
+      description: [
+        "En utilisant les formulaires présents sur le site, vous acceptez le stockage des données ainsi transmises et le traitement de celles-ci. Elles sont conservées et traitées à des fins de gestion, d'historique et d'amélioration de nos services.",
+        "Les données sont conservées pour une durée raisonnable de 10 ans.",
+        "Pour toute demande de suppression, de rectification ou d'accès aux données, veuillez effectuer une demande par email à : {email} ou par courrier à l'adresse : {address}"
+      ]
+    },
+    responsibility: {
+      title: "RESPONSABILITÉ DE LA {compagny}",
+      description: [
+        "Dans les conditions autorisées par la loi, la {compagny} n'encourt aucune responsabilité :",
+        "Pour toute imprécision, inexactitude, omission ou pour tous dommages résultant d'une intrusion d'un tiers ayant entraîné une modification des informations mises à disposition sur le Site.",
+        "En cas de dommages provoqués en raison de l'accès d'un tiers non autorisé sur le Site ou rendant impossible son accès.",
+        "Le visiteur est informé que l'accès au Site pourra être interrompu à tout moment par la {compagny} en raison de maintenance, de sécurité ou toute autre contrainte technique."
+      ]
+    },
+    applicableLaw: {
+      title: "DROIT APPLICABLE",
+      description: "Les présentes mentions sont régies par le droit français. Les juridictions françaises sont seules compétentes pour connaître tout litige se rapportant directement ou indirectement à l'accès au présent Site ou à son utilisation."
+    }
   },
   generalConditionOfSale: {
     title: "Conditions générales de vente",
+    pageTitle: "Condition general de vente des séjours en chambre d'hôtes",
     meta: {
       title: "Conditions générales de vente - Domaine de Pipangaille",
       desc: "Consultez nos conditions générales de vente pour les séjours en chambre d'hôtes au Domaine de Pipangaille. Réservez votre séjour en toute tranquillité.",
     },
+    "articles": [
+      {
+        "title": "DURÉE DU SÉJOUR",
+        "description": [
+          "Le client signataire du présent contrat conclu pour une durée déterminée ne pourra en aucune circonstance se prévaloir d'un quelconque droit au maintien dans les lieux."
+        ]
+      },
+      {
+        "title": "FORMALITÉS DE RÉSERVATION",
+        "description": [
+          "La réservation devient effective dès lors que le client aura fait parvenir au propriétaire un acompte de 25 % du montant total du prix du séjour avec un minimum d'une nuitée par chambre retenue et un exemplaire du contrat signé avant la date indiquée au recto.",
+          "Le deuxième exemplaire du contrat est à conserver par le client.",
+          "Les prix s'entendent toutes charges comprises suivant la fiche descriptive, hors taxe de séjour."
+        ]
+      },
+      {
+        "title": "CODE DE LA CONSOMMATION - DROIT DE RÉTRACTATION",
+        "description": [
+          "Une réservation faite en ligne, par téléphone, et/ou par correspondance est un achat à distance. Il s'agit d'un contrat conclu à distance au sens de la définition donnée par le Code de la consommation.",
+          "Nous sommes soumis aux articles L. 121-17 et suivants du code de la consommation.",
+          "Nous vous remarquons que le droit de rétractation n'existe pas pour les contrats des prestations de services d'hébergement."
+        ]
+      },
+      {
+        "title": "ANNULATION DU SÉJOUR PAR LE CLIENT",
+        "description": [
+          "Toute modification n'est possible qu'après l'accord de « Domaine de Pipangaille » et peut entraîner des frais supplémentaires.",
+          "Nous vous informons qu'en cas d'annulation de la réservation avant le début du séjour, il sera dû, à titre de clause pénale par le client, une indemnité fixée de la façon suivante :",
+          "- si l'annulation intervient plus de 1 semaine avant la date d'arrivée, l'acompte sera remboursé dans sa totalité;",
+          "- si l'annulation intervient moins de 1 semaine avant la date d'arrivée, l'acompte restera acquis à Domaine de Pipangaille qui en droit de réclamer et de facturer le solde du prix du séjour (conformément au contrat de réservation) si le séjour reste vacant suite à l'annulation.",
+          "En cas de départ anticipé en cours de séjour : le règlement total de la prestation réservée est dû quel qu'en soit le motif."
+        ]
+      },
+      {
+        "title": "ASSURANCE ANNULATION À CHARGE DU CLIENT",
+        "description": [
+          "Nous attirons votre attention sur le fait qu'aucune assurance annulation n'est incluse dans nos tarifs.",
+          "Il est par conséquent vivement recommandé d'en souscrire une."
+        ]
+      },
+      {
+        "title": "ANNULATION DU SÉJOUR PAR LE PROPRIÉTAIRE",
+        "description": [
+          "Si, avant le début du séjour, le propriétaire est amené à annuler la réservation, il doit aussitôt en informer son client par tout moyen.",
+          "Le client sera alors immédiatement et intégralement remboursé des sommes qu'il aura déjà versées."
+        ]
+      },
+      {
+        "title": "HEURE D'ARRIVÉE",
+        "description": [
+          "L'arrivée est prévue l'après-midi à partir de { minCheckIn }, et possible jusqu'à { maxCheckIn }.",
+          "En cas de demande particulière ou imprévue, il sera nécessaire de nous contacter par téléphone au { tel } pour nous signaler tout retard."
+        ]
+      },
+      {
+        "title": "HEURE DE DÉPART",
+        "description": [
+          "L'heure de départ des chambres est fixée à { maxCheckOut } au plus tard."
+        ]
+      },
+      {
+        "title": "RÈGLEMENT DU SOLDE DE L'HÉBERGEMENT",
+        "description": [
+          "Le paiement du solde du séjour s'effectuera un jour avant votre arrivée, conformément à votre contrat de réservation.",
+          "Tous éventuels frais additionnels, entre autres afférents à la table d'hôte et aux boissons vous seront facturés le jour de votre départ."
+        ]
+      },
+      {
+        "title": "CHANGEMENT DE CHAMBRES",
+        "description": [
+          "Sans que le client ne puisse se prévaloir d'aucune indemnité, le propriétaire se réserve la possibilité de changer la chambre initialement réservée par le client par une chambre de même capacité ou de capacité supérieure.",
+          "En pareil cas, le coût de la réservation reste inchangé."
+        ]
+      },
+      {
+        "title": "ANIMAUX DE COMPAGNIE",
+        "description": [
+          "Les animaux de compagnie ne sont pas autorisés."
+        ]
+      },
+      {
+        "title": "ART DE VIVRE ET UTILISATION DES LIEUX",
+        "description": [
+          "Afin de garantir la quiétude des lieux et le confort des hôtes du Domaine de Pipangaille, le respect d'un certain « art de vivre » est exigé de tous.",
+          "Il est notamment demandé de ne pas fumer à l'intérieur.",
+          "Le client s'engage à respecter les consignes de savoir-vivre qui lui seront indiquées et les présentes conditions générales de vente.",
+          "Le client s'engage à rendre les chambres en parfait état et exemptes de dommages à la fin du séjour et à déclarer systématiquement - et à assumer financièrement - toute dégradation dont il serait responsable.",
+          "Les frais de réparations y compris le temps des interventions nécessaires à la remise en état seront réglés selon facturation distincte et sur la base des justificatifs des frais engagés.",
+          "L'attention des hôtes est attirée sur le fait que les mineurs évoluant sur la propriété sont placés sous l'unique et entière responsabilité de leurs parents ou des personnes ayant autorité sur eux.",
+          "Les enfants doivent toujours être accompagnés par un adulte dans notre maison et/ou sur le terrain (inclus la piscine).",
+          "Votre séjour au Domaine de Pipangaille et l'usage de notre équipement et de nos facilités comme la piscine, la cuisine commune et lieu de stationnement se fait volontairement et à vos propres risques.",
+          "Le Domaine de Pipangaille ne répond pas des cas de perte, de vol et/ou de dommages ou de blessures causés aux biens et/ou aux personnes se trouvant sur la propriété, et ce, quelle qu'en soit la cause."
+        ]
+      },
+      {
+        "title": "MODIFICATION DES CONDITIONS DE VENTE",
+        "description": [
+          "Les présentes conditions de vente sont modifiables à tout moment et sans préavis.",
+          "L'acceptation et le respect de ces conditions de vente sont réputés acquis aussitôt l'acompte versé."
+        ]
+      },
+      {
+        "title": "LOI INFORMATIQUE ET LIBERTÉ",
+        "description": [
+          "Conformément à la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous bénéficiez d'un droit d'accès et de rectification aux données vous concernant.",
+          "Nous nous engageons à ne transmettre en aucun cas les informations que vous nous avez communiquées à d'autres sociétés ou organismes."
+        ]
+      }
+    ],
+  "conditions_generales_vente": {
+    "sejours_en_chambre_hotes": "Domaine de Pipangaille",
+  }
   },
 }

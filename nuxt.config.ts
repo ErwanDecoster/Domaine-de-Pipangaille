@@ -38,19 +38,19 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     locales: [
       {
+        code: 'fr',
+        iso: 'fr-FR',
+        name: 'Français',
+        file: "fr-FR.ts",
+        dir: "ltr",
+      },
+      {
         code: 'en',
         iso: 'en-US',
         name: 'English',
         file: "en-US.ts",
         dir: "ltr",
       },
-      {
-        code: 'fr',
-        iso: 'fr-FR',
-        name: 'Français',
-        file: "fr-FR.ts",
-        dir: "ltr",
-      }
     ],
     customRoutes: 'config',
     pages: {
@@ -67,15 +67,15 @@ export default defineNuxtConfig({
         en: '/accommodation/[id]',
       },
       'near/index': {
-        fr: '/à-proximité',
+        fr: '/a-proximité',
         en: '/near',
       },
       'near/[group]/[id]': {
-        fr: '/à-proximité/[group]/[id]',
+        fr: '/a-proximité/[group]/[id]',
         en: '/near/[group]/[id]',
       },
       book: {
-        fr: '/réserver',
+        fr: '/reserver',
         en: '/book',
       },
       contact: {
@@ -83,7 +83,7 @@ export default defineNuxtConfig({
         en: '/contact-us',
       },
       legal_notice: {
-        fr: '/mentions-légales',
+        fr: '/mentions-legales',
         en: '/legal-notice',
       },
       general_condition_of_sale: {

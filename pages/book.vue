@@ -1,11 +1,12 @@
 <template>
   <div class="md:pt-14 relative h-[100vh]">
     <div class="p-8 absolute inset-8 md:inset-16 rounded-xl">
-      <p class="mx-auto center text-lg">
-        Chargement de la page de réservation. Cela peut prendre un petit moment.
-      </p>
-      <p class="mx-auto center text-lg">
-        Si rien ne charge, réserver directement aux 04 75 68 28 24.
+      <p 
+        v-for="row in $tm('book.loadingText')" 
+        :key="row"
+        class="mx-auto center text-lg"
+      >
+        {{ $rt(row, { tel: tel }) }}
       </p>
     </div>
     <iframe 
@@ -26,6 +27,7 @@ export default {
       nbEnfant: 0,
       startDate: this.DateNow(new Date(), 0),
       endDate: this.DateNow(new Date(), 1),
+      tel: "+33475682824",
     };
   },
   mounted() {

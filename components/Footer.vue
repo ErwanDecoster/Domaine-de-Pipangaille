@@ -34,13 +34,18 @@
             newWindow="_blank" 
           />
           <ButtonInline 
+            link="https://instagram.com/domaine_de_pipangaille"
+            content="instagram" 
+            newWindow="_blank" 
+          />
+          <ButtonInline 
             link="https://linkedin.com/company/domaine-de-pipangaille/"
             content="linkedin"
             newWindow="_blank" 
           />
           <ButtonInline 
-            link="https://instagram.com/domaine_de_pipangaille"
-            content="instagram" 
+            link="https://twitter.com/D_Pipangaille"
+            content="twitter" 
             newWindow="_blank" 
           />
         </div>

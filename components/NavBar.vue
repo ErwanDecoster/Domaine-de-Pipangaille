@@ -111,49 +111,50 @@ const availableLocales = computed(() => {
       <span class="w-8 bg-black dark:bg-white h-1 block rounded-full -rotate-45 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" />
     </button>
     <NuxtLink 
-      to="/"
+      to="index"
       class="group flex gap-2 items-center absolute left-6 top-6"
-      @click="fullNavOpen = !fullNavOpen"
       title="Domaine de Pipangaille"
+      @click="fullNavOpen = !fullNavOpen"
     > 
       <p class="whitespace-nowrap text-xl">
         domaine-de-pipangaille.fr
       </p>
     </NuxtLink>
+    <LangSwitcher class="absolute left-6 top-16" />
     <div class="flex flex-col flex-wrap justify-center items-center gap-4 mx-auto h-full">
       <LocalButtonInline
-        link="/"
-        content="Accueil"
+        link="index"
+        content="index.title"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />
       <LocalButtonInline
-        link="/the_place"
-        content="Le lieu"
+        link="the_place"
+        content="thePlace.title"
         fontSize="20" 
         @click="fullNavOpen = !fullNavOpen"
       />
       <LocalButtonInline
-        link="/accommodation"
-        content="Nos hébergements"
+        link="accommodation"
+        content="accommodation.title"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />
       <LocalButtonInline
-        link="/a_proximite"
-        content="À proximité"
+        link="near"
+        content="near.title"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />
       <LocalButtonInline
-        link="/reserver"
-        content="Réserver"
+        link="book"
+        content="book.title"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />
       <LocalButtonInlineSecondary
-        link="/contact"
-        content="Nous contacter"
+        link="contact"
+        content="contact.contactUs"
         fontSize="20"
         @click="fullNavOpen = !fullNavOpen"
       />

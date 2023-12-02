@@ -1,6 +1,11 @@
+✔️ refactor lang json
+✔️ add translate gestion for general-condition-of-sale page
+✔️ add translate gestion for legal-notice page
+✔️ add translate gestion for book page
 - add translate gestion for ALT img text
-- add translate gestion for legal-notice page
-- add translate gestion for general-condition-of-sale page
-- add translate gestion for all Google Maps link
+✔️ add translate gestion for all Google Maps link
 - add request for agreement for Google Maps integration
 - translate in english
+- translate in russe
+- translate in spanish
+- translate in portuguese

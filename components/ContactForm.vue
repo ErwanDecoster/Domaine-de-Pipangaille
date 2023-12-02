@@ -23,7 +23,7 @@
                   href="tel:+334 75 68 28 24"
                   class="pl-2 underline decoration-2 underline-offset-2 decoration-almond dark:decoration-dark-almond text-md block"
                 >
-                  04 75 68 28 24
+                  +33 4 75 68 28 24
                 </a>
               </div>
             </div>
@@ -70,9 +70,10 @@
               </div>
             </div>
           </div>
+          <!-- :src="`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d&#39;h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071!5m2!1s${local}!2s${local}`" -->
           <iframe
             :title="$t('contact.contactForm.mapsTitle')" 
-            :src="`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d&#39;h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071!5m2!1s${local}!2sfr`"
+            :src="`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d&#39;h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071`"
             style="border:0;"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -184,7 +185,6 @@
             >
               {{ $t('contact.contactForm.message') }} :
             </label>
-            {{ local }}
             <textarea 
               id="message"
               v-model="form.message"

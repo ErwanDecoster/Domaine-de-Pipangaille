@@ -2,124 +2,124 @@
   <div class="mb-8 md:pt-[5.25rem]">
     <section class="max-w-screen-xl mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
-        Mentions Légales
+        {{ $t('legalNotice.legalNotice.title') }}
       </h1>
       <div class="grid gap-8">
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            éditeur du site
+            {{ $t('legalNotice.siteEditor.title') }}
           </h2>
           <div>
             <p>
-              Identification de la Société :
-              <span>SAS Domaine de Pipangaille</span>
+              {{ $t('legalNotice.siteEditor.company') }} :
+              <span>{{ company }}</span>
             </p>
             <p>
-              Siège social : 
+              {{ $t('legalNotice.siteEditor.headquarters') }} :
               <span>
                 <a 
                   href="https://www.google.fr/maps/dir//domaine+de+pipangaille/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47f53e41af912869:0xe0c49553166e1500?sa=X&ved=2ahUKEwj59IKk0474AhUa_4UKHTamDM0Q9Rd6BAhbEAQ"
                   target="_blank"
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  1 Quartier Les Marettes, 26140, Andancette
+                  {{ address }}
                 </a>
               </span>
             </p>
             <div class="flex gap-2">
-              <p>RCS : <span>904 638 814</span> /</p>
-              <p>Code NAF : <span>55202</span> /</p>
-              <p>Capital social : <span>1 500 euro</span></p>
+              <p>{{ $t('legalNotice.siteEditor.rcs') }} : <span>{{ RCS }}</span> /</p>
+              <p>{{ $t('legalNotice.siteEditor.nafCode') }} : <span>{{ NAF }}</span> /</p>
+              <p>{{ $t('legalNotice.siteEditor.shareCapital') }} : <span>{{ shareCapital }} €</span></p>
             </div>
             <p>
-              Téléphone : 
+              {{ $t('legalNotice.siteEditor.phone') }} : 
               <span>
                 <a 
-                  href="tel:+334 75 68 28 24"
+                  :href="`tel:${tel}`"
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  04 75 68 28 24
+                  {{ tel }}
                 </a>
               </span>
             </p>
             <p>
-              Email : 
+              {{ $t('legalNotice.siteEditor.email') }} : 
               <span>
                 <a 
-                  href="mailto:contact@domaine-de-pipangaille.fr"
+                  :href="`mailto:${email}`"
                   target="_blank"
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  contact@domaine-de-pipangaille.fr
+                  {{ email }}
                 </a>
               </span>
             </p>
-            <p>Dirigeant : <span>Catherine Lemoine</span></p>
-            <p>Directeur de la Publication : <span>Catherine Lemoine</span></p>
+            <p>{{ $t('legalNotice.siteEditor.director') }} : <span>{{ director }}</span></p>
+            <p>{{ $t('legalNotice.siteEditor.publicationDirector') }} : <span>{{ director }}</span></p>
           </div>
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            CONCEPTION ET DÉVELOPPEMENT DU SITE
+            {{ $t('legalNotice.siteDesignAndDevelopment.title') }}
           </h2>
           <div>
-            <p>Société : <span>Decoster Erwan</span></p>
+            <p>{{ $t('legalNotice.siteDesignAndDevelopment.company') }} : <span>{{ design.company }}</span></p>
             <p>
-              Téléphone : 
+              {{ $t('legalNotice.siteDesignAndDevelopment.phone') }} : 
               <span>
                 <a 
                   href="tel:+33625306813"
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  06 25 30 68 13
+                  {{ design.tel }}
                 </a>
               </span>
             </p>
             <p>
-              Email : 
+              {{ $t('legalNotice.siteDesignAndDevelopment.email') }} : 
               <span>
                 <a 
-                  href="mailto:erwan.decoster.pro@gmail.com"
+                  :href="`mailto:${design.email}`"
                   target="_blank" 
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  erwan.decoster.pro@gmail.com
+                  {{ design.email }}
                 </a>
               </span>
             </p>
             <p>
-              Site : 
+              {{ $t('legalNotice.siteDesignAndDevelopment.website') }} : 
               <span>
                 <a 
-                  href="https://erwan-decoster.com/"
+                  :href="`https://${design.website}`"
                   target="_blank" 
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  erwan-decoster.com
+                  {{ design.website }}
                 </a>
               </span>
             </p>
             <p>
-              Github : 
+              {{ $t('legalNotice.siteDesignAndDevelopment.github') }} : 
               <span>
                 <a 
-                  href="https://github.com/ErwanDecoster"
+                  :href="`https://${design.github}`"
                   target="_blank" 
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  github.com/ErwanDecoster
+                  {{ design.github }}
                 </a>
               </span>
             </p>
             <p>
-              Repo du site : 
+              {{ $t('legalNotice.siteDesignAndDevelopment.siteRepo') }}
               <span>
                 <a 
                   href="https://github.com/ErwanDecoster/Domaine-de-Pipangaille" 
                   target="_blank"
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  github.com/ErwanDecoster/Domaine-de-Pipangaille
+                  {{ design.websiteRepo }}
                 </a>
               </span>
             </p>
@@ -127,18 +127,18 @@
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            HEBERGEMENT DU SITE
+            {{ $t('legalNotice.siteHosting.title') }}c
           </h2>
           <div>
             <p>
-              Vercel Inc |  : 
+              {{ hosting }} : 
               <span>
                 <a 
-                  href="https://vercel.com/"
+                  :href="`https://${hostingWebsite}`"
                   target="_blank"
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  vercel.com
+                  {{ hostingWebsite }}
                 </a>
               </span>
             </p>
@@ -146,18 +146,18 @@
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            possèssion du nom de domaine
+            {{ $t('legalNotice.domainNameOwnership.title') }}
           </h2>
           <div>
             <p>
-              Hostinger International Ltd |  : 
+              {{ domainName }} : 
               <span>
                 <a 
-                  href="https://www.hostinger.fr/"
+                  :href="`https://${domainWebsite}`"
                   target="_blank"
                   class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
                 >
-                  hostinger.fr
+                  {{ domainWebsite }}
                 </a>
               </span>
             </p>
@@ -165,70 +165,52 @@
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            CRÉDIT PHOTOS
+            {{ $t('legalNotice.photoCredit.title') }}
           </h2>
           <div>
-            <p>Toutes les photos sont la propriété de SAS Domaine de Pipangaille.</p>
+            <p>{{ $t('legalNotice.photoCredit.description') }}</p>
           </div>
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            UTILISATION DES COOKIES
+            {{ $t('legalNotice.cookieUsage.title') }}
           </h2>
           <div>
-            <p>Ce site utilise les cookies dans un but de statistiques et de fonctionnement uniquement.</p>
+            <p>{{ $t('legalNotice.cookieUsage.description') }}</p>
           </div>
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            UTILISATION DES DONNÉES PERSONNELLES
+            {{ $t('legalNotice.personalDataUsage.title') }}
           </h2>
           <div>
-            <p>En utilisant les formulaires présents sur le site, vous acceptez le stockage des données ainsi transmises et le traitement de celles-ci. Elles sont conservées et traitées à des fins de gestion, d'historique et d'amélioration de nos services.</p>
-            <p>Les données sont conservées pour une durée raisonnable de 10 ans.</p>
-            <p>
-              Pour toute demande de suppression, de rectification ou d'accès aux données, veuillez effectuer une demande par email à : 
-              <span>
-                <a 
-                  href="mailto:contact@domaine-de-pipangaille.fr"
-                  target="_blank"
-                  class="underline decoration-2 underline-offset-2 decoration-almond text-md"
-                >
-                  contact@domaine-de-pipangaille.fr 
-                </a>
-              </span>
-              ou par courrier à l'adresse : 
-              <span>
-                <a 
-                  href="https://www.google.fr/maps/dir//domaine+de+pipangaille/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47f53e41af912869:0xe0c49553166e1500?sa=X&ved=2ahUKEwj59IKk0474AhUa_4UKHTamDM0Q9Rd6BAhbEAQ"
-                  target="_blank"
-                  class="p-2 underline decoration-2 underline-offset-2 decoration-almond text-md"
-                >
-                  1 Quartier Les Marettes 26140 Andancette
-                </a>
-              </span>
+            <p 
+              v-for="row in $tm('legalNotice.personalDataUsage.description')"
+              :key="row"
+            >
+              {{ $rt(row, { email: email, address: address }) }}
             </p>
           </div>
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            RESPONSABILITÉ DE LA SAS DOMAINE DE PIPANGAILLE
+            {{ $t('legalNotice.responsibility.title', { company: company }) }}
           </h2>
           <div>
-            <p>Dans les conditions autorisées par la loi, la SAS Domaine de Pipangaille n'encourt aucune responsabilité :</p>
-            <ul>
-              <li>Pour toute imprécision, inexactitude, omission ou pour tous dommages résultant d'une intrusion d'un tiers ayant entraîné une modification des informations mises à disposition sur le Site.</li>
-              <li>En cas de dommages provoqués en raison de l'accès d'un tiers non autorisé sur le Site ou rendant impossible son accès.</li>
-            </ul>
-            <p>Le visiteur est informé que l'accès au Site pourra être interrompu à tout moment par la SAS Domaine de Pipangaille en raison de maintenance, de sécurité ou toute autre contrainte technique.</p>
+            <p 
+              v-for="row in $tm('legalNotice.responsibility.description')"
+              :key="row"
+            >
+              {{ $rt(row, { company: company }) }}
+            </p>
           </div>
         </div>
         <div class="grid gap-2">
           <h2 class="text-4xl uppercase">
-            DROIT APPLICABLE
+            {{ $t('legalNotice.applicableLaw.title') }}
           </h2>
           <div>
-            <p>Les présentes mentions sont régies par le droit français. Les juridictions françaises sont seules compétentes pour connaître tout litige se rapportant directement ou indirectement à l'accès au présent Site ou à son utilisation.</p>
+            <p>{{ $t('legalNotice.applicableLaw.description') }}</p>
           </div>
         </div>
       </div>
@@ -240,6 +222,27 @@
 export default {
   data() {
     return {
+      address: "1 Quartier Les Marettes, 26140, Andancette",
+      mapsLink: "",
+      RCS: "904 638 814",
+      NAF: "55202",
+      shareCapital: "1500",
+      tel: "+33475682824",
+      email: "contact@domaine-de-pipangaille.fr",
+      director: "Catherine Lemoine",
+      company: "SAS Domaine de Pipangaille",
+      design: {
+        company: "Erwan Decoster",
+        tel: "+33625306813",
+        email: "contact@erwan-decoster.com",
+        website: "erwan-decoster.com",
+        github: "github.com/ErwanDecoster",
+        websiteRepo: "github.com/ErwanDecoster/Domaine-de-Pipangaille",
+      },
+      hosting: "Vercel Inc",
+      hostingWebsite: "vercel.com",
+      domainName: "Hostinger International Ltd",
+      domainWebsite: "hostinger.fr",
     };
   },
   mounted() {

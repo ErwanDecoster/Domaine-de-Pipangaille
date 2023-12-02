@@ -37,16 +37,9 @@ export default {
       identifierAttribute: 'id',
       addSeoAttributes: true
     })
+    console.log();
     const title = this.$t('index.meta.title')
     useHead({
-      script: [
-        {
-          id: 'seona-js-plugin',
-          defer: true,
-          src: 'https://assets.usestyle.ai/seonajsplugin',
-          type: 'text/javascript'
-        },
-      ],
       title: title,
       htmlAttrs: {
         lang: head.value.htmlAttrs.lang,
@@ -59,7 +52,11 @@ export default {
         { name: 'theme-color', content: '#ffffff'},
       ],
     })
-  }
+  },
+  mounted() {
+    const style = "background: #1A1D1A; color: #eee; border-radius: 4px; padding: 2px 10px; border: 1px solid #595859; font-size: 16px;";
+    console.log("%cWebsite designed and developed by Erwan Decoster www.erwan-decoster.com in Nuxt 🤍\nGithub repo : https://github.com/ErwanDecoster/Domaine-de-Pipangaille", style)
+  },
 }
 </script>
 
