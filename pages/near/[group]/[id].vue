@@ -5,7 +5,7 @@
         {{ aProximiterSelected.title }}
       </h1>
       <CardTypeOn 
-        :title="group === 'toVisit' ? 'Le lieu' : 'Le restaurant'" 
+        :title="group === 'toVisit' ? $t('near.toVisit.thePlace') : $t('near.restore.restaurant')" 
         :content="$tm(`near.${group}.${aProximiterSelected.i18n}.longDesc`)"
         :imgs="[Imgs[aProximiterSelected.imgs[1].id], Imgs[aProximiterSelected.imgs[2].id]]"
         :links="aProximiterSelected.links" 
@@ -24,7 +24,7 @@
       </div>
       <div class="grid gap-4">
         <h2 class="text-4xl">
-          {{ group === 'toVisit' ? 'Autre lieu a visiter' : 'Autre endroit ou se restaurer' }}
+          {{ group === 'toVisit' ? $t('near.toVisit.otherPlaceToVisit') : $t('near.restore.anotherPlaceToEat') }}
         </h2>
         <PageCardGroup
           v-if="aProximiterNoSelected"

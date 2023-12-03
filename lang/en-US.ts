@@ -1,551 +1,555 @@
 export default {
-  learnMore: "En savoir plus",
-  bookNow: "Réserver maintenent",
-  photos: "photos",
-  website: "site internet",
+  learnMore: "Learn more",
+  bookNow: "Book now",
+  photos: "Photos",
+  website: "Website",
   facebook: "Facebook",
   instagram: "Instagram",
   linkedin: "LinkedIn",
-  twitter: "Twitter (x)",
-  schedulesAndPrices: "Horaires et Tarifs",
-  price: "Tarifs",
-  ticketing: "Billetterie",
+  twitter: "Twitter",
+  schedulesAndPrices: "Schedules and Prices",
+  prices: "Prices",
+  ticketing: "Ticketing",
+  ourSocialNetworks: "Our Social Networks",
+  ourOtherPages: "Our Other Pages",
   index: {
-    title: "Accueil",
+    title: "Home",
     meta: {
-      title: "Domaine de Pipangaille - Chambres d'hôtes à Andancette",
-      desc: "Nos 4 chambres d'hôte situé à Andancette vous accueils un cadre idyllique en pleine nature. Proche de la Via Rhona accessible directement à vélo.",
+      title: "Domaine de Pipangaille - Bed and Breakfast in Andancette",
+      desc: "Our 4 guest rooms located in Andancette welcome you in an idyllic setting surrounded by nature. Close to the Via Rhona, accessible directly by bike."
     },
-    welcome: "Votre séjour au",
-    placeDescTitle: "Le Domaine de Pipangaille",
-    placeDescText: "Le Domaine de Pipangaille, ancienne magnanerie récemment rénovée vous propose un séjour magique dans un cadre idyllique. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événement à fêter, le domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la ViaRhôna.",
-    guestroomDescTitle: "Nos chambres d'hôtes",
-    guestroomDescText: "Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d'été à votre disposition ainsi qu'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étag",
-    guestroomDescActionButton: "Voir les chambres",
-    reviewsTittle: "Avis clients",
-    nearDescTitle: "À proximité",
-    nearDescTextPart1: "Idéalement situé proche des grands axes au cœur de la vallée du Rhône, lors de votre séjour au Domaine de Pipangaille, vous pourrez visiter : le Safari de Peaugres, le Palais Idéal du facteur Cheval, le Musée de l’Alambic... Vous pourrez également vous initier au golf avec le golf d'Albon et de St Clair.",
-    nearDescTextPart2: "Au cœur du Saint Joseph, vous pourrez aussi déguster les vins locaux et visiter de nombreuses caves. Randonnées, promenades, espace aquatique, vol en montgolfière sont également à proximité. Mais aussi la ViaRhôna en accès direct, ou encore la ViaFluvia, pas très loin.",
+    welcome: "Your stay at",
+    placeDescTitle: "Domaine de Pipangaille",
+    placeDescText: "Domaine de Pipangaille, a recently renovated former silk farm, offers a magical stay in an idyllic setting. Whether you're looking for a privileged place for a break, a short stay, a business trip, or a celebration, Domaine de Pipangaille is the ideal location. It is situated one hour from Lyon and Saint-Étienne, 45 minutes from Valence, and has direct access to the ViaRhôna.",
+    guestroomDescTitle: "Our guest rooms",
+    guestroomDescText: "You access the rooms by crossing the wooded park, leading you to the inner courtyard surrounded by stones, giving it an authentic and soothing atmosphere. You will then find a summer kitchen at your disposal, as well as a communal room. The four uniquely decorated rooms, inviting you to travel, are located on the second floor.",
+    guestroomDescActionButton: "See the rooms",
+    reviewsTittle: "Customer Reviews",
+    nearDescTitle: "Nearby",
+    nearDescTextPart1: "Ideally located near major roads in the heart of the Rhône Valley, during your stay at Domaine de Pipangaille, you can visit: Peaugres Safari, the Ideal Palace of the Postman Cheval, the Distillery Museum... You can also try golf at Albon and St Clair golf courses.",
+    nearDescTextPart2: "In the heart of Saint Joseph, you can also taste local wines and visit numerous wineries. Hiking, walks, water activities, hot air balloon flights are also nearby. And don't forget the direct access to ViaRhôna or the nearby ViaFluvia."
   },
   searchEngine: {
-    book: "Réserver",
-    part1: "Pour",
-    part2: "adultes",
-    part3: "et",
-    part4: "enfants,",
-    part5: "du",
-    part6: "au",
-    showDisponibility: "Voir les disponibilités",
+    book: "Book",
+    part1: "For",
+    part2: "adults",
+    part3: "and",
+    part4: "children,",
+    part5: "from",
+    part6: "to",
+    showAvailability: "See availability",
   },
   thePlace: {
-    title: "Le lieu",
+    title: "The Place",
     meta: {
-      title: "Domaine de Pipangaille - Séjour magique en pleine nature",
-      desc: "Découvrez le charme du Domaine de Pipangaille, des chambres d'hôte idyllique à Andancette. Profitez d'un cadre pittoresque au cœur de la nature.",
+      title: "Domaine de Pipangaille - Magical Stay in the Heart of Nature",
+      desc: "Discover the charm of Domaine de Pipangaille, an idyllic bed and breakfast in Andancette. Enjoy a picturesque setting in the heart of nature."
     },
-    placeDescTitle: "Le Domaine de Pipangaille",
-    placeDescText: "Ancienne magnanerie de plus de 150 ans, la demeure authentique, de caractère et pleine de charme est bercée par le doux tourbillon du Rhône. Outre le charme de la bâtisse vous pourrez profiter du parc, de la piscine et du pavillon d'été pour vous détendre. En accès direct sur la ViaRhôna et au cœur d'un bois, le lieu vous offre une parenthèse mêlant détente, nature et zenitude. La propriété s'étend sur trois hectares, principalement un bois, et dispose d'un parking intérieur et extérieur.",
-    eventOrganisationTitle: "Organisation d'événements",
-    eventOrganisationText: "Réunions familiales, événements artistiques, anniversaires, mariages, séminaires, dégustations de vins, les propositions sont nombreuses....",
-    eventOrganisationActionButton: "Nous contacter",
-    ourPhotosTitle: "Nos photos"
-  },
+    placeDescTitle: "Domaine de Pipangaille",
+    placeDescText: "More than 150 years old, this former silk farm is an authentic, characterful, and charming residence, surrounded by the gentle swirl of the Rhône. In addition to the charm of the building, you can enjoy the park, the swimming pool, and the summer pavilion for relaxation. With direct access to the ViaRhôna and nestled in a wooded area, the place offers a moment of relaxation, nature, and serenity. The property extends over three hectares, mainly woodland, and has both indoor and outdoor parking.",
+    eventOrganisationTitle: "Event Organization",
+    eventOrganisationText: "Family gatherings, artistic events, birthdays, weddings, seminars, wine tastings – the possibilities are numerous...",
+    eventOrganisationActionButton: "Contact Us",
+    ourPhotosTitle: "Our Photos"
+},
   accommodation: {
-    title: "Nos hébergements",
+    title: "Our Accommodations",
     meta: {
-      title: "Hébergements - Domaine de Pipangaille - Chambres d'hôtes à Andancette",
-      desc: "Séjournez dans nos charmante chambres d'hôte au cœur de la nature. Chambres confortables et délicieux petit-déjeuner.",
+        title: "Accommodations - Domaine de Pipangaille - Bed and Breakfast in Andancette",
+        desc: "Stay in our charming bed and breakfast rooms in the heart of nature. Comfortable rooms and delicious breakfast."
     },
-    guestroomDescTitle: "Les chambres d'hôtes",
+    guestroomDescTitle: "Guest Rooms",
     guestroomDescText: [
-      "Une décoration et un aménagement atypiques, mêlant originalité et confort, caractérisent nos chambres situées au deuxième étage, conçues pour vous offrir un séjour dépaysant. Nos quatre chambres thématiques sont fonctionnelles pour vous accueillir le temps d'une nuit, d'un week-end ou d'un séjour, que vous soyez particuliers ou professionnels. Le Domaine de Pipangaille vous accueille en couple, en famille ou entre amis.",
+        "Unusual decoration and layout, blending originality and comfort, characterize our rooms located on the second floor, designed to offer you an exotic stay. Our four themed rooms are functional to welcome you for a night, a weekend, or a longer stay, whether you are private individuals or professionals. Domaine de Pipangaille welcomes you as a couple, with family, or with friends."
     ],
-    breakfastTitle: "Petit déjeuner et Table d'hôtes",
+    breakfastTitle: "Breakfast and Table d'Hôtes",
     breakfastText: [
-      "Le petit déjeuner est servi de 8h00 à 9h30, ou plus tôt sur demande. Il vous est proposé dans la salle à manger ou dans la cour intérieure pleine de charme, à la belle saison. Sous forme de buffet, vous retrouverez le pain traditionnel et ses viennoiseries, du thé bio, le café du torréfacteur, du jus de fruits et des yaourts locaux, ainsi que des fruits de saison.",
-      "Sur réservation, la table d'hôte est possible afin de partager un moment convivial et gourmand. Nous vous proposons un menu unique \"maison\" ou des planches de charcuteries, fromages, ou salade composée avec des produits locaux et bio.",
+        "Breakfast is served from 8:00 to 9:30, or earlier upon request. It is offered in the dining room or in the charming inner courtyard, especially in the beautiful season. In buffet form, you will find traditional bread and pastries, organic tea, coffee from the roaster, fruit juice, and local yogurt, as well as seasonal fruits.",
+        "Upon reservation, the table d'hôte is available to share a friendly and gourmet moment. We offer a unique 'homemade' menu or platters of cold cuts, cheeses, or composed salads with local and organic products."
     ],
-    theRoom: "La chambres",
-    equipment: "Équipements",
-    ourProposals: "nos propositions",
-    guestTableTitle: "La table d'hôtes",
-    guestTableText: "Sur réservation, nous vous proposons la table d'hôtes afin de partager un moment convivial et gourmand. Un menu unique composé d'une cuisine locale gourmande et familale avec des produits locaux et bio. Planche charcuteries fromages, salade gourmande peuvent aussi vous être proposées.",
-    summerKitchenTitle: "La cuisine d'été",
+    theRoom: "The Room",
+    equipment: "Facilities",
+    ourProposals: "Our Proposals",
+    guestTableTitle: "Table d'Hôtes",
+    guestTableText: "Upon reservation, we offer the table d'hôtes to share a friendly and gourmet moment. A unique menu composed of gourmet and family local cuisine with local and organic products. Platters of cold cuts, cheeses, and gourmet salads can also be offered.",
+    summerKitchenTitle: "Summer Kitchen",
     summerKitchenText: [
-      "Nous mettons à votre disposition une petite cuisine commune toute équipée. Vous disposez des équipements suivants : Four, Frigo, Plaque de cuisson, Lave vaisselle, Lave linge.",
-      "Un emplacement est prévu pour recharger vos batteries de vélos électriques.",
+        "We provide you with a small fully equipped communal kitchen. You have the following equipment: Oven, Fridge, Hob, Dishwasher, Washing Machine.",
+        "A designated area is available to recharge your electric bike batteries."
     ],
-    relaxation: "Détente",
+    relaxation: "Relaxation",
     relaxationText: [
-      "Une piscine est à votre disposition en pleine saison avec transats. Vous y trouverez le pavillon d'été, endroit de convivialité pour y prendre un verre, manger une glace, ou tous simplement vous y détendre.",
-      "Une salle commune est aussi à votre disposition (canapés, livres, jeux de sociétés)",
+        "A pool is available during the high season with sun loungers. You will find the summer pavilion, a friendly place to have a drink, eat ice cream, or simply relax.",
+        "A common room is also at your disposal (sofas, books, board games)."
     ],
-    otherAccommodations: "Nos autres hébergements",
+    otherAccommodations: "Our Other Accommodations",
     facilities: {
-      doubleBedSeparable: "Lit double séparable",
-      doubleBed160x200cm: "Lit double 160*200cm",
-      singleBed: "Lit simple",
-      freeHighSpeedWifi: "Wifi Gratuit Haut Debit",
-      airConditioning: "Climatisation",
-      privateBathroom: "Salle d'eau privé",
-      babyCribOnRequest: "Lit bébé sur demande",
-      hairDryer: "Sèche cheveux",
-      kettle: "Bouilloire",
-      sofa: "Canapé",
-      desk: "Bureau",
-      commonWashingMachine: "Lave linge commun",
-      summerKitchen: "Cuisine d'été",
-      sharedFridge: "Frigo partagé",
+        doubleBedSeparable: "Separable Double Bed",
+        doubleBed160x200cm: "Double Bed 160*200cm",
+        singleBed: "Single Bed",
+        freeHighSpeedWifi: "Free High-Speed Wifi",
+        airConditioning: "Air Conditioning",
+        privateBathroom: "Private Bathroom",
+        babyCribOnRequest: "Baby Crib on Request",
+        hairDryer: "Hair Dryer",
+        kettle: "Kettle",
+        sofa: "Sofa",
+        desk: "Desk",
+        commonWashingMachine: "Common Washing Machine",
+        summerKitchen: "Summer Kitchen",
+        sharedFridge: "Shared Fridge",
     },
     MoroccanGuestRoom: {
-      title: "Chambre Marocaine",
-      shortDesc: "Notre chambre familiale aux couleurs chaleureuses, avec toilette et salle d'eau privée, canapé et possibilité de lit séparé.",
+      title: "Moroccan Room",
+      shortDesc: "Our family room with warm colors, private toilet and bathroom, sofa, and the possibility of a separate bed.",
       longDesc: [
-        "L'ambiance marocaine aux couleurs chaleureuses vous dépaysera pour cette chambre de 20 m², adaptée pour 2 adultes et un enfant ou pour un séjour en amoureux. La chambre est composée d'un lit de 1,80 m, d'un canapé-lit, d'un lavabo double vasque et d'une douche spacieuse 'Tadelakt', d'un toilette séparé et d'un petit espace de rangement. Le couchage peut être configuré en deux lits simples.",
-        "Pour votre bien-être, la chambre est climatisée en été.",
+          "The warm and colorful Moroccan ambiance will transport you in this 20 m² room, suitable for 2 adults and a child or for a romantic getaway. The room consists of a 1.80 m bed, a sofa bed, a double sink, and a spacious 'Tadelakt' shower, a separate toilet, and a small storage space. The bedding can be configured as two single beds.",
+          "For your well-being, the room is air-conditioned in summer."
       ]
     },
     AfricanGuestRoom: {
-      title: "Chambre Africaine",
-      shortDesc: "Une chambre pour deux aux couleurs qui font voyager, avec salle d'eau privée, table et possibilité de lit séparé.",
-      longDesc: [
-        "Une autre invitation au voyage avec la chambre 'africaine', une chambre aux couleurs qui vous feront voyager. Conçue pour 2 personnes, avec un lit double de 1,80 m ou 2 lits simples, la chambre possède un lavabo, une douche ouverte, des toilettes séparées, un petit espace de rangement, une table et 2 chaises.",
-        "Pour votre bien-être, la chambre est climatisée en été.",
-      ]
+        title: "African Room",
+        shortDesc: "A room for two with colors that take you on a journey, with a private bathroom, a table, and the possibility of a separate bed.",
+        longDesc: [
+            "Another invitation to travel with the 'African' room, a room with colors that will take you on a journey. Designed for 2 people, with a double bed of 1.80 m or 2 single beds, the room has a sink, an open shower, separate toilet, a small storage space, a table, and 2 chairs.",
+            "For your well-being, the room is air-conditioned in summer."
+        ]
     },
     TuscanyGuestRoom: {
-      title: "Chambre Toscane",
-      shortDesc: "Une agréable chambre aux couleurs romantiques qui vous invite au voyage, avec une salle d'eau privée, une table et un lit double.",
-      longDesc: [
-        "Une chambre romantique aux couleurs délicates sur le thème toscan, une région au centre de l'Italie. Une chambre pour deux personnes équipée d'un lavabo, d'une belle douche, de toilettes séparées, d'un espace de rangement et d'une table.",
-        "Pour votre bien-être, la chambre est climatisée en été.",
-      ]
+        title: "Tuscany Room",
+        shortDesc: "A pleasant room with romantic colors that invites you to travel, with a private bathroom, a table, and a double bed.",
+        longDesc: [
+            "A romantic room with delicate colors on the Tuscan theme, a region in central Italy. A room for two equipped with a sink, a beautiful shower, separate toilet, storage space, and a table.",
+            "For your well-being, the room is air-conditioned in summer."
+        ]
     },
     CreoleGuestRoom: {
-      title: "Chambre Créole",
-      shortDesc: "Une chambre aux couleurs originale, avec salle d'eau privée et lit double.",
-      longDesc: [
-        "Une chambre aux couleurs légères s'inspirant des îles créoles. Conçue pour deux personnes, elle est équipée d'un lit double, d'un lavabo et d'une douche. Votre hébergement dispose également de toilettes séparées et d'un grand placard.",
-        "Pour une totale autonomie, il est possible de louer la cuisine attenante pour un long séjour ou un séjour d'affaires. N'hésitez pas à nous contacter pour plus d'informations.",
-        "Pour votre bien-être, la chambre est climatisée en été.",
-      ]
+        title: "Creole Room",
+        shortDesc: "An original color room, with a private bathroom and a double bed.",
+        longDesc: [
+            "A room with light colors inspired by the Creole islands. Designed for two people, it is equipped with a double bed, a sink, and a shower. Your accommodation also has separate toilets and a large closet.",
+            "For complete autonomy, it is possible to rent the adjoining kitchen for a long stay or a business trip. Feel free to contact us for more information.",
+            "For your well-being, the room is air-conditioned in summer."
+        ]
     },
   },
   near: {
-    title: "À proximité",
+    title: "Nearby",
     meta: {
-      title: "Sites touristiques à proximité - Domaine de Pipangaille",
-      desc: "Découvrez les attractions à visiter près du Domaine de Pipangaille, dont le Safari de Peaugres et le Palais Idéal du Facteur Cheval.",
+        title: "Tourist Sites Nearby - Domaine de Pipangaille",
+        desc: "Discover the attractions to visit near Domaine de Pipangaille, including Peaugres Safari and the Ideal Palace of Postman Cheval."
     },
-    toVisitDescTitle: "À visiter",
+    toVisitDescTitle: "To Visit",
     toVisitDescText: [
-      "Au cœur de la Vallée du Rhône, à proximité de la sortie A7, à 1 h de Lyon, 50 min de Valence, et 1 h 15 de Grenoble, le domaine de Pipangaille bénéficie d'un emplacement privilégié. Cet emplacement est particulièrement apprécié par les touristes à vélo, car la ViaRhôna longe le domaine. Pour des activités en famille, telles que des randonnées à pied ou en VTT, des découvertes œnologiques sur la route des vins, la visite du Palais Idéal du Facteur Cheval, du Safari de Peaugres, du chemin de fer du Vivarais, le choix est riche et varié...",
+        "In the heart of the Rhône Valley, near the A7 exit, 1 hour from Lyon, 50 minutes from Valence, and 1 hour 15 minutes from Grenoble, Domaine de Pipangaille enjoys a privileged location. This location is particularly appreciated by cycling tourists, as the ViaRhôna runs alongside the estate. For family activities, such as hiking or mountain biking, oenological discoveries on the wine route, visits to the Ideal Palace of Postman Cheval, Peaugres Safari, Vivarais Railway, the choice is rich and varied...",
     ],
-    restoreDescTitle: "Se restaurer",
-    restoreDescText: "Plusieurs restaurants se trouvent à proximité, le plus proche se trouvant à deux kilomètres.",
-    guestTableTitle: "La table d'hôtes",
-    guestTableText: "Sur réservation, nous vous proposons la table d'hôtes afin de partager un moment convivial et gourmand. Un menu unique composé d'une cuisine locale gourmande et familiale, avec des produits locaux et bio, vous est proposé. Des planches de charcuteries, de fromages, ainsi qu'une salade gourmande peuvent également vous être proposées.",
+    restoreDescTitle: "Dining",
+    restoreDescText: "Several restaurants are located nearby, with the closest being two kilometers away.",
+    guestTableTitle: "Guest Table",
+    guestTableText: "Upon reservation, we offer the guest table to share a friendly and gourmet moment. A unique menu consisting of gourmet and family local cuisine, with local and organic products, is offered. Platters of cold cuts, cheeses, and a gourmet salad can also be proposed.",
+    links: "Links",
     toVisit: {
-      slug: "à-visiter",
+      slug: "to-visit",
       filter: {
-        none: "Aucun",
-        bike: "Vélo",
-        family: "Famile",
-        visit: "Visite",
-        loved: "Coup de coeur",
-        ride: "Promenade",
-        sport: "sport",
+        none: "None",
+        bike: "Bike",
+        family: "Family",
+        visit: "Visit",
+        loved: "Favorites",
+        ride: "Walk",
+        sport: "Sport",
       },
-      showMore: "Voir plus d'activité",
-      showLess: "Voir moins d'activité",
+      thePlace: "The Place",
+      otherPlaceToVisit: "Other Places to Visit",
+      showMore: "See more activities",
+      showLess: "See fewer activities",
       SafariDePeaugres: {
-        shortDesc: "Partez en famille, en couple ou entre amis à la découverte du Safari, plus 130 espèces et 1200 animaux diffèrents, dans un grand parc de 80 hectares.",
+        shortDesc: "Embark with family, as a couple, or with friends to discover the Safari, with over 130 species and 1200 different animals, in a large 80-hectare park.",
         longDesc: [
-          "Un grand parc remplit d'animaux, le tout sur deux circuits, voiture et à pied. Profitez du safari de Peaugres et faites la rencontre avec plus 130 espèces différentes, le tout sur 80 hectares avec plus de 1200 animaux. Traversez l'enclos des félins dans un solide tunnel de verre, entrez dans la serre tropicale Terre des minus, découvrez la baie des otaries, la serre aux 1000 cachettes, la passerelle des girafes et bien d'autres choses encore.",
+            "A large park filled with animals, all on two circuits, by car and on foot. Enjoy the Peaugres Safari and meet over 130 different species, all on 80 hectares with over 1200 animals. Cross the enclosure of felines in a sturdy glass tunnel, enter the tropical greenhouse 'Terre des Minus,' discover the bay of sea lions, the greenhouse with 1000 hiding places, the giraffe walkway, and much more.",
         ],
       },
       PalaisIdéalDuFacteurCheval: {
-        shortDesc: "Un palais de pierres, construit à la main par un seul homme, \"le facteur cheval\". Une histoire passionnante d'un projet d'une vie.",
-        longDesc: [
-          "Visitez au cœur d'un jardin luxuriant, un palais de pierres, construit à la main par un seul homme, \"le facteur cheval\". Une histoire passionnante d'un projet d'une vie, 93 000 heures, 33 ans d'épreuves. Un palais inspiré des cartes postales livrées, qui vous fera voyager. Peuplé de caïmans, éléphants, pélicans, ours, oiseaux… Mais aussi de géants, de fées, de personnages mythologiques ou encore de cascades, d'architectures de tous les continents. Une œuvre architecturale aussi inclassable qu'universelle.",
-        ],
+          shortDesc: "A palace of stones, built by hand by a single man, 'the postman Cheval.' A fascinating story of a lifetime project.",
+          longDesc: [
+              "Visit, in the heart of a lush garden, a palace of stones, built by hand by a single man, 'the postman Cheval.' A fascinating story of a lifetime project, 93,000 hours, 33 years of trials. A palace inspired by delivered postcards that will take you on a journey. Populated by caimans, elephants, pelicans, bears, birds... But also giants, fairies, mythological characters, waterfalls, architectures from all continents. An architectural work as unclassifiable as it is universal.",
+          ],
       },
       AcroboisPilat: {
-        shortDesc: "Au cœur d'un bois, profitez en famille en couple ou entre amis d'une aventure sur 14 parcours pour tous les niveaux.",
-        longDesc: [
-          "Au cœur d'un bois, profitez en famille en couple ou entre amis d'une aventure sur 14 parcours pour tous les niveaux. Venez vous mettre aux défis et essayez d'atteindre et de réussir le dernier parcours. De nombreuses tyroliennes et obstacles variés sauront vous mettre à l'épreuve.",
-        ],
+          shortDesc: "In the heart of a forest, enjoy family, as a couple, or with friends an adventure on 14 courses for all levels.",
+          longDesc: [
+              "In the heart of a forest, enjoy family, as a couple, or with friends an adventure on 14 courses for all levels. Come and challenge yourself and try to reach and complete the last course. Many zip lines and various obstacles will put you to the test.",
+          ],
       },
       MuseeDeLAlambic: {
-        shortDesc: "Relate le charme et l'histoire d'un passé disparu, celui des bouilleurs ambulants. Exposition, de magnifiques appareils en cuivre provenant de toute la France",
-        longDesc: [
-          "Au cœur de la Vallée du Rhône à Saint Désirat, le musée de l'Alambic de la Distillerie JEAN GAUTHIER, relate le charme et l'histoire d'un passé disparu, celui des bouilleurs ambulants. Sur 1400 m² d'exposition, de magnifiques appareils en cuivre provenant des quatre coins de France, ainsi qu'une collection de matériels, ustensiles et autres outils constituent en 30 tableaux la mémoire d'une partie de notre patrimoine rural",
-        ],
+          shortDesc: "Relates the charm and history of a bygone era, that of itinerant distillers. Exhibition of magnificent copper stills from all over France.",
+          longDesc: [
+              "In the heart of the Rhône Valley in Saint Désirat, the Alambic Museum of the JEAN GAUTHIER Distillery tells the charm and history of a bygone era, that of itinerant distillers. In 1400 m² of exhibition, magnificent copper stills from all corners of France, as well as a collection of equipment, utensils, and other tools, make up 30 panels of the memory of part of our rural heritage.",
+          ],
       },
       GolfDeSaintClair: {
-        shortDesc: "Entre la Vallée du Rhône et le début des Monts d'Ardèche, venez profiter de magnifiques parcours de golf.",
-        longDesc: [
-          "Bien situé dans le parc d'un château du XVIIIème, entre la Vallée du Rhône et le début des Monts d'Ardèche, le parcours est réputé pour sa situation panoramique et la largeur de ses fairways arborés. Ces particularités procurent une agréable sensation d'espace !",
-        ],
+          shortDesc: "Between the Rhône Valley and the beginning of the Ardèche Mountains, come and enjoy magnificent golf courses.",
+          longDesc: [
+              "Well located in the park of an 18th-century castle, between the Rhône Valley and the beginning of the Ardèche Mountains, the course is known for its panoramic location and the width of its tree-lined fairways. These features provide a pleasant feeling of space!",
+          ],
       },
       ViaRhona: {
-        shortDesc: "Cet itinéraire cyclable vous conduit le long des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles de Côtes du Rhône et de Provence méridionale",
-        longDesc: [
-          "Vous mener des rives du lac Léman aux plages de la Méditerranée à vélo, en suivant le fleuve Rhône, voici l'ambition de ViaRhôna. Cet itinéraire cyclable de 815 km vous conduit des panoramas alpins aux plages de Camargue, en traversant les paysages emblématiques des vignobles des Côtes du Rhône et ceux de la Provence méridionale",
-        ],
+          shortDesc: "This cycling route takes you along Alpine panoramas to the beaches of Camargue, crossing the iconic landscapes of the Côtes du Rhône and southern Provence vineyards.",
+          longDesc: [
+              "To lead you from the shores of Lake Geneva to the beaches of the Mediterranean by bike, following the Rhône River, that is the ambition of ViaRhôna. This 815 km cycling route takes you from Alpine panoramas to the beaches of Camargue, crossing the iconic landscapes of the Côtes du Rhône vineyards and those of southern Provence.",
+          ],
       },
       ViaFluvia: {
-        shortDesc: "Une expérience nature au cœur de magnifiques paysages à travers la Loire, la Haute-Loire et l'Ardèche, une expérience nature à 360°.",
-        longDesc: [
-          "La Via Fluvia est un itinéraire cyclable de plus de 80km aménagés et sécurisés à travers la Loire, la Haute-Loire et l'Ardèche. Reconnaissable par la diversité de ses paysages, c'est une expérience nature à 360° qui s'offre à vous le long de cette ancienne ligne de chemin de fer accessible au plus grand nombre (vélos, piétons, trottinettes, etc.).",
-        ],
+          shortDesc: "A nature experience in the heart of beautiful landscapes through the Loire, Haute-Loire, and Ardèche, a 360° nature experience.",
+          longDesc: [
+              "Via Fluvia is a cycling route of over 80 km arranged and secured through the Loire, Haute-Loire, and Ardèche. Recognizable by the diversity of its landscapes, it is a 360° nature experience that awaits you along this former railway line accessible to a wide audience (bikes, pedestrians, scooters, etc.).",
+          ],
       },
       MontgolfieresEtCie: {
-        shortDesc: "Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté.",
-        longDesc: [
-          "Prenez place à bord de nos montgolfières accueillant chacune au maximum 8 passagers, privilégiant ainsi l'échange avec notre équipe. Partagez un moment convivial en famille, entre amis, collègues ou d'autres passagers, vous vivrez ce moment de totale liberté dans une nacelle sécurisée, aux dimensions confortables.",
-        ],
+          shortDesc: "Share a friendly moment with family, friends, colleagues, or other passengers, experience this moment of total freedom.",
+          longDesc: [
+              "Take a seat on our hot air balloons, each accommodating a maximum of 8 passengers, favoring interaction with our team. Share a friendly moment with family, friends, colleagues, or other passengers, experience this moment of total freedom in a secure basket, with comfortable dimensions.",
+          ],
       },
       TrainDeLArdeche: {
-        shortDesc: "Embarquez pour un voyage unique en Ardèche à bord du train à vapeur, découvrez des paysages exceptionnels.",
-        longDesc: [
-          "Une activité incontournable pendant vos vacances en Ardèche : embarquez pour un voyage exceptionnel à bord de l'unique train de voyageurs circulant dans tout le département ardéchois.",
-          "Nos authentiques locomotives à vapeur vous emmènent au cœur d'une nature préservée, le long d'une rivière sauvage. Des gorges du Doux à la montagne ardéchoise, profitez de paysages à couper le souffle.",
-        ],
+          shortDesc: "Embark on a unique journey in Ardèche aboard the steam train, discover exceptional landscapes.",
+          longDesc: [
+              "A must-do activity during your holidays in Ardèche: embark on an exceptional journey aboard the only passenger train circulating throughout the Ardèche department.",
+              "Our authentic steam locomotives take you into the heart of unspoiled nature, along a wild river. From the Gorges du Doux to the Ardèche mountains, enjoy breathtaking landscapes.",
+          ],
       },
       LaFabriqueDeJulien: {
-        shortDesc: "Re découvrez votre enfance à La Fabrique de Julien, Bourg Argental : bonbons artisanaux, visites, délices gourmands.",
-        longDesc: [
-          "Re plongez en enfance à La Fabrique de Julien, Bourg Argental. Des bonbons artisanaux, sans gluten ni conservateurs, disponibles à Lyon et Bourg Argental.",
-          "Nos maîtres confiseurs lyonnais ont créé une variété de délices : sucettes, caramels, guimauves, confiseries au chocolat, et bien plus.",
-          "Visitez la fabrique et le musée pour découvrir leur savoir-faire. Découvrez une expérience gourmande avec des saveurs d'antan",
-        ],
+          shortDesc: "Rediscover your childhood at La Fabrique de Julien, Bourg Argental: artisanal candies, visits, gourmet delights.",
+          longDesc: [
+              "Immerse yourself in childhood at La Fabrique de Julien, Bourg Argental. Artisanal candies, gluten-free and preservative-free, available in Lyon and Bourg Argental.",
+              "Our Lyonese master confectioners have created a variety of delights: lollipops, caramels, marshmallows, chocolate confections, and much more.",
+              "Visit the factory and museum to discover their know-how. Experience a gourmet journey with flavors of yesteryear.",
+          ],
       },
       LeNougatDeMontsegur: {
-        shortDesc: "Délices artisanaux de Montségur-sur-Lauzon : nougat traditionnel, sans additifs, dans la pure tradition provençale.",
-        longDesc: [
-          "Au sein de la pittoresque Drôme provençale, niché dans le charmant village de Montségur-sur-Lauzon, nous sommes fiers de créer et de proposer à la vente nos propres délices.",
-          "Chaque produit est conçu avec une attention méticuleuse, cuisiné dans des chaudrons en cuivre pour assurer une qualité authentique.",
-          "Notre nougat traditionnel se distingue par son engagement envers la pureté, dépourvu de colorants et de conservateurs.",
-          "Chacun de nos ingrédients est soigneusement sélectionné, perpétuant la tradition immuable de ce joyau gastronomique ancré dans le terroir provençal.",
-        ],
+          shortDesc: "Artisanal delights from Montségur-sur-Lauzon: traditional nougat, without additives, in the pure Provencal tradition.",
+          longDesc: [
+              "In the picturesque Drôme Provençale, nestled in the charming village of Montségur-sur-Lauzon, we take pride in creating and offering for sale our own delights.",
+              "Each product is crafted with meticulous attention, cooked in copper cauldrons to ensure authentic quality.",
+              "Our traditional nougat stands out for its commitment to purity, free from colorings and preservatives.",
+              "Each of our ingredients is carefully selected, perpetuating the timeless tradition of this gastronomic gem rooted in the Provencal terroir.",
+          ],
       },
       ChateauDeGrignan: {
-        shortDesc: "Château de Grignan, joyau historique dominant, alliant Renaissance et classicisme, offre une immersion dans l'art de vivre à travers les siècles.",
-        longDesc: [
-          "Surplombant le village, le Château de Grignan, témoin de l'histoire, mêle Renaissance et classicisme français. Transformé en demeure de plaisance au 17e siècle, il fut résidence de la marquise de Sévigné. Démantelé à la Révolution, reconstruit au 20e siècle, il appartient au Département de la Drôme depuis 1979. Classé Monument historique et labellisé Musée de France, le château offre une plongée dans l'art de vivre à travers les siècles.",
-        ],
+          shortDesc: "Grignan Castle, a historic jewel dominating, combining Renaissance and classicism, offers an immersion in the art of living through the centuries.",
+          longDesc: [
+              "Overlooking the village, Grignan Castle, a witness to history, blends French Renaissance and classicism. Transformed into a pleasure residence in the 17th century, it was the residence of the Marquise de Sévigné. Dismantled during the Revolution, rebuilt in the 20th century, it has belonged to the Department of Drôme since 1979. Classified as a Historical Monument and labeled a Museum of France, the castle offers a dive into the art of living through the centuries.",
+          ],
       },
       LabyrintheVegetal: {
-        shortDesc: "Labyrinthe de maïs à Charmes : aventure ludique, sportive et intellectuelle dans un cadre préservé depuis 2001.",
-        longDesc: [
-          "Niché dans un cadre préservé, ce labyrinthe de maïs promet joie aux petits comme aux grands. Depuis 2001, perché sur les hauteurs de Charmes au cœur d'une exploitation agricole, il offre une expérience ludique, sportive et intellectuelle pour tous les âges. Laissez-vous séduire par l'aventure !",
-        ],
+          shortDesc: "Maize labyrinth in Charmes: playful, sporting, and intellectual adventure in a preserved setting since 2001.",
+          longDesc: [
+              "Nestled in a preserved setting, this maize labyrinth promises joy for young and old. Since 2001, perched on the heights of Charmes in the heart of a farm, it offers a playful, sporting, and intellectual experience for all ages. Let yourself be seduced by the adventure!",
+          ],
       },
       CompagnieDesCanotiersRhoneEtSaone: {
-        shortDesc: "Canotier solaire sur le Rhône : croisière gourmande, vue sur Saint Joseph, dégustation de vin, choix de programmes avec option vélo.",
-        longDesc: [
-          "Embarquez à bord d'un canotier électro-solaire pour une croisière gourmande, une balade, ou un dîner sur le Rhône. Savourez une dégustation de vins tout en admirant les coteaux du Saint Joseph. Une escapade inoubliable pour les amateurs de plaisirs gustatifs. Choisissez votre programme, et selon les options, profitez de la possibilité d'emporter votre vélo à bord.",
-        ],
+          shortDesc: "Solar boater on the Rhône: gourmet cruise, view of Saint Joseph, wine tasting, choice of programs with bike option.",
+          longDesc: [
+              "Embark on an electro-solar boater for a gourmet cruise, a stroll, or a dinner on the Rhône. Savor a wine tasting while admiring the slopes of Saint Joseph. An unforgettable escapade for enthusiasts of gustatory pleasures. Choose your program, and with the options, take advantage of the opportunity to bring your bike on board.",
+          ],
       },
       LeChateauDAnet: {
-        shortDesc: "Explorez le Château d'Anet, joyau Renaissance en Eure-et-Loir. Vivez l'histoire de Henri II et Diane de Poitiers lors d'une visite guidée captivante.",
+        shortDesc: "Explore Château d'Anet, a Renaissance jewel in Eure-et-Loir. Experience the history of Henri II and Diane de Poitiers with a captivating guided tour.",
         longDesc: [
-          "Les hôtes du Château d'Anet, Eure-et-Loir, vous invitent à la détente et à l'échange culturel. Explorez ce joyau de la Renaissance française avec une visite guidée, plongez dans l'histoire du monument construit en 1548 par Henri II pour Diane de Poitiers. Un guide vous dévoilera la demeure, les objets de Diane, et la chapelle où elle repose.",
+            "The hosts of Château d'Anet, Eure-et-Loir, invite you to relaxation and cultural exchange. Explore this jewel of French Renaissance with a guided tour, immerse yourself in the history of the monument built in 1548 by Henri II for Diane de Poitiers. A guide will reveal the residence, Diane's objects, and the chapel where she rests.",
         ],
       },
     },
     restore: {
-      slug: "se-restaurer",
-      showMore: "Voir plus de lieu de restauration",
-      showLess: "Voir moins de lieu de restauration",
+      slug: "dining",
+      showMore: "See more dining places",
+      showLess: "See fewer dining places",
+      restaurant: "The Restaurant",
+      anotherPlaceToEat: "Another Place to Eat",
       LeRelaisDesMailles: {
-        shortDesc: "",
-        longDesc: [
-          "",
-        ],
+          shortDesc: "",
+          longDesc: [
+              "",
+          ],
       },
       LaPouleNoire: {
-        shortDesc: "",
-        longDesc: [
-          "",
-        ],
+          shortDesc: "",
+          longDesc: [
+              "",
+          ],
       },
       LePicotin: {
-        shortDesc: "",
-        longDesc: [
-          "",
-        ],
+          shortDesc: "",
+          longDesc: [
+              "",
+          ],
       },
       AuPreDuRhone: {
-        shortDesc: "",
-        longDesc: [
-          "",
-        ],
+          shortDesc: "",
+          longDesc: [
+              "",
+          ],
       },
       LaBelleEpoque: {
-        shortDesc: "Une cuisine traditionnelle, faite maison, avec un maximum de circuits courts.",
-        longDesc: [
-          "Restaurant La Belle Epoque au Creux de la Thine, à 2 kms.",
-          "Accueil chaleureux en toute convivialité.",
-          "Une cuisine traditionnelle, faite maison, avec un maximum de circuits courts.",
-          "Terrasse ombragée, Parking.",
-          "Ouvert tous les midis du Lundi au Vendredi + mardi soir et jeudi soir.",
-        ],
+          shortDesc: "Traditional homemade cuisine with a focus on local ingredients.",
+          longDesc: [
+              "La Belle Epoque Restaurant in Creux de la Thine, 2 km away.",
+              "Warm welcome in a friendly atmosphere.",
+              "Traditional homemade cuisine with a focus on local ingredients.",
+              "Shaded terrace, parking.",
+              "Open every lunchtime from Monday to Friday + Tuesday evening and Thursday evening.",
+          ],
       },
       ODailyTruck: {
-        shortDesc: "Au menu, burgers 100% maison, viandes en sauce ou snacks, planches de charcuteries et fromages à partager, plats végétariens, frites fraîches.",
-        longDesc: [
-          "Au menu, burgers 100% maison, viandes en sauce ou snacks, planches de charcuteries et fromages à partager, plats végétariens, frites fraîches.",
-          "Le but est de varier nos offres et de faire découvrir à notre clientèle la richesse des produits de saisons, charcuterie italienne, ou espagnole, fromage de nos régions ou des montagnes suisses, fruits et légumes de nos maraîchers locaux, viandes d'Aubrac et volaille du terroir, aromates cultivés sur nos belles collines drômoises.",
-          "Également des desserts maison : on a plaisir à retrouver des mousses au chocolat, des tartes des pannacottas onctueuses et légères, des glaces artisanales.",
-        ],
+          shortDesc: "On the menu: 100% homemade burgers, meat in sauce or snacks, charcuterie and cheese boards to share, vegetarian dishes, fresh fries.",
+          longDesc: [
+              "On the menu: 100% homemade burgers, meat in sauce or snacks, charcuterie and cheese boards to share, vegetarian dishes, fresh fries.",
+              "The goal is to vary our offerings and introduce our customers to the richness of seasonal products, Italian or Spanish charcuterie, cheese from our regions or the Swiss mountains, fruits and vegetables from our local market gardeners, Aubrac meats, and local poultry, herbs grown on our beautiful Drôme hills.",
+              "Also homemade desserts: we enjoy finding chocolate mousse, creamy and light panna cottas, and artisanal ice creams.",
+          ],
       },
       CesarPizza: {
-        shortDesc: "",
-        longDesc: [
-          "",
-        ],
+          shortDesc: "",
+          longDesc: [
+              "",
+          ],
       },
       LaVillaChampagnère: {
-        shortDesc: "",
-        longDesc: [
-          "",
-        ],
+          shortDesc: "",
+          longDesc: [
+              "",
+          ],
       },
     },
   },
   book: {
-    title: "Réserver",
+    title: "Book",
     meta: {
-      title: "Réserver - Domaine de Pipangaille - Chambres d'hôtes à Andancette",
-      desc: "Réservez dès aujourd'hui votre chambre au Domaine de Pipangaille, un charmant B&B à Andancette. Cadre pittoresque en pleine nature.",
+        title: "Book - Domaine de Pipangaille - Bed and Breakfast in Andancette",
+        desc: "Book your room today at Domaine de Pipangaille, a charming B&B in Andancette. Picturesque setting in the heart of nature.",
     },
     loadingText: [
-      "Chargement de la page de réservation. Cela peut prendre un petit moment.",
-      "Si rien ne charge, réserver directement aux { tel }.",
+        "Loading the booking page. This may take a moment.",
+        "If nothing loads, book directly at {tel}.",
     ],
   },
   contact: {
-    title: "contact",
-    contactUs: "Nous contacter",
+    title: "Contact",
+    contactUs: "Contact Us",
     meta: {
-      title: "Contactez-nous - Domaine de Pipangaille",
-      desc: "Réservez dès maintenant votre séjour dans nos chambres d'hôtes. Contactez-nous pour plus d'informations.",
+        title: "Contact Us - Domaine de Pipangaille",
+        desc: "Book your stay now in our guest rooms. Contact us for more information.",
     },
-    specialRequestTitle: "Demande particulière",
+    specialRequestTitle: "Special Request",
     specialRequestText: [
-      "Nous pouvons privatiser le lieu pour vos événements privés, avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, des séminaires... Le domaine de Pipangaille, ancienne bâtisse de caractère entourée d'un parc arboré, avec de nombreux espaces, est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux... nous restons à votre disposition pour toutes demandes.",
+        "We can privatize the venue for your private events, with or without accommodation. If you are looking for a venue to organize a family event, a reception, an artistic event, seminars, etc., Domaine de Pipangaille, an old character building surrounded by a wooded park with many spaces, is ideal for hosting your events. The park, the courtyard, the inner courtyard, the installation of marquees... we are at your disposal for all requests.",
     ],
     contactForm: {
-      succes: "Message envoyé avec succès",
-      mapsTitle: "Carte Google maps du Domaine de Pipangaille",
-      phone: "téléphone",
+      succes: "Message sent successfully",
+      mapsTitle: "Google Maps of Domaine de Pipangaille",
+      phone: "phone",
       email: "e-mail",
-      address: "adresse",
-      name: "nom",
-      object: "objet",
+      address: "address",
+      name: "name",
+      object: "subject",
       message: "message",
-      optional: "optionnel",
-      send: "envoyer",
-      sendingInProgress: "envoi en cours",
-      sent: "message envoyé 🚀",
-      emailBody: "Contact via email site internet%0D%0A%0D%0ANom : %0D%0APrénom : %0D%0ATéléphone : %0D%0AMessage : %0D%0A",
+      optional: "optional",
+      send: "send",
+      sendingInProgress: "sending in progress",
+      sent: "message sent 🚀",
+      emailBody: "Contact via website email%0D%0A%0D%0AName: %0D%0AFirst Name: %0D%0APhone: %0D%0AMessage: %0D%0A",
       errors: {
-        errorOcured: "Une erreur est suvenu durant l\'envoi",
-        nameFieldRequired: "Le champ Nom est requis.",
-        emailFieldRequired: "Le champ Email est requis.",
-        emailInvalid: "Une adresse email valide est requise.",
-        objectFieldRequired: "Le champ Objet est requis.",
-        messageFieldRequired: "Le champ Message est requis.",
-        messageFieldTtooShort: "Le champ Message doit contenir au moins 10 caractères.",
-        alreadySend: "Un message à déjà était envoyé. Vous pourrez à nouveau envoyer un message d\'ici quelques minutes.",
-        badConnection: "Une erreur est survenue vérifier votre connexion ainsi que les champs remplis ou réessayés plus tard.",
-        messageSending: "Un message est déjà en cours d\'envoi.",
+        errorOcured: "An error occurred during sending",
+        nameFieldRequired: "The Name field is required.",
+        emailFieldRequired: "The Email field is required.",
+        emailInvalid: "A valid email address is required.",
+        objectFieldRequired: "The Subject field is required.",
+        messageFieldRequired: "The Message field is required.",
+        messageFieldTtooShort: "The Message field must contain at least 10 characters.",
+        alreadySend: "A message has already been sent. You can send a message again in a few minutes.",
+        badConnection: "An error occurred. Check your connection and the filled fields or try again later.",
+        messageSending: "A message is already being sent.",
       },
     },
   },
   legalNotice: {
-    title: "Mentions Légales",
+    title: "Legal Notice",
     meta: {
-      title: "Mentions Légales - Domaine de Pipangaille - Chambres d'hôtes de charme à Andancette",
-      desc: "Consultez les mentions légales du Domaine de Pipangaille, des charmantes chambres d'hôte situé à Andancette, offrant un cadre pittoresque en pleine nature.",
+      title: "Legal Notice - Domaine de Pipangaille - Charming Guest Rooms in Andancette",
+      desc: "Check the legal notice of Domaine de Pipangaille, charming guest rooms located in Andancette, offering a picturesque setting in nature.",
     },
     siteEditor: {
-      title: "éditeur du site",
-      company: "Identification de la Société",
-      headquarters: "Siège social",
+      title: "Site Editor",
+      company: "Company Identification",
+      headquarters: "Headquarters",
       rcs: "RCS",
-      nafCode: "Code NAF",
-      shareCapital: "Capital social",
-      phone: "Téléphone",
-      email: "Email ",
-      director: "dirigeant",
-      publicationDirector: "Directeur de la Publication"
+      nafCode: "NAF Code",
+      shareCapital: "Share Capital",
+      phone: "Phone",
+      email: "Email",
+      director: "Director",
+      publicationDirector: "Publication Director"
     },
     siteDesignAndDevelopment: {
-      title: "CONCEPTION ET DÉVELOPPEMENT DU SITE",
-      company: "Société",
-      phone: "Téléphone",
+      title: "Site Design and Development",
+      company: "Company",
+      phone: "Phone",
       email: "Email",
-      website: "Site",
+      website: "Website",
       github: "Github",
-      siteRepo: "Repo Github"
+      siteRepo: "Github Repo"
     },
     siteHosting: {
-      title: "HEBERGEMENT DU SITE",
+      title: "Site Hosting",
     },
     domainNameOwnership: {
-      title: "possèssion du nom de domaine",
+      title: "Domain Name Ownership",
     },
     photoCredit: {
-      title: "CRÉDIT PHOTOS",
-      description: "Toutes les photos sont la propriété de {company}"
+      title: "Photo Credit",
+      description: "All photos are the property of {company}"
     },
     cookieUsage: {
-      title: "UTILISATION DES COOKIES",
-      description: "Ce site utilise les cookies dans un but de statistiques et de fonctionnement uniquement."
+      title: "Cookie Usage",
+      description: "This site uses cookies for statistical and operational purposes only."
     },
     personalDataUsage: {
-      title: "UTILISATION DES DONNÉES PERSONNELLES",
+      title: "Personal Data Usage",
       description: [
-        "En utilisant les formulaires présents sur le site, vous acceptez le stockage des données ainsi transmises et le traitement de celles-ci. Elles sont conservées et traitées à des fins de gestion, d'historique et d'amélioration de nos services.",
-        "Les données sont conservées pour une durée raisonnable de 10 ans.",
-        "Pour toute demande de suppression, de rectification ou d'accès aux données, veuillez effectuer une demande par email à : {email} ou par courrier à l'adresse : {address}"
+        "By using the forms on the site, you agree to the storage and processing of the transmitted data. They are kept and processed for management, history, and improvement of our services.",
+        "The data is kept for a reasonable period of 10 years.",
+        "For any request for deletion, rectification, or access to data, please make a request by email to: {email} or by mail to the address: {address}"
       ]
     },
     responsibility: {
-      title: "RESPONSABILITÉ DE LA {company}",
+      title: "Responsibility of {company}",
       description: [
-        "Dans les conditions autorisées par la loi, la {company} n'encourt aucune responsabilité :",
-        "Pour toute imprécision, inexactitude, omission ou pour tous dommages résultant d'une intrusion d'un tiers ayant entraîné une modification des informations mises à disposition sur le Site.",
-        "En cas de dommages provoqués en raison de l'accès d'un tiers non autorisé sur le Site ou rendant impossible son accès.",
-        "Le visiteur est informé que l'accès au Site pourra être interrompu à tout moment par la {company} en raison de maintenance, de sécurité ou toute autre contrainte technique."
+        "Under the conditions allowed by law, {company} incurs no liability:",
+        "For any inaccuracy, inaccuracy, omission, or any damage resulting from intrusion by a third party causing a modification of the information made available on the Site.",
+        "In the event of damage caused due to the access of an unauthorized third party to the Site or making its access impossible.",
+        "The visitor is informed that access to the Site may be interrupted at any time by {company} due to maintenance, security, or any other technical constraint."
       ]
     },
     applicableLaw: {
-      title: "DROIT APPLICABLE",
-      description: "Les présentes mentions sont régies par le droit français. Les juridictions françaises sont seules compétentes pour connaître tout litige se rapportant directement ou indirectement à l'accès au présent Site ou à son utilisation."
+      title: "Applicable Law",
+      description: "These mentions are governed by French law. French courts have sole jurisdiction to hear any dispute directly or indirectly related to access to this Site or its use."
     }
   },
   generalConditionOfSale: {
-    title: "Conditions générales de vente",
-    pageTitle: "Condition general de vente des séjours en chambre d'hôtes",
+    title: "General Conditions of Sale",
+    pageTitle: "General Sales Conditions for Bed and Breakfast Stays",
     meta: {
-      title: "Conditions générales de vente - Domaine de Pipangaille",
-      desc: "Consultez nos conditions générales de vente pour les séjours en chambre d'hôtes au Domaine de Pipangaille. Réservez votre séjour en toute tranquillité.",
+      title: "General Conditions of Sale - Domaine de Pipangaille",
+      desc: "Check our general conditions of sale for bed and breakfast stays at Domaine de Pipangaille. Book your stay with peace of mind.",
     },
-    "articles": [
+    articles: [
       {
-        "title": "DURÉE DU SÉJOUR",
-        "description": [
-          "Le client signataire du présent contrat conclu pour une durée déterminée ne pourra en aucune circonstance se prévaloir d'un quelconque droit au maintien dans les lieux."
+        title: "DURATION OF STAY",
+        description: [
+          "The client signing this contract for a specified period may not, under any circumstances, claim any right to remain on the premises."
         ]
       },
       {
-        "title": "FORMALITÉS DE RÉSERVATION",
-        "description": [
-          "La réservation devient effective dès lors que le client aura fait parvenir au propriétaire un acompte de 25 % du montant total du prix du séjour avec un minimum d'une nuitée par chambre retenue et un exemplaire du contrat signé avant la date indiquée au recto.",
-          "Le deuxième exemplaire du contrat est à conserver par le client.",
-          "Les prix s'entendent toutes charges comprises suivant la fiche descriptive, hors taxe de séjour."
+        title: "RESERVATION PROCEDURES",
+        description: [
+          "The reservation becomes effective once the client has sent the owner a deposit of 25% of the total price of the stay, with a minimum of one night per reserved room, and a signed copy of the contract before the date indicated on the front.",
+          "The second copy of the contract is to be kept by the client.",
+          "Prices include all charges as per the descriptive sheet, excluding tourist tax."
         ]
       },
       {
-        "title": "CODE DE LA CONSOMMATION - DROIT DE RÉTRACTATION",
-        "description": [
-          "Une réservation faite en ligne, par téléphone, et/ou par correspondance est un achat à distance. Il s'agit d'un contrat conclu à distance au sens de la définition donnée par le Code de la consommation.",
-          "Nous sommes soumis aux articles L. 121-17 et suivants du code de la consommation.",
-          "Nous vous remarquons que le droit de rétractation n'existe pas pour les contrats des prestations de services d'hébergement."
+        title: "CONSUMER CODE - RIGHT OF WITHDRAWAL",
+        description: [
+          "A reservation made online, by phone, and/or by correspondence is a distance purchase. It is a contract concluded at a distance within the meaning of the definition given by the Consumer Code.",
+          "We are subject to articles L. 121-17 and following of the Consumer Code.",
+          "We note that the right of withdrawal does not apply to contracts for accommodation services."
         ]
       },
       {
-        "title": "ANNULATION DU SÉJOUR PAR LE CLIENT",
-        "description": [
-          "Toute modification n'est possible qu'après l'accord de « Domaine de Pipangaille » et peut entraîner des frais supplémentaires.",
-          "Nous vous informons qu'en cas d'annulation de la réservation avant le début du séjour, il sera dû, à titre de clause pénale par le client, une indemnité fixée de la façon suivante :",
-          "- si l'annulation intervient plus de 1 semaine avant la date d'arrivée, l'acompte sera remboursé dans sa totalité;",
-          "- si l'annulation intervient moins de 1 semaine avant la date d'arrivée, l'acompte restera acquis à Domaine de Pipangaille qui en droit de réclamer et de facturer le solde du prix du séjour (conformément au contrat de réservation) si le séjour reste vacant suite à l'annulation.",
-          "En cas de départ anticipé en cours de séjour : le règlement total de la prestation réservée est dû quel qu'en soit le motif."
+        title: "CANCELLATION OF STAY BY THE CLIENT",
+        description: [
+          "Any modification is only possible after the agreement of 'Domaine de Pipangaille' and may incur additional charges.",
+          "We inform you that in case of cancellation of the reservation before the start of the stay, the client shall owe, as a penalty clause, an indemnity fixed as follows:",
+          "- if the cancellation occurs more than 1 week before the arrival date, the deposit will be fully refunded;",
+          "- if the cancellation occurs less than 1 week before the arrival date, the deposit will remain due to Domaine de Pipangaille, which is entitled to claim and invoice the balance of the stay price (in accordance with the reservation contract) if the stay remains vacant due to the cancellation.",
+          "In case of early departure during the stay: the total payment of the reserved service is due regardless of the reason."
         ]
       },
       {
-        "title": "ASSURANCE ANNULATION À CHARGE DU CLIENT",
-        "description": [
-          "Nous attirons votre attention sur le fait qu'aucune assurance annulation n'est incluse dans nos tarifs.",
-          "Il est par conséquent vivement recommandé d'en souscrire une."
+        title: "CANCELLATION INSURANCE AT THE CUSTOMER'S EXPENSE",
+        description: [
+          "We draw your attention to the fact that no cancellation insurance is included in our rates.",
+          "It is therefore strongly recommended to take out insurance."
         ]
       },
       {
-        "title": "ANNULATION DU SÉJOUR PAR LE PROPRIÉTAIRE",
-        "description": [
-          "Si, avant le début du séjour, le propriétaire est amené à annuler la réservation, il doit aussitôt en informer son client par tout moyen.",
-          "Le client sera alors immédiatement et intégralement remboursé des sommes qu'il aura déjà versées."
+        title: "CANCELLATION OF STAY BY THE OWNER",
+        description: [
+          "If, before the start of the stay, the owner has to cancel the reservation, he must inform his client immediately by any means.",
+          "The client will then be immediately and fully reimbursed for the sums he has already paid."
         ]
       },
       {
-        "title": "HEURE D'ARRIVÉE",
-        "description": [
-          "L'arrivée est prévue l'après-midi à partir de { minCheckIn }, et possible jusqu'à { maxCheckIn }.",
-          "En cas de demande particulière ou imprévue, il sera nécessaire de nous contacter par téléphone au { tel } pour nous signaler tout retard."
+        title: "ARRIVAL TIME",
+        description: [
+          "Arrival is scheduled for the afternoon from { minCheckIn }, and possible until { maxCheckIn }.",
+          "In case of a particular or unforeseen request, it will be necessary to contact us by phone at { tel } to report any delay."
         ]
       },
       {
-        "title": "HEURE DE DÉPART",
-        "description": [
-          "L'heure de départ des chambres est fixée à { maxCheckOut } au plus tard."
+        title: "DEPARTURE TIME",
+        description: [
+          "The departure time for the rooms is set at { maxCheckOut } at the latest."
         ]
       },
       {
-        "title": "RÈGLEMENT DU SOLDE DE L'HÉBERGEMENT",
-        "description": [
-          "Le paiement du solde du séjour s'effectuera un jour avant votre arrivée, conformément à votre contrat de réservation.",
-          "Tous éventuels frais additionnels, entre autres afférents à la table d'hôte et aux boissons vous seront facturés le jour de votre départ."
+        title: "SETTLEMENT OF ACCOMMODATION BALANCE",
+        description: [
+          "Payment of the balance of the stay will be made one day before your arrival, in accordance with your reservation contract.",
+          "Any additional fees, including those related to the table d'hôte and drinks, will be charged on the day of your departure."
         ]
       },
       {
-        "title": "CHANGEMENT DE CHAMBRES",
-        "description": [
-          "Sans que le client ne puisse se prévaloir d'aucune indemnité, le propriétaire se réserve la possibilité de changer la chambre initialement réservée par le client par une chambre de même capacité ou de capacité supérieure.",
-          "En pareil cas, le coût de la réservation reste inchangé."
+        title: "ROOM CHANGE",
+        description: [
+          "Without the client being able to claim any compensation, the owner reserves the right to change the room initially reserved by the client with a room of the same or greater capacity.",
+          "In such a case, the cost of the reservation remains unchanged."
         ]
       },
       {
-        "title": "ANIMAUX DE COMPAGNIE",
-        "description": [
-          "Les animaux de compagnie ne sont pas autorisés."
+        title: "PETS",
+        description: [
+          "Pets are not allowed."
         ]
       },
       {
-        "title": "ART DE VIVRE ET UTILISATION DES LIEUX",
-        "description": [
-          "Afin de garantir la quiétude des lieux et le confort des hôtes du Domaine de Pipangaille, le respect d'un certain « art de vivre » est exigé de tous.",
-          "Il est notamment demandé de ne pas fumer à l'intérieur.",
-          "Le client s'engage à respecter les consignes de savoir-vivre qui lui seront indiquées et les présentes conditions générales de vente.",
-          "Le client s'engage à rendre les chambres en parfait état et exemptes de dommages à la fin du séjour et à déclarer systématiquement - et à assumer financièrement - toute dégradation dont il serait responsable.",
-          "Les frais de réparations y compris le temps des interventions nécessaires à la remise en état seront réglés selon facturation distincte et sur la base des justificatifs des frais engagés.",
-          "L'attention des hôtes est attirée sur le fait que les mineurs évoluant sur la propriété sont placés sous l'unique et entière responsabilité de leurs parents ou des personnes ayant autorité sur eux.",
-          "Les enfants doivent toujours être accompagnés par un adulte dans notre maison et/ou sur le terrain (inclus la piscine).",
-          "Votre séjour au Domaine de Pipangaille et l'usage de notre équipement et de nos facilités comme la piscine, la cuisine commune et lieu de stationnement se fait volontairement et à vos propres risques.",
-          "Le Domaine de Pipangaille ne répond pas des cas de perte, de vol et/ou de dommages ou de blessures causés aux biens et/ou aux personnes se trouvant sur la propriété, et ce, quelle qu'en soit la cause."
+        title: "LIFESTYLE AND USE OF PREMISES",
+        description: [
+          "To guarantee the tranquility of the premises and the comfort of the guests of Domaine de Pipangaille, compliance with a certain 'lifestyle' is required of all.",
+          "In particular, it is requested not to smoke indoors.",
+          "The client undertakes to comply with the codes of conduct that will be indicated to him and these general conditions of sale.",
+          "The client undertakes to return the rooms in perfect condition and free of damage at the end of the stay and to systematically declare - and financially assume - any damage for which he is responsible.",
+          "The costs of repairs, including the time of interventions necessary for the restoration, will be settled by separate invoice and based on supporting documents of the expenses incurred.",
+          "The attention of the guests is drawn to the fact that minors on the property are under the sole and entire responsibility of their parents or the persons having authority over them.",
+          "Children must always be accompanied by an adult in our house and/or on the premises (including the pool).",
+          "Your stay at Domaine de Pipangaille and the use of our equipment and facilities such as the pool, common kitchen, and parking are voluntary and at your own risk.",
+          "Domaine de Pipangaille is not responsible for loss, theft, and/or damage or injury caused to property and/or persons on the property, regardless of the cause."
         ]
       },
       {
-        "title": "MODIFICATION DES CONDITIONS DE VENTE",
-        "description": [
-          "Les présentes conditions de vente sont modifiables à tout moment et sans préavis.",
-          "L'acceptation et le respect de ces conditions de vente sont réputés acquis aussitôt l'acompte versé."
+        title: "MODIFICATION OF SALES CONDITIONS",
+        description: [
+          "These sales conditions can be modified at any time and without notice.",
+          "Acceptance and compliance with these sales conditions are deemed acquired as soon as the deposit is paid."
         ]
       },
       {
-        "title": "LOI INFORMATIQUE ET LIBERTÉ",
-        "description": [
-          "Conformément à la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous bénéficiez d'un droit d'accès et de rectification aux données vous concernant.",
-          "Nous nous engageons à ne transmettre en aucun cas les informations que vous nous avez communiquées à d'autres sociétés ou organismes."
+        title: "COMPUTER AND FREEDOM LAW",
+        description: [
+          "In accordance with law no. 78-17 of January 6, 1978, relating to data processing, files, and freedoms, you have the right to access and rectify data concerning you.",
+          "We undertake not to transmit the information you have provided to us to other companies or organizations."
         ]
       }
     ],
-    "conditions_generales_vente": {
-      "sejours_en_chambre_hotes": "Domaine de Pipangaille",
-    }
   },
 }

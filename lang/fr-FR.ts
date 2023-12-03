@@ -8,7 +8,7 @@ export default {
   linkedin: "LinkedIn",
   twitter: "Twitter (x)",
   schedulesAndPrices: "Horaires et Tarifs",
-  price: "Tarifs",
+  prices: "Tarifs",
   ticketing: "Billetterie",
   ourSocialNetworks: "Nos réseaux sociaux",
   ourOtherPages: "Nos autres pages",
@@ -37,7 +37,7 @@ export default {
     part4: "enfants,",
     part5: "du",
     part6: "au",
-    showDisponibility: "Voir les disponibilités",
+    showAvailability: "Voir les disponibilités",
   },
   thePlace: {
     title: "Le lieu",
@@ -147,6 +147,7 @@ export default {
     restoreDescText: "Plusieurs restaurants se trouvent à proximité, le plus proche se trouvant à deux kilomètres.",
     guestTableTitle: "La table d'hôtes",
     guestTableText: "Sur réservation, nous vous proposons la table d'hôtes afin de partager un moment convivial et gourmand. Un menu unique composé d'une cuisine locale gourmande et familiale, avec des produits locaux et bio, vous est proposé. Des planches de charcuteries, de fromages, ainsi qu'une salade gourmande peuvent également vous être proposées.",
+    links: "Les liens",
     toVisit: {
       slug: "à-visiter",
       filter: {
@@ -158,6 +159,8 @@ export default {
         ride: "Promenade",
         sport: "sport",
       },
+      thePlace: "Le lieu",
+      otherPlaceToVisit: "Autre lieu à visiter",
       showMore: "Voir plus d'activité",
       showLess: "Voir moins d'activité",
       SafariDePeaugres: {
@@ -261,6 +264,8 @@ export default {
       slug: "se-restaurer",
       showMore: "Voir plus de lieu de restauration",
       showLess: "Voir moins de lieu de restauration",
+      restaurant: "Le restaurant",
+      anotherPlaceToEat: "Autre endroit où se restaurer",
       LeRelaisDesMailles: {
         shortDesc: "",
         longDesc: [

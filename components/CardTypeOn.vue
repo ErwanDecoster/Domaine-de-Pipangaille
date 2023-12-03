@@ -33,7 +33,7 @@
           class="grid gap-2"
         >
           <p class="text-lg">
-            Les liens
+            {{ $t('near.links') }}
           </p>
           <div class="flex gap-4 flex-wrap md:w-[130%]">
             <NuxtLink

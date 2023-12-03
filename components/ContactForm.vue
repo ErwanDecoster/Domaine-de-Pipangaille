@@ -118,7 +118,7 @@
             <input 
               id="name" 
               v-model="form.name" 
-              required 
+               
               type="text" 
               name="name" 
               autocomplete="name" 
@@ -135,7 +135,7 @@
             <input 
               id="email"
               v-model="form.email"
-              required
+              
               type="email"
               name="email"
               autocomplete="email"
@@ -171,7 +171,7 @@
             <input 
               id="object"
               v-model="form.object" 
-              required
+              
               type="text"
               name="object"
               autocomplete="off"
@@ -188,7 +188,7 @@
             <textarea 
               id="message"
               v-model="form.message"
-              required
+              
               name="message" 
               autocomplete="off"
               class="rounded-lg px-2 py-1 border h-32 min-h-[8em] outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black" 
