@@ -6,7 +6,7 @@
       </h1>
       <CardTypeOn 
         :title="$t('thePlace.placeDescTitle')" 
-        :content="[{ text: $t('thePlace.placeDescText') }]"
+        :content="[ $t('thePlace.placeDescText') ]"
         :imgs="[ Imgs[38], Imgs[42] ]" 
       />
       <div class="grid md:grid-cols-7 rounded overflow-hidden">

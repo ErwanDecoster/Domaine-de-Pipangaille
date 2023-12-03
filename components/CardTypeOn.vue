@@ -11,7 +11,7 @@
             v-for="row in content"
             :key="row"
           >
-            {{ $rt(row.text) }}
+            {{ $rt(row) }}
           </p>
         </div>
         <div 

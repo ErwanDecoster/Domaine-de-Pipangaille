@@ -59,7 +59,7 @@
       </div>
       <CardTypeOnReverse 
         :title="$t('index.guestroomDescTitle')" 
-        :content="[{ text: $t('index.guestroomDescText') }]"
+        :content="[ $t('index.guestroomDescText') ]"
         :imgs="[ Imgs[63], Imgs[62] ]" 
         :button="[{ target: 'accommodation', content: $t('index.guestroomDescActionButton') }, { target: 'book', content: $t('book.title') }]"
       />

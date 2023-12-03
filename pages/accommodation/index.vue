@@ -24,7 +24,7 @@
             :key="row"
             class="grow"
           >
-            {{ $rt(row.text) }}
+            {{ $rt(row) }}
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ const availableLocales = computed(() => {
 <template>
   <nav class="hidden md:flex bg-white dark:bg-eerie-black shadow-lg dark:shadow-lg-dark duration-200 rounded-b-xl fixed top-0 h-24 inset-x-0 z-20">
     <div class="max-w-screen-xl mx-auto w-full flex justify-between items-center px-4">
-      <div class="flex items-center gap-2 md:gap-4">
+      <div class="flex items-center gap-2 lg:gap-4">
         <NuxtLink 
           class="hidden lg:block h-full py-4"
           :to="localePath({ name: 'index' })"
@@ -56,30 +56,6 @@ const availableLocales = computed(() => {
       </div>
       <div class="flex gap-2">
         <LangSwitcher />
-        <!-- <NuxtLink 
-          v-for="local in availableLocales" 
-          :key="local.code" 
-          :to="switchLocalePath(local.code)"
-        >
-          {{ local.name }}
-        </NuxtLink> -->
-        <!-- <form action="">
-          <select
-            v-model="locale"
-            class="dark:bg-eerie-black p-2 px-4 rounded-lg text-md duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
-          >
-            <option 
-              value="fr"
-            >
-              Français
-            </option>
-            <option 
-              value="en"
-            >
-              English
-            </option>
-          </select>
-        </form> -->
         <NuxtLink
           :to="localePath({ name: 'contact' })"
           class="btn-secondary"

@@ -40,14 +40,16 @@ export default defineNuxtConfig({
       {
         code: 'fr',
         iso: 'fr-FR',
-        name: 'Français',
+        name: 'Fr',
+        // name: 'Français',
         file: "fr-FR.ts",
         dir: "ltr",
       },
       {
         code: 'en',
         iso: 'en-US',
-        name: 'English',
+        name: 'En',
+        // name: 'English',
         file: "en-US.ts",
         dir: "ltr",
       },
@@ -67,11 +69,11 @@ export default defineNuxtConfig({
         en: '/accommodation/[id]',
       },
       'near/index': {
-        fr: '/a-proximité',
+        fr: '/a-proximite',
         en: '/near',
       },
       'near/[group]/[id]': {
-        fr: '/a-proximité/[group]/[id]',
+        fr: '/a-proximite/[group]/[id]',
         en: '/near/[group]/[id]',
       },
       book: {

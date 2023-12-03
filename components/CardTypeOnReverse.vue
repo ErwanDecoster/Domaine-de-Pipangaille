@@ -11,7 +11,7 @@
             v-for="row in content"
             :key="row"
           >
-            {{ row.text }}
+            {{ row }}
           </p>
         </div>
         <div 

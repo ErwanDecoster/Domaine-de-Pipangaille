@@ -1,12 +1,12 @@
 <template>
   <footer 
     v-if="onBookPage" 
-    class="p-8 bg-white dark:bg-eerie-black rounded-t-2xl shadow-lg-inverted dark:shadow-lg-dark-inverted z-10"
+    class="p-8 pb-16 lg:pb-8 bg-white dark:bg-eerie-black rounded-t-2xl shadow-lg-inverted dark:shadow-lg-dark-inverted z-10"
   >
-    <div class="max-w-screen-xl mx-auto relative flex justify-center">
+    <div class="max-w-screen-xl gap-y-8 mx-auto relative grid lg:grid-cols-5 justify-items-center items-center">
       <NuxtLink
         :to="localePath({ name: 'index' })"
-        class="hidden lg:block p-2 absolute left-0 top-1/2 -translate-y-1/2 md:translate-x-1/2"
+        class="hidden lg:block"
         title="Domaine de Pipangaille"
         aria-label="Domaine de Pipangaille"
       >
@@ -26,8 +26,11 @@
           >
         </picture>
       </NuxtLink>
-      <div class="grid sm:grid-cols-2 sm:gap-12">
-        <div class="flex flex-col items-center">
+      <div class="grid sm:grid-cols-2 gap-y-8 sm:gap-12 lg:col-span-3">
+        <div class="grid grid-cols-2 justify-items-center">
+          <h2 class="col-span-2 text-xl pb-2">
+            {{ $t('ourSocialNetworks') }}
+          </h2>
           <ButtonInline 
             link="https://facebook.com/domainedepipangaille"
             content="facebook"
@@ -49,7 +52,10 @@
             newWindow="_blank" 
           />
         </div>
-        <div class="flex flex-col items-center">
+        <div class="grid grid-cols-2 justify-items-center">
+          <h2 class="col-span-2 text-xl pb-2">
+            {{ $t('ourOtherPages') }}
+          </h2>
           <LocalButtonInline 
             link="contact"
             content="contact.contactUs" 
@@ -61,9 +67,11 @@
           <LocalButtonInline 
             link="general_condition_of_sale"
             content="generalConditionOfSale.title"
+            class="col-span-2"
           />
         </div>
       </div>
+      <LangSwitcher />
     </div>
   </footer>
 </template>

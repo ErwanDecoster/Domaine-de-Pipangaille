@@ -744,14 +744,6 @@ export const aProximiter = {
         { id: 73 },
         { id: 74 },
       ],
-      shortDesc: "Une cuisine traditionnelle, faite maison, avec un maximum de circuits courts.",
-      longDesc: [
-        { text: "Restaurant La Belle Epoque au Creux de la Thine, à 2 kms." },
-        { text: "Accueil chaleureux en toute convivialité." }, 
-        { text: "Une cuisine traditionnelle, faite maison, avec un maximum de circuits courts." },
-        { text: "Terrasse ombragée, Parking." },
-        { text: "Ouvert tous les midis du Lundi au Vendredi + mardi soir et jeudi soir." },
-      ],
       links: [
         {
           label: 'facebook',
@@ -772,12 +764,6 @@ export const aProximiter = {
         { id: 30 },
         { id: 69 },
         { id: 70 },
-      ],
-      shortDesc: "Au menu, burgers 100% maison, viandes en sauce ou snacks, planches de charcuteries et fromages à partager, plats végétariens, frites fraîches.",
-      longDesc: [
-        { text: "Au menu, burgers 100% maison, viandes en sauce ou snacks, planches de charcuteries et fromages à partager, plats végétariens, frites fraîches." },
-        { text: " Le but est de varier nos offres et de faire découvrir à notre clientèle la richesse des produits de saisons, charcuterie italienne, ou espagnole, fromage de nos régions ou des montagnes suisses, fruits et légumes de nos maraîchers locaux, viandes d'Aubrac et volaille du terroir, aromates cultivés sur nos belles collines drômoises." }, 
-        { text: "Également des desserts maison : on a plaisir à retrouver des mousses au chocolat, des tartes des pannacottas onctueuses et légères, des glaces artisanales." }
       ],
       links: [
         {
