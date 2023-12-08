@@ -149,7 +149,7 @@ export default {
     guestTableText: "Sur réservation, nous vous proposons la table d'hôtes afin de partager un moment convivial et gourmand. Un menu unique composé d'une cuisine locale gourmande et familiale, avec des produits locaux et bio, vous est proposé. Des planches de charcuteries, de fromages, ainsi qu'une salade gourmande peuvent également vous être proposées.",
     links: "Les liens",
     toVisit: {
-      slug: "à-visiter",
+      slug: "a-visiter",
       filter: {
         none: "Aucun",
         bike: "Vélo",
