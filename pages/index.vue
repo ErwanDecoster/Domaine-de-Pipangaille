@@ -13,14 +13,14 @@
           sizes="100vw"
           class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] 4xl:h-[65vh] 5xl:h-[50vh] rounded-b-xl bg-[#61845a] font-bold bg"
         >
-        <h1 class="mx-auto max-w-screen-xl w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-36 sm:bottom-28 left-1/2 -translate-x-1/2 text-4xl sm:text-6xl">
+        <h1 class="mx-auto max-w-screen-xl w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-40 sm:bottom-28 left-1/2 -translate-x-1/2 text-3xl sm:text-6xl">
           <span class="relative w-max">
             {{ $t('index.welcome') }}
             <span class="bg-almond dark:bg-dark-almond absolute -top-1 bottom-0 -inset-x-3 dark:opacity-90 -z-10 rounded-t-lg" />
           </span>
           <span class="relative w-max">
             Domaine de Pipangaille
-            <span class="bg-almond dark:bg-dark-almond absolute -bottom-1 top-0 -inset-x-3 dark:opacity-90 -z-10 rounded-b-lg" />
+            <span class="bg-almond dark:bg-dark-almond absolute -bottom-1 top-0 -inset-x-3 dark:opacity-90 -z-10 rounded-b-lg rounded-tr-lg" />
           </span>
         </h1>
       </div>
@@ -64,92 +64,7 @@
         :button="[{ target: 'accommodation', content: $t('index.guestroomDescActionButton') }, { target: 'book', content: $t('book.title') }]"
       />
     </section>
-    <section class="bg-almond dark:bg-dark-almond w-full min-h-[16rem] my-8 flex items-center py-8">
-      <div class="max-w-screen-xl w-full px-4 mx-auto">
-        <h2 class="text-4xl w-full">
-          {{ $t('index.reviewsTittle')}}
-        </h2>
-        <div class="max-w-4xl px-2 sm:px-6 gap-2 md:gap-8 flex items-center mx-auto ">
-          <button 
-            aria-label="Boutton voir avis precedent"
-            class="h-40 w-8 duration-150 hover:-translate-x-2"
-            @click="PreviousSlide"
-          >
-            <img 
-              src="/images/icon_fleche_gauche.svg"
-              loading="lazy"
-              height="32"
-              width="32"
-              alt="flèche en direction de la gauche"
-              class="w-8 max-w-none object-cover font-bold dark:invert"
-            >
-          </button>
-          <div class="overflow-hidden flex">
-            <div 
-              v-for="review in reviews.sort((a,b) => b.review_timestamp - a.review_timestamp)" 
-              :key="review"
-              tabindex="0"
-              class="w-full flex-none my-auto grid gap-4" 
-            >
-              <div class="relative w-max mx-auto">
-                <ul class="flex gap-2">
-                  <li 
-                    v-for="index in 5"
-                    :key="index" 
-                    class="h-6 w-6"
-                  >
-                    <svg 
-                      viewBox="0 0 19 17" 
-                      class="fill-white" 
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M8.84026 0.463526C8.98994 0.0028702 9.64164 0.0028701 9.79132 0.463525L11.5196 5.78254C11.5865 5.98855 11.7785 6.12803 11.9951 6.12803L17.5878 6.12803C18.0722 6.12804 18.2736 6.74784 17.8817 7.03254L13.3571 10.3199C13.1819 10.4472 13.1085 10.6729 13.1755 10.8789L14.9037 16.1979C15.0534 16.6586 14.5262 17.0416 14.1343 16.7569L9.60968 13.4696C9.43444 13.3423 9.19714 13.3423 9.0219 13.4696L4.49727 16.7569C4.10541 17.0416 3.57817 16.6586 3.72785 16.1979L5.4561 10.8789C5.52304 10.6729 5.44971 10.4472 5.27447 10.3199L0.749839 7.03254C0.357983 6.74784 0.55937 6.12804 1.04373 6.12803L6.63648 6.12803C6.85309 6.12803 7.04507 5.98855 7.11201 5.78254L8.84026 0.463526Z" />
-                    </svg>
-                  </li>
-                </ul>
-                <ul class="flex gap-2 absolute top-0">
-                  <li 
-                    v-for="star in review.review_rating"
-                    :key="star"
-                    class="h-6 w-6"
-                  >
-                    <svg 
-                      viewBox="0 0 19 17"
-                      class="fill-yellow-red"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M8.84026 0.463526C8.98994 0.0028702 9.64164 0.0028701 9.79132 0.463525L11.5196 5.78254C11.5865 5.98855 11.7785 6.12803 11.9951 6.12803L17.5878 6.12803C18.0722 6.12804 18.2736 6.74784 17.8817 7.03254L13.3571 10.3199C13.1819 10.4472 13.1085 10.6729 13.1755 10.8789L14.9037 16.1979C15.0534 16.6586 14.5262 17.0416 14.1343 16.7569L9.60968 13.4696C9.43444 13.3423 9.19714 13.3423 9.0219 13.4696L4.49727 16.7569C4.10541 17.0416 3.57817 16.6586 3.72785 16.1979L5.4561 10.8789C5.52304 10.6729 5.44971 10.4472 5.27447 10.3199L0.749839 7.03254C0.357983 6.74784 0.55937 6.12804 1.04373 6.12803L6.63648 6.12803C6.85309 6.12803 7.04507 5.98855 7.11201 5.78254L8.84026 0.463526Z" />
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-              <p class="max-h-36 overflow-y-scroll">
-                {{ review.review_text }}
-              </p>
-              <p>
-                {{ review.author_title }}
-                - {{ review.platform_origin }}
-                - {{ $d(new Date(review.review_timestamp * 1000)) }}
-              </p>
-            </div>
-          </div>
-          <button 
-            aria-label="Boutton voir avis suivant"
-            class="h-40 w-8 duration-150 hover:translate-x-2"
-            @click="NextSlide"
-          >
-            <img 
-              src="/images/icon_fleche_droite.svg" 
-              loading="lazy"
-              height="32" 
-              width="32"
-              alt="flèche en direction de la droite"
-              class="w-8 max-w-none object-cover font-bold dark:invert"
-            >
-          </button>
-        </div>
-      </div>
-    </section>
+    <ReviewsCarousel :reviews="reviews" />
     <section class="max-w-screen-xl mx-auto px-4 grid gap-8">
       <div class="w-full h-full relative">
         <div class="bg-almond dark:bg-dark-almond left-0 right-0 md:right-1/4 top-0 bottom-32 sm:bottom-1/3 md:bottom-8 md:top-8 absolute rounded" />
@@ -218,7 +133,6 @@ export default {
   data() {
     return {
       Imgs: Imgs,
-      slidesUsable: [],
       reviews: [
         {
           author_title: "Ionut Moldovan",
@@ -436,9 +350,6 @@ export default {
       }
     };
   },
-  mounted() {
-    this.slidesUsable = this.reviews;
-  },
   created() {
     const desc = this.$t('index.meta.desc')
     const title = this.$t('index.meta.title')
@@ -473,16 +384,6 @@ export default {
     })
   },
   methods: {
-    NextSlide() {
-      const fisrtSlide = this.slidesUsable[0];
-      this.slidesUsable.shift();
-      this.slidesUsable.push(fisrtSlide);
-    },
-    PreviousSlide() {
-      const lastSlide = this.slidesUsable[this.slidesUsable.length - 1];
-      this.slidesUsable.splice(-1);
-      this.slidesUsable.unshift(lastSlide);
-    },
     Pad(d) {
       return (d < 10) ? '0' + d.toString() : d.toString();
     },
