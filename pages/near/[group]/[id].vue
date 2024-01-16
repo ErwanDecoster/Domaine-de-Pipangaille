@@ -43,7 +43,7 @@ import { Imgs } from '@/data';
 export default {
   data() {
     return {
-      group: this.$route.params.group === 'to-visit' || this.$route.params.group === 'à-visiter' ? 'toVisit' : 'restore',
+      group: this.$route.params.group === 'to-visit' || this.$route.params.group === 'a-visiter' ? 'toVisit' : 'restore',
       Imgs: Imgs,
       aProximiterSelected: [],
       aProximiterNoSelected: [],
@@ -58,6 +58,7 @@ export default {
     this.NoSelecteAProximites()
     const title = this.aProximiterSelected.title + " - " + this.$t(`near.title`) + " - Domaine de Pipangaille"
     const desc = this.$t(`near.${this.group}.${this.aProximiterSelected.i18n}.shortDesc`)
+    const img = this.aProximiterSelected.imgs[1].link
     useHead({
       title: title,
       meta: [
@@ -70,13 +71,13 @@ export default {
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: title },
         { property: 'og:description', content: desc },
-        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + this.aProximiterSelected.imgs[1].link },
+        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + img },
         { property: 'twitter:card', content: 'summary_large_image' },
         { property: 'twitter:site', content: '@D_Pipangaille' },
         { property: 'twitter:creator', content: '@D_Pipangaille' },
         { property: 'twitter:title', content: title },
         { property: 'twitter:description', content: desc },
-        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + this.aProximiterSelected.imgs[1].link },
+        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + img },
       ],
       link: [
         {

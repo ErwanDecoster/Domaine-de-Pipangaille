@@ -47,9 +47,20 @@ export default {
     },
     placeDescTitle: "Domaine de Pipangaille",
     placeDescText: "More than 150 years old, this former silk farm is an authentic, characterful, and charming residence, surrounded by the gentle swirl of the Rhône. In addition to the charm of the building, you can enjoy the park, the swimming pool, and the summer pavilion for relaxation. With direct access to the ViaRhôna and nestled in a wooded area, the place offers a moment of relaxation, nature, and serenity. The property extends over three hectares, mainly woodland, and has both indoor and outdoor parking.",
-    eventOrganisationTitle: "Event Organization",
-    eventOrganisationText: "Family gatherings, artistic events, birthdays, weddings, seminars, wine tastings – the possibilities are numerous...",
-    eventOrganisationActionButton: "Contact Us",
+    bicycleShelter: {
+      title: "Abri vélos",
+      desc: [
+        "For the comfort of our cycling guests, we provide an open shelter where you can secure your bicycles. The gate is closed at night for optimal security.",
+        "A kitchen equipped with a refrigerator is at your disposal, perfect for keeping your beverages cool.",
+      ],
+    },
+    eventOrganisation: {
+      title: "Event Organization",
+      desc: [
+        "Family gatherings, artistic events, birthdays, weddings, seminars, wine tastings - the possibilities are numerous...",
+      ],
+      actionButton: "Contact Us",
+    },
     ourPhotosTitle: "Our Photos"
 },
   accommodation: {

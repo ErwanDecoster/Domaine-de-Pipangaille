@@ -9,7 +9,54 @@
         :content="[ $t('thePlace.placeDescText') ]"
         :imgs="[ Imgs[38], Imgs[42] ]" 
       />
-      <div class="grid md:grid-cols-7 rounded overflow-hidden">
+      <div class="grid md:grid-cols-2 rounded overflow-hidden">
+        <img
+          src="https://www.generali.fr/sites/default/files-d8/2019-09/Table_dhote.jpg"
+          alt="Description de l'image"
+          loading="lazy"
+          class="aspect-video md:h-full object-cover bg-northern_light_grey font-bold"
+        >
+        <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
+          <h2 class="text-4xl">
+            {{ $t('thePlace.bicycleShelter.title') }}
+          </h2>
+          <p 
+            v-for="row in $tm('thePlace.bicycleShelter.desc')"
+            :key="row"
+            class="grow"
+          >
+            {{ $rt(row) }}
+          </p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 rounded overflow-hidden">
+        <img 
+          :src="Imgs[25].srcs[0].src" 
+          :alt="Imgs[25].alt" 
+          class="aspect-video w-full md:h-full md:order-1 object-cover bg-northern_light_grey font-bold" 
+          loading="lazy"
+        >
+        <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
+          <h2 class="text-4xl">
+            {{ $t('thePlace.eventOrganisation.title') }}
+          </h2>
+          <p 
+            v-for="row in $tm('thePlace.eventOrganisation.desc')"
+            :key="row"
+            class="grow"
+          >
+            {{ $rt(row) }}
+          </p>
+          <NuxtLink 
+            :to="localePath({ name: 'contact'})"
+            class="btn-primary"
+            :title="$t('thePlace.eventOrganisation.actionButton')"
+          >
+            {{ $t('thePlace.eventOrganisation.actionButton') }}
+          </NuxtLink>
+        </div>
+      </div>
+      <!-- <div class="grid md:grid-cols-7 rounded overflow-hidden">
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8 md:col-span-4">
           <h2 class="text-4xl">
             {{ $t('thePlace.eventOrganisationTitle') }}
@@ -31,7 +78,7 @@
           class="md:h-full md:col-span-3 aspect-video object-cover bg-northern_light_grey font-bold" 
           loading="lazy"
         >
-      </div>
+      </div> -->
       <h2 class="text-4xl sm:text-5xl">
         {{ $t('thePlace.ourPhotosTitle') }}
       </h2>

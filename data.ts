@@ -57,7 +57,7 @@ export const accommodations = [
       },
       {
         label: 'commonWashingMachine',
-        path: 'icon_canape',
+        path: 'icon_machine_a_laver',
         imgAlt: 'commonWashingMachine',
       },
       {
@@ -124,7 +124,7 @@ export const accommodations = [
       },
       {
         label: 'commonWashingMachine',
-        path: 'icon_canape',
+        path: 'icon_machine_a_laver',
         imgAlt: 'commonWashingMachine',
       },
       {
@@ -191,7 +191,7 @@ export const accommodations = [
       },
       {
         label: 'commonWashingMachine',
-        path: 'icon_canape',
+        path: 'icon_machine_a_laver',
         imgAlt: 'commonWashingMachine',
       },
       {
@@ -248,7 +248,7 @@ export const accommodations = [
       },
       {
         label: 'commonWashingMachine',
-        path: 'icon_canape',
+        path: 'icon_machine_a_laver',
         imgAlt: 'commonWashingMachine',
       },
       {

@@ -47,9 +47,21 @@ export default {
     },
     placeDescTitle: "Le Domaine de Pipangaille",
     placeDescText: "Ancienne magnanerie de plus de 150 ans, la demeure authentique, de caractère et pleine de charme est bercée par le doux tourbillon du Rhône. Outre le charme de la bâtisse vous pourrez profiter du parc, de la piscine et du pavillon d'été pour vous détendre. En accès direct sur la ViaRhôna et au cœur d'un bois, le lieu vous offre une parenthèse mêlant détente, nature et zenitude. La propriété s'étend sur trois hectares, principalement un bois, et dispose d'un parking intérieur et extérieur.",
-    eventOrganisationTitle: "Organisation d'événements",
-    eventOrganisationText: "Réunions familiales, événements artistiques, anniversaires, mariages, séminaires, dégustations de vins, les propositions sont nombreuses....",
-    eventOrganisationActionButton: "Nous contacter",
+    bicycleShelter: {
+      title: "Abri vélos",
+      desc: [
+        "Pour le confort de nos clients à vélo, nous mettons à disposition un abri ouvert, où vous pouvez attacher vos vélos entre eux. Le portail est fermé la nuit pour assurer une sécurité optimale. ",
+        "Une cuisine équipée d'un réfrigérateur est à votre disposition, idéale pour conserver vos boissons au frais. De plus, cet espace propose une zone dédiée à la recharge des batteries de vos vélos."
+      ],
+    },
+    eventOrganisation: {
+      title: "Organisation d'événements",
+      desc: [
+        "Réunions familiales, événements artistiques, anniversaires, mariages, séminaires, dégustations de vins, les propositions sont nombreuses....",
+      ],
+      actionButton: "Nous contacter",
+    },
+
     ourPhotosTitle: "Nos photos"
   },
   accommodation: {

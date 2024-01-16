@@ -23,7 +23,36 @@ export default defineEventHandler(async (event) => {
 					to: config.CONTACTMAIL,
 					subject: `Site Web | ${data.object}`,
 					text: data.message,
-					html: `<body style="font-family: Arial;"><div style="background-color: #EEDECC; padding: 20px; border-radius: 16px;"><hr style="border-color: black;"><h1 style="font-weight: bold;">Formulaire Website</h1><p><span style="font-weight: bold;">Objet : </span>${data.object}</p><p><span style="font-weight: bold;">Nom : </span>${data.name}</p><p><span style="font-weight: bold;">Tel : </span>${data.phone}</p><p><span style="font-weight: bold;">Email : </span>${data.email}</p><p><span style="font-weight: bold;">Message :</span></p><pre style="font-family: Arial; white-space: pre-wrap;">${data.message}</pre></div></body>`,
+					html: `
+						<body style="font-family: Arial;">
+							<div style="background-color: #EEDECC; padding: 20px; border-radius: 16px;">
+								<h1 style="font-weight: bold; font-size: 24px;">Formulaire Domaine de Pipangaille</h1>
+								<p style="padding: 4px 0px;">
+									<span style="font-weight: bold;">Objet : </span>
+									${data.object}
+								</p>
+								<p style="padding: 4px 0px;">
+									<span style="font-weight: bold;">Nom : </span>
+									${data.name}</p>
+								<p style="padding: 4px 0px;">
+									<span style="font-weight: bold;">Tel : </span>
+									<a style="color: #0e5899; text-decoration: none;" href="tel:${data.phone}">
+										${data.phone}
+									</a>
+								</p>
+								<p style="padding: 4px 0px;">
+									<span style="font-weight: bold;">Email : </span>
+									<a style="color: #0e5899; text-decoration: none;" href="mailto:${data.email}">
+										${data.email}
+									</a>
+								</p>
+								<p style="padding-top: 4px;">
+									<span style="font-weight: bold;">Message :</span>
+								</p>
+								<pre style="font-family: Arial; white-space: pre-wrap; padding-bottom: 4px;">${data.message}</pre>
+							</div>
+						</body>
+					`,
 				});
 				return Promise.resolve();
 			})
