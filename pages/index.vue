@@ -359,7 +359,6 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          // content: 'Envie d\'un séjour magique dans un cadre idyllique en pleine nature dans une ancienne magnanerie récemment rénovée. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événemment a fêter, le Domaine de Pipangaille est le lieu idéal.' 
           content: desc 
         },
         { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
