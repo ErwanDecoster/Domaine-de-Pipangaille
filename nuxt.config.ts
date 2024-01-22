@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     'nuxt-simple-sitemap',
     'nuxt-vercel-analytics',
+    'nuxt-security',
     '@nuxtjs/i18n',
   ],
   i18n: {
