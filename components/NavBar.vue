@@ -55,7 +55,7 @@ const availableLocales = computed(() => {
         />
       </div>
       <div class="flex gap-2">
-        <LangSwitcher />
+        <LangSwitcher place="navbar" />
         <NuxtLink
           :to="localePath({ name: 'contact' })"
           class="btn-secondary"

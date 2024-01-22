@@ -11,7 +11,7 @@
       />
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img 
-          src="https://www.alsace.shop/wp-content/uploads/2021/06/formule-petit-dejeuner.jpg"
+          src="/images/petit_dejeuner.png"
           alt="photo d'un petit dejeuner"
           class="aspect-video md:h-full w-full object-cover bg-northern_light_grey font-bold"
         >

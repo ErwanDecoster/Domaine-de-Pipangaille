@@ -71,7 +71,7 @@
           />
         </div>
       </div>
-      <LangSwitcher />
+      <LangSwitcher place="footer" />
     </div>
   </footer>
 </template>

@@ -27,6 +27,11 @@ export default defineNuxtConfig({
     'nuxt-security',
     '@nuxtjs/i18n',
   ],
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy: false,
+    },
+  },
   i18n: {
     baseUrl: 'https://domaine-de-pipangaille.fr',
     detectBrowserLanguage: {

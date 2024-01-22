@@ -61,7 +61,7 @@
       </h2>
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img
-          src="https://www.generali.fr/sites/default/files-d8/2019-09/Table_dhote.jpg"
+          src="/images/table_d_hote.png"
           alt="Description de l'image"
           class="aspect-video md:h-full w-full bg-northern_light_grey font-bold"
         >

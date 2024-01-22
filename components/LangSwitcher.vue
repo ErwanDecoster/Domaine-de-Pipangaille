@@ -20,14 +20,21 @@ function onLocaleChanged(event: Event) {
   // switchLocalePath('ar-EG') will return '/ar-EG/about'
   router.push({ path: switchLocalePath(target.value) })
 }
+
+defineProps<{
+  place: string
+}>()
 </script>
 
 <template>
   <div>
     <!-- 🌐 -->
     <select 
+      :id="`local-lang-change-${place}`"
+      name="local-lang-change"
       :value="locale" 
       class="dark:bg-eerie-black p-2 px-4 rounded-lg text-md duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
+      aria-label="Langue du site"
       @change="onLocaleChanged"
     >
       <option 
