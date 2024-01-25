@@ -113,22 +113,6 @@ export default {
         this.aProximiterNoSelected = this.aProximiter.seRestaurer.filter(item => item !== this.aProximiterSelected );
       }
     },
-    // FormatTime(min){
-    //   if (min < 60) {
-    //     return `${min}m`;
-    //   }
-    //   else {
-    //     if (min % 60 === 0) {
-    //       const h = Math.floor(min / 60)
-    //       return `${h}h`;
-    //     }
-    //     else {
-    //       const m = min % 60
-    //       const h = Math.floor(min / 60)
-    //       return `${h}h${m}m`;
-    //     }
-    //   }
-    // }
   },
 };
 </script>

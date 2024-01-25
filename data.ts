@@ -1497,10 +1497,15 @@ export const Imgs = [
   {
     id: 71,
     srcs: [
-      { src: "/images/photo_17_375x500.webp" },
-      { src: "/images/photo_17_768x768.webp" },
-      { src: "/images/photo_17_1920x820.webp" },
-      { src: "/images/photo_17_2048x820.webp" },
+      { src: "/images/photo_17_375x700.webp" },
+      { src: "/images/photo_17_425x700.webp" },
+      { src: "/images/photo_17_640x790.webp" },
+      { src: "/images/photo_17_768x790.webp" },
+      { src: "/images/photo_17_1024x790.webp" },
+      { src: "/images/photo_17_1280x790.webp" },
+      { src: "/images/photo_17_1536x790.webp" },
+      { src: "/images/photo_17_1792x790.webp" },
+      { src: "/images/photo_17_2048x790.webp" },
     ],
     alt: "Grand espace avec une piscine ombragée, une terrasse ensoleillée qui l'entoure. On voit de nombreux transats sur la pelouse artificielle ainsi qu'un cabanon en bois et le pavillon."
   },
