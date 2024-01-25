@@ -2,7 +2,7 @@
   <div class="mb-8 md:pt-[5.25rem]">
     <section class="relative">
       <div class="relative">
-        <img 
+        <!-- <img 
           :src="Imgs[71].srcs[0].src" 
           :alt="Imgs[71].alt" 
           :srcset="
@@ -12,7 +12,24 @@
               Imgs[71].srcs[3].src + ' 2048w'"
           sizes="100vw"
           class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] 4xl:h-[65vh] 5xl:h-[50vh] rounded-b-xl bg-[#61845a] font-bold bg"
-        >
+        > -->
+        <NuxtImg 
+          format="webp"
+          sizes="
+            375px 
+            xs:320px
+            sm:640px 
+            md:768px
+            lg:1024px
+            xl:1280px
+            2xl:1536px
+          "
+          quality="70"
+          fit="cover"
+          placeholder
+          src="/images/photo_17_full_good_ratio.jpeg" 
+          class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] max-h-[790px] rounded-b-xl bg-[#61845a] font-bold bg"
+        />
         <h1 class="mx-auto max-w-screen-xl w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-40 sm:bottom-28 left-1/2 -translate-x-1/2 text-3xl sm:text-6xl">
           <span class="relative w-max">
             {{ $t('index.welcome') }}

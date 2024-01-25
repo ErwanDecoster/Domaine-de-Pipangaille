@@ -21,8 +21,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxt/image-edge',
-    'nuxt-simple-sitemap',
+    '@nuxt/image',
     'nuxt-vercel-analytics',
     'nuxt-security',
     '@nuxtjs/i18n',
