@@ -1,11 +1,11 @@
 <script setup lang="ts">
 // Used for type casting
-import { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
+// import { LocaleObject } from "@nuxtjs/i18n/dist/runtime/composables"
 
 // Get active locale and supported locales
 const { locale, locales } = useI18n()
 // Cast to avoid TypeScript errors in template
-const supportedLocales = locales.value as Array<LocaleObject>
+const supportedLocales = locales.value
 
 const router = useRouter()
 const switchLocalePath = useSwitchLocalePath()
