@@ -20,7 +20,7 @@
     </Modal> -->
     <NavBar />
     <NuxtPage />
-    <Footer />
+    <LazyFooter />
   </div>
 </template>
 
