@@ -2,11 +2,11 @@
   <div class="card bg-white dark:bg-eerie-black shadow-lg dark:shadow-lg-dark rounded flex flex-col overflow-hidden">
     <img 
       v-if="img" 
-      :src="img.srcs[0].src" 
+      :src="img.srcs[0]" 
       :alt="img.alt" 
       :srcset="
-        img.srcs[0].src + ' 309w, ' +
-          img.srcs[1].src + ' 462w'"
+        img.srcs[0] + ' 309w, ' +
+          img.srcs[1] + ' 462w'"
       class="rounded-b w-full h-full aspect-[4/3] max-h-64 object-cover bg-northern_light_grey font-bold" 
       sizes="(max-width: 600px) 462px, 309px"
       loading="lazy"

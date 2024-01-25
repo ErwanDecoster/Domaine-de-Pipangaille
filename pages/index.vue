@@ -3,18 +3,18 @@
     <section class="relative">
       <div class="relative">
         <img 
-          :src="Imgs[71].srcs[0].src" 
+          :src="Imgs[71].srcs[0]" 
           :alt="Imgs[71].alt" 
           :srcset="
-            Imgs[71].srcs[0].src + ' 375w, ' +
-              Imgs[71].srcs[1].src + ' 425w, ' +
-              Imgs[71].srcs[2].src + ' 640w, ' +
-              Imgs[71].srcs[3].src + ' 769w, ' +
-              Imgs[71].srcs[4].src + ' 1024w, ' +
-              Imgs[71].srcs[5].src + ' 1280w, ' +
-              Imgs[71].srcs[6].src + ' 1536w, ' +
-              Imgs[71].srcs[7].src + ' 1792w, ' +
-              Imgs[71].srcs[8].src + ' 2048w'"
+            Imgs[71].srcs[0] + ' 375w, ' +
+              Imgs[71].srcs[1] + ' 425w, ' +
+              Imgs[71].srcs[2] + ' 640w, ' +
+              Imgs[71].srcs[3] + ' 769w, ' +
+              Imgs[71].srcs[4] + ' 1024w, ' +
+              Imgs[71].srcs[5] + ' 1280w, ' +
+              Imgs[71].srcs[6] + ' 1536w, ' +
+              Imgs[71].srcs[7] + ' 1792w, ' +
+              Imgs[71].srcs[8] + ' 2048w'"
           class="w-full max-w-screen-4xl m-auto object-cover h-[75vh] max-h-[790px] rounded-b-xl bg-[#61845a] font-bold bg"
         >
         <h1 class="mx-auto max-w-screen-xl w-full text-eerie-blacks dark:text-white flex flex-col pl-4 absolute bottom-40 sm:bottom-28 left-1/2 -translate-x-1/2 text-3xl sm:text-6xl">
@@ -50,11 +50,11 @@
             </NuxtLink>
           </div>
           <img 
-            :src="Imgs[42].srcs[1].src" 
+            :src="Imgs[42].srcs[1]" 
             :alt="Imgs[42].alt" 
             :srcset="
-              Imgs[42].srcs[1].src + ' 488w, ' +
-                Imgs[42].srcs[2].src + ' 656w'"
+              Imgs[42].srcs[1] + ' 488w, ' +
+                Imgs[42].srcs[2] + ' 656w'"
             class="rounded w-full shadow-lg dark:shadow-lg-dark aspect-video object-cover bg-northern_light_grey font-bold"
             loading="lazy"
           >
@@ -92,33 +92,33 @@
           </div>
           <div class="relative">
             <img 
-              :src="Imgs[31].srcs[0].src" 
+              :src="Imgs[31].srcs[0]" 
               :alt="Imgs[31].alt" 
               :srcset="
-                Imgs[31].srcs[0].src + ' 309w, ' +
-                  Imgs[31].srcs[2].src + ' 378w, ' +
-                  Imgs[31].srcs[1].src + ' 462w'"
+                Imgs[31].srcs[0] + ' 309w, ' +
+                  Imgs[31].srcs[2] + ' 378w, ' +
+                  Imgs[31].srcs[1] + ' 462w'"
               sizes="298px"
               class="rounded hover:z-10 shadow-lg w-2/3 md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold"
               loading="lazy"
             >
             <img 
-              :src="Imgs[60].srcs[0].src" 
+              :src="Imgs[60].srcs[0]" 
               :alt="Imgs[60].alt" 
               :srcset="
-                Imgs[60].srcs[0].src + ' 309w, ' +
-                  Imgs[60].srcs[1].src + ' 462w'"
+                Imgs[60].srcs[0] + ' 309w, ' +
+                  Imgs[60].srcs[1] + ' 462w'"
               sizes="298px"
               class="rounded hover:z-10 shadow-lg w-2/3 ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:left-0 md:w-3/5 aspect-video object-cover bg-northern_light_grey font-bold"
               loading="lazy"
             >
             <img 
-              :src="Imgs[28].srcs[0].src" 
+              :src="Imgs[28].srcs[0]" 
               :alt="Imgs[28].alt" 
               :srcset="
-                Imgs[28].srcs[0].src + ' 309w, ' +
-                  Imgs[28].srcs[1].src + ' 378w, ' +
-                  Imgs[28].srcs[2].src + ' 462w'"
+                Imgs[28].srcs[0] + ' 309w, ' +
+                  Imgs[28].srcs[1] + ' 378w, ' +
+                  Imgs[28].srcs[2] + ' 462w'"
               sizes="298px"
               class="rounded hover:z-10 shadow-lg hidden md:block md:absolute md:top-1/2 md:-translate-y-1/2 md:right-0 w-3/5 aspect-video object-cover bg-northern_light_grey font-bold"
               loading="lazy"

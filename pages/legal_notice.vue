@@ -223,7 +223,7 @@ export default {
   data() {
     return {
       address: "1 Quartier Les Marettes, 26140, Andancette",
-      mapsLink: "",
+      mapsUrl: "",
       RCS: "904 638 814",
       NAF: "55202",
       shareCapital: "1500",

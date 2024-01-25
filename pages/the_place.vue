@@ -31,7 +31,7 @@
       </div>
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img 
-          :src="Imgs[25].srcs[0].src" 
+          :src="Imgs[25].srcs[0]" 
           :alt="Imgs[25].alt" 
           class="aspect-video w-full md:h-full md:order-1 object-cover bg-northern_light_grey font-bold" 
           loading="lazy"
@@ -73,7 +73,7 @@
           </NuxtLink>
         </div>
         <img 
-          :src="Imgs[25].srcs[0].src" 
+          :src="Imgs[25].srcs[0]" 
           :alt="Imgs[25].alt" 
           class="md:h-full md:col-span-3 aspect-video object-cover bg-northern_light_grey font-bold" 
           loading="lazy"
@@ -102,13 +102,13 @@
           </div>
           <img 
             v-if="photo.img" 
-            :src="photo.img.srcs[0].src" 
+            :src="photo.img.srcs[0]" 
             :alt="photo.img.alt" 
             :srcset="
-              photo.img.srcs[0].src + ' 320w, ' +
-                photo.img.srcs[1].src + ' 488w, ' +
-                photo.img.srcs[2].src + ' 656w, ' +
-                photo.img.srcs[3].src + ' 1980w'"
+              photo.img.srcs[0] + ' 320w, ' +
+                photo.img.srcs[1] + ' 488w, ' +
+                photo.img.srcs[2] + ' 656w, ' +
+                photo.img.srcs[3] + ' 1980w'"
             class="w-full h-full object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 group-focus-within:scale-110" 
             :sizes="160*photo.size + 'px'"
             loading="lazy"

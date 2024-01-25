@@ -39,7 +39,7 @@
             <NuxtLink 
               v-for="link in links" 
               :key="link" 
-              :to="localePath(link.link)"
+              :to="localePath(link.url)"
               newWindow="_blank"
               class="btn-secondary"
             >
@@ -52,11 +52,11 @@
         <img 
           v-if="imgs[0]" 
           :id="id1"
-          :src="imgs[0].srcs[0].src" 
+          :src="imgs[0].srcs[0]" 
           :alt="imgs[0].alt" 
           :srcset="
-            imgs[0].srcs[0].src + ' 309w, ' +
-              imgs[0].srcs[1].src + ' 462w'"
+            imgs[0].srcs[0] + ' 309w, ' +
+              imgs[0].srcs[1] + ' 462w'"
           style="z-index: 0;"
           class="rounded duration-150 shadow-lg dark:shadow-lg-dark md:absolute md:top-0 md:left-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
           sizes="378px"
@@ -66,11 +66,11 @@
         <img 
           v-if="imgs[1]" 
           :id="id2"
-          :src="imgs[1].srcs[0].src" 
+          :src="imgs[1].srcs[0]" 
           :alt="imgs[1].alt" 
           :srcset="
-            imgs[1].srcs[0].src + ' 309w, ' +
-              imgs[1].srcs[1].src + ' 462w'"
+            imgs[1].srcs[0] + ' 309w, ' +
+              imgs[1].srcs[1] + ' 462w'"
           style="z-index: 10;"
           class="rounded duration-150 shadow-lg dark:shadow-lg-dark ml-auto -mt-4 sm:-mt-20 md:absolute md:bottom-0 md:right-0 w-3/5 md:w-2/3 aspect-video object-cover bg-northern_light_grey font-bold" 
           sizes="378px"

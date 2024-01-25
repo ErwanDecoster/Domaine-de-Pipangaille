@@ -11,13 +11,13 @@
         :links="aProximiterSelected.links" 
       />
       <div 
-        v-if="aProximiterSelected.mapslink"
+        v-if="aProximiterSelected.mapsUrl"
         class="grid h-[328px] rounded overflow-hidden"
       >
         <iframe 
           :title="`Carte Google Maps de la localisation de ${aProximiterSelected.title}`" 
           class="h-full w-full bg-northern_light_grey font-bold dark:hue-rotate-180 dark:invert-[0.8] dark:contrast-125"
-          :src="`${aProximiterSelected.mapslink}`"
+          :src="`${aProximiterSelected.mapsUrl}`"
           allowfullscreen="true"
           loading="lazy"
         />

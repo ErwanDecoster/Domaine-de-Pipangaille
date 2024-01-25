@@ -40,7 +40,7 @@
           >
             <img 
               v-if="img" 
-              :src="img.srcs[3].src" 
+              :src="img.srcs[3]" 
               :alt="img.alt" 
               class="rounded-lg object-contain font-bold m-auto h-full" 
               loading="lazy"

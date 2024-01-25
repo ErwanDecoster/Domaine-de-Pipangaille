@@ -18,11 +18,11 @@
       </div>
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img 
-          :src="Imgs[2].srcs[0].src" 
+          :src="Imgs[2].srcs[0]" 
           :alt="Imgs[2].alt" 
           :srcset="
-            Imgs[2].srcs[0].src + ' 309w, ' +
-              Imgs[2].srcs[1].src + ' 462w'"
+            Imgs[2].srcs[0] + ' 309w, ' +
+              Imgs[2].srcs[1] + ' 462w'"
           sizes="462px"
           class="aspect-video w-full md:h-full object-cover bg-northern_light_grey font-bold"
           loading="lazy"

@@ -18,12 +18,12 @@
           <img 
             v-for="img in accommodationSelected.imgs"
             :key="img"
-            :src="Imgs[img.id].srcs[2].src" 
+            :src="Imgs[img.id].srcs[2]" 
             :alt="Imgs[img.id].alt" 
             :srcset="
-              Imgs[img.id].srcs[2].src + ' 320w, ' +
-                Imgs[img.id].srcs[1].src + ' 462w, ' +
-                Imgs[img.id].srcs[3].src + ' 1980w'"
+              Imgs[img.id].srcs[2] + ' 320w, ' +
+                Imgs[img.id].srcs[1] + ' 462w, ' +
+                Imgs[img.id].srcs[3] + ' 1980w'"
             class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
             sizes="320px"
             loading="lazy"
@@ -47,7 +47,7 @@
               width="24"
               height="24"
               class="w-6 h-6 bg dark:invert font-bold aspect-square"
-              :src="`/images/${row.path}.svg`"
+              :src="`/images/${row.url}.svg`"
               :alt="'icone ' + $t(`accommodation.facilities.${row.label}`)"
             >
             <p class="">
