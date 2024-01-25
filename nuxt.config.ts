@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-vercel-analytics',
     'nuxt-security',
-    '@vite-pwa/nuxt',
+    '@nuxtjs/sitemap',
     '@nuxtjs/i18n',
   ],
   security: {
@@ -42,12 +42,12 @@ export default defineNuxtConfig({
     langDir: "lang",
     lazy: true,
     strategy: 'prefix_except_default',
+    defaultLocale: 'fr',
     locales: [
       {
         code: 'fr',
         iso: 'fr-FR',
         name: 'Fr',
-        // name: 'Français',
         file: "fr-FR.ts",
         dir: "ltr",
       },
@@ -55,7 +55,6 @@ export default defineNuxtConfig({
         code: 'en',
         iso: 'en-US',
         name: 'En',
-        // name: 'English',
         file: "en-US.ts",
         dir: "ltr",
       },
@@ -98,51 +97,6 @@ export default defineNuxtConfig({
         fr: '/condition-general-de-vente',
         en: '/general-condition-of-sale',
       },
-    },
-    defaultLocale: 'fr',
-  },
-  pwa: {
-    // registerType: 'autoUpdate',
-    manifest: {
-      name: 'Domaine de Pipangaille',
-      short_name: 'Pipangaille',
-      description: 'Nos 4 chambres d\'hôte situé à Andancette vous accueils un cadre idyllique en pleine nature. Proche de la Via Rhona accessible directement à vélo.',
-      theme_color: '#ffffff',
-      display_override: ["fullscreen", "minimal-ui"],
-      display: "standalone",
-      icons: [
-        {
-          src: '192.png',
-          sizes: '192x192',
-          type: 'image/png',
-        },
-        {
-          src: '512.png',
-          sizes: '512x512',
-          type: 'image/png',
-        },
-        {
-          src: '512.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'any maskable',
-        },
-      ],
-    },
-    // workbox: {
-    //   globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-    // },
-    // client: {
-    //   installPrompt: true,
-    //   // you don't need to include this: only for testing purposes
-    //   // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
-    //   periodicSyncForUpdates: 20,
-    // },
-    devOptions: {
-      enabled: true,
-      suppressWarnings: true,
-      navigateFallbackAllowlist: [/^\/$/],
-      type: 'module',
     },
   },
   nitro: {
