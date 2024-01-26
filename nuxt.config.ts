@@ -58,44 +58,60 @@ export default defineNuxtConfig({
         file: "en-US.ts",
         dir: "ltr",
       },
+      {
+        code: 'es',
+        iso: 'es-ES',
+        name: 'Es',
+        file: "es-ES.ts",
+        dir: "ltr",
+      },
     ],
     customRoutes: 'config',
     pages: {
       the_place: {
         fr: '/le-lieu',
         en: '/the-place',
+        es: '/el-lugar',
       },
       'accommodation/index': {
         fr: '/hebergements',
         en: '/accommodation',
+        es: '/alojamiento',
       },
       'accommodation/[id]': {
         fr: '/hebergements/[id]',
         en: '/accommodation/[id]',
+        es: '/alojamiento/[id]',
       },
       'near/index': {
         fr: '/a-proximite',
         en: '/near',
+        es: '/cerca',
       },
       'near/[group]/[id]': {
         fr: '/a-proximite/[group]/[id]',
         en: '/near/[group]/[id]',
+        es: '/cerca/[group]/[id]',
       },
       book: {
         fr: '/reserver',
         en: '/book',
+        es: '/reservar',
       },
       contact: {
         fr: '/nous-contacter',
         en: '/contact-us',
+        es: '/contáctenos',
       },
       legal_notice: {
         fr: '/mentions-legales',
         en: '/legal-notice',
+        es: '/notas-legales',
       },
       general_condition_of_sale: {
         fr: '/condition-general-de-vente',
         en: '/general-condition-of-sale',
+        es: '/condiciones-generales-de-venta',
       },
     },
   },

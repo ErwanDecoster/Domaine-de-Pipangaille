@@ -30,7 +30,7 @@
         tag="div"
         class="flex relative flex-wrap sm:grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8"
       >
-        <LazyPageCard
+        <PageCard
           v-for="element in elementsList" 
           :id="element.id"
           :key="element" 

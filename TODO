@@ -11,7 +11,8 @@
 - translate in russe
 - translate in spanish
 - translate in portuguese
-- incress performance
-- reduce inused code
-- add sitemap
-- add robot.txt
+✔️ incress performance
+✔️ reduce inused code
+✔️ add sitemap
+- add dynamic route in sitemap 
+✔️ add robot.txt
