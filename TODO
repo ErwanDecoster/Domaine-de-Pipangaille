@@ -2,17 +2,18 @@
 ✔️ add translate gestion for general-condition-of-sale page
 ✔️ add translate gestion for legal-notice page
 ✔️ add translate gestion for book page
-- add translate gestion for ALT img text
 ✔️ add translate gestion for all Google Maps link
 ✔️ change Washing Machine icon
-- add request for agreement for Google Maps integration
 ✔️ bug att Avis clients, we cant use arrow
 ✔️ translate in english
-- translate in russe
-- translate in spanish
-- translate in portuguese
+✔️ translate in spanish
 ✔️ incress performance
 ✔️ reduce inused code
 ✔️ add sitemap
-- add dynamic route in sitemap 
 ✔️ add robot.txt
+- translate in spanish legal notice and general condition of sale 
+- add translate gestion for ALT img text
+- add request for agreement for Google Maps integration
+- translate in russe
+- translate in portuguese
+- add dynamic route in sitemap 

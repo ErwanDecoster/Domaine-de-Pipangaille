@@ -6,7 +6,7 @@ export default {
   facebook: "Facebook",
   instagram: "Instagram",
   linkedin: "LinkedIn",
-  twitter: "Twitter (x)",
+  x: "X (Twitter)",
   schedulesAndPrices: "Horaires et Tarifs",
   prices: "Tarifs",
   ticketing: "Billetterie",

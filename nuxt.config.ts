@@ -21,11 +21,11 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxt/image',
     'nuxt-vercel-analytics',
     'nuxt-security',
     '@nuxtjs/sitemap',
     '@nuxtjs/i18n',
+    'nuxt-delay-hydration',
   ],
   security: {
     headers: {
@@ -86,12 +86,12 @@ export default defineNuxtConfig({
       'near/index': {
         fr: '/a-proximite',
         en: '/near',
-        es: '/cerca',
+        es: '/a-proximidad',
       },
       'near/[group]/[id]': {
         fr: '/a-proximite/[group]/[id]',
         en: '/near/[group]/[id]',
-        es: '/cerca/[group]/[id]',
+        es: '/a-proximidad/[group]/[id]',
       },
       book: {
         fr: '/reserver',

@@ -43,7 +43,7 @@
             class="p-1 flex gap-4"
           >
             <img 
-              v-if="row.path"
+              v-if="row.url"
               width="24"
               height="24"
               class="w-6 h-6 bg dark:invert font-bold aspect-square"

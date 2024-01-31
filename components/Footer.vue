@@ -48,7 +48,7 @@
           />
           <ButtonInline 
             link="https://twitter.com/D_Pipangaille"
-            content="twitter" 
+            content="x" 
             newWindow="_blank" 
           />
         </div>
