@@ -118,6 +118,32 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
+  routeRules: {
+    "/a_proximite/a_visiter/musee_de_l_alambic": {
+        redirect: {
+          to: "/a-proximite/a-visiter/musee_de_l_alambic",
+          statusCode: 301,
+        },
+    },
+    "/le_lieu": {
+        redirect: {
+          to: "/le-lieu",
+          statusCode: 301,
+        },
+    },
+    "/a_proximite/se_restaurer/le_picotin": {
+        redirect: {
+          to: "/a-proximite/se-restaurer/le_picotin"",
+          statusCode: 301,
+        },
+    },
+    "/a_proximite/se_restaurer/o_daily_truck": {
+        redirect: {
+          to: "/a-proximite/se-restaurer/o_daily_truck",
+          statusCode: 301,
+        },
+    },
+  },
   runtimeConfig: {
     public: {
       siteUrl: process.env.PUBLIC_SITE_URL || 'https://domaine-de-pipangaille.fr',

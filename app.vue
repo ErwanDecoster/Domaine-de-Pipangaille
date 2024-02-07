@@ -19,7 +19,6 @@ export default {
       identifierAttribute: 'id',
       addSeoAttributes: true
     })
-    console.log();
     const title = this.$t('index.meta.title')
     useHead({
       title: title,
