@@ -129,7 +129,7 @@ export default {
     this.PreparePhoto()
     const title = this.$t(`accommodation.${this.accommodationSelected.i18n}.title`) + " - " + this.$t(`accommodation.title`) + " - Domaine de Pipangaille"
     const desc = this.$t(`accommodation.${this.accommodationSelected.i18n}.shortDesc`)
-    const img = this.accommodationSelected.imgs[1].link
+    const img = this.Imgs[this.accommodationSelected.imgs[1].id].srcs[0]
     const path = this.$route.path
     useHead({
       title: title,

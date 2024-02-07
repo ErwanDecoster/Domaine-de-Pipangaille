@@ -119,15 +119,21 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
   routeRules: {
+    "/le_lieu": {
+      redirect: {
+        to: "/le-lieu",
+        statusCode: 301,
+      },
+    },
     "/a_proximite/a_visiter/musee_de_l_alambic": {
         redirect: {
           to: "/a-proximite/a-visiter/musee_de_l_alambic",
           statusCode: 301,
         },
     },
-    "/le_lieu": {
+    "/a_proximite/a_visiter/palais_ideal_du_facteur_cheval": {
         redirect: {
-          to: "/le-lieu",
+          to:"/a-proximite/a-visiter/palais_ideal_du_facteur_cheval",
           statusCode: 301,
         },
     },
@@ -140,6 +146,12 @@ export default defineNuxtConfig({
     "/a_proximite/se_restaurer/o_daily_truck": {
         redirect: {
           to: "/a-proximite/se-restaurer/o_daily_truck",
+          statusCode: 301,
+        },
+    },
+    "/a_proximite/se_restaurer/le_relais_mailles": {
+        redirect: {
+          to: "/a-proximite/se-restaurer/le_relais_mailles",
           statusCode: 301,
         },
     },

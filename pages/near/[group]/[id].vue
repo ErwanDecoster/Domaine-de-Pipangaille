@@ -60,7 +60,7 @@ export default {
     if (title.length >= 70)
       title = this.aProximiterSelected.title + " - " + this.$t(`near.title`)
     const desc = this.$t(`near.${this.group}.${this.aProximiterSelected.i18n}.shortDesc`)
-    const img = this.aProximiterSelected.imgs[1].link
+    const img = this.Imgs[this.aProximiterSelected.imgs[1].id].srcs[0]
     useHead({
       title: title,
       meta: [

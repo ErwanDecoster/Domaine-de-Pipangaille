@@ -20,6 +20,7 @@
             width="165"
             height="74"
             loading="lazy"
+            title="Domaine de Pipangaille"
             class="h-[4.625rem] duration-200"
             src="/images/logo_domaine_de_pipangaille.svg"
             alt="logo du Domaine de Pipangaille"
