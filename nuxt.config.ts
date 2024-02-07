@@ -133,7 +133,7 @@ export default defineNuxtConfig({
     },
     "/a_proximite/se_restaurer/le_picotin": {
         redirect: {
-          to: "/a-proximite/se-restaurer/le_picotin"",
+          to: "/a-proximite/se-restaurer/le_picotin",
           statusCode: 301,
         },
     },

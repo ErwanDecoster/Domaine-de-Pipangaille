@@ -386,7 +386,7 @@ export default {
   legalNotice: {
     title: "Mentions Légales",
     meta: {
-      title: "Mentions Légales - Domaine de Pipangaille - Chambres d'hôtes de charme à Andancette",
+      title: "Mentions Légales - Domaine de Pipangaille",
       desc: "Consultez les mentions légales du Domaine de Pipangaille, des charmantes chambres d'hôte situé à Andancette, offrant un cadre pittoresque en pleine nature.",
     },
     siteEditor: {

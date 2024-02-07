@@ -57,6 +57,8 @@ export default {
     this.SelecteAProximite();
     this.NoSelecteAProximites()
     const title = this.aProximiterSelected.title + " - " + this.$t(`near.title`) + " - Domaine de Pipangaille"
+    if (title.length >= 70)
+      title = this.aProximiterSelected.title + " - " + this.$t(`near.title`)
     const desc = this.$t(`near.${this.group}.${this.aProximiterSelected.i18n}.shortDesc`)
     const img = this.aProximiterSelected.imgs[1].link
     useHead({

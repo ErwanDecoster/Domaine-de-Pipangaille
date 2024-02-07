@@ -386,7 +386,7 @@ export default {
   legalNotice: {
     title: "Legal Notice",
     meta: {
-      title: "Legal Notice - Domaine de Pipangaille - Charming Guest Rooms in Andancette",
+      title: "Legal Notice - Domaine de Pipangaille",
       desc: "Check the legal notice of Domaine de Pipangaille, charming guest rooms located in Andancette, offering a picturesque setting in nature.",
     },
     siteEditor: {

@@ -1,6 +1,9 @@
 <template>
   <div class="md:pt-14 relative h-[100vh]">
     <div class="p-8 absolute inset-8 md:inset-16 rounded-xl">
+      <h1 class="text-4xl sm:text-5xl my-4">
+        {{ $t('book.title') }}
+      </h1>
       <p 
         v-for="row in $tm('book.loadingText')" 
         :key="row"
