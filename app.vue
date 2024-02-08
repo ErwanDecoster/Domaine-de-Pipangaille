@@ -8,11 +8,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      showModal: true,
-    }
-  },
   created() {
     const head = useLocaleHead({
       addDirAttribute: true,

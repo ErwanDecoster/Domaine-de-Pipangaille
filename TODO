@@ -20,3 +20,4 @@
 ✔️ add redirect for 404 page
 - add Les Agapon Restaurant
 - add Lamas des plainers ?
+- Bug when user comme back after 404 error, not in nuxt 3.7.1 but in nuxt 3.9.3
