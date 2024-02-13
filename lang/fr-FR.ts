@@ -21,6 +21,7 @@ export default {
     welcome: "Votre séjour au",
     placeDescTitle: "Le Domaine de Pipangaille",
     placeDescText: "Le Domaine de Pipangaille, ancienne magnanerie récemment rénovée vous propose un séjour magique dans un cadre idyllique. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événement à fêter, le domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la ViaRhôna.",
+    placeActionButton: "Le Domaine de Pipangaille",
     guestroomDescTitle: "Nos chambres d'hôtes",
     guestroomDescText: "Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d'été à votre disposition ainsi qu'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étag",
     guestroomDescActionButton: "Voir les chambres",
@@ -28,6 +29,7 @@ export default {
     nearDescTitle: "À proximité",
     nearDescTextPart1: "Idéalement situé proche des grands axes au cœur de la vallée du Rhône, lors de votre séjour au Domaine de Pipangaille, vous pourrez visiter : le Safari de Peaugres, le Palais Idéal du facteur Cheval, le Musée de l’Alambic... Vous pourrez également vous initier au golf avec le golf d'Albon et de St Clair.",
     nearDescTextPart2: "Au cœur du Saint Joseph, vous pourrez aussi déguster les vins locaux et visiter de nombreuses caves. Randonnées, promenades, espace aquatique, vol en montgolfière sont également à proximité. Mais aussi la ViaRhôna en accès direct, ou encore la ViaFluvia, pas très loin.",
+    nearActionButton: "Activités et restaurants à proximité",
   },
   searchEngine: {
     book: "Réserver",

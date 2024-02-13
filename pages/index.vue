@@ -46,7 +46,7 @@
               class="btn-primary"
               :title="$t('thePlace.title')"
             >
-              {{ $t('learnMore') }}
+              {{ $t('index.placeActionButton') }}
             </NuxtLink>
           </div>
           <img 
@@ -87,7 +87,7 @@
               class="btn-primary"
               :title="$t('near.title')"
             >
-              {{ $t('learnMore') }}
+              {{ $t('index.nearActionButton') }}
             </NuxtLink>
           </div>
           <div class="relative">
@@ -381,6 +381,11 @@ export default {
           hid: 'canonical',
           rel: 'canonical',
           href: `https://domaine-de-pipangaille.fr${this.$route.path}`,
+        },
+        {
+          rel: 'preload',
+          as: 'image',
+          href: Imgs[71].srcs[0],
         },
       ],
     })

@@ -21,13 +21,15 @@ export default {
     welcome: "Your stay at",
     placeDescTitle: "Domaine de Pipangaille",
     placeDescText: "Domaine de Pipangaille, a recently renovated former silk farm, offers a magical stay in an idyllic setting. Whether you're looking for a privileged place for a break, a short stay, a business trip, or a celebration, Domaine de Pipangaille is the ideal location. It is situated one hour from Lyon and Saint-Étienne, 45 minutes from Valence, and has direct access to the ViaRhôna.",
+    placeActionButton: "The Domain of Pipangaille",
     guestroomDescTitle: "Our guest rooms",
     guestroomDescText: "You access the rooms by crossing the wooded park, leading you to the inner courtyard surrounded by stones, giving it an authentic and soothing atmosphere. You will then find a summer kitchen at your disposal, as well as a communal room. The four uniquely decorated rooms, inviting you to travel, are located on the second floor.",
     guestroomDescActionButton: "See the rooms",
     reviewsTittle: "Customer Reviews",
     nearDescTitle: "Nearby",
     nearDescTextPart1: "Ideally located near major roads in the heart of the Rhône Valley, during your stay at Domaine de Pipangaille, you can visit: Peaugres Safari, the Ideal Palace of the Postman Cheval, the Distillery Museum... You can also try golf at Albon and St Clair golf courses.",
-    nearDescTextPart2: "In the heart of Saint Joseph, you can also taste local wines and visit numerous wineries. Hiking, walks, water activities, hot air balloon flights are also nearby. And don't forget the direct access to ViaRhôna or the nearby ViaFluvia."
+    nearDescTextPart2: "In the heart of Saint Joseph, you can also taste local wines and visit numerous wineries. Hiking, walks, water activities, hot air balloon flights are also nearby. And don't forget the direct access to ViaRhôna or the nearby ViaFluvia.",
+    nearActionButton: "Activities and restaurants nearby",
   },
   searchEngine: {
     book: "Book",
