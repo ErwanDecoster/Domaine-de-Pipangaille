@@ -1,7 +1,7 @@
 <template>
   <div class="mb-8 md:pt-[5.25rem]">
     <section class="max-w-screen-xl mx-auto px-4 grid gap-8 pt-16">
-      <div v-if="aProximiterSelected" class="mx-auto grid gap-8">
+      <div v-if="aProximiterSelected" class="mx-auto grid gap-8 w-full">
         <h1 class="text-4xl sm:text-5xl">
           {{ aProximiterSelected.title }}
         </h1>
