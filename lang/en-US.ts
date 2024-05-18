@@ -12,6 +12,7 @@ export default {
   ticketing: "Ticketing",
   ourSocialNetworks: "Our Social Networks",
   ourOtherPages: "Our Other Pages",
+  findModePlace: "Autour du Palais idéal ",
   index: {
     title: "Home",
     meta: {

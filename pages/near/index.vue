@@ -8,6 +8,10 @@
         :title="$t('near.toVisitDescTitle')"
         :content="$tm('near.toVisitDescText')"
         :imgs="[ Imgs[31], Imgs[28] ]"
+        :links="[{
+          label: 'findModePlace',
+          url: 'https://au-pre-du-rhone.fr/',
+        }]"
       />
       <div class="grid gap-2">
         <PageCardGroup
