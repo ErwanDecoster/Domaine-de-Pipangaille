@@ -74,11 +74,11 @@
           </p>
         </div>
       </div>
-      <CardTypeOn 
+      <!-- <CardTypeOn 
         :title="$t('accommodation.summerKitchenTitle')" 
         :content="$tm('accommodation.summerKitchenText')"
         :imgs="[Imgs[20], Imgs[21]]"
-      />
+      /> -->
       <CardTypeOn 
         :title="$t('accommodation.relaxation')" 
         :content="$tm('accommodation.relaxationText')"
@@ -124,8 +124,8 @@ export default {
     window.scrollTo(0,0);
   },
   created() {
-    this.SelecteAccommodation()
-    this.NoSelecteAccommodations()
+    this.SelectAccommodation()
+    this.NoSelectAccommodations()
     this.PreparePhoto()
     const title = this.$t(`accommodation.${this.accommodationSelected.i18n}.title`) + " - " + this.$t(`accommodation.title`) + " - Domaine de Pipangaille"
     const desc = this.$t(`accommodation.${this.accommodationSelected.i18n}.shortDesc`)
@@ -145,8 +145,8 @@ export default {
         { property: 'og:description', content: desc },
         { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + img },
         { property: 'twitter:card', content: 'summary_large_image' },
-        { property: 'twitter:site', content: '@erwan0711' },
-        { property: 'twitter:creator', content: '@erwan0711' },
+        { property: 'twitter:site', content: '@D_Pipangaille' },
+        { property: 'twitter:creator', content: '@D_Pipangaille' },
         { property: 'twitter:title', content: title },
         { property: 'twitter:description', content: desc },
         { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + img },
@@ -166,14 +166,14 @@ export default {
         this.photosPrepared.push(this.Imgs[photo.id]);
       });
     },
-    SelecteAccommodation() {
+    SelectAccommodation() {
       this.accommodations.forEach(accommodation => {
         if (accommodation.slug === this.$route.params.id) {
           this.accommodationSelected = accommodation;
         }
       });
     },
-    NoSelecteAccommodations() {
+    NoSelectAccommodations() {
       this.accommodationsNoSelected = this.accommodations.filter(item => item !== this.accommodationSelected );
     },
     OpenPicture(div, pict) {
