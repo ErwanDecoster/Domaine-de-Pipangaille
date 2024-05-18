@@ -16,7 +16,7 @@
           class="grid h-[328px] rounded overflow-hidden"
         >
           <iframe 
-            :title="`Carte Google Maps de la localisation de ${aProximiterSelected.title}`" 
+            :title="`Carte Google Maps de l'emplacement de ${aProximiterSelected.title}`" 
             class="h-full w-full bg-northern_light_grey font-bold dark:hue-rotate-180 dark:invert-[0.8] dark:contrast-125"
             :src="`${aProximiterSelected.mapsUrl}`"
             allowfullscreen="true"
@@ -58,8 +58,8 @@ export default {
     window.scrollTo(0,0)
   },
   created() {
-    this.SelecteAProximite()
-    this.NoSelecteAProximites();
+    this.SelectAProximite()
+    this.NoSelectAProximites();
     if (this.aProximiterSelected) {
       const title = this.aProximiterSelected.title + " - " + this.$t(`near.title`) + " - Domaine de Pipangaille"
       if (title.length >= 70)
@@ -103,7 +103,7 @@ export default {
     }
   },
   methods: {
-    SelecteAProximite() {
+    SelectAProximite() {
       if (this.group === 'toVisit') {
         this.aProximiter.aVisiter.forEach(element => {
           if (element.slug === this.$route.params.id) {
@@ -123,7 +123,7 @@ export default {
         console.log('error');
       }
     },
-    NoSelecteAProximites() {
+    NoSelectAProximites() {
       if (this.group === 'toVisit') {
         this.aProximiterNoSelected = this.aProximiter.aVisiter.filter(item => item !== this.aProximiterSelected );
       }

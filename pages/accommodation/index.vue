@@ -12,7 +12,7 @@
       <div class="grid md:grid-cols-2 rounded overflow-hidden">
         <img 
           src="/images/petit_dejeuner.png"
-          alt="photo d'un petit dejeuner"
+          alt="photo d'un petit déjeuner"
           class="aspect-video md:h-full w-full object-cover bg-northern_light_grey font-bold"
         >
         <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
