@@ -18,10 +18,10 @@ export default defineEventHandler(async (event) => {
 		await isValid(body)
 			.then(async (data) => {
 				const mail = await transporter.sendMail({
-					from: `${config.MAILUSER}`,
+					from: `Site internet - Domaine de Pipangaille<website@domaine-de-pipangaille.fr>`,
 					replyTo: data.email,
 					to: config.CONTACTMAIL,
-					subject: `Site Web | ${data.object}`,
+					subject: `Site internet | ${data.object}`,
 					text: data.message,
 					html: `
 						<body style="font-family: Arial;">
