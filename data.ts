@@ -2,6 +2,7 @@ export const accommodations = [
   {
     id: 1,
     i18n: 'MoroccanGuestRoom',
+    bedConfiguration: true,
     imgs: [
       { id: 10 },
       { id: 11 },
@@ -59,6 +60,7 @@ export const accommodations = [
   {
     id: 2,
     i18n: 'AfricanGuestRoom',
+    bedConfiguration: true,
     imgs: [
       { id: 4 },
       { id: 5 },

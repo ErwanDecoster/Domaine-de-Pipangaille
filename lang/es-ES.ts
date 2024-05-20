@@ -119,7 +119,8 @@ export default {
       longDesc: [
         "El ambiente marroquí con colores cálidos te transportará en esta habitación de 20 m², adecuada para 2 adultos y un niño o para una estancia romántica. La habitación consta de una cama de 1,80 m, un sofá cama, un lavabo doble y una espaciosa ducha 'Tadelakt', un aseo separado y un pequeño espacio de almacenamiento. La disposición para dormir se puede configurar en dos camas individuales.",
         "Para tu bienestar, la habitación cuenta con aire acondicionado en verano."
-      ]
+      ],
+      bedConfiguration: "Esta habitación está disponible en dos configuraciones: dos camas individuales o una cama doble (180 cm x 200 cm). Por favor, especifique su preferencia al hacer la reserva."
     },
     AfricanGuestRoom: {
       title: "Habitación Africana",
@@ -127,7 +128,8 @@ export default {
       longDesc: [
         "Otra invitación al viaje con la habitación 'africana', una habitación con colores que te harán viajar. Diseñada para 2 personas, con una cama doble de 1,80 m o 2 camas individuales, la habitación cuenta con un lavabo, una ducha abierta, un aseo separado, un pequeño espacio de almacenamiento, una mesa y 2 sillas.",
         "Para tu bienestar, la habitación cuenta con aire acondicionado en verano."
-      ]
+      ],
+      bedConfiguration: "Esta habitación está disponible en dos configuraciones: dos camas individuales o una cama doble (180 cm x 200 cm). Por favor, especifique su preferencia al hacer la reserva."
     },
     TuscanyGuestRoom: {
       title: "Habitación Toscana",

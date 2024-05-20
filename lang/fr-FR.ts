@@ -120,14 +120,16 @@ export default {
       longDesc: [
         "L'ambiance marocaine aux couleurs chaleureuses vous dépaysera pour cette chambre de 20 m², adaptée pour 2 adultes et un enfant ou pour un séjour en amoureux. La chambre est composée d'un lit de 1,80 m, d'un canapé-lit, d'un lavabo double vasque et d'une douche spacieuse 'Tadelakt', d'un toilette séparé et d'un petit espace de rangement. Le couchage peut être configuré en deux lits simples.",
         "Pour votre bien-être, la chambre est climatisée en été.",
-      ]
+      ],
+      bedConfiguration: "Cette chambre est disponible en deux configurations : deux lits simples ou un lit double (180 cm x 200 cm). Veuillez indiquer votre préférence lors de la réservation."
     },
     AfricanGuestRoom: {
       title: "Chambre Africaine",
       shortDesc: "Une chambre pour deux aux couleurs qui font voyager, avec salle d'eau privée, table et possibilité de lit séparé.",
       longDesc: [
         "Une autre invitation au voyage avec la chambre 'africaine', une chambre aux couleurs qui vous feront voyager. Conçue pour 2 personnes, avec un lit double de 1,80 m ou 2 lits simples, la chambre possède un lavabo, une douche ouverte, des toilettes séparées, un petit espace de rangement, une table et 2 chaises.",
-        "Pour votre bien-être, la chambre est climatisée en été.",
+      ],
+      bedConfiguration: "Cette chambre est disponible en deux configurations : deux lits simples ou un lit double (180 cm x 200 cm). Veuillez indiquer votre préférence lors de la réservation."
       ]
     },
     TuscanyGuestRoom: {

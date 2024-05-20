@@ -10,6 +10,10 @@
         :imgs="[ Imgs[accommodationSelected.imgs[1].id], Imgs[accommodationSelected.imgs[2].id] ]" 
         :button="[{ target: 'book', content: 'bookNow' }]"
       />
+      <div v-if="accommodationSelected.bedConfiguration" class="flex gap-4 p-4 rounded bg-almond dark:bg-dark-almond text-eerie-black dark:text-white items-center">
+        <Icon class="" name="fe:info"  />
+        <p>{{ $t(`accommodation.${accommodationSelected.i18n}.bedConfiguration`) }}</p>
+      </div>
       <div class="grid gap-2">
         <h2 class="text-4xl first-letter:capitalize">
           {{ $t('photos') }}

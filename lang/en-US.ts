@@ -119,32 +119,34 @@ export default {
       longDesc: [
           "The warm and colorful Moroccan ambiance will transport you in this 20 m² room, suitable for 2 adults and a child or for a romantic getaway. The room consists of a 1.80 m bed, a sofa bed, a double sink, and a spacious 'Tadelakt' shower, a separate toilet, and a small storage space. The bedding can be configured as two single beds.",
           "For your well-being, the room is air-conditioned in summer."
-      ]
+      ],
+      bedConfiguration: "This room is available in two configurations: two single beds or one double bed (180 cm x 200 cm). Please specify your preference when booking."
     },
     AfricanGuestRoom: {
-        title: "African Room",
-        shortDesc: "A room for two with colors that take you on a journey, with a private bathroom, a table, and the possibility of a separate bed.",
-        longDesc: [
-            "Another invitation to travel with the 'African' room, a room with colors that will take you on a journey. Designed for 2 people, with a double bed of 1.80 m or 2 single beds, the room has a sink, an open shower, separate toilet, a small storage space, a table, and 2 chairs.",
-            "For your well-being, the room is air-conditioned in summer."
-        ]
+      title: "African Room",
+      shortDesc: "A room for two with colors that take you on a journey, with a private bathroom, a table, and the possibility of a separate bed.",
+      longDesc: [
+          "Another invitation to travel with the 'African' room, a room with colors that will take you on a journey. Designed for 2 people, with a double bed of 1.80 m or 2 single beds, the room has a sink, an open shower, separate toilet, a small storage space, a table, and 2 chairs.",
+          "For your well-being, the room is air-conditioned in summer."
+      ],
+      bedConfiguration: "This room is available in two configurations: two single beds or one double bed (180 cm x 200 cm). Please specify your preference when booking."
     },
     TuscanyGuestRoom: {
-        title: "Tuscany Room",
-        shortDesc: "A pleasant room with romantic colors that invites you to travel, with a private bathroom, a table, and a double bed.",
-        longDesc: [
-            "A romantic room with delicate colors on the Tuscan theme, a region in central Italy. A room for two equipped with a sink, a beautiful shower, separate toilet, storage space, and a table.",
-            "For your well-being, the room is air-conditioned in summer."
-        ]
+      title: "Tuscany Room",
+      shortDesc: "A pleasant room with romantic colors that invites you to travel, with a private bathroom, a table, and a double bed.",
+      longDesc: [
+          "A romantic room with delicate colors on the Tuscan theme, a region in central Italy. A room for two equipped with a sink, a beautiful shower, separate toilet, storage space, and a table.",
+          "For your well-being, the room is air-conditioned in summer."
+      ]
     },
     CreoleGuestRoom: {
-        title: "Creole Room",
-        shortDesc: "An original color room, with a private bathroom and a double bed.",
-        longDesc: [
-            "A room with light colors inspired by the Creole islands. Designed for two people, it is equipped with a double bed, a sink, and a shower. Your accommodation also has separate toilets and a large closet.",
-            "For complete autonomy, it is possible to rent the adjoining kitchen for a long stay or a business trip. Feel free to contact us for more information.",
-            "For your well-being, the room is air-conditioned in summer."
-        ]
+      title: "Creole Room",
+      shortDesc: "An original color room, with a private bathroom and a double bed.",
+      longDesc: [
+          "A room with light colors inspired by the Creole islands. Designed for two people, it is equipped with a double bed, a sink, and a shower. Your accommodation also has separate toilets and a large closet.",
+          "For complete autonomy, it is possible to rent the adjoining kitchen for a long stay or a business trip. Feel free to contact us for more information.",
+          "For your well-being, the room is air-conditioned in summer."
+      ]
     },
   },
   near: {
