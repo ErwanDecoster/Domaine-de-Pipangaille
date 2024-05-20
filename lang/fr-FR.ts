@@ -128,9 +128,9 @@ export default {
       shortDesc: "Une chambre pour deux aux couleurs qui font voyager, avec salle d'eau privée, table et possibilité de lit séparé.",
       longDesc: [
         "Une autre invitation au voyage avec la chambre 'africaine', une chambre aux couleurs qui vous feront voyager. Conçue pour 2 personnes, avec un lit double de 1,80 m ou 2 lits simples, la chambre possède un lavabo, une douche ouverte, des toilettes séparées, un petit espace de rangement, une table et 2 chaises.",
+        "Pour votre bien-être, la chambre est climatisée en été.",
       ],
       bedConfiguration: "Cette chambre est disponible en deux configurations : deux lits simples ou un lit double (180 cm x 200 cm). Veuillez indiquer votre préférence lors de la réservation."
-      ]
     },
     TuscanyGuestRoom: {
       title: "Chambre Toscane",
@@ -362,6 +362,7 @@ export default {
       "Nous pouvons privatiser le lieu pour vos événements privés, avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, des séminaires... Le domaine de Pipangaille, ancienne bâtisse de caractère entourée d'un parc arboré, avec de nombreux espaces, est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux... nous restons à votre disposition pour toutes demandes.",
     ],
     contactForm: {
+      usageInfo: "Toutes les réservations se font exclusivement sur notre site internet via l'onglet \"Réserver\". Nous n'acceptons pas de réservations par ce formulaire de contact. Pour vérifier la disponibilité et effectuer une réservation, merci de bien vouloir utiliser l'onglet \"Réserver\".",
       succes: "Message envoyé avec succès",
       mapsTitle: "Carte Google maps du Domaine de Pipangaille",
       phone: "téléphone",

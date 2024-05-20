@@ -1,6 +1,10 @@
 <template>
-  <section class="bg-almond dark:bg-dark-almond p-2 py-8 sm:p-16 rounedd-t-lg">
-    <div class="max-w-screen-xl mx-auto p-8 bg-white dark:bg-eerie-black rounded grid gap-8">
+  <section class="bg-almond dark:bg-dark-almond p-2 py-8 sm:p-16 rounedd-t-lg grid gap-4">
+    <div class="flex gap-4 p-4 rounded bg-white dark:bg-eerie-black text-eerie-black dark:text-white items-center">
+      <Icon class="min-w-6" name="fe:info" />
+      <p>{{ $t('contact.contactForm.usageInfo') }}</p>
+    </div>
+    <div class="max-w-screen-xl w-full mx-auto p-8 bg-white dark:bg-eerie-black rounded grid gap-8">
       <h2 class="text-4xl">
         {{ $t('contact.contactUs') }}
       </h2>
@@ -20,7 +24,7 @@
                   {{ $t('contact.contactForm.phone') }} :
                 </p>
                 <a 
-                  href="tel:+334 75 68 28 24"
+                  href="tel:+33475682824"
                   class="pl-2 underline decoration-2 underline-offset-2 decoration-almond dark:decoration-dark-almond text-md block"
                 >
                   +33 4 75 68 28 24
