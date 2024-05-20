@@ -7,4 +7,8 @@ export default defineAppConfig({
       return event;
     },
   },
+  nuxtIcon: {
+    size: '24px',
+    color: 'black',
+  },
 });

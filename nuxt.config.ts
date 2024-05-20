@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/i18n',
     'nuxt-delay-hydration',
+    'nuxt-icon'
   ],
   security: {
     headers: {
