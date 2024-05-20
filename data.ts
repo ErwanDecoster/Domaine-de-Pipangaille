@@ -51,10 +51,10 @@ export const accommodations = [
         label: 'commonWashingMachine',
         url: 'icon_machine_a_laver',
       },
-      {
-        label: 'summerKitchen',
-        url: 'icon_cuisine',
-      },
+      // {
+      //   label: 'summerKitchen',
+      //   url: 'icon_cuisine',
+      // },
     ]
   },
   {
@@ -104,10 +104,10 @@ export const accommodations = [
         label: 'commonWashingMachine',
         url: 'icon_machine_a_laver',
       },
-      {
-        label: 'summerKitchen',
-        url: 'icon_cuisine',
-      },
+      // {
+      //   label: 'summerKitchen',
+      //   url: 'icon_cuisine',
+      // },
     ]
   },
   {
@@ -156,10 +156,10 @@ export const accommodations = [
         label: 'commonWashingMachine',
         url: 'icon_machine_a_laver',
       },
-      {
-        label: 'summerKitchen',
-        url: 'icon_cuisine',
-      },
+      // {
+      //   label: 'summerKitchen',
+      //   url: 'icon_cuisine',
+      // },
     ]
   },
   {
@@ -193,6 +193,10 @@ export const accommodations = [
         url: 'icon_lit_bebe',
       },
       {
+        label: 'kettle',
+        url: 'icon_bouilloire',
+      },
+      {
         label: 'hairDryer',
         url: 'icon_seche_cheveux',
       },
@@ -200,10 +204,10 @@ export const accommodations = [
         label: 'commonWashingMachine',
         url: 'icon_machine_a_laver',
       },
-      {
-        label: 'summerKitchen',
-        url: 'icon_cuisine',
-      },
+      // {
+      //   label: 'summerKitchen',
+      //   url: 'icon_cuisine',
+      // },
     ]
   },
 ]
