@@ -81,7 +81,7 @@ export default {
   },
   data() {
     return {
-      defaultVisibleCard: 3,
+      defaultVisibleCard: !this.elementsCategory ? 4 : 3,
       filters: [],
       Imgs: Imgs,
       elementsList: this.propElementsList.slice(0, this.defaultVisibleCard),
@@ -103,6 +103,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this.defaultVisibleCard);
     this.CalcVisibleCard()
     window.addEventListener('resize', () => {
       this.CalcVisibleCard()
@@ -129,11 +130,6 @@ export default {
         this.elementsList = this.filteredElementsList.slice(0, this.defaultVisibleCard);
       else
         this.elementsList = this.filteredElementsList
-      setTimeout(() => {
-        document.querySelectorAll('.card').forEach(card => {
-          card.style.width = card.getBoundingClientRect().width + 'px';
-        })
-      }, 200)
     },
     GetFilter() {
       const filters = []
@@ -162,6 +158,8 @@ export default {
       this.updateElementList()
     },
     CalcVisibleCard() {
+      if (!this.elementsCategory)
+        return
       const width = window.innerWidth;
       let newVisibleCard = 3
       if (width > 640)

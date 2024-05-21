@@ -7,7 +7,7 @@
       :srcset="
         img.srcs[0] + ' 309w, ' +
           img.srcs[1] + ' 462w'"
-      class="rounded-b w-full h-full aspect-[4/3] max-h-64 object-cover bg-northern_light_grey font-bold" 
+      class="rounded-b w-full aspect-[4/3] max-h-64 object-cover bg-northern_light_grey font-bold" 
       sizes="(max-width: 600px) 462px, 309px"
       loading="lazy"
     >
@@ -23,7 +23,7 @@
       </p>
       <NuxtLink
         :to="localePath(target)"
-        class="btn-secondary"
+        class="btn-secondary mt-auto"
         :title="title"
       >
         {{ $t('learnMore') }}
