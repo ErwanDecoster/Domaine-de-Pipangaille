@@ -1,6 +1,6 @@
 <template>
   <section class="bg-almond dark:bg-dark-almond p-2 py-8 sm:p-16 rounedd-t-lg grid gap-4">
-    <div class="flex gap-4 p-4 rounded bg-white dark:bg-eerie-black text-eerie-black dark:text-white items-center">
+    <div class="flex gap-4 p-4 max-w-screen-xl mx-auto rounded bg-white dark:bg-eerie-black text-eerie-black dark:text-white items-center">
       <Icon class="min-w-6" name="fe:info" />
       <p>{{ $t('contact.contactForm.usageInfo') }}</p>
     </div>
