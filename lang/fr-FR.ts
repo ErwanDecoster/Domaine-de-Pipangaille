@@ -362,7 +362,7 @@ export default {
       "Nous pouvons privatiser le lieu pour vos événements privés, avec ou sans hébergement. Vous recherchez un lieu pour organiser un événement familial, une réception, un événement artistique, des séminaires... Le domaine de Pipangaille, ancienne bâtisse de caractère entourée d'un parc arboré, avec de nombreux espaces, est idéal pour accueillir vos événements. Le parc, le préau, la cour intérieure, l'installation de chapiteaux... nous restons à votre disposition pour toutes demandes.",
     ],
     contactForm: {
-      usageInfo: "Toutes les réservations se font exclusivement sur notre site internet via l'onglet \"Réserver\". Nous n'acceptons pas de réservations par ce formulaire de contact. Pour vérifier la disponibilité et effectuer une réservation, merci de bien vouloir utiliser l'onglet \"Réserver\".",
+      usageInfo: "Toutes les réservations se font exclusivement via la page \"Réserver\". Nous n'acceptons pas de réservations par ce formulaire. Veuillez utiliser la page \"Réserver\" pour vérifier la disponibilité et effectuer une réservation.",
       succes: "Message envoyé avec succès",
       mapsTitle: "Carte Google maps du Domaine de Pipangaille",
       phone: "téléphone",
