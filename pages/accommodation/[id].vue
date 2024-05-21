@@ -11,7 +11,7 @@
         :button="[{ target: 'book', content: 'bookNow' }]"
       />
       <div v-if="accommodationSelected.bedConfiguration" class="flex gap-4 p-4 rounded bg-almond dark:bg-dark-almond text-eerie-black dark:text-white items-center">
-        <Icon class="" name="fe:info"  />
+        <Icon class="min-w-6" name="fe:info"  />
         <p>{{ $t(`accommodation.${accommodationSelected.i18n}.bedConfiguration`) }}</p>
       </div>
       <div class="grid gap-2">
