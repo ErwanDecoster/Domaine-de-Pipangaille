@@ -1,23 +1,11 @@
-<template>
-  <NuxtLink 
-    :to="localePath(link)"
-    :target="newWindow"
-    class="md:ml-auto md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
-    :style="{ 'font-size': fontSize + 'px' }"
-    :title="$t(content)"
-  >
-    {{ $t(content) }}
-  </NuxtLink>
-</template>
-
 <script>
 export default {
-  props: { 
+  props: {
     link: {
       type: String,
       default: '',
     },
-    content: { 
+    content: {
       type: String,
       default: '',
     },
@@ -28,7 +16,19 @@ export default {
     newWindow: {
       type: String,
       default: '',
-    }
+    },
   },
-};
-</script>s
+}
+</script>
+
+<template>
+  <NuxtLink
+    :to="localePath(link)"
+    :target="newWindow"
+    class="md:ml-auto md:w-max p-2 px-4 rounded-lg bg-almond dark:bg-dark-almond text-md text-center duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
+    :style="{ 'font-size': `${fontSize}px` }"
+    :title="$t(content)"
+  >
+    {{ $t(content) }}
+  </NuxtLink>
+</template>s

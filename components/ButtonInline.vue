@@ -1,3 +1,22 @@
+<script>
+export default {
+  props: {
+    link: {
+      type: String,
+      default: '',
+    },
+    content: {
+      type: String,
+      default: '',
+    },
+    newWindow: {
+      type: String,
+      default: '',
+    },
+  },
+}
+</script>
+
 <template>
   <NuxtLink
     :to="link"
@@ -13,25 +32,6 @@
     </div>
   </NuxtLink>
 </template>
-
-<script>
-export default {
-  props: { 
-    link: {
-      type: String,
-      default: '',
-    },
-    content: { 
-      type: String,
-      default: '',
-    },
-    newWindow: {
-      type: String,
-      default: '',
-    }
-  },
-};
-</script>
 
 <style>
 .router-link-active .progres_bg{

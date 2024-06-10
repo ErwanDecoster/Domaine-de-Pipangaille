@@ -1,142 +1,15 @@
-<template>
-  <div class="mb-8 md:pt-[5.25rem]">
-    <section class="max-w-screen-xl mx-auto px-4 grid gap-8 pt-16">
-      <h1 class="text-4xl sm:text-5xl">
-        {{ $t('thePlace.title') }}
-      </h1>
-      <CardTypeOn 
-        :title="$t('thePlace.placeDescTitle')" 
-        :content="[ $t('thePlace.placeDescText') ]"
-        :imgs="[ Imgs[38], Imgs[42] ]" 
-      />
-      <div class="grid rounded overflow-hidden">
-        <!-- <img
-          src=""
-          alt="Description de l'image"
-          loading="lazy"
-          class="aspect-video md:h-full object-cover bg-northern_light_grey font-bold"
-        > -->
-        <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
-          <h2 class="text-4xl">
-            {{ $t('thePlace.bicycleShelter.title') }}
-          </h2>
-          <p 
-            v-for="row in $tm('thePlace.bicycleShelter.desc')"
-            :key="row"
-            class="grow"
-          >
-            {{ $rt(row) }}
-          </p>
-        </div>
-      </div>
-      <div class="grid md:grid-cols-2 rounded overflow-hidden">
-        <img 
-          :src="Imgs[25].srcs[0]" 
-          :alt="Imgs[25].alt" 
-          class="aspect-video w-full md:h-full md:order-1 object-cover bg-northern_light_grey font-bold" 
-          loading="lazy"
-        >
-        <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
-          <h2 class="text-4xl">
-            {{ $t('thePlace.eventOrganisation.title') }}
-          </h2>
-          <p 
-            v-for="row in $tm('thePlace.eventOrganisation.desc')"
-            :key="row"
-            class="grow"
-          >
-            {{ $rt(row) }}
-          </p>
-          <NuxtLink 
-            :to="localePath({ name: 'contact'})"
-            class="btn-primary"
-            :title="$t('thePlace.eventOrganisation.actionButton')"
-          >
-            {{ $t('thePlace.eventOrganisation.actionButton') }}
-          </NuxtLink>
-        </div>
-      </div>
-      <!-- <div class="grid md:grid-cols-7 rounded overflow-hidden">
-        <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8 md:col-span-4">
-          <h2 class="text-4xl">
-            {{ $t('thePlace.eventOrganisationTitle') }}
-          </h2>
-          <p class="grow">
-            {{ $t('thePlace.eventOrganisationText') }}
-          </p>
-          <NuxtLink 
-            :to="localePath({ name: 'contact'})"
-            class="btn-primary"
-            :title="$t('thePlace.eventOrganisationActionButton')"
-          >
-            {{ $t('thePlace.eventOrganisationActionButton') }}
-          </NuxtLink>
-        </div>
-        <img 
-          :src="Imgs[25].srcs[0]" 
-          :alt="Imgs[25].alt" 
-          class="md:h-full md:col-span-3 aspect-video object-cover bg-northern_light_grey font-bold" 
-          loading="lazy"
-        >
-      </div> -->
-      <h2 class="text-4xl sm:text-5xl">
-        {{ $t('thePlace.ourPhotosTitle') }}
-      </h2>
-      <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-6 gap-4">
-        <div 
-          v-for="photo in photos" 
-          :key="photo" 
-          class="h-80 group w-full relative rounded overflow-hidden bg-almond shadow cursor-pointer"
-          :class="[ {'md:col-span-2': photo.size === 2}, {'md:col-span-3': photo.size === 3}, {'md:col-span-4': photo.size === 4} ]"
-          tabindex="0"
-          @click="OpenPicture($event, photo)"
-          @keyup.enter="OpenPicture($event, photo)"
-        >
-          <div class="bg-gradient-to-b z-10 from-eerie-black absolute inset-x-0 p-2 pb-10 -translate-y-full duration-300 group-hover:-translate-y-0 group-focus-within:-translate-y-0">
-            <h3 class="text-3xl text-white font-semibold">
-              {{ photo.title }}
-            </h3>
-            <p class="text-white">
-              {{ photo.espace }}
-            </p>
-          </div>
-          <img 
-            v-if="photo.img" 
-            :src="photo.img.srcs[0]" 
-            :alt="photo.img.alt" 
-            :srcset="
-              photo.img.srcs[0] + ' 320w, ' +
-                photo.img.srcs[1] + ' 488w, ' +
-                photo.img.srcs[2] + ' 656w, ' +
-                photo.img.srcs[3] + ' 1980w'"
-            class="w-full h-full object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 group-focus-within:scale-110" 
-            :sizes="160*photo.size + 'px'"
-            loading="lazy"
-          >
-        </div>
-      </div>
-    </section>
-    <PictureFull 
-      v-if="PictureFull"
-      :imgs="photosPrepared"
-      :enterPictIndex="index"
-      @close="PictureFull = false"
-    />
-  </div>
-</template>
-
 <script>
-import { Imgs } from '@/data';
+import { Imgs } from '@/data'
 
 export default {
   data() {
     return {
-      Imgs: Imgs,
+      Imgs,
       route: this.$route.path,
       PictureFull: false,
       index: 0,
       photosPrepared: [],
-      photos:  [
+      photos: [
         {
           id: 32,
           title: 'Petite terrasse',
@@ -376,24 +249,24 @@ export default {
           size: 2,
         },
       ],
-    };
+    }
   },
   mounted() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0)
   },
   created() {
     this.PreparePhoto()
     const desc = this.$t('thePlace.meta.desc')
     const title = this.$t('thePlace.meta.title')
     useHead({
-      title: title,
+      title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: desc 
+          content: desc,
         },
-        { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + this.$route.path },
+        { property: 'og:url', content: `https://domaine-de-pipangaille.fr${this.$route.path}` },
         { property: 'og:type', content: 'article' },
         { property: 'og:title', content: title },
         { property: 'og:description', content: desc },
@@ -416,14 +289,141 @@ export default {
   },
   methods: {
     PreparePhoto() {
-      this.photos.forEach(photo => {
-        this.photosPrepared.push(photo.img);
-      });
+      this.photos.forEach((photo) => {
+        this.photosPrepared.push(photo.img)
+      })
     },
     OpenPicture(div, pict) {
-      this.PictureFull = true;
-      this.index = this.photos.indexOf(pict, 0);
+      this.PictureFull = true
+      this.index = this.photos.indexOf(pict, 0)
     },
   },
-};
+}
 </script>
+
+<template>
+  <div class="mb-8 md:pt-[5.25rem]">
+    <section class="max-w-screen-xl mx-auto px-4 grid gap-8 pt-16">
+      <h1 class="text-4xl sm:text-5xl">
+        {{ $t('thePlace.title') }}
+      </h1>
+      <CardTypeOn
+        :title="$t('thePlace.placeDescTitle')"
+        :content="[$t('thePlace.placeDescText')]"
+        :imgs="[Imgs[38], Imgs[42]]"
+      />
+      <div class="grid rounded overflow-hidden">
+        <!-- <img
+          src=""
+          alt="Description de l'image"
+          loading="lazy"
+          class="aspect-video md:h-full object-cover bg-northern_light_grey font-bold"
+        > -->
+        <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
+          <h2 class="text-4xl">
+            {{ $t('thePlace.bicycleShelter.title') }}
+          </h2>
+          <p
+            v-for="row in $tm('thePlace.bicycleShelter.desc')"
+            :key="row"
+            class="grow"
+          >
+            {{ $rt(row) }}
+          </p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 rounded overflow-hidden">
+        <img
+          :src="Imgs[25].srcs[0]"
+          :alt="Imgs[25].alt"
+          class="aspect-video w-full md:h-full md:order-1 object-cover bg-northern_light_grey font-bold"
+          loading="lazy"
+        >
+        <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8">
+          <h2 class="text-4xl">
+            {{ $t('thePlace.eventOrganisation.title') }}
+          </h2>
+          <p
+            v-for="row in $tm('thePlace.eventOrganisation.desc')"
+            :key="row"
+            class="grow"
+          >
+            {{ $rt(row) }}
+          </p>
+          <NuxtLink
+            :to="localePath({ name: 'contact' })"
+            class="btn-primary"
+            :title="$t('thePlace.eventOrganisation.actionButton')"
+          >
+            {{ $t('thePlace.eventOrganisation.actionButton') }}
+          </NuxtLink>
+        </div>
+      </div>
+      <!-- <div class="grid md:grid-cols-7 rounded overflow-hidden">
+        <div class="bg-almond dark:bg-dark-almond flex flex-col gap-2 p-6 md:p-8 md:col-span-4">
+          <h2 class="text-4xl">
+            {{ $t('thePlace.eventOrganisationTitle') }}
+          </h2>
+          <p class="grow">
+            {{ $t('thePlace.eventOrganisationText') }}
+          </p>
+          <NuxtLink
+            :to="localePath({ name: 'contact'})"
+            class="btn-primary"
+            :title="$t('thePlace.eventOrganisationActionButton')"
+          >
+            {{ $t('thePlace.eventOrganisationActionButton') }}
+          </NuxtLink>
+        </div>
+        <img
+          :src="Imgs[25].srcs[0]"
+          :alt="Imgs[25].alt"
+          class="md:h-full md:col-span-3 aspect-video object-cover bg-northern_light_grey font-bold"
+          loading="lazy"
+        >
+      </div> -->
+      <h2 class="text-4xl sm:text-5xl">
+        {{ $t('thePlace.ourPhotosTitle') }}
+      </h2>
+      <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-6 gap-4">
+        <div
+          v-for="photo in photos"
+          :key="photo"
+          class="h-80 group w-full relative rounded overflow-hidden bg-almond shadow cursor-pointer"
+          :class="[{ 'md:col-span-2': photo.size === 2 }, { 'md:col-span-3': photo.size === 3 }, { 'md:col-span-4': photo.size === 4 }]"
+          tabindex="0"
+          @click="OpenPicture($event, photo)"
+          @keyup.enter="OpenPicture($event, photo)"
+        >
+          <div class="bg-gradient-to-b z-10 from-eerie-black absolute inset-x-0 p-2 pb-10 -translate-y-full duration-300 group-hover:-translate-y-0 group-focus-within:-translate-y-0">
+            <h3 class="text-3xl text-white font-semibold">
+              {{ photo.title }}
+            </h3>
+            <p class="text-white">
+              {{ photo.espace }}
+            </p>
+          </div>
+          <img
+            v-if="photo.img"
+            :src="photo.img.srcs[0]"
+            :alt="photo.img.alt"
+            :srcset="
+              `${photo.img.srcs[0]} 320w, ${
+                photo.img.srcs[1]} 488w, ${
+                photo.img.srcs[2]} 656w, ${
+                photo.img.srcs[3]} 1980w`"
+            class="w-full h-full object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 group-focus-within:scale-110"
+            :sizes="`${160 * photo.size}px`"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+    <PictureFull
+      v-if="PictureFull"
+      :imgs="photosPrepared"
+      :enter-pict-index="index"
+      @close="PictureFull = false"
+    />
+  </div>
+</template>

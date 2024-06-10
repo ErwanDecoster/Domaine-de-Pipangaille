@@ -1,4 +1,7 @@
 <script setup lang="ts">
+defineProps<{
+  place: string
+}>()
 const { locale, locales } = useI18n()
 const supportedLocales = locales.value
 
@@ -9,26 +12,22 @@ function onLocaleChanged(event: Event) {
   const target = event.target as HTMLInputElement
   router.push({ path: switchLocalePath(target.value) })
 }
-
-defineProps<{
-  place: string
-}>()
 </script>
 
 <template>
   <div>
     <!-- 🌐 -->
-    <select 
+    <select
       :id="`local-lang-change-${place}`"
       name="local-lang-change"
-      :value="locale" 
+      :value="locale"
       class="dark:bg-eerie-black p-2 px-4 rounded-lg text-md duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
       aria-label="Langue du site"
       @change="onLocaleChanged"
     >
-      <option 
-        v-for="loc in supportedLocales" 
-        :key="loc.code" 
+      <option
+        v-for="loc in supportedLocales"
+        :key="loc.code"
         :value="loc.code"
       >
         {{ loc.name }}

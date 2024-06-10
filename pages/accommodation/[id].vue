@@ -1,17 +1,96 @@
+<script>
+import { Imgs, accommodations } from '@/data'
+
+export default {
+  data() {
+    return {
+      Imgs,
+      photosPrepared: [],
+      accommodationSelected: [],
+      accommodationsNoSelected: [],
+      accommodations,
+      PictureFull: false,
+      index: 0,
+    }
+  },
+  mounted() {
+    window.scrollTo(0, 0)
+  },
+  created() {
+    this.SelectAccommodation()
+    this.NoSelectAccommodations()
+    this.PreparePhoto()
+    const title = `${this.$t(`accommodation.${this.accommodationSelected.i18n}.title`)} - ${this.$t(`accommodation.title`)} - Domaine de Pipangaille`
+    const desc = this.$t(`accommodation.${this.accommodationSelected.i18n}.shortDesc`)
+    const img = this.Imgs[this.accommodationSelected.imgs[1].id].srcs[0]
+    const path = this.$route.path
+    useHead({
+      title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: desc,
+        },
+        { property: 'og:url', content: `https://domaine-de-pipangaille.fr${path}` },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: desc },
+        { property: 'og:image', content: `https://domaine-de-pipangaille.fr${img}` },
+        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'twitter:site', content: '@D_Pipangaille' },
+        { property: 'twitter:creator', content: '@D_Pipangaille' },
+        { property: 'twitter:title', content: title },
+        { property: 'twitter:description', content: desc },
+        { property: 'twitter:image', content: `https://domaine-de-pipangaille.fr${img}` },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://domaine-de-pipangaille.fr${path}`,
+        },
+      ],
+    })
+  },
+  methods: {
+    PreparePhoto() {
+      this.accommodationSelected.imgs.forEach((photo) => {
+        this.photosPrepared.push(this.Imgs[photo.id])
+      })
+    },
+    SelectAccommodation() {
+      this.accommodations.forEach((accommodation) => {
+        if (accommodation.slug === this.$route.params.id) {
+          this.accommodationSelected = accommodation
+        }
+      })
+    },
+    NoSelectAccommodations() {
+      this.accommodationsNoSelected = this.accommodations.filter(item => item !== this.accommodationSelected)
+    },
+    OpenPicture(div, pict) {
+      this.PictureFull = true
+      this.index = this.accommodationSelected.imgs.indexOf(pict, 0)
+    },
+  },
+}
+</script>
+
 <template>
   <div class="mb-8 md:pt-[5.25rem]">
     <section class="max-w-screen-xl mx-auto px-4 grid gap-8 pt-16">
       <h1 class="text-4xl sm:text-5xl">
         {{ $t(`accommodation.${accommodationSelected.i18n}.title`) }}
       </h1>
-      <CardTypeOn 
-        :title="$t('accommodation.theRoom')" 
+      <CardTypeOn
+        :title="$t('accommodation.theRoom')"
         :content="$tm(`accommodation.${accommodationSelected.i18n}.longDesc`)"
-        :imgs="[ Imgs[accommodationSelected.imgs[1].id], Imgs[accommodationSelected.imgs[2].id] ]" 
+        :imgs="[Imgs[accommodationSelected.imgs[1].id], Imgs[accommodationSelected.imgs[2].id]]"
         :button="[{ target: 'book', content: 'bookNow' }]"
       />
       <div v-if="accommodationSelected.bedConfiguration" class="flex gap-4 p-4 rounded bg-almond dark:bg-dark-almond text-eerie-black dark:text-white items-center">
-        <Icon class="min-w-6" name="fe:info"  />
+        <Icon class="min-w-6" name="fe:info" />
         <p>{{ $t(`accommodation.${accommodationSelected.i18n}.bedConfiguration`) }}</p>
       </div>
       <div class="grid gap-2">
@@ -19,16 +98,16 @@
           {{ $t('photos') }}
         </h2>
         <div class="flex flex-wrap sm:grid grid-cols-2 md:grid-cols-3 gap-4">
-          <img 
+          <img
             v-for="img in accommodationSelected.imgs"
             :key="img"
-            :src="Imgs[img.id].srcs[2]" 
-            :alt="Imgs[img.id].alt" 
+            :src="Imgs[img.id].srcs[2]"
+            :alt="Imgs[img.id].alt"
             :srcset="
-              Imgs[img.id].srcs[2] + ' 320w, ' +
-                Imgs[img.id].srcs[1] + ' 462w, ' +
-                Imgs[img.id].srcs[3] + ' 1980w'"
-            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer" 
+              `${Imgs[img.id].srcs[2]} 320w, ${
+                Imgs[img.id].srcs[1]} 462w, ${
+                Imgs[img.id].srcs[3]} 1980w`"
+            class="object-cover bg-northern_light_grey font-bold duration-500 group-hover:scale-110 h-72 group w-full relative rounded overflow-hidden shadow cursor-pointer"
             sizes="320px"
             loading="lazy"
             @click="OpenPicture($event, img)"
@@ -41,18 +120,18 @@
           {{ $t('accommodation.equipment') }}
         </h2>
         <div class="w-full lg:w-4/5 grid sm:grid-cols-2 md:grid-cols-3 gap-1">
-          <div 
+          <div
             v-for="row in accommodationSelected.equipements"
             :key="row"
             class="p-1 flex gap-4"
           >
-            <img 
+            <img
               v-if="row.url"
               width="24"
               height="24"
               class="w-6 h-6 bg dark:invert font-bold aspect-square"
               :src="`/images/${row.url}.svg`"
-              :alt="'icone ' + $t(`accommodation.facilities.${row.label}`)"
+              :alt="`icone ${$t(`accommodation.facilities.${row.label}`)}`"
             >
             <p class="">
               {{ $t(`accommodation.facilities.${row.label}`) }}
@@ -78,13 +157,13 @@
           </p>
         </div>
       </div>
-      <!-- <CardTypeOn 
-        :title="$t('accommodation.summerKitchenTitle')" 
+      <!-- <CardTypeOn
+        :title="$t('accommodation.summerKitchenTitle')"
         :content="$tm('accommodation.summerKitchenText')"
         :imgs="[Imgs[20], Imgs[21]]"
       /> -->
-      <CardTypeOn 
-        :title="$t('accommodation.relaxation')" 
+      <CardTypeOn
+        :title="$t('accommodation.relaxation')"
         :content="$tm('accommodation.relaxationText')"
         :imgs="[Imgs[33], Imgs[58]]"
       />
@@ -92,98 +171,18 @@
         <h2 class="text-4xl">
           {{ $t('accommodation.otherAccommodations') }}
         </h2>
-        <PageCardGroup 
+        <PageCardGroup
           v-if="accommodationsNoSelected"
-          :propElementsList="accommodationsNoSelected"
-          targetPage="accommodation"
+          :prop-elements-list="accommodationsNoSelected"
+          target-page="accommodation"
         />
       </div>
     </section>
     <PictureFull
       v-if="PictureFull"
       :imgs="photosPrepared"
-      :enterPictIndex="index" 
+      :enter-pict-index="index"
       @close="PictureFull = false"
     />
   </div>
 </template>
-
-<script>
-import { accommodations } from '@/data';
-import { Imgs } from '@/data';
-
-export default {
-  data() {
-    return {
-      Imgs: Imgs,
-      photosPrepared: [],
-      accommodationSelected: [],
-      accommodationsNoSelected: [],
-      accommodations: accommodations,
-      PictureFull: false,
-      index: 0,
-    };
-  },
-  mounted() {
-    window.scrollTo(0,0);
-  },
-  created() {
-    this.SelectAccommodation()
-    this.NoSelectAccommodations()
-    this.PreparePhoto()
-    const title = this.$t(`accommodation.${this.accommodationSelected.i18n}.title`) + " - " + this.$t(`accommodation.title`) + " - Domaine de Pipangaille"
-    const desc = this.$t(`accommodation.${this.accommodationSelected.i18n}.shortDesc`)
-    const img = this.Imgs[this.accommodationSelected.imgs[1].id].srcs[0]
-    const path = this.$route.path
-    useHead({
-      title: title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: desc, 
-        },
-        { property: 'og:url', content: 'https://domaine-de-pipangaille.fr' + path },
-        { property: 'og:type', content: 'article' },
-        { property: 'og:title', content: title },
-        { property: 'og:description', content: desc },
-        { property: 'og:image', content: 'https://domaine-de-pipangaille.fr' + img },
-        { property: 'twitter:card', content: 'summary_large_image' },
-        { property: 'twitter:site', content: '@D_Pipangaille' },
-        { property: 'twitter:creator', content: '@D_Pipangaille' },
-        { property: 'twitter:title', content: title },
-        { property: 'twitter:description', content: desc },
-        { property: 'twitter:image', content: 'https://domaine-de-pipangaille.fr' + img },
-      ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://domaine-de-pipangaille.fr${path}`,
-        },
-      ],
-    })
-  },
-  methods: {
-    PreparePhoto() {
-      this.accommodationSelected.imgs.forEach(photo => {
-        this.photosPrepared.push(this.Imgs[photo.id]);
-      });
-    },
-    SelectAccommodation() {
-      this.accommodations.forEach(accommodation => {
-        if (accommodation.slug === this.$route.params.id) {
-          this.accommodationSelected = accommodation;
-        }
-      });
-    },
-    NoSelectAccommodations() {
-      this.accommodationsNoSelected = this.accommodations.filter(item => item !== this.accommodationSelected );
-    },
-    OpenPicture(div, pict) {
-      this.PictureFull = true;
-      this.index = this.accommodationSelected.imgs.indexOf(pict, 0);
-    },
-  },
-};
-</script>

@@ -6,10 +6,10 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
       cssnano:
-      process.env.NODE_ENV === "production"
+      process.env.NODE_ENV === 'production'
         ? {
             preset: [
-              "default",
+              'default',
               {
                 discardComments: {
                   removeAll: true,
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/i18n',
     'nuxt-delay-hydration',
-    'nuxt-icon'
+    'nuxt-icon',
   ],
   security: {
     headers: {
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
     },
-    langDir: "lang",
+    langDir: 'lang',
     lazy: true,
     strategy: 'prefix_except_default',
     defaultLocale: 'fr',
@@ -49,27 +49,27 @@ export default defineNuxtConfig({
         code: 'fr',
         iso: 'fr-FR',
         name: 'Fr',
-        file: "fr-FR.ts",
-        dir: "ltr",
+        file: 'fr-FR.ts',
+        dir: 'ltr',
       },
       {
         code: 'en',
         iso: 'en-US',
         name: 'En',
-        file: "en-US.ts",
-        dir: "ltr",
+        file: 'en-US.ts',
+        dir: 'ltr',
       },
       {
         code: 'es',
         iso: 'es-ES',
         name: 'Es',
-        file: "es-ES.ts",
-        dir: "ltr",
+        file: 'es-ES.ts',
+        dir: 'ltr',
       },
     ],
     customRoutes: 'config',
     pages: {
-      the_place: {
+      'the_place': {
         fr: '/le-lieu',
         en: '/the-place',
         es: '/el-lugar',
@@ -94,22 +94,22 @@ export default defineNuxtConfig({
         en: '/near/[group]/[id]',
         es: '/a-proximidad/[group]/[id]',
       },
-      book: {
+      'book': {
         fr: '/reserver',
         en: '/book',
         es: '/reservar',
       },
-      contact: {
+      'contact': {
         fr: '/nous-contacter',
         en: '/contact-us',
         es: '/contáctenos',
       },
-      legal_notice: {
+      'legal_notice': {
         fr: '/mentions-legales',
         en: '/legal-notice',
         es: '/notas-legales',
       },
-      general_condition_of_sale: {
+      'general_condition_of_sale': {
         fr: '/condition-general-de-vente',
         en: '/general-condition-of-sale',
         es: '/condiciones-generales-de-venta',
@@ -120,41 +120,41 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
   routeRules: {
-    "/le_lieu": {
+    '/le_lieu': {
       redirect: {
-        to: "/le-lieu",
+        to: '/le-lieu',
         statusCode: 301,
       },
     },
-    "/a_proximite/a_visiter/musee_de_l_alambic": {
-        redirect: {
-          to: "/a-proximite/a-visiter/musee_de_l_alambic",
-          statusCode: 301,
-        },
+    '/a_proximite/a_visiter/musee_de_l_alambic': {
+      redirect: {
+        to: '/a-proximite/a-visiter/musee_de_l_alambic',
+        statusCode: 301,
+      },
     },
-    "/a_proximite/a_visiter/palais_ideal_du_facteur_cheval": {
-        redirect: {
-          to:"/a-proximite/a-visiter/palais_ideal_du_facteur_cheval",
-          statusCode: 301,
-        },
+    '/a_proximite/a_visiter/palais_ideal_du_facteur_cheval': {
+      redirect: {
+        to: '/a-proximite/a-visiter/palais_ideal_du_facteur_cheval',
+        statusCode: 301,
+      },
     },
-    "/a_proximite/se_restaurer/le_picotin": {
-        redirect: {
-          to: "/a-proximite/se-restaurer/le_picotin",
-          statusCode: 301,
-        },
+    '/a_proximite/se_restaurer/le_picotin': {
+      redirect: {
+        to: '/a-proximite/se-restaurer/le_picotin',
+        statusCode: 301,
+      },
     },
-    "/a_proximite/se_restaurer/o_daily_truck": {
-        redirect: {
-          to: "/a-proximite/se-restaurer/o_daily_truck",
-          statusCode: 301,
-        },
+    '/a_proximite/se_restaurer/o_daily_truck': {
+      redirect: {
+        to: '/a-proximite/se-restaurer/o_daily_truck',
+        statusCode: 301,
+      },
     },
-    "/a_proximite/se_restaurer/le_relais_mailles": {
-        redirect: {
-          to: "/a-proximite/se-restaurer/le_relais_mailles",
-          statusCode: 301,
-        },
+    '/a_proximite/se_restaurer/le_relais_mailles': {
+      redirect: {
+        to: '/a-proximite/se-restaurer/le_relais_mailles',
+        statusCode: 301,
+      },
     },
   },
   runtimeConfig: {
