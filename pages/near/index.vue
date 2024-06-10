@@ -10,7 +10,7 @@
         :imgs="[ Imgs[31], Imgs[28] ]"
         :links="[{
           label: 'findModePlace',
-          url: 'https://au-pre-du-rhone.fr/',
+          url: 'https://www.autour-du-palais-ideal.fr/ ',
         }]"
       />
       <div class="grid gap-2">
