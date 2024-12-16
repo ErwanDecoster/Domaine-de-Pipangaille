@@ -351,7 +351,7 @@ export default {
             {{ $rt(row) }}
           </p>
           <NuxtLink
-            :to="localePath({ name: 'contact' })"
+            :to="$localePath({ name: 'contact' })"
             class="btn-primary"
             :title="$t('thePlace.eventOrganisation.actionButton')"
           >
@@ -368,7 +368,7 @@ export default {
             {{ $t('thePlace.eventOrganisationText') }}
           </p>
           <NuxtLink
-            :to="localePath({ name: 'contact'})"
+            :to="$localePath({ name: 'contact'})"
             class="btn-primary"
             :title="$t('thePlace.eventOrganisationActionButton')"
           >

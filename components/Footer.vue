@@ -22,7 +22,7 @@ export default {
   >
     <div class="max-w-screen-xl gap-y-8 mx-auto relative grid lg:grid-cols-5 justify-items-center items-center">
       <NuxtLink
-        :to="localePath({ name: 'index' })"
+        :to="$localePath({ name: 'index' })"
         class="hidden lg:block"
         title="Domaine de Pipangaille"
         aria-label="Domaine de Pipangaille"

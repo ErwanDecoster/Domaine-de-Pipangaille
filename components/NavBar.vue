@@ -66,7 +66,7 @@ export default {
       <div class="flex items-center gap-2 lg:gap-4">
         <NuxtLink
           class="hidden lg:block h-full py-4"
-          :to="localePath({ name: 'index' })"
+          :to="$localePath({ name: 'index' })"
           title="Domaine de Pipangaille"
           aria-label="Domaine de Pipangaille"
         >
@@ -110,7 +110,7 @@ export default {
       <div class="flex gap-2">
         <LangSwitcher place="navbar" />
         <NuxtLink
-          :to="localePath({ name: 'contact' })"
+          :to="$localePath({ name: 'contact' })"
           class="btn-secondary"
           :title="$t('contact.contactUs')"
         >
