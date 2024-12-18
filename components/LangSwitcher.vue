@@ -1,22 +1,19 @@
 <script setup lang="ts">
-defineProps<{
-  place: string
-}>()
+defineProps<{ place: string }>()
+
 const { locale, locales } = useI18n()
 const supportedLocales = locales.value
-
 const router = useRouter()
 const switchLocalePath = useSwitchLocalePath()
 
 function onLocaleChanged(event: Event) {
-  const target = event.target as HTMLInputElement
+  const target = event.target as HTMLSelectElement
   router.push({ path: switchLocalePath(target.value) })
 }
 </script>
 
 <template>
   <div>
-    <!-- 🌐 -->
     <select
       :id="`local-lang-change-${place}`"
       name="local-lang-change"

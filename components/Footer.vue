@@ -1,18 +1,7 @@
-<script>
-export default {
-  data() {
-    return {
-    }
-  },
-  computed: {
-    onBookPage() {
-      if (this.$route.name.search('book') !== -1) {
-        return false
-      }
-      return true
-    },
-  },
-}
+<script setup>
+const route = useRoute()
+
+const onBookPage = computed(() => !route.name.includes('book'))
 </script>
 
 <template>

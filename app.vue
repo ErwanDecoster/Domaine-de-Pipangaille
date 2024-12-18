@@ -32,9 +32,9 @@ onMounted(() => {
 
 <template>
   <div class="text-eerie-black bg-white dark:bg-eerie-black dark:text-white min-h-[100vh] h-full">
-    <!-- <NavBar /> -->
-    <!-- <NuxtPage /> -->
-    <!-- <LazyFooter /> -->
+    <NavBar />
+    <NuxtPage />
+    <LazyFooter />
   </div>
 </template>
 

@@ -1,63 +1,50 @@
 <script setup>
-const { locale, locales } = useI18n()
-// const switchLocalePath = useSwitchLocalePath()
+const route = useRoute()
 
-// const availableLocales = computed(() => {
-//   return (locales.value).filter(i => i.code !== locale.value)
-// })
-</script>
+const fullNavOpen = ref(false)
 
-<script>
-export default {
-  data() {
-    return {
-      fullNavOpen: false,
-    }
-  },
-  watch: {
-    $route() {
-      this.UpdateDefaultStyle()
-    },
-  },
-  mounted() {
-    this.UpdateDefaultStyle()
-    window.addEventListener('scroll', () => {
-      const scrollYPosition = window.scrollY
-      const navBar = document.querySelector('nav')
-      const logo = document.querySelector('#logo')
-      if (scrollYPosition > 50 && this.$route.name.search('book') === -1) {
-        navBar.classList.remove('h-24')
-        navBar.classList.add('h-16')
-        logo.classList.remove('h-[4.625rem]')
-        logo.classList.add('h-14')
-      }
-      else if (this.$route.name.search('book') === -1) {
-        navBar.classList.add('h-24')
-        navBar.classList.remove('h-16')
-        logo.classList.add('h-[4.625rem]')
-        logo.classList.remove('h-14')
-      }
-    })
-  },
-  methods: {
-    UpdateDefaultStyle() {
-      const navBar = document.querySelector('nav')
-      const logo = document.querySelector('#logo')
-      if (this.$route.name.search('book') !== -1) {
-        navBar.classList.remove('h-24')
-        navBar.classList.add('h-16')
-        logo.classList.remove('h-[4.625rem]')
-        logo.classList.add('h-14')
-      }
-      else {
-        navBar.classList.add('h-24')
-        navBar.classList.remove('h-16')
-        logo.classList.add('h-[4.625rem]')
-        logo.classList.remove('h-14')
-      }
-    },
-  },
+function updateDefaultStyle() {
+  const navBar = document.querySelector('nav')
+  const logo = document.querySelector('#logo')
+
+  if (route.name && route.name.includes('book')) {
+    navBar.classList.remove('h-24')
+    navBar.classList.add('h-16')
+    logo.classList.remove('h-[4.625rem]')
+    logo.classList.add('h-14')
+  }
+  else {
+    navBar.classList.add('h-24')
+    navBar.classList.remove('h-16')
+    logo.classList.add('h-[4.625rem]')
+    logo.classList.remove('h-14')
+  }
 }
+
+watch(() => route.name, updateDefaultStyle)
+
+onMounted(() => {
+  updateDefaultStyle()
+
+  window.addEventListener('scroll', () => {
+    const scrollYPosition = window.scrollY
+    const navBar = document.querySelector('nav')
+    const logo = document.querySelector('#logo')
+
+    if (scrollYPosition > 50 && route.name && !route.name.includes('book')) {
+      navBar.classList.remove('h-24')
+      navBar.classList.add('h-16')
+      logo.classList.remove('h-[4.625rem]')
+      logo.classList.add('h-14')
+    }
+    else if (route.name && !route.name.includes('book')) {
+      navBar.classList.add('h-24')
+      navBar.classList.remove('h-16')
+      logo.classList.add('h-[4.625rem]')
+      logo.classList.remove('h-14')
+    }
+  })
+})
 </script>
 
 <template>
@@ -86,26 +73,11 @@ export default {
             >
           </picture>
         </NuxtLink>
-        <LocalButtonInline
-          link="index"
-          content="index.title"
-        />
-        <LocalButtonInline
-          link="the_place"
-          content="thePlace.title"
-        />
-        <LocalButtonInline
-          link="accommodation"
-          content="accommodation.title"
-        />
-        <LocalButtonInline
-          link="near"
-          content="near.title"
-        />
-        <LocalButtonInline
-          link="book"
-          content="book.title"
-        />
+        <LocalButtonInline link="index" content="index.title" />
+        <LocalButtonInline link="the_place" content="thePlace.title" />
+        <LocalButtonInline link="accommodation" content="accommodation.title" />
+        <LocalButtonInline link="near" content="near.title" />
+        <LocalButtonInline link="book" content="book.title" />
       </div>
       <div class="flex gap-2">
         <LangSwitcher place="navbar" />
@@ -125,19 +97,25 @@ export default {
     @click="fullNavOpen = !fullNavOpen"
   >
     <span class="w-8 bg-black dark:bg-white h-1 block rounded-full drop-shadow-lg" />
-    <span class="group-hover:w-1/3 w-8 duration-150 bg-black dark:bg-white h-1 block rounded-full drop-shadow-lg" />
+    <span
+      class="group-hover:w-1/3 w-8 duration-150 bg-black dark:bg-white h-1 block rounded-full drop-shadow-lg"
+    />
     <span class="w-8 bg-black dark:bg-white h-1 block rounded-full drop-shadow-lg" />
   </button>
   <div
-    v-if="fullNavOpen === true"
+    v-if="fullNavOpen"
     class="md:hidden fixed z-40 inset-0 bg-white dark:bg-eerie-black"
   >
     <button
       class="h-12 w-12 px-2 pt-2.5 absolute right-6 top-6 flex flex-col gap-2 duration-150 hover:rotate-90"
       @click="fullNavOpen = !fullNavOpen"
     >
-      <span class="w-8 bg-black dark:bg-white h-1 block rounded-full rotate-45 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" />
-      <span class="w-8 bg-black dark:bg-white h-1 block rounded-full -rotate-45 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2" />
+      <span
+        class="w-8 bg-black dark:bg-white h-1 block rounded-full rotate-45 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
+      />
+      <span
+        class="w-8 bg-black dark:bg-white h-1 block rounded-full -rotate-45 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
+      />
     </button>
     <NuxtLink
       to="index"
