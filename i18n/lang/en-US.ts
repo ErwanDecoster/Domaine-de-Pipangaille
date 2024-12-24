@@ -368,6 +368,7 @@ export default {
       succes: 'Message sent successfully',
       mapsTitle: 'Google Maps of Domaine de Pipangaille',
       phone: 'phone',
+      whatsapp: 'Whatsapp',
       email: 'e-mail',
       address: 'address',
       name: 'name',
