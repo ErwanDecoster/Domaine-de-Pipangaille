@@ -57,7 +57,6 @@ export default {
       title: 'Refugio para bicicletas',
       desc: [
         'Para comodidad de nuestros huéspedes ciclistas, disponemos de un refugio abierto donde pueden atar sus bicicletas. La verja se cierra por la noche para mayor seguridad.',
-        'Una cocina con nevera está a su disposición, ideal para mantener sus bebidas frías. Además, este espacio cuenta con una zona para recargar las baterías de las bicicletas.',
       ],
     },
     eventOrganisation: {

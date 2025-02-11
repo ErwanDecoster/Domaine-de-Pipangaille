@@ -56,8 +56,7 @@ export default {
     bicycleShelter: {
       title: 'Abri vélos',
       desc: [
-        'Pour le confort de nos clients à vélo, nous mettons à disposition un abri ouvert, où vous pouvez attacher vos vélos entre eux. Le portail est fermé la nuit pour assurer une sécurité optimale. ',
-        'Une cuisine équipée d\'un réfrigérateur est à votre disposition, idéale pour conserver vos boissons au frais. De plus, cet espace propose une zone dédiée à la recharge des batteries de vos vélos.',
+        'Pour le confort de nos clients à vélo, nous mettons à disposition un abri ouvert, où vous pouvez attacher vos vélos entre eux. Le portail est fermé la nuit pour assurer une sécurité optimale.',
       ],
     },
     eventOrganisation: {

@@ -57,7 +57,6 @@ export default {
       title: 'Abri vélos',
       desc: [
         'For the comfort of our cycling guests, we provide an open shelter where you can secure your bicycles. The gate is closed at night for optimal security.',
-        'A kitchen equipped with a refrigerator is at your disposal, perfect for keeping your beverages cool.',
       ],
     },
     eventOrganisation: {
