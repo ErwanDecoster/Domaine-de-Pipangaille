@@ -6,11 +6,14 @@ export default {
   facebook: 'Facebook',
   instagram: 'Instagram',
   linkedin: 'LinkedIn',
+  bento: 'Bento',
+  pagesJaunes: 'Pages Jaunes',
+  tripadvisor: 'Tripadvisor',
   x: 'X (Twitter)',
   schedulesAndPrices: 'Horaires et Tarifs',
   prices: 'Tarifs',
   ticketing: 'Billetterie',
-  ourSocialNetworks: 'Nos réseaux sociaux',
+  usefulLinksAndSocialNetworks: 'Nos liens utiles et réseaux sociaux',
   ourOtherPages: 'Nos autres pages',
   findModePlace: 'Autour du Palais idéal ',
   index: {
@@ -53,8 +56,7 @@ export default {
     bicycleShelter: {
       title: 'Abri vélos',
       desc: [
-        'Pour le confort de nos clients à vélo, nous mettons à disposition un abri ouvert, où vous pouvez attacher vos vélos entre eux. Le portail est fermé la nuit pour assurer une sécurité optimale. ',
-        'Une cuisine équipée d\'un réfrigérateur est à votre disposition, idéale pour conserver vos boissons au frais. De plus, cet espace propose une zone dédiée à la recharge des batteries de vos vélos.',
+        'Pour le confort de nos clients à vélo, nous mettons à disposition un abri ouvert, où vous pouvez attacher vos vélos entre eux. Le portail est fermé la nuit pour assurer une sécurité optimale.',
       ],
     },
     eventOrganisation: {
@@ -366,6 +368,7 @@ export default {
       succes: 'Message envoyé avec succès',
       mapsTitle: 'Carte Google maps du Domaine de Pipangaille',
       phone: 'téléphone',
+      whatsapp: 'Whatsapp',
       email: 'e-mail',
       address: 'adresse',
       name: 'nom',

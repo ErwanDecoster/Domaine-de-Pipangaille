@@ -6,11 +6,14 @@ export default {
   facebook: 'Facebook',
   instagram: 'Instagram',
   linkedin: 'LinkedIn',
+  bento: 'Bento',
+  pagesJaunes: 'Pages Jaunes',
+  tripadvisor: 'Tripadvisor',
   x: 'X (Twitter)',
   schedulesAndPrices: 'Schedules and Prices',
   prices: 'Prices',
   ticketing: 'Ticketing',
-  ourSocialNetworks: 'Our Social Networks',
+  usefulLinksAndSocialNetworks: 'Our useful links and social networks',
   ourOtherPages: 'Our Other Pages',
   findModePlace: 'Autour du Palais idéal ',
   index: {
@@ -54,7 +57,6 @@ export default {
       title: 'Abri vélos',
       desc: [
         'For the comfort of our cycling guests, we provide an open shelter where you can secure your bicycles. The gate is closed at night for optimal security.',
-        'A kitchen equipped with a refrigerator is at your disposal, perfect for keeping your beverages cool.',
       ],
     },
     eventOrganisation: {
@@ -365,6 +367,7 @@ export default {
       succes: 'Message sent successfully',
       mapsTitle: 'Google Maps of Domaine de Pipangaille',
       phone: 'phone',
+      whatsapp: 'Whatsapp',
       email: 'e-mail',
       address: 'address',
       name: 'name',

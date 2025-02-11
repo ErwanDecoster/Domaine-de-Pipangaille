@@ -104,7 +104,7 @@ export default {
           <NuxtLink
             v-for="row in button"
             :key="row"
-            :to="localePath(row.target)"
+            :to="$localePath(row.target)"
             class="btn-primary"
             :title="row.content"
           >
@@ -122,7 +122,7 @@ export default {
             <NuxtLink
               v-for="link in links"
               :key="link"
-              :to="localePath(link.url)"
+              :to="$localePath(link.url)"
               new-window="_blank"
               class="btn-secondary"
             >
