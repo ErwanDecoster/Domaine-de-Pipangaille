@@ -6,11 +6,14 @@ export default {
   facebook: 'Facebook',
   instagram: 'Instagram',
   linkedin: 'LinkedIn',
+  bento: 'Bento',
+  pagesJaunes: 'Pages Jaunes',
+  tripadvisor: 'Tripadvisor',
   x: 'X (Twitter)',
   schedulesAndPrices: 'Horaires et Tarifs',
   prices: 'Tarifs',
   ticketing: 'Billetterie',
-  ourSocialNetworks: 'Nos réseaux sociaux',
+  usefulLinksAndSocialNetworks: 'Nos liens utiles et réseaux sociaux',
   ourOtherPages: 'Nos autres pages',
   findModePlace: 'Autour du Palais idéal ',
   index: {
@@ -24,7 +27,7 @@ export default {
     placeDescText: 'Le Domaine de Pipangaille, ancienne magnanerie récemment rénovée vous propose un séjour magique dans un cadre idyllique. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événement à fêter, le domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la ViaRhôna.',
     placeActionButton: 'Le Domaine de Pipangaille',
     guestroomDescTitle: 'Nos chambres d\'hôtes',
-    guestroomDescText: 'Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d\'été à votre disposition ainsi qu\'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étag',
+    guestroomDescText: 'Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d\'été à votre disposition ainsi qu\'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étage',
     guestroomDescActionButton: 'Voir les chambres',
     reviewsTittle: 'Avis clients',
     nearDescTitle: 'À proximité',
@@ -53,8 +56,7 @@ export default {
     bicycleShelter: {
       title: 'Abri vélos',
       desc: [
-        'Pour le confort de nos clients à vélo, nous mettons à disposition un abri ouvert, où vous pouvez attacher vos vélos entre eux. Le portail est fermé la nuit pour assurer une sécurité optimale. ',
-        'Une cuisine équipée d\'un réfrigérateur est à votre disposition, idéale pour conserver vos boissons au frais. De plus, cet espace propose une zone dédiée à la recharge des batteries de vos vélos.',
+        'Pour le confort de nos clients à vélo, nous mettons à disposition un abri ouvert, où vous pouvez attacher vos vélos entre eux. Le portail est fermé la nuit pour assurer une sécurité optimale.',
       ],
     },
     eventOrganisation: {
@@ -80,6 +82,7 @@ export default {
     breakfastTitle: 'Petit déjeuner et Table d\'hôtes',
     breakfastText: [
       'Le petit déjeuner est servi de 8h00 à 9h30, ou plus tôt sur demande. Il vous est proposé dans la salle à manger ou dans la cour intérieure pleine de charme, à la belle saison. Sous forme de buffet, vous retrouverez le pain traditionnel et ses viennoiseries, du thé bio, le café du torréfacteur, du jus de fruits et des yaourts locaux, ainsi que des fruits de saison.',
+      'Nous nous adaptons à tous les régimes alimentaires (végétarien, vegan, sans gluten, etc.), il suffit de nous contacter à l\'avance pour que nous puissions répondre à vos besoins spécifiques.',
       'Sur réservation, la table d\'hôte est possible afin de partager un moment convivial et gourmand. Nous vous proposons un menu unique "maison" ou des planches de charcuteries, fromages, ou salade composée avec des produits locaux et bio.',
     ],
     theRoom: 'La chambres',
@@ -366,6 +369,7 @@ export default {
       succes: 'Message envoyé avec succès',
       mapsTitle: 'Carte Google maps du Domaine de Pipangaille',
       phone: 'téléphone',
+      whatsapp: 'Whatsapp',
       email: 'e-mail',
       address: 'adresse',
       name: 'nom',

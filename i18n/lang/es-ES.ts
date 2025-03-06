@@ -6,11 +6,14 @@ export default {
   facebook: 'Facebook',
   instagram: 'Instagram',
   linkedin: 'LinkedIn',
+  bento: 'Bento',
+  pagesJaunes: 'Pages Jaunes',
+  tripadvisor: 'Tripadvisor',
   x: 'X (Twitter)',
   schedulesAndPrices: 'Horarios y precios',
   prices: 'Precios',
   ticketing: 'Venta de entradas',
-  ourSocialNetworks: 'Nuestras redes sociales',
+  usefulLinksAndSocialNetworks: 'Nuestros enlaces útiles y redes sociales',
   ourOtherPages: 'Nuestras otras páginas',
   findModePlace: 'Autour du Palais idéal ',
   index: {
@@ -54,7 +57,6 @@ export default {
       title: 'Refugio para bicicletas',
       desc: [
         'Para comodidad de nuestros huéspedes ciclistas, disponemos de un refugio abierto donde pueden atar sus bicicletas. La verja se cierra por la noche para mayor seguridad.',
-        'Una cocina con nevera está a su disposición, ideal para mantener sus bebidas frías. Además, este espacio cuenta con una zona para recargar las baterías de las bicicletas.',
       ],
     },
     eventOrganisation: {
@@ -80,6 +82,7 @@ export default {
     breakfastText: [
       'El desayuno se sirve de 8:00 a 9:30, o antes si lo solicita. Se ofrece en el comedor o en el encantador patio interior, en la temporada de buen tiempo. El bufé incluye pan y bollería tradicionales, té orgánico, café tostado, zumos de frutas y yogures locales, así como frutas de temporada.',
       'Si lo desea, también puede reservar la mesa de huéspedes para disfrutar de una agradable comida gourmet. Le proponemos un menú "casero" único o tablas de embutidos, quesos o ensaladas elaboradas con productos locales y orgánicos.',
+      'Nos adaptamos a todas las dietas alimenticias (vegetariana, vegana, sin gluten, etc.), simplemente contáctenos con antelación para que podamos satisfacer sus necesidades específicas.',
     ],
     theRoom: 'La habitación',
     equipment: 'Equipamientos',
@@ -365,6 +368,7 @@ export default {
       succes: 'Mensaje enviado exitosamente',
       mapsTitle: 'Mapa de Google del Domaine de Pipangaille',
       phone: 'teléfono',
+      whatsapp: 'Whatsapp',
       email: 'correo electrónico',
       address: 'dirección',
       name: 'nombre',

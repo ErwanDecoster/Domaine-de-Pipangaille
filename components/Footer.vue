@@ -1,18 +1,7 @@
-<script>
-export default {
-  data() {
-    return {
-    }
-  },
-  computed: {
-    onBookPage() {
-      if (this.$route.name.search('book') !== -1) {
-        return false
-      }
-      return true
-    },
-  },
-}
+<script setup>
+const route = useRoute()
+
+const onBookPage = computed(() => !route.name.includes('book'))
 </script>
 
 <template>
@@ -22,7 +11,7 @@ export default {
   >
     <div class="max-w-screen-xl gap-y-8 mx-auto relative grid lg:grid-cols-5 justify-items-center items-center">
       <NuxtLink
-        :to="localePath({ name: 'index' })"
+        :to="$localePath({ name: 'index' })"
         class="hidden lg:block"
         title="Domaine de Pipangaille"
         aria-label="Domaine de Pipangaille"
@@ -47,7 +36,7 @@ export default {
       <div class="grid sm:grid-cols-2 gap-y-8 sm:gap-12 lg:col-span-3">
         <div class="grid grid-cols-2 justify-items-center">
           <h2 class="col-span-2 text-xl pb-2">
-            {{ $t('ourSocialNetworks') }}
+            {{ $t('usefulLinksAndSocialNetworks') }}
           </h2>
           <ButtonInline
             link="https://facebook.com/domainedepipangaille"
@@ -69,8 +58,24 @@ export default {
             content="x"
             new-window="_blank"
           />
+          <ButtonInline
+            link="https://bento.me/domaine-de-pipangaille"
+            content="bento"
+            new-window="_blank"
+          />
+          <ButtonInline
+            link="https://www.tripadvisor.fr/Hotel_Review-g11695688-d5990107-Reviews-Domaine_de_Pipangaille-Andancette_Drome_Auvergne_Rhone_Alpes.html"
+            content="tripadvisor"
+            new-window="_blank"
+          />
+          <ButtonInline
+            link="https://www.pagesjaunes.fr/pros/56007503"
+            content="pagesJaunes"
+            new-window="_blank"
+            class="col-span-2"
+          />
         </div>
-        <div class="grid grid-cols-2 justify-items-center">
+        <div class="grid grid-cols-2 justify-items-center h-fit">
           <h2 class="col-span-2 text-xl pb-2">
             {{ $t('ourOtherPages') }}
           </h2>

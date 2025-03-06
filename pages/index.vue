@@ -321,7 +321,7 @@ export default {
               {{ $t('index.placeDescText') }}
             </p>
             <NuxtLink
-              :to="localePath({ name: 'the_place' })"
+              :to="$localePath({ name: 'the_place' })"
               class="btn-primary"
               :title="$t('thePlace.title')"
             >
@@ -362,7 +362,7 @@ export default {
               {{ $t('index.nearDescTextPart2') }}
             </p>
             <NuxtLink
-              :to="localePath({ name: 'near' })"
+              :to="$localePath({ name: 'near' })"
               class="btn-primary"
               :title="$t('near.title')"
             >

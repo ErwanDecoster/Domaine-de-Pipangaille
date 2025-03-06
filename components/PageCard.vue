@@ -45,7 +45,7 @@ export default {
         {{ shortDesc }}
       </p>
       <NuxtLink
-        :to="localePath(target)"
+        :to="$localePath(target)"
         class="btn-secondary mt-auto"
         :title="title"
       >

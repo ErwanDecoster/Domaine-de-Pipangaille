@@ -104,7 +104,7 @@ export default {
           <NuxtLink
             v-for="row in button"
             :key="row"
-            :to="localePath({ name: row.target })"
+            :to="$localePath({ name: row.target })"
             class="btn-primary"
             :title="$t(row.content)"
           >

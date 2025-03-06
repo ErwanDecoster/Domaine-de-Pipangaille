@@ -1,6 +1,9 @@
+import process from 'node:process'
+
 export default defineNuxtConfig({
   css: ['~/assets/css/styles.css'],
   dev: process.env.NODE_ENV !== 'production',
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -20,6 +23,7 @@ export default defineNuxtConfig({
         : false, // disable cssnano when not in production
     },
   },
+
   modules: [
     'nuxt-vercel-analytics',
     'nuxt-security',
@@ -28,11 +32,13 @@ export default defineNuxtConfig({
     'nuxt-delay-hydration',
     'nuxt-icon',
   ],
+
   security: {
     headers: {
       crossOriginEmbedderPolicy: false,
     },
   },
+
   i18n: {
     baseUrl: 'https://domaine-de-pipangaille.fr',
     detectBrowserLanguage: {
@@ -116,9 +122,11 @@ export default defineNuxtConfig({
       },
     },
   },
+
   nitro: {
     compressPublicAssets: true,
   },
+
   routeRules: {
     '/le_lieu': {
       redirect: {
@@ -157,6 +165,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   runtimeConfig: {
     public: {
       siteUrl: process.env.PUBLIC_SITE_URL || 'https://domaine-de-pipangaille.fr',
@@ -167,4 +176,6 @@ export default defineNuxtConfig({
     MAILPASSWORD: process.env.MAILPASSWORD,
     CONTACTMAIL: process.env.CONTACTMAIL,
   },
+
+  compatibilityDate: '2024-12-16',
 })

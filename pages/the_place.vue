@@ -214,13 +214,6 @@ export default {
           size: 3,
         },
         {
-          id: 20,
-          title: 'La cuisine en accès libre',
-          espace: 'Cuisine d\'été',
-          img: Imgs[20],
-          size: 2,
-        },
-        {
           id: 65,
           title: 'Un endroit où s\'abriter',
           espace: 'Salle commune',
@@ -351,7 +344,7 @@ export default {
             {{ $rt(row) }}
           </p>
           <NuxtLink
-            :to="localePath({ name: 'contact' })"
+            :to="$localePath({ name: 'contact' })"
             class="btn-primary"
             :title="$t('thePlace.eventOrganisation.actionButton')"
           >
@@ -368,7 +361,7 @@ export default {
             {{ $t('thePlace.eventOrganisationText') }}
           </p>
           <NuxtLink
-            :to="localePath({ name: 'contact'})"
+            :to="$localePath({ name: 'contact'})"
             class="btn-primary"
             :title="$t('thePlace.eventOrganisationActionButton')"
           >

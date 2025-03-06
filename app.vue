@@ -1,25 +1,25 @@
-<script>
-export default {
-  created() {
-    const head = useLocaleHead({
-      addDirAttribute: true,
-      identifierAttribute: 'id',
-      addSeoAttributes: true,
-    })
-    const title = this.$t('index.meta.title')
-    useHead({
-      title,
-      htmlAttrs: {
-        lang: head.value.htmlAttrs.lang,
-        dir: head.value.htmlAttrs.dir,
-      },
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'robots', content: 'index, follow' },
-        { name: 'theme-color', content: '#ffffff' },
-      ],
-      script: [
+<script setup>
+const { t } = useI18n()
+
+const head = useLocaleHead({
+  addDirAttribute: true,
+  identifierAttribute: 'id',
+  addSeoAttributes: true,
+})
+
+useHead({
+  title: t('index.meta.title'),
+  htmlAttrs: {
+    lang: head.value.htmlAttrs.lang,
+    dir: head.value.htmlAttrs.dir,
+  },
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'theme-color', content: '#ffffff' },
+  ],
+  script: [
         {
           innerHTML: `
             (function(h,o,t,j,a,r){
@@ -34,13 +34,15 @@ export default {
           type: 'text/javascript',
         },
       ],
-    })
-  },
-  mounted() {
-    const style = 'background: #1A1D1A; color: #eee; border-radius: 4px; padding: 2px 10px; border: 1px solid #595859; font-size: 16px;'
-    console.log('%cWebsite designed and developed by Erwan Decoster www.erwan-decoster.com in Nuxt 🤍\nGithub repo : https://github.com/ErwanDecoster/Domaine-de-Pipangaille', style)
-  },
-}
+})
+
+onMounted(() => {
+  const style = 'background: #1A1D1A; color: #eee; border-radius: 4px; padding: 2px 10px; border: 1px solid #595859; font-size: 16px;'
+  console.log(
+    '%cWebsite designed and developed by Erwan Decoster www.erwan-decoster.com in Nuxt 🤍\nGithub repo : https://github.com/ErwanDecoster/Domaine-de-Pipangaille',
+    style,
+  )
+})
 </script>
 
 <template>
@@ -63,23 +65,9 @@ html {
     font-family: 'Nunito';
 }
 
-/* h1, h2, h3, h4, h5 {
-    font-family: "Lora";
-    src: local("Lora"),
-     url(~/assets/font/Lora-Regular.ttf) format("truetype");
-} */
 h1, h2, h3, h4, h5 {
     font-family: "WollstonecraftRomance";
     src: local("WollstonecraftRomance"),
      url(~/assets/font/WollstonecraftRomance-Regular.ttf) format("truetype");
 }
-/* .page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-} */
 </style>

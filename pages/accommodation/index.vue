@@ -1,5 +1,5 @@
 <script>
-import { Imgs, accommodations } from '@/data'
+import { accommodations, Imgs } from '@/data'
 
 export default {
   data() {

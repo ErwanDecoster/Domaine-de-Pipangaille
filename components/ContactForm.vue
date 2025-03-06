@@ -81,7 +81,7 @@ export default {
       }
     },
     ValidEmail(email) {
-      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/i
+      const re = /^[\w.%+-]+@[\w.-]+\.[A-Z]{2,}$/i
       return re.test(email)
     },
     CheckForm() {
@@ -172,13 +172,13 @@ export default {
       <div class="grid lg:flex gap-x-16 gap-y-8">
         <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
           <div class="grid gap-2">
-            <div class="flex gap-2">
+            <div class="flex gap-2 items-center">
               <img
                 width="28"
                 height="28"
                 src="/images/icon_telephone.svg"
                 alt="Icone Téléphone"
-                class="w-7 sm:10 dark:invert"
+                class="size-7 dark:invert"
               >
               <div>
                 <p class="font-semibold ml-2">
@@ -192,13 +192,34 @@ export default {
                 </a>
               </div>
             </div>
-            <div class="flex gap-2">
+            <div class="flex gap-2 items-center">
+              <img
+                width="28"
+                height="28"
+                src="/images/icon_telephone.svg"
+                alt="Icone Téléphone"
+                class="size-7 dark:invert"
+              >
+              <div>
+                <p class="font-semibold ml-2">
+                  {{ $t('contact.contactForm.whatsapp') }} :
+                </p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=33475682824"
+                  target="_blank"
+                  class="pl-2 underline decoration-2 underline-offset-2 decoration-almond dark:decoration-dark-almond text-md block"
+                >
+                  +33 4 75 68 28 24
+                </a>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
               <img
                 width="28"
                 height="28"
                 src="/images/icon_email.svg"
                 alt="Icone Email"
-                class="w-7 sm:10 dark:invert"
+                class="size-7 dark:invert"
               >
               <div>
                 <p class="font-semibold ml-2">
@@ -213,13 +234,13 @@ export default {
                 </a>
               </div>
             </div>
-            <div class="flex gap-2">
+            <div class="flex gap-2 items-center">
               <img
                 width="28"
                 height="28"
                 src="/images/icon_localisation.svg"
                 alt="Icone localisation"
-                class="w-7 sm:10 dark:invert"
+                class="size-7 dark:invert"
               >
               <div>
                 <p class="font-semibold ml-2">
