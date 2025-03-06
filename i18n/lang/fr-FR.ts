@@ -82,8 +82,8 @@ export default {
     breakfastTitle: 'Petit déjeuner et Table d\'hôtes',
     breakfastText: [
       'Le petit déjeuner est servi de 8h00 à 9h30, ou plus tôt sur demande. Il vous est proposé dans la salle à manger ou dans la cour intérieure pleine de charme, à la belle saison. Sous forme de buffet, vous retrouverez le pain traditionnel et ses viennoiseries, du thé bio, le café du torréfacteur, du jus de fruits et des yaourts locaux, ainsi que des fruits de saison.',
+      'Nous nous adaptons à tous les régimes alimentaires (végétarien, vegan, sans gluten, etc.), il suffit de nous contacter à l\'avance pour que nous puissions répondre à vos besoins spécifiques.',
       'Sur réservation, la table d\'hôte est possible afin de partager un moment convivial et gourmand. Nous vous proposons un menu unique "maison" ou des planches de charcuteries, fromages, ou salade composée avec des produits locaux et bio.',
-      'Nous nous adaptons à tous les régimes alimentaires, il suffit de nous contacter à l\'avance pour que nous puissions répondre à vos besoins spécifiques.',
     ],
     theRoom: 'La chambres',
     equipment: 'Équipements',
