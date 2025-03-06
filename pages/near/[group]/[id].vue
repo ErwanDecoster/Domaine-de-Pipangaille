@@ -1,5 +1,5 @@
 <script>
-import { Imgs, aProximiter } from '@/data'
+import { aProximiter, Imgs } from '@/data'
 
 export default {
   data() {

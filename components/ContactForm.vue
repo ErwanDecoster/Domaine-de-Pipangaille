@@ -81,7 +81,7 @@ export default {
       }
     },
     ValidEmail(email) {
-      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/i
+      const re = /^[\w.%+-]+@[\w.-]+\.[A-Z]{2,}$/i
       return re.test(email)
     },
     CheckForm() {
