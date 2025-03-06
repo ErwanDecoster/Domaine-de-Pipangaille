@@ -27,7 +27,7 @@ export default {
     placeDescText: 'Le Domaine de Pipangaille, ancienne magnanerie récemment rénovée vous propose un séjour magique dans un cadre idyllique. Vous recherchez un endroit privilégié pour un break, un court séjour, un déplacement professionnel ou encore un événement à fêter, le domaine de Pipangaille est le lieu idéal, situé à une heure de Lyon et de Saint-Étienne, à 45 minutes de Valence et en accès direct sur la ViaRhôna.',
     placeActionButton: 'Le Domaine de Pipangaille',
     guestroomDescTitle: 'Nos chambres d\'hôtes',
-    guestroomDescText: 'Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d\'été à votre disposition ainsi qu\'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étag',
+    guestroomDescText: 'Vous accédez aux chambres en traversant le parc arboré, qui vous amène dans la cour intérieure entourée de pierres, ce qui lui confère un cadre authentique et apaisant. Vous trouverez ensuite une cuisine d\'été à votre disposition ainsi qu\'une salle de convivialité. Les quatre chambres à la décoration atypique, vous invitant au voyage, sont situées au deuxième étage',
     guestroomDescActionButton: 'Voir les chambres',
     reviewsTittle: 'Avis clients',
     nearDescTitle: 'À proximité',
