@@ -17,7 +17,6 @@ function onLocaleChanged(event: Event) {
     <select
       :id="`local-lang-change-${place}`"
       name="local-lang-change"
-      :value="locale"
       class="dark:bg-eerie-black p-2 px-4 rounded-lg text-md duration-100 border border-almond dark:border-dark-almond hover:bg-white dark:hover:bg-eerie-black hover:border-eerie-black dark:hover:border-white hover:rounded-md"
       aria-label="Langue du site"
       @change="onLocaleChanged"
@@ -26,6 +25,7 @@ function onLocaleChanged(event: Event) {
         v-for="loc in supportedLocales"
         :key="loc.code"
         :value="loc.code"
+        :selected="loc.code === locale"
       >
         {{ loc.name }}
       </option>
