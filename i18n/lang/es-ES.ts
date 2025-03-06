@@ -82,6 +82,7 @@ export default {
     breakfastText: [
       'El desayuno se sirve de 8:00 a 9:30, o antes si lo solicita. Se ofrece en el comedor o en el encantador patio interior, en la temporada de buen tiempo. El bufé incluye pan y bollería tradicionales, té orgánico, café tostado, zumos de frutas y yogures locales, así como frutas de temporada.',
       'Si lo desea, también puede reservar la mesa de huéspedes para disfrutar de una agradable comida gourmet. Le proponemos un menú "casero" único o tablas de embutidos, quesos o ensaladas elaboradas con productos locales y orgánicos.',
+      'Nos adaptamos a todas las dietas alimenticias (vegetariana, vegana, sin gluten, etc.), simplemente contáctenos con antelación para que podamos satisfacer sus necesidades específicas.',
     ],
     theRoom: 'La habitación',
     equipment: 'Equipamientos',

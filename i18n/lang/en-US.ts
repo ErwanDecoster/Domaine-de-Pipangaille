@@ -82,6 +82,7 @@ export default {
     breakfastText: [
       'Breakfast is served from 8:00 to 9:30, or earlier upon request. It is offered in the dining room or in the charming inner courtyard, especially in the beautiful season. In buffet form, you will find traditional bread and pastries, organic tea, coffee from the roaster, fruit juice, and local yogurt, as well as seasonal fruits.',
       'Upon reservation, the table d\'hôte is available to share a friendly and gourmet moment. We offer a unique \'homemade\' menu or platters of cold cuts, cheeses, or composed salads with local and organic products.',
+      'We accommodate all dietary requirements (vegetarian, vegan, gluten-free, etc.), simply let us know in advance so we can cater to your specific needs.',
     ],
     theRoom: 'The Room',
     equipment: 'Facilities',
