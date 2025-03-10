@@ -953,26 +953,26 @@ export const Imgs = [
     ],
     alt: 'Vue de la cour intérieure depuis une des terrasse. Sur la terrasse nous apercevons des chaises et une guirlande. Dans le jardin nous voyons des transats, des tables mais aussi de nombreux arbres. ',
   },
-  // {
-  //   id: 20,
-  //   srcs: [
-  //     '/images/cuisine_ete_1_320x320.webp',
-  //     '/images/cuisine_ete_1_378x213.webp',
-  //     '/images/cuisine_ete_1_462x347.webp',
-  //     '/images/cuisine_ete_1_488x320.webp',
-  //     '/images/cuisine_ete_1_656x320.webp',
-  //     '/images/cuisine_ete_1_1920x1080.webp',
-  //   ],
-  //   alt: 'Photo de l\'ensemble de la cuisine d\'été. On peut y voir une table entourée de chaises, les différents équipements de la cuisine, frigo, four, machine à laver, plaques de cuisson et un évier.',
-  // },
-  // {
-  //   id: 21,
-  //   srcs: [
-  //     '/images/cuisine_ete_2_378x213.webp',
-  //     '/images/cuisine_ete_2_462x347.webp',
-  //   ],
-  //   alt: 'Sur cette photo nous voyons une table entourée de chaises, les différents équipements de la cuisine, frigo, four, machine à laver, plaques de cuisson et un évier.',
-  // },
+  {
+    id: 20,
+    srcs: [
+      '/images/cuisine_ete_1_320x320.webp',
+      '/images/cuisine_ete_1_378x213.webp',
+      '/images/cuisine_ete_1_462x347.webp',
+      '/images/cuisine_ete_1_488x320.webp',
+      '/images/cuisine_ete_1_656x320.webp',
+      '/images/cuisine_ete_1_1920x1080.webp',
+    ],
+    alt: 'Photo de l\'ensemble de la cuisine d\'été. On peut y voir une table entourée de chaises, les différents équipements de la cuisine, frigo, four, machine à laver, plaques de cuisson et un évier.',
+  },
+  {
+    id: 21,
+    srcs: [
+      '/images/cuisine_ete_2_378x213.webp',
+      '/images/cuisine_ete_2_462x347.webp',
+    ],
+    alt: 'Sur cette photo nous voyons une table entourée de chaises, les différents équipements de la cuisine, frigo, four, machine à laver, plaques de cuisson et un évier.',
+  },
   {
     id: 22,
     srcs: [
