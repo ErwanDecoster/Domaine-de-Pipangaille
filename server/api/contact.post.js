@@ -1,4 +1,4 @@
-import { defineEventHandler, readBody, useRuntimeConfig } from '#imports'
+import { createError, defineEventHandler, readBody, sendError, useRuntimeConfig } from '#imports'
 import nodemailer from 'nodemailer'
 import validator from 'validator'
 
@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
     await isValid(body)
       .then(async (data) => {
         await transporter.sendMail({
-          from: `Site internet - Domaine de Pipangaille<website@domaine-de-pipangaille.fr>`,
+          from: `Site internet - Domaine de Pipangaille<contact@domaine-de-pipangaille.fr>`,
           replyTo: data.email,
           to: config.CONTACT_MAIL,
           subject: `Site internet | ${data.object}`,
@@ -65,23 +65,23 @@ export default defineEventHandler(async (event) => {
     return 'send'
   }
   catch (error) {
-    sendError(event, createError({ statusCode: 400, statusMessage: error }))
+    sendError(event, createError({ statusCode: 400, statusMessage: error.message }))
   }
 })
 
 async function isValid(body) {
   const errors = []
 
-  if (validator.isEmpty(body.email || ''))
-    errors.push('Le champ Nom est requi.')
   if (validator.isEmpty(body.name || ''))
-    errors.push('Le champ Nom est requi.')
-  if (validator.isEmpty(body.object || ''))
-    errors.push('Le champ Objet est requi.')
-  if (validator.isEmpty(body.message || ''))
-    errors.push('Le champ Message est requi.')
+    errors.push('Le champ Nom est requis.')
+  if (validator.isEmpty(body.email || ''))
+    errors.push('Le champ Email est requis.')
   if (!validator.isEmail(body.email || ''))
-    errors.push('L\'email est incorecte.')
+    errors.push('L\'email est incorrect.')
+  if (validator.isEmpty(body.object || ''))
+    errors.push('Le champ Objet est requis.')
+  if (validator.isEmpty(body.message || ''))
+    errors.push('Le champ Message est requis.')
 
   if (errors.length > 0) {
     return Promise.reject(errors)
