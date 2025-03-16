@@ -131,6 +131,7 @@ export default {
       document.getElementById('contact-form').scrollIntoView()
     },
     SendMessage() {
+      const config = useRuntimeConfig()
       if (this.waiting) {
         this.errors.push(this.$t('contact.contactForm.errors.messageSending'))
       }
@@ -138,8 +139,7 @@ export default {
         if (this.CheckForm() && this.CheckSendDate() && this.waiting === false) {
           this.errors = []
           this.waiting = true
-          const url = 'https://domaine-de-pipangaille.fr/api/contact'
-          // const url = 'http://localhost:3000/api/contact'
+          const url = `${config.public.API_URL}/contact`
           $fetch(url, {
             method: 'POST',
             headers: {

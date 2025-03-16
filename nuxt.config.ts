@@ -169,6 +169,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: process.env.PUBLIC_SITE_URL || 'https://domaine-de-pipangaille.fr',
+      API_URL: process.env.API_URL,
     },
     MAIL_HOST: process.env.MAIL_HOST,
     MAIL_PORT: process.env.MAIL_PORT,
