@@ -271,7 +271,7 @@ async function SendMessage() {
         <span class="lg:hidden mx-auto h-1 bg-almond dark:bg-dark-almond w-full rounded" />
         <form
           id="contact-form"
-          class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow relative scroll-m-4"
+          class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow relative scroll-m-20"
           @submit.prevent="SendMessage"
         >
           <div
