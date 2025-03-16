@@ -1,161 +1,164 @@
-<script>
-export default {
-  data() {
-    return {
-      local: useI18n().locale,
-      errors: [],
-      success: false,
-      waiting: false,
-      sendDate: '',
-      form: {
-        name: '',
-        email: '',
-        phone: '',
-        object: '',
-        message: '',
-      },
+<script setup>
+import { onMounted, ref, watch } from 'vue'
+
+const errors = ref([])
+const success = ref(false)
+const waiting = ref(false)
+const sendDate = ref('')
+const form = ref({
+  name: '',
+  email: '',
+  phone: '',
+  object: '',
+  message: '',
+})
+
+watch(() => form.value.name, (newName) => {
+  localStorage.name = newName
+})
+
+watch(() => form.value.email, (newEmail) => {
+  localStorage.email = newEmail
+})
+
+watch(() => form.value.phone, (newPhone) => {
+  localStorage.phone = newPhone
+})
+
+watch(() => form.value.object, (newObject) => {
+  localStorage.object = newObject
+})
+
+watch(() => form.value.message, (newMessage) => {
+  localStorage.message = newMessage
+})
+
+onMounted(() => {
+  if (localStorage.name) {
+    form.value.name = localStorage.name
+  }
+  if (localStorage.email) {
+    form.value.email = localStorage.email
+  }
+  if (localStorage.phone) {
+    form.value.phone = localStorage.phone
+  }
+  if (localStorage.object) {
+    form.value.object = localStorage.object
+  }
+  if (localStorage.message) {
+    form.value.message = localStorage.message
+  }
+  if (localStorage.sendDate) {
+    sendDate.value = localStorage.sendDate
+  }
+})
+
+function VerifySendState(data) {
+  waiting.value = false
+  if (data === 'send') {
+    success.value = true
+    form.value = {
+      name: '',
+      email: '',
+      phone: '',
+      object: '',
+      message: '',
     }
-  },
-  watch: {
-    'form.name': function (newName) {
-      localStorage.name = newName
-    },
-    'form.email': function (newEmail) {
-      localStorage.email = newEmail
-    },
-    'form.phone': function (newPhone) {
-      localStorage.phone = newPhone
-    },
-    'form.object': function (newObject) {
-      localStorage.object = newObject
-    },
-    'form.message': function (newMessage) {
-      localStorage.message = newMessage
-    },
-  },
-  mounted() {
-    if (localStorage.name) {
-      this.form.name = localStorage.name
+    localStorage.name = ''
+    localStorage.email = ''
+    localStorage.phone = ''
+    localStorage.object = ''
+    localStorage.message = ''
+    sendDate.value = Date.parse(new Date())
+    localStorage.sendDate = sendDate.value
+    document.getElementById('contact-form').scrollIntoView()
+  }
+  else {
+    errors.value.push('Une erreur est survenue.')
+    document.getElementById('contact-form').scrollIntoView()
+  }
+}
+
+function ValidEmail(email) {
+  const re = /^[\w.%+-]+@[\w.-]+\.[A-Z]{2,}$/i
+  return re.test(email)
+}
+
+function CheckForm() {
+  if (form.value.name && form.value.email && ValidEmail(form.value.email) && form.value.object && form.value.message && form.value.message.length > 10 && !success.value) {
+    errors.value = []
+    return true
+  }
+  errors.value = []
+  if (success.value) {
+    errors.value.push('Message déjà envoyé.')
+  }
+  if (!form.value.name) {
+    errors.value.push('Le champ nom est requis.')
+  }
+  if (!form.value.email) {
+    errors.value.push('Le champ email est requis.')
+  }
+  else if (!ValidEmail(form.value.email)) {
+    errors.value.push('Email invalide.')
+  }
+  if (!form.value.object) {
+    errors.value.push('Le champ objet est requis.')
+  }
+  if (!form.value.message) {
+    errors.value.push('Le champ message est requis.')
+  }
+  else if (form.value.message.length <= 10) {
+    errors.value.push('Le message est trop court.')
+  }
+  document.getElementById('contact-form').scrollIntoView()
+  return false
+}
+
+function CheckSendDate() {
+  if (Date.parse(new Date()) - sendDate.value < 200000) {
+    errors.value.push('Message déjà envoyé.')
+    document.getElementById('contact-form').scrollIntoView()
+    return false
+  }
+  return true
+}
+
+function DisplayError() {
+  waiting.value = false
+  errors.value = []
+  errors.value.push('Problème de connexion.')
+  document.getElementById('contact-form').scrollIntoView()
+}
+
+async function SendMessage() {
+  const config = useRuntimeConfig()
+  if (waiting.value) {
+    errors.value.push('Envoi en cours...')
+  }
+  else {
+    if (CheckForm() && CheckSendDate() && !waiting.value) {
+      errors.value = []
+      waiting.value = true
+      const url = `${config.public.API_URL}/contact`
+      try {
+        const response = await $fetch(url, {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+          },
+          credentials: 'same-origin',
+          body: form.value,
+        })
+        VerifySendState(response)
+      }
+      catch (error) {
+        console.error(error)
+        DisplayError()
+      }
     }
-    if (localStorage.email) {
-      this.form.email = localStorage.email
-    }
-    if (localStorage.phone) {
-      this.form.phone = localStorage.phone
-    }
-    if (localStorage.object) {
-      this.form.object = localStorage.object
-    }
-    if (localStorage.message) {
-      this.form.message = localStorage.message
-    }
-    if (localStorage.sendDate) {
-      this.sendDate = localStorage.sendDate
-    }
-  },
-  methods: {
-    VerifSendState(data) {
-      this.waiting = false
-      if (data === 'send') {
-        this.waiting = false
-        this.success = true
-        this.form = {
-          name: '',
-          email: '',
-          phone: '',
-          object: '',
-          message: '',
-        }
-        localStorage.name = ''
-        localStorage.email = ''
-        localStorage.phone = ''
-        localStorage.object = ''
-        localStorage.message = ''
-        this.sendDate = Date.parse(new Date())
-        localStorage.sendDate = this.sendDate
-        document.getElementById('contact-form').scrollIntoView()
-      }
-      else {
-        this.errors.push(this.$t('contact.contactForm.errors.errorOcured'))
-        document.getElementById('contact-form').scrollIntoView()
-      }
-    },
-    ValidEmail(email) {
-      const re = /^[\w.%+-]+@[\w.-]+\.[A-Z]{2,}$/i
-      return re.test(email)
-    },
-    CheckForm() {
-      if (this.form.name && this.form.email && this.ValidEmail(this.form.email) && this.form.object && this.form.message && !(this.form.message.length <= 10) && !this.messageSend) {
-        this.errors = []
-        return true
-      }
-      this.errors = []
-      if (this.success) {
-        this.errors.push(this.$t('contact.contactForm.errors.alreadySend'))
-      }
-      if (!this.form.name) {
-        this.errors.push(this.$t('contact.contactForm.errors.nameFieldRequired'))
-      }
-      if (!this.form.email) {
-        this.errors.push(this.$t('contact.contactForm.errors.emailFieldRequired'))
-      }
-      else if (!this.ValidEmail(this.form.email)) {
-        this.errors.push(this.$t('contact.contactForm.errors.emailInvalid'))
-      }
-      if (!this.form.object) {
-        this.errors.push(this.$t('contact.contactForm.errors.objectFieldRequired'))
-      }
-      if (!this.form.message) {
-        this.errors.push(this.$t('contact.contactForm.errors.messageFieldRequired'))
-      }
-      else if (this.form.message.length <= 10) {
-        this.errors.push(this.$t('contact.contactForm.errors.messageFieldTtooShort'))
-      }
-      document.getElementById('contact-form').scrollIntoView()
-      return false
-    },
-    CheckSendDate() {
-      if (Date.parse(new Date()) - this.sendDate < 200000) {
-        this.errors.push(this.$t('contact.contactForm.errors.alreadySend'))
-        document.getElementById('contact-form').scrollIntoView()
-        return false
-      }
-      else {
-        return true
-      }
-    },
-    ShowError() {
-      this.waiting = false
-      this.errors = []
-      this.errors.push(this.$t('contact.contactForm.errors.badConnection'))
-      document.getElementById('contact-form').scrollIntoView()
-    },
-    SendMessage() {
-      const config = useRuntimeConfig()
-      if (this.waiting) {
-        this.errors.push(this.$t('contact.contactForm.errors.messageSending'))
-      }
-      else {
-        if (this.CheckForm() && this.CheckSendDate() && this.waiting === false) {
-          this.errors = []
-          this.waiting = true
-          const url = `${config.public.API_URL}/contact`
-          $fetch(url, {
-            method: 'POST',
-            headers: {
-              Accept: 'application/json',
-            },
-            credentials: 'same-origin',
-            body: this.form,
-          }).then(
-            response => this.VerifSendState(response),
-          ).catch(
-            response => new this.ShowError(response),
-          )
-        }
-      }
-    },
-  },
+  }
 }
 </script>
 
@@ -256,7 +259,6 @@ export default {
               </div>
             </div>
           </div>
-          <!-- :src="`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d&#39;h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071!5m2!1s${local}!2s${local}`" -->
           <iframe
             :title="$t('contact.contactForm.mapsTitle')"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.7609287776054!2d4.8084116158016466!3d45.25262695555646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f53e41af912869%3A0xe0c49553166e1500!2sChambre%20d'h%C3%B4tes%20Pipangaille!5e0!3m2!1sfr!2sfr!4v1654167736071"
@@ -270,16 +272,16 @@ export default {
         <form
           id="contact-form"
           class="flex flex-col sm:grid sm:grid-cols-2 gap-y-2 gap-x-8 lg:col-span-2 grow relative scroll-m-4"
-          @submit.prevent="SendMessage()"
+          @submit.prevent="SendMessage"
         >
           <div
-            v-if="(errors || success)"
+            v-if="(errors.length || success)"
             class="sm:col-span-2"
           >
             <div
               v-if="success"
               class="bg-ufo-green px-2 py-1 rounded-lg"
-              @click="(success = false)"
+              @click="success = false"
             >
               {{ $t('contact.contactForm.succes') }}
             </div>
@@ -304,7 +306,6 @@ export default {
             <input
               id="name"
               v-model="form.name"
-
               type="text"
               name="name"
               autocomplete="name"
@@ -321,7 +322,6 @@ export default {
             <input
               id="email"
               v-model="form.email"
-
               type="email"
               name="email"
               autocomplete="email"
@@ -357,7 +357,6 @@ export default {
             <input
               id="object"
               v-model="form.object"
-
               type="text"
               name="object"
               autocomplete="off"
@@ -374,7 +373,6 @@ export default {
             <textarea
               id="message"
               v-model="form.message"
-
               name="message"
               autocomplete="off"
               class="rounded-lg px-2 py-1 border h-32 min-h-[8em] outline-eerie-black dark:outline-white focus:outline-4 outline-offset-4 dark:bg-eerie-black"
