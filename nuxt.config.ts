@@ -170,11 +170,11 @@ export default defineNuxtConfig({
     public: {
       siteUrl: process.env.PUBLIC_SITE_URL || 'https://domaine-de-pipangaille.fr',
     },
-    MAILHOST: process.env.MAILHOST,
-    MAILPORT: process.env.MAILPORT,
-    MAILUSER: process.env.MAILUSER,
-    MAILPASSWORD: process.env.MAILPASSWORD,
-    CONTACTMAIL: process.env.CONTACTMAIL,
+    MAIL_HOST: process.env.MAIL_HOST,
+    MAIL_PORT: process.env.MAIL_PORT,
+    MAIL_USER: process.env.MAIL_USER,
+    MAIL_PASSWORD: process.env.MAIL_PASSWORD,
+    CONTACT_MAIL: process.env.CONTACT_MAIL,
   },
 
   compatibilityDate: '2024-12-16',

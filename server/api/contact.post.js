@@ -1,14 +1,15 @@
+import { defineEventHandler, readBody, useRuntimeConfig } from '#imports'
 import nodemailer from 'nodemailer'
 import validator from 'validator'
 
 const config = useRuntimeConfig()
 
 const transporter = nodemailer.createTransport({
-  host: config.MAILHOST,
-  port: config.MAILPORT,
+  host: config.MAIL_HOST,
+  port: config.MAIL_PORT,
   auth: {
-    user: config.MAILUSER,
-    pass: config.MAILPASSWORD,
+    user: config.MAIL_USER,
+    pass: config.MAIL_PASSWORD,
   },
 })
 
@@ -21,7 +22,7 @@ export default defineEventHandler(async (event) => {
         await transporter.sendMail({
           from: `Site internet - Domaine de Pipangaille<website@domaine-de-pipangaille.fr>`,
           replyTo: data.email,
-          to: config.CONTACTMAIL,
+          to: config.CONTACT_MAIL,
           subject: `Site internet | ${data.object}`,
           text: data.message,
           html: `
